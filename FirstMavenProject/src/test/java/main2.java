@@ -9,17 +9,23 @@ public class main2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
   
+		//below 3 lines to check if the junit jar file is configured via POM file
 		int a=4; 
 		int b=4;		
 		Assert.assertEquals(a, b);
-		WindowsUtils.killByName("chromedriver.exe");
+		
+		WindowsUtils.killByName("chromedriver.exe"); //closing chromedriver browser if open any. 
+		//setting the path of chrome driver
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.amazon.com/");
-		driver.manage().window().maximize();		
-		String[] arr=new String[4];
+		WebDriver driver=new ChromeDriver(); // creating an instance of ChromeDriver.
+		driver.get("https://www.amazon.com/"); //Navigating to Amazon home page after launching Google Chrome browser(driver).
+		driver.manage().window().maximize();	//Maximizing the browser	
+		String[] arr=new String[4]; //declaring an array of string with 4 elements.
+		//initializing 4 values into the 4 elements
 		arr[0]="black hair";arr[1]="red eyes";arr[2]="pink Lips";arr[3]="T-Shartviuawebby9ipvvvvvvvvpiyru";
-		System.out.println(arr.length);
+		System.out.println(arr.length); //printing out the array length
+		//below for loop will search texts and capture search result.
+		// it will also show pass if the result contains numbers.
 		for(int i=0;i<arr.length;i++){
 			driver.findElement(By.id("twotabsearchtextbox")).sendKeys(arr[i]);
 			waitTime(5000);
