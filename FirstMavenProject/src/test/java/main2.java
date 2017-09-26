@@ -44,7 +44,8 @@ public class main2 {
 					System.out.println("Failed because \""+vOutput+"\" does not contain any newmeric number");
 				}		
 				driver.findElement(By.id("twotabsearchtextbox")).clear();
-			}}
+			}
+			}
 	}
 	//method to wait a specific time
 	public static void waitTime(int a){
