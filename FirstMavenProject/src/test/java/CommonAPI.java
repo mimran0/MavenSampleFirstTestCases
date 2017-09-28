@@ -86,4 +86,19 @@ public class CommonAPI {
 		result=a+b;
 		return result;
 	}
+	
+	//OpenChromeBrowser (09/28/17)
+	// This function/method will open GoogleChrome Browser and navigate to the URL given during calling the method
+	// Output: this function/method will return page title
+	// Input: this function/method takes string URL of the page as input argument
+		WebDriver driver;	
+		public String OpenChromeBrowser(String url){
+			String result=null;
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
+			driver=new ChromeDriver();
+			driver.get(url);
+			waitTime(5000);
+			result=driver.getTitle();	
+			return result;
+		}
 }

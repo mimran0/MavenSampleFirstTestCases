@@ -1,9 +1,10 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MyTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
 		
 		boolean vOutput=isContainNewMeric(";vjon876evouw");
 		if (vOutput==true){
@@ -31,4 +32,27 @@ public class MyTest {
 		}		
 		return result;
 	}
+	
+	
+	//OpenBrowser
+	WebDriver driver;	
+	public String OpenChromeBrowser(String url){
+		String result=null;
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get(url);
+		waitTime(5000);
+		result=driver.getTitle();	
+		return result;
+	}
+	
+	//method to wait a specific time
+		public static void waitTime(int a){
+			try {
+				Thread.sleep(a);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 }
