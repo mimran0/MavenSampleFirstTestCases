@@ -1,0 +1,8 @@
+<suite name="Fun TestSuite to check priority">
+	<test name="fun test set">
+		<classes>
+			<class name="Priotization"/>			
+			
+		</classes>
+	</test>
+</suite>

@@ -1,63 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Amazon suite" duration-ms="110764" started-at="2017-09-28T03:37:16Z" finished-at="2017-09-28T03:39:06Z">
+  <suite name="Fun TestSuite to check priority" duration-ms="112" started-at="2017-09-28T19:40:28Z" finished-at="2017-09-28T19:40:28Z">
     <groups>
     </groups>
-    <test name="Homepage test set" duration-ms="110764" started-at="2017-09-28T03:37:16Z" finished-at="2017-09-28T03:39:06Z">
-      <class name="FirstClassWith2methods">
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@29774679]" name="doFirst" is-config="true" duration-ms="466" started-at="2017-09-27T23:37:16Z" finished-at="2017-09-27T23:37:16Z">
+    <test name="fun test set" duration-ms="112" started-at="2017-09-28T19:40:28Z" finished-at="2017-09-28T19:40:28Z">
+      <class name="Priotization">
+        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@8bd1b6a]" name="A" duration-ms="16" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doFirst" is-config="true" duration-ms="303" started-at="2017-09-27T23:37:16Z" finished-at="2017-09-27T23:37:16Z">
+        </test-method> <!-- A -->
+        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@8bd1b6a]" name="F" duration-ms="4" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@29774679]" name="doBeforeEveryMethod" is-config="true" duration-ms="302" started-at="2017-09-27T23:37:16Z" finished-at="2017-09-27T23:37:17Z">
+        </test-method> <!-- F -->
+        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@8bd1b6a]" name="D" duration-ms="6" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@29774679]" name="UsersAreAbleToSearch" duration-ms="53586" started-at="2017-09-27T23:37:17Z" finished-at="2017-09-27T23:38:10Z">
+        </test-method> <!-- D -->
+        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@8bd1b6a]" name="E" duration-ms="5" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@29774679]" name="doBeforeEveryMethod" is-config="true" duration-ms="454" started-at="2017-09-27T23:38:10Z" finished-at="2017-09-27T23:38:11Z">
+        </test-method> <!-- E -->
+        <test-method status="PASS" signature="B()[pri:4, instance:Priotization@8bd1b6a]" name="B" duration-ms="3" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@29774679]" name="test2" duration-ms="3" started-at="2017-09-27T23:38:11Z" finished-at="2017-09-27T23:38:11Z">
+        </test-method> <!-- B -->
+        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@8bd1b6a]" name="C" duration-ms="1" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@29774679]" name="doLast" is-config="true" duration-ms="0" started-at="2017-09-27T23:39:06Z" finished-at="2017-09-27T23:39:06Z">
+        </test-method> <!-- C -->
+        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@8bd1b6a]" name="G" duration-ms="2" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doLast -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doLast" is-config="true" duration-ms="1" started-at="2017-09-27T23:39:06Z" finished-at="2017-09-27T23:39:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLast -->
-      </class> <!-- FirstClassWith2methods -->
-      <class name="SecondClasssWith2Methods">
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doBeforeEveryMethod" is-config="true" duration-ms="353" started-at="2017-09-27T23:38:11Z" finished-at="2017-09-27T23:38:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="UsersAreAbleToSearch" duration-ms="54859" started-at="2017-09-27T23:38:11Z" finished-at="2017-09-27T23:39:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doBeforeEveryMethod" is-config="true" duration-ms="402" started-at="2017-09-27T23:39:06Z" finished-at="2017-09-27T23:39:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="test2" duration-ms="1" started-at="2017-09-27T23:39:06Z" finished-at="2017-09-27T23:39:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- SecondClasssWith2Methods -->
-    </test> <!-- Homepage test set -->
-  </suite> <!-- Amazon suite -->
+        </test-method> <!-- G -->
+      </class> <!-- Priotization -->
+    </test> <!-- fun test set -->
+  </suite> <!-- Fun TestSuite to check priority -->
 </testng-results>
