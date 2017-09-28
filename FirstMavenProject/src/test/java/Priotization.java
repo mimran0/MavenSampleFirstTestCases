@@ -6,7 +6,7 @@ public class Priotization {
 		System.out.println("This is sub-procudure/method A");
 	}
 
-	@Test(priority = 4)
+	@Test(enabled = false)
 	public void B() {
 		System.out.println("This is sub-procudure/method B");
 	}

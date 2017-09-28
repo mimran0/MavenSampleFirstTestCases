@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Fun TestSuite to check priority" duration-ms="112" started-at="2017-09-28T19:40:28Z" finished-at="2017-09-28T19:40:28Z">
+  <suite name="Fun TestSuite to check priority" duration-ms="74" started-at="2017-09-28T19:45:47Z" finished-at="2017-09-28T19:45:47Z">
     <groups>
     </groups>
-    <test name="fun test set" duration-ms="112" started-at="2017-09-28T19:40:28Z" finished-at="2017-09-28T19:40:28Z">
+    <test name="fun test set" duration-ms="74" started-at="2017-09-28T19:45:47Z" finished-at="2017-09-28T19:45:47Z">
       <class name="Priotization">
-        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@8bd1b6a]" name="A" duration-ms="16" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
+        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@8bd1b6a]" name="A" duration-ms="19" started-at="2017-09-28T15:45:47Z" finished-at="2017-09-28T15:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A -->
-        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@8bd1b6a]" name="F" duration-ms="4" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
+        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@8bd1b6a]" name="F" duration-ms="3" started-at="2017-09-28T15:45:47Z" finished-at="2017-09-28T15:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F -->
-        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@8bd1b6a]" name="D" duration-ms="6" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
+        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@8bd1b6a]" name="D" duration-ms="2" started-at="2017-09-28T15:45:47Z" finished-at="2017-09-28T15:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- D -->
-        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@8bd1b6a]" name="E" duration-ms="5" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
+        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@8bd1b6a]" name="E" duration-ms="1" started-at="2017-09-28T15:45:47Z" finished-at="2017-09-28T15:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- E -->
-        <test-method status="PASS" signature="B()[pri:4, instance:Priotization@8bd1b6a]" name="B" duration-ms="3" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- B -->
-        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@8bd1b6a]" name="C" duration-ms="1" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
+        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@8bd1b6a]" name="C" duration-ms="2" started-at="2017-09-28T15:45:47Z" finished-at="2017-09-28T15:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- C -->
-        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@8bd1b6a]" name="G" duration-ms="2" started-at="2017-09-28T15:40:28Z" finished-at="2017-09-28T15:40:28Z">
+        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@8bd1b6a]" name="G" duration-ms="3" started-at="2017-09-28T15:45:47Z" finished-at="2017-09-28T15:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- G -->
