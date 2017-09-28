@@ -1,0 +1,8 @@
+<suite name="Amazon suite">
+	<test name="Homepage test set">
+		<classes>
+			<class name="FirstClassWith2methods" />		
+			<class name="SecondClasssWith2Methods" />		
+		</classes>
+	</test>
+</suite>

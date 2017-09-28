@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.BeforeMethod;
 
 public class main2 {
 
@@ -71,5 +72,12 @@ public class main2 {
 			}		  
 		}		
 		return result;
+	}
+	
+	@BeforeMethod
+	public void doBeforeEveryMethod(){
+		//CLOSING ALL OPEN BROWSERS before every method/(@test) executed
+				WindowsUtils.killByName("chromedriver.exe");
+				WindowsUtils.killByName("chrome.exe");
 	}
 }

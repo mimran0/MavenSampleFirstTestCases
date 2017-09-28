@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56441" started-at="2017-09-27T02:10:51Z" finished-at="2017-09-27T02:11:48Z">
+  <suite name="Amazon suite" duration-ms="108188" started-at="2017-09-28T02:50:57Z" finished-at="2017-09-28T02:52:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56441" started-at="2017-09-27T02:10:51Z" finished-at="2017-09-27T02:11:48Z">
-      <class name="PlayWithTestNG">
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:PlayWithTestNG@6f7fd0e6]" name="doFirst" is-config="true" duration-ms="469" started-at="2017-09-26T22:10:51Z" finished-at="2017-09-26T22:10:52Z">
+    <test name="Homepage test set" duration-ms="108188" started-at="2017-09-28T02:50:57Z" finished-at="2017-09-28T02:52:45Z">
+      <class name="FirstClassWith2methods">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@29774679]" name="doFirst" is-config="true" duration-ms="467" started-at="2017-09-27T22:50:57Z" finished-at="2017-09-27T22:50:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:PlayWithTestNG@6f7fd0e6]" name="UsersAreAbleToSearch" duration-ms="55944" started-at="2017-09-26T22:10:52Z" finished-at="2017-09-26T22:11:48Z">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doFirst" is-config="true" duration-ms="353" started-at="2017-09-27T22:50:57Z" finished-at="2017-09-27T22:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doFirst -->
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@29774679]" name="doBeforeEveryMethod" is-config="true" duration-ms="303" started-at="2017-09-27T22:50:58Z" finished-at="2017-09-27T22:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeEveryMethod -->
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@29774679]" name="UsersAreAbleToSearch" duration-ms="54170" started-at="2017-09-27T22:50:58Z" finished-at="2017-09-27T22:51:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:PlayWithTestNG@6f7fd0e6]" name="test2" duration-ms="2" started-at="2017-09-26T22:11:48Z" finished-at="2017-09-26T22:11:48Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@29774679]" name="doBeforeEveryMethod" is-config="true" duration-ms="484" started-at="2017-09-27T22:51:52Z" finished-at="2017-09-27T22:51:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeEveryMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@29774679]" name="test2" duration-ms="2" started-at="2017-09-27T22:51:53Z" finished-at="2017-09-27T22:51:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:PlayWithTestNG@6f7fd0e6]" name="doLast" is-config="true" duration-ms="1" started-at="2017-09-26T22:11:48Z" finished-at="2017-09-26T22:11:48Z">
+        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@29774679]" name="doLast" is-config="true" duration-ms="1" started-at="2017-09-27T22:52:45Z" finished-at="2017-09-27T22:52:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLast -->
-      </class> <!-- PlayWithTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doLast" is-config="true" duration-ms="0" started-at="2017-09-27T22:52:45Z" finished-at="2017-09-27T22:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLast -->
+      </class> <!-- FirstClassWith2methods -->
+      <class name="SecondClasssWith2Methods">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doBeforeEveryMethod" is-config="true" duration-ms="353" started-at="2017-09-27T22:51:53Z" finished-at="2017-09-27T22:51:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeEveryMethod -->
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="UsersAreAbleToSearch" duration-ms="51562" started-at="2017-09-27T22:51:53Z" finished-at="2017-09-27T22:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsersAreAbleToSearch -->
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="doBeforeEveryMethod" is-config="true" duration-ms="460" started-at="2017-09-27T22:52:45Z" finished-at="2017-09-27T22:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeEveryMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@3ffc5af1]" name="test2" duration-ms="1" started-at="2017-09-27T22:52:45Z" finished-at="2017-09-27T22:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- SecondClasssWith2Methods -->
+    </test> <!-- Homepage test set -->
+  </suite> <!-- Amazon suite -->
 </testng-results>
