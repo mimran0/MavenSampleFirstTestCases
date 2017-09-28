@@ -6,7 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class FirstClassWith2methods extends main2{
+public class FirstClassWith2methods extends CommonAPI{
 	
 	@BeforeTest
 	public void doFirst(){

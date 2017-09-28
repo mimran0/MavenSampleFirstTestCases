@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.os.WindowsUtils;
 import org.testng.annotations.BeforeMethod;
 
-public class main2 {
+public class CommonAPI {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
