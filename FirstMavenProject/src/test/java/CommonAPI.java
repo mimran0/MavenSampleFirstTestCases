@@ -80,4 +80,10 @@ public class CommonAPI {
 				WindowsUtils.killByName("chromedriver.exe");
 				WindowsUtils.killByName("chrome.exe");
 	}
+	
+	public int add(int a, int b){
+		int result;
+		result=a+b;
+		return result;
+	}
 }
