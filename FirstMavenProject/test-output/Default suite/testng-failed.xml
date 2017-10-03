@@ -5,8 +5,10 @@
     <classes>
       <class name="afterLoginIn.TestSetA">
         <methods>
-          <include name="Login_And_LogOut"/>
+          <include name="TC_402_Login_NegativeTest"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_401_Login_And_LogOut"/>
+          <include name="SetUpPreDataMethod"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
