@@ -1,123 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="17" passed="16">
+<testng-results skipped="0" failed="0" ignored="1" total="18" passed="17">
   <reporter-output>
   </reporter-output>
-  <suite name="all" duration-ms="109011" started-at="2017-09-28T21:47:11Z" finished-at="2017-09-28T21:49:00Z">
+  <suite name="all" duration-ms="154998" started-at="2017-10-03T03:40:14Z" finished-at="2017-10-03T03:42:49Z">
     <groups>
       <group name="A">
-        <method signature="Group.F1()[pri:0, instance:Group@68c4039c]" name="F1" class="Group"/>
-        <method signature="Group.F3()[pri:0, instance:Group@68c4039c]" name="F3" class="Group"/>
-        <method signature="Group.F6()[pri:0, instance:Group@68c4039c]" name="F6" class="Group"/>
+        <method signature="Group.F1()[pri:0, instance:Group@27efef64]" name="F1" class="Group"/>
+        <method signature="Group.F3()[pri:0, instance:Group@27efef64]" name="F3" class="Group"/>
+        <method signature="Group.F6()[pri:0, instance:Group@27efef64]" name="F6" class="Group"/>
       </group> <!-- A -->
       <group name="B">
-        <method signature="Group.F2()[pri:0, instance:Group@68c4039c]" name="F2" class="Group"/>
-        <method signature="Group.F5()[pri:0, instance:Group@68c4039c]" name="F5" class="Group"/>
+        <method signature="Group.F2()[pri:0, instance:Group@27efef64]" name="F2" class="Group"/>
+        <method signature="Group.F5()[pri:0, instance:Group@27efef64]" name="F5" class="Group"/>
       </group> <!-- B -->
       <group name="C">
-        <method signature="Group.F4()[pri:0, instance:Group@68c4039c]" name="F4" class="Group"/>
+        <method signature="Group.F4()[pri:0, instance:Group@27efef64]" name="F4" class="Group"/>
       </group> <!-- C -->
     </groups>
-    <test name="all" duration-ms="109011" started-at="2017-09-28T21:47:11Z" finished-at="2017-09-28T21:49:00Z">
-      <class name="Group">
-        <test-method status="PASS" signature="F1()[pri:0, instance:Group@68c4039c]" name="F1" duration-ms="6" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F1 -->
-        <test-method status="PASS" signature="F2()[pri:0, instance:Group@68c4039c]" name="F2" duration-ms="1" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F2 -->
-        <test-method status="PASS" signature="F3()[pri:0, instance:Group@68c4039c]" name="F3" duration-ms="2" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F3 -->
-        <test-method status="PASS" signature="F4()[pri:0, instance:Group@68c4039c]" name="F4" duration-ms="0" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F4 -->
-        <test-method status="PASS" signature="F5()[pri:0, instance:Group@68c4039c]" name="F5" duration-ms="2" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F5 -->
-        <test-method status="PASS" signature="F6()[pri:0, instance:Group@68c4039c]" name="F6" duration-ms="2" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F6 -->
-      </class> <!-- Group -->
+    <test name="all" duration-ms="154998" started-at="2017-10-03T03:40:14Z" finished-at="2017-10-03T03:42:49Z">
       <class name="Priotization">
-        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@ae45eb6]" name="A" duration-ms="1" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
+        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@6f7fd0e6]" name="A" duration-ms="2" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A -->
-        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@ae45eb6]" name="F" duration-ms="2" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@6f7fd0e6]" name="F" duration-ms="1" started-at="2017-10-02T23:42:49Z" finished-at="2017-10-02T23:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F -->
-        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@ae45eb6]" name="D" duration-ms="2" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@6f7fd0e6]" name="D" duration-ms="1" started-at="2017-10-02T23:42:49Z" finished-at="2017-10-02T23:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- D -->
-        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@ae45eb6]" name="E" duration-ms="1" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@6f7fd0e6]" name="E" duration-ms="1" started-at="2017-10-02T23:42:49Z" finished-at="2017-10-02T23:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- E -->
-        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@ae45eb6]" name="C" duration-ms="0" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@6f7fd0e6]" name="C" duration-ms="1" started-at="2017-10-02T23:42:49Z" finished-at="2017-10-02T23:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- C -->
-        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@ae45eb6]" name="G" duration-ms="1" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@6f7fd0e6]" name="G" duration-ms="1" started-at="2017-10-02T23:42:49Z" finished-at="2017-10-02T23:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- G -->
       </class> <!-- Priotization -->
+      <class name="Group">
+        <test-method status="PASS" signature="F1()[pri:0, instance:Group@27efef64]" name="F1" duration-ms="8" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F1 -->
+        <test-method status="PASS" signature="F2()[pri:0, instance:Group@27efef64]" name="F2" duration-ms="2" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F2 -->
+        <test-method status="PASS" signature="F3()[pri:0, instance:Group@27efef64]" name="F3" duration-ms="3" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F3 -->
+        <test-method status="PASS" signature="F4()[pri:0, instance:Group@27efef64]" name="F4" duration-ms="1" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F4 -->
+        <test-method status="PASS" signature="F5()[pri:0, instance:Group@27efef64]" name="F5" duration-ms="2" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F5 -->
+        <test-method status="PASS" signature="F6()[pri:0, instance:Group@27efef64]" name="F6" duration-ms="4" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F6 -->
+      </class> <!-- Group -->
+      <class name="afterLoginIn.TestSetA">
+        <test-method status="PASS" signature="Login_And_LogOut()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="Login_And_LogOut" duration-ms="37081" started-at="2017-10-02T23:42:12Z" finished-at="2017-10-02T23:42:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_And_LogOut -->
+      </class> <!-- afterLoginIn.TestSetA -->
       <class name="FirstClassWith2methods">
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@26653222]" name="doFirst" is-config="true" duration-ms="373" started-at="2017-09-28T17:47:11Z" finished-at="2017-09-28T17:47:11Z">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doFirst" is-config="true" duration-ms="481" started-at="2017-10-02T23:40:14Z" finished-at="2017-10-02T23:40:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@3532ec19]" name="doFirst" is-config="true" duration-ms="303" started-at="2017-09-28T17:47:11Z" finished-at="2017-09-28T17:47:12Z">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doFirst" is-config="true" duration-ms="302" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@26653222]" name="doBeforeEveryMethod" is-config="true" duration-ms="302" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:47:12Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="SetUpPreData" is-config="true" duration-ms="152" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreData -->
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doBeforeEveryMethod" is-config="true" duration-ms="354" started-at="2017-10-02T23:40:15Z" finished-at="2017-10-02T23:40:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@26653222]" name="UsersAreAbleToSearch" duration-ms="55526" started-at="2017-09-28T17:47:12Z" finished-at="2017-09-28T17:48:08Z">
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="UsersAreAbleToSearch" duration-ms="57652" started-at="2017-10-02T23:40:16Z" finished-at="2017-10-02T23:41:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@26653222]" name="doBeforeEveryMethod" is-config="true" duration-ms="406" started-at="2017-09-28T17:48:08Z" finished-at="2017-09-28T17:48:08Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doBeforeEveryMethod" is-config="true" duration-ms="403" started-at="2017-10-02T23:41:13Z" finished-at="2017-10-02T23:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@26653222]" name="test2" duration-ms="0" started-at="2017-09-28T17:48:08Z" finished-at="2017-09-28T17:48:08Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="test2" duration-ms="1" started-at="2017-10-02T23:41:14Z" finished-at="2017-10-02T23:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@3532ec19]" name="doLast" is-config="true" duration-ms="1" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doLast" is-config="true" duration-ms="0" started-at="2017-10-02T23:42:49Z" finished-at="2017-10-02T23:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLast -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@26653222]" name="doLast" is-config="true" duration-ms="0" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doLast" is-config="true" duration-ms="0" started-at="2017-10-02T23:42:49Z" finished-at="2017-10-02T23:42:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLast -->
       </class> <!-- FirstClassWith2methods -->
       <class name="SecondClasssWith2Methods">
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@3532ec19]" name="doBeforeEveryMethod" is-config="true" duration-ms="303" started-at="2017-09-28T17:48:08Z" finished-at="2017-09-28T17:48:08Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doBeforeEveryMethod" is-config="true" duration-ms="303" started-at="2017-10-02T23:41:14Z" finished-at="2017-10-02T23:41:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@3532ec19]" name="UsersAreAbleToSearch" duration-ms="51276" started-at="2017-09-28T17:48:08Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="UsersAreAbleToSearch" duration-ms="57773" started-at="2017-10-02T23:41:14Z" finished-at="2017-10-02T23:42:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@3532ec19]" name="doBeforeEveryMethod" is-config="true" duration-ms="403" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doBeforeEveryMethod" is-config="true" duration-ms="403" started-at="2017-10-02T23:42:12Z" finished-at="2017-10-02T23:42:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@3532ec19]" name="test2" duration-ms="0" started-at="2017-09-28T17:49:00Z" finished-at="2017-09-28T17:49:00Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="test2" duration-ms="0" started-at="2017-10-02T23:42:12Z" finished-at="2017-10-02T23:42:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->

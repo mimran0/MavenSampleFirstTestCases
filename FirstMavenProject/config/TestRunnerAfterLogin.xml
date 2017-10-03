@@ -1,0 +1,7 @@
+<suite name="Amazon suite">
+	<test name="login test set">
+		<classes>
+			<class name="afterLoginIn.TestSetA" />				
+		</classes>
+	</test>
+</suite>

@@ -4,7 +4,8 @@
 			<class name="Group" />
 			<class name="Priotization"/>
 			<class name="FirstClassWith2methods" />		
-			<class name="SecondClasssWith2Methods" />	
+			<class name="SecondClasssWith2Methods" />
+			<class name="afterLoginIn.TestSetA" />	
 		</classes>
 	</test>
 </suite>
