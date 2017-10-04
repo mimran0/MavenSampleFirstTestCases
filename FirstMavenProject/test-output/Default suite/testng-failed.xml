@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="afterLoginIn.TestSetA">
+      <class name="walmart.TestSetB">
         <methods>
-          <include name="TC_402_Login_NegativeTest"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_401_Login_And_LogOut"/>
-          <include name="SetUpPreDataMethod"/>
+          <include name="UsersAreAbleToSearch"/>
           <include name="SetUpPreData"/>
+          <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- afterLoginIn.TestSetA -->
+      </class> <!-- walmart.TestSetB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

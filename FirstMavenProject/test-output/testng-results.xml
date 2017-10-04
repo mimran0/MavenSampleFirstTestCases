@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="1" total="21" passed="18">
+<testng-results skipped="0" failed="2" ignored="1" total="22" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="all" duration-ms="186665" started-at="2017-10-03T19:00:31Z" finished-at="2017-10-03T19:03:38Z">
+  <suite name="all" duration-ms="320347" started-at="2017-10-04T01:48:45Z" finished-at="2017-10-04T01:54:05Z">
     <groups>
       <group name="A">
-        <method signature="Group.F1()[pri:0, instance:Group@27efef64]" name="F1" class="Group"/>
-        <method signature="Group.F3()[pri:0, instance:Group@27efef64]" name="F3" class="Group"/>
-        <method signature="Group.F6()[pri:0, instance:Group@27efef64]" name="F6" class="Group"/>
+        <method signature="Group.F1()[pri:0, instance:Group@47c62251]" name="F1" class="Group"/>
+        <method signature="Group.F3()[pri:0, instance:Group@47c62251]" name="F3" class="Group"/>
+        <method signature="Group.F6()[pri:0, instance:Group@47c62251]" name="F6" class="Group"/>
       </group> <!-- A -->
       <group name="B">
-        <method signature="Group.F2()[pri:0, instance:Group@27efef64]" name="F2" class="Group"/>
-        <method signature="Group.F5()[pri:0, instance:Group@27efef64]" name="F5" class="Group"/>
+        <method signature="Group.F2()[pri:0, instance:Group@47c62251]" name="F2" class="Group"/>
+        <method signature="Group.F5()[pri:0, instance:Group@47c62251]" name="F5" class="Group"/>
       </group> <!-- B -->
       <group name="C">
-        <method signature="Group.F4()[pri:0, instance:Group@27efef64]" name="F4" class="Group"/>
+        <method signature="Group.F4()[pri:0, instance:Group@47c62251]" name="F4" class="Group"/>
       </group> <!-- C -->
     </groups>
-    <test name="all" duration-ms="186665" started-at="2017-10-03T19:00:31Z" finished-at="2017-10-03T19:03:38Z">
-      <class name="Group">
-        <test-method status="PASS" signature="F2()[pri:0, instance:Group@27efef64]" name="F2" duration-ms="16" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+    <test name="all" duration-ms="320347" started-at="2017-10-04T01:48:45Z" finished-at="2017-10-04T01:54:05Z">
+      <class name="Priotization">
+        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@3e6fa38a]" name="A" duration-ms="0" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- F2 -->
-        <test-method status="PASS" signature="F1()[pri:0, instance:Group@27efef64]" name="F1" duration-ms="0" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+        </test-method> <!-- A -->
+        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@3e6fa38a]" name="F" duration-ms="1" started-at="2017-10-03T21:54:05Z" finished-at="2017-10-03T21:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F -->
+        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@3e6fa38a]" name="D" duration-ms="2" started-at="2017-10-03T21:54:05Z" finished-at="2017-10-03T21:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D -->
+        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@3e6fa38a]" name="E" duration-ms="0" started-at="2017-10-03T21:54:05Z" finished-at="2017-10-03T21:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E -->
+        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@3e6fa38a]" name="G" duration-ms="0" started-at="2017-10-03T21:54:05Z" finished-at="2017-10-03T21:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- G -->
+        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@3e6fa38a]" name="C" duration-ms="0" started-at="2017-10-03T21:54:05Z" finished-at="2017-10-03T21:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C -->
+      </class> <!-- Priotization -->
+      <class name="Group">
+        <test-method status="PASS" signature="F1()[pri:0, instance:Group@47c62251]" name="F1" duration-ms="16" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F1 -->
-        <test-method status="PASS" signature="F3()[pri:0, instance:Group@27efef64]" name="F3" duration-ms="0" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+        <test-method status="PASS" signature="F2()[pri:0, instance:Group@47c62251]" name="F2" duration-ms="0" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F2 -->
+        <test-method status="PASS" signature="F3()[pri:0, instance:Group@47c62251]" name="F3" duration-ms="0" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F3 -->
-        <test-method status="PASS" signature="F4()[pri:0, instance:Group@27efef64]" name="F4" duration-ms="16" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+        <test-method status="PASS" signature="F4()[pri:0, instance:Group@47c62251]" name="F4" duration-ms="0" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F4 -->
-        <test-method status="PASS" signature="F5()[pri:0, instance:Group@27efef64]" name="F5" duration-ms="1" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+        <test-method status="PASS" signature="F5()[pri:0, instance:Group@47c62251]" name="F5" duration-ms="16" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F5 -->
-        <test-method status="PASS" signature="F6()[pri:0, instance:Group@27efef64]" name="F6" duration-ms="0" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+        <test-method status="PASS" signature="F6()[pri:0, instance:Group@47c62251]" name="F6" duration-ms="0" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F6 -->
       </class> <!-- Group -->
-      <class name="Priotization">
-        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@6f7fd0e6]" name="A" duration-ms="0" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- A -->
-        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@6f7fd0e6]" name="F" duration-ms="2" started-at="2017-10-03T15:03:38Z" finished-at="2017-10-03T15:03:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F -->
-        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@6f7fd0e6]" name="D" duration-ms="1" started-at="2017-10-03T15:03:38Z" finished-at="2017-10-03T15:03:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- D -->
-        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@6f7fd0e6]" name="E" duration-ms="2" started-at="2017-10-03T15:03:38Z" finished-at="2017-10-03T15:03:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- E -->
-        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@6f7fd0e6]" name="C" duration-ms="0" started-at="2017-10-03T15:03:38Z" finished-at="2017-10-03T15:03:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C -->
-        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@6f7fd0e6]" name="G" duration-ms="1" started-at="2017-10-03T15:03:38Z" finished-at="2017-10-03T15:03:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- G -->
-      </class> <!-- Priotization -->
       <class name="afterLoginIn.TestSetA">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="SetUpPreDataMethod" is-config="true" duration-ms="169" started-at="2017-10-03T15:02:26Z" finished-at="2017-10-03T15:02:26Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="SetUpPreDataMethod" is-config="true" duration-ms="178" started-at="2017-10-03T21:50:40Z" finished-at="2017-10-03T21:50:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_401_Login_And_LogOut()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="TC_401_Login_And_LogOut" duration-ms="27452" started-at="2017-10-03T15:02:26Z" finished-at="2017-10-03T15:02:54Z">
+        <test-method status="FAIL" signature="TC_401_Login_And_LogOut()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="TC_401_Login_And_LogOut" duration-ms="26181" started-at="2017-10-03T21:50:40Z" finished-at="2017-10-03T21:51:07Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"nav-link-accountList"}
@@ -86,8 +86,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8216_2200}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f89529ee4703916ef4d46a69191a6748
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir7336_9211}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cf0db42869567294ac0ed917f224c3ae
 *** Element info: {Using=id, value=nav-link-accountList}]]>
             </message>
             <full-stacktrace>
@@ -99,8 +99,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8216_2200}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f89529ee4703916ef4d46a69191a6748
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir7336_9211}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cf0db42869567294ac0ed917f224c3ae
 *** Element info: {Using=id, value=nav-link-accountList}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -150,11 +150,11 @@ Session ID: f89529ee4703916ef4d46a69191a6748
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_401_Login_And_LogOut -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="SetUpPreDataMethod" is-config="true" duration-ms="173" started-at="2017-10-03T15:02:54Z" finished-at="2017-10-03T15:02:54Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="SetUpPreDataMethod" is-config="true" duration-ms="217" started-at="2017-10-03T21:51:07Z" finished-at="2017-10-03T21:51:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_402_Login_NegativeTest()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="TC_402_Login_NegativeTest" duration-ms="16456" started-at="2017-10-03T15:02:54Z" finished-at="2017-10-03T15:03:10Z">
+        <test-method status="FAIL" signature="TC_402_Login_NegativeTest()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="TC_402_Login_NegativeTest" duration-ms="15583" started-at="2017-10-03T21:51:07Z" finished-at="2017-10-03T21:51:22Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="auth-error-message-box"]/div/div/ul/li/span"}
@@ -165,8 +165,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir11896_18830}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 14f8363d74213347e26b3150bc7f852c
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir9492_21279}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b80a81b43b7d950627aba2dc72109c9d
 *** Element info: {Using=xpath, value=//*[@id="auth-error-message-box"]/div/div/ul/li/span}]]>
             </message>
             <full-stacktrace>
@@ -178,8 +178,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir11896_18830}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 14f8363d74213347e26b3150bc7f852c
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir9492_21279}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b80a81b43b7d950627aba2dc72109c9d
 *** Element info: {Using=xpath, value=//*[@id="auth-error-message-box"]/div/div/ul/li/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -229,79 +229,93 @@ Session ID: 14f8363d74213347e26b3150bc7f852c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_402_Login_NegativeTest -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="SetUpPreDataMethod" is-config="true" duration-ms="182" started-at="2017-10-03T15:03:10Z" finished-at="2017-10-03T15:03:11Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="SetUpPreDataMethod" is-config="true" duration-ms="201" started-at="2017-10-03T21:51:22Z" finished-at="2017-10-03T21:51:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_403_VerifyFieldsInLoginPage()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="TC_403_VerifyFieldsInLoginPage" duration-ms="11886" started-at="2017-10-03T15:03:11Z" finished-at="2017-10-03T15:03:23Z">
+        <test-method status="PASS" signature="TC_403_VerifyFieldsInLoginPage()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="TC_403_VerifyFieldsInLoginPage" duration-ms="10369" started-at="2017-10-03T21:51:23Z" finished-at="2017-10-03T21:51:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_403_VerifyFieldsInLoginPage -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="SetUpPreDataMethod" is-config="true" duration-ms="184" started-at="2017-10-03T15:03:23Z" finished-at="2017-10-03T15:03:23Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="SetUpPreDataMethod" is-config="true" duration-ms="201" started-at="2017-10-03T21:51:33Z" finished-at="2017-10-03T21:51:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_404_ToolTip()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="TC_404_ToolTip" duration-ms="14911" started-at="2017-10-03T15:03:23Z" finished-at="2017-10-03T15:03:38Z">
+        <test-method status="PASS" signature="TC_404_ToolTip()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="TC_404_ToolTip" duration-ms="13186" started-at="2017-10-03T21:51:33Z" finished-at="2017-10-03T21:51:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_404_ToolTip -->
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="FirstClassWith2methods">
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doFirst" is-config="true" duration-ms="417" started-at="2017-10-03T15:00:31Z" finished-at="2017-10-03T15:00:31Z">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@ae45eb6]" name="doFirst" is-config="true" duration-ms="533" started-at="2017-10-03T21:48:45Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doFirst" is-config="true" duration-ms="301" started-at="2017-10-03T15:00:31Z" finished-at="2017-10-03T15:00:32Z">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@59f99ea]" name="doFirst" is-config="true" duration-ms="364" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:afterLoginIn.TestSetA@59f99ea]" name="SetUpPreData" is-config="true" duration-ms="169" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:afterLoginIn.TestSetA@27efef64]" name="SetUpPreData" is-config="true" duration-ms="169" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreData -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doBeforeEveryMethod" is-config="true" duration-ms="347" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:00:32Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:walmart.TestSetB@6f7fd0e6]" name="SetUpPreData" is-config="true" duration-ms="184" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreData -->
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@ae45eb6]" name="doBeforeEveryMethod" is-config="true" duration-ms="370" started-at="2017-10-03T21:48:46Z" finished-at="2017-10-03T21:48:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="UsersAreAbleToSearch" duration-ms="57322" started-at="2017-10-03T15:00:32Z" finished-at="2017-10-03T15:01:30Z">
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@ae45eb6]" name="UsersAreAbleToSearch" duration-ms="55716" started-at="2017-10-03T21:48:47Z" finished-at="2017-10-03T21:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doBeforeEveryMethod" is-config="true" duration-ms="407" started-at="2017-10-03T15:01:30Z" finished-at="2017-10-03T15:01:30Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@ae45eb6]" name="doBeforeEveryMethod" is-config="true" duration-ms="392" started-at="2017-10-03T21:49:42Z" finished-at="2017-10-03T21:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="test2" duration-ms="0" started-at="2017-10-03T15:01:30Z" finished-at="2017-10-03T15:01:30Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@ae45eb6]" name="test2" duration-ms="0" started-at="2017-10-03T21:49:43Z" finished-at="2017-10-03T21:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@68c4039c]" name="doLast" is-config="true" duration-ms="0" started-at="2017-10-03T15:03:38Z" finished-at="2017-10-03T15:03:38Z">
+        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@59f99ea]" name="doLast" is-config="true" duration-ms="0" started-at="2017-10-03T21:54:05Z" finished-at="2017-10-03T21:54:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLast -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doLast" is-config="true" duration-ms="0" started-at="2017-10-03T15:03:38Z" finished-at="2017-10-03T15:03:38Z">
+        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@ae45eb6]" name="doLast" is-config="true" duration-ms="0" started-at="2017-10-03T21:54:05Z" finished-at="2017-10-03T21:54:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLast -->
       </class> <!-- FirstClassWith2methods -->
       <class name="SecondClasssWith2Methods">
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doBeforeEveryMethod" is-config="true" duration-ms="301" started-at="2017-10-03T15:01:30Z" finished-at="2017-10-03T15:01:30Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@59f99ea]" name="doBeforeEveryMethod" is-config="true" duration-ms="300" started-at="2017-10-03T21:49:43Z" finished-at="2017-10-03T21:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="UsersAreAbleToSearch" duration-ms="55465" started-at="2017-10-03T15:01:30Z" finished-at="2017-10-03T15:02:26Z">
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@59f99ea]" name="UsersAreAbleToSearch" duration-ms="56618" started-at="2017-10-03T21:49:43Z" finished-at="2017-10-03T21:50:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="doBeforeEveryMethod" is-config="true" duration-ms="412" started-at="2017-10-03T15:02:26Z" finished-at="2017-10-03T15:02:26Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@59f99ea]" name="doBeforeEveryMethod" is-config="true" duration-ms="457" started-at="2017-10-03T21:50:40Z" finished-at="2017-10-03T21:50:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@ae45eb6]" name="test2" duration-ms="0" started-at="2017-10-03T15:02:26Z" finished-at="2017-10-03T15:02:26Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@59f99ea]" name="test2" duration-ms="0" started-at="2017-10-03T21:50:40Z" finished-at="2017-10-03T21:50:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
       </class> <!-- SecondClasssWith2Methods -->
+      <class name="walmart.TestSetB">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@6f7fd0e6]" name="SetUpPreDataMethod" is-config="true" duration-ms="227" started-at="2017-10-03T21:51:46Z" finished-at="2017-10-03T21:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:walmart.TestSetB@6f7fd0e6]" name="UsersAreAbleToSearch" duration-ms="138807" started-at="2017-10-03T21:51:47Z" finished-at="2017-10-03T21:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsersAreAbleToSearch -->
+      </class> <!-- walmart.TestSetB -->
     </test> <!-- all -->
   </suite> <!-- all -->
 </testng-results>
