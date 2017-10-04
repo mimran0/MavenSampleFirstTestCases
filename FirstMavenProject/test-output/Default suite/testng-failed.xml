@@ -6,7 +6,7 @@
       <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="UsersAreAbleToSearch"/>
+          <include name="TC_503_mouseOver"/>
           <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
