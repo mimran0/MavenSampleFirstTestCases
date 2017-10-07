@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -96,6 +97,91 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 			action.moveToElement(we).build().perform();
 			waitTime(2000);		
 		}
+	}
+	
+	//Requirement 504: Users are able to view all credit card options, click on each options and able to view corresponding page loads.
+	@Test(enabled=true)
+	public void TC_504_Credit_Cards(){
+		String vBaseURL = "http://www.walmart.com";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(vBaseURL);
+		waitTime(5000);
+		driver.manage().window().maximize();
+		driver.findElement(By.id("header-GlobalEyebrowNav-link-6")).click();
+		waitTime(2000);
+		//list of id's
+		String[] list = new String[11];
+		list[0] = "WalmartCreditCard-menu-button";
+		list[1] = "MoneyTransfers-menu-button";
+		list[2] = "WalmartMoneyCard-menu-button";
+		list[3] = "PromotionalProducts-menu-button";
+		list[4] = "ProductCarePlan-menu-button";
+		list[5] = "CheckPrinting-menu-button";
+		list[6] = "BillPay&MoneyOrder-menu-button";
+		list[7] = "Bluebird-menu-button";
+		list[8] = "TaxPrepServices-menu-button";
+		list[9] = "CheckCashing-menu-button";
+		list[10] = "RapidReload-menu-button";
+		
+		//list of expected results
+		String[] list_ExpectedResult = new String[11];
+		list_ExpectedResult[0]="Walmart Credit Card";
+		list_ExpectedResult[1]="Online Money Transfers";
+		list_ExpectedResult[2]="Walmart MoneyCard";
+		list_ExpectedResult[3]="Promotional Products";
+		list_ExpectedResult[4]="Product Care Plan";
+		list_ExpectedResult[5]="Check Printing";
+		list_ExpectedResult[6]="Bill Pay & Money Order";
+		list_ExpectedResult[7]="Bluebird";
+		list_ExpectedResult[8]="Tax Prep Services";
+		list_ExpectedResult[9]="Check Cashing";		
+		list_ExpectedResult[10]="Rapid Reload";
+		
+		for (int i = 0; i < list.length; i++) {
+			driver.findElement(By.id(list[i])).click();
+			waitTime(2000);
+			String vActualResult=driver.findElement(By.xpath("//*[@id=\"categoryContainer\"]/div[1]/div[1]/div/nav/ol/li[2]/h1")).getText();
+			System.out.println(vActualResult);
+			//putting a checkpoint if the correct page loads or not based on text displays
+			Assert.assertEquals(vActualResult, list_ExpectedResult[i]);
+			driver.findElement(By.xpath("//*[@id=\"categoryContainer\"]/div[1]/div[1]/div/nav/ol/li[1]/a")).click();
+			waitTime(1000);			
+		}
+	}
+	
+	// Requirement 505: Users are able to login into walmart website using valid credentials
+	@Test(enabled=true)
+	public void ValidLogin(){
+		String vBaseURL = "http://www.walmart.com";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(vBaseURL);
+		waitTime(5000);
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a")).click();
+		waitTime(2000);
+		driver.findElement(By.name("email")).sendKeys("imranlimon00@gmail.com");
+		driver.findElement(By.name("password")).sendKeys("1234560y");
+		//Uncheck the check box
+		/*WebElement CheckBox=driver.findElement(By.name("rememberme"));
+		System.out.println(CheckBox.getText());
+		if(CheckBox.isSelected()){
+			CheckBox.click();
+			waitTime(5000);
+		}else{
+			//Do Nothing
+			System.out.println("Else block Executed");
+		}	*/
+		driver.findElement(By.xpath("/html/body/div/div/div/div[2]/div/section/form/div[5]/button")).click();
+		waitTime(10000);
+		String vActualCheckPoint=driver.findElement(By.xpath("/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a")).getText();
+		System.out.println(vActualCheckPoint);
+		Assert.assertEquals("Hello, Imran", vActualCheckPoint);
+		//below 3 lines for mouseover
+		Actions action = new Actions(driver);
+		WebElement we = driver.findElement(By.id("header-GlobalAccountFlyout-flyout-link"));
+		action.moveToElement(we).build().perform();
+		waitTime(2000);
+		driver.get("https://www.walmart.com/account/logout");
 	}
 
 }

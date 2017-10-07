@@ -3,6 +3,14 @@
 <suite name="Failed suite [all]">
   <test name="all(failed)">
     <classes>
+      <class name="walmart.TestSetB">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_504_Credit_Cards"/>
+          <include name="SetUpPreData"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- walmart.TestSetB -->
       <class name="afterLoginIn.TestSetA">
         <methods>
           <include name="TC_402_Login_NegativeTest"/>

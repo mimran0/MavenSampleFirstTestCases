@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">23 methods, 2 failed,   21 passed</span>
+                    <span class="method-stats">25 methods, 3 failed,   22 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-all" title="afterLoginIn.TestSetA" hash-for-method="TC_402_Login_NegativeTest">TC_402_Login_NegativeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-all" title="walmart.TestSetB" hash-for-method="TC_504_Credit_Cards">TC_504_Credit_Cards</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-all -->
@@ -216,6 +221,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-all" title="walmart.TestSetB" hash-for-method="ValidLogin">ValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-all" title="FirstClassWith2methods" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -239,6 +249,47 @@
           <div class="suite-all-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">walmart.TestSetB</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_504_Credit_Cards">
+                  </a> <!-- TC_504_Credit_Cards -->
+                  <span class="method-name">TC_504_Credit_Cards</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;CheckPrinting-menu-button&quot;}
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir14436_17101}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a703165759913d8cf6fdf58cb7abb254
+*** Element info: {Using=id, value=CheckPrinting-menu-button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at walmart.TestSetB.TC_504_Credit_Cards(TestSetB.java:141)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-all-class-failed -->
+          <div class="suite-all-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">afterLoginIn.TestSetA</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -255,8 +306,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir14808_12456}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: dcb3bd01d985e12c097654ca1de37a93
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir5016_10299}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 70e7463216e4bb7c9f6a7daad11ad8e8
 *** Element info: {Using=id, value=nav-link-accountList}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -288,8 +339,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir15176_23395}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e9d7fafc761520be4a3354a139f90601
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir9916_23807}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 85054dce0d592867fda36e37667cd08a
 *** Element info: {Using=xpath, value=//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -335,6 +386,13 @@ Session ID: e9d7fafc761520be4a3354a139f90601
                   <a name="TC_503_mouseOver">
                   </a> <!-- TC_503_mouseOver -->
                   <span class="method-name">TC_503_mouseOver</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidLogin">
+                  </a> <!-- ValidLogin -->
+                  <span class="method-name">ValidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -598,104 +656,112 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(23);
+data.addRows(25);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_501_UsersAreAbleToSearch')
 data.setCell(0, 2, 'walmart.TestSetB')
-data.setCell(0, 3, 328800);
+data.setCell(0, 3, 235262);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'UsersAreAbleToSearch')
 data.setCell(1, 2, 'FirstClassWith2methods')
-data.setCell(1, 3, 166993);
+data.setCell(1, 3, 122732);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'UsersAreAbleToSearch')
 data.setCell(2, 2, 'SecondClasssWith2Methods')
-data.setCell(2, 3, 96177);
+data.setCell(2, 3, 91285);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC_502_SelectDropdownValue')
 data.setCell(3, 2, 'walmart.TestSetB')
-data.setCell(3, 3, 93921);
+data.setCell(3, 3, 73620);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_503_mouseOver')
+data.setCell(4, 1, 'TC_504_Credit_Cards')
 data.setCell(4, 2, 'walmart.TestSetB')
-data.setCell(4, 3, 54104);
+data.setCell(4, 3, 67568);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_401_Login_And_LogOut')
-data.setCell(5, 2, 'afterLoginIn.TestSetA')
-data.setCell(5, 3, 38809);
+data.setCell(5, 1, 'TC_503_mouseOver')
+data.setCell(5, 2, 'walmart.TestSetB')
+data.setCell(5, 3, 44030);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_402_Login_NegativeTest')
+data.setCell(6, 1, 'TC_401_Login_And_LogOut')
 data.setCell(6, 2, 'afterLoginIn.TestSetA')
-data.setCell(6, 3, 25330);
+data.setCell(6, 3, 42076);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_404_ToolTip')
-data.setCell(7, 2, 'afterLoginIn.TestSetA')
-data.setCell(7, 3, 19076);
+data.setCell(7, 1, 'ValidLogin')
+data.setCell(7, 2, 'walmart.TestSetB')
+data.setCell(7, 3, 35793);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_403_VerifyFieldsInLoginPage')
+data.setCell(8, 1, 'TC_402_Login_NegativeTest')
 data.setCell(8, 2, 'afterLoginIn.TestSetA')
-data.setCell(8, 3, 15548);
+data.setCell(8, 3, 21269);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'G')
-data.setCell(9, 2, 'Priotization')
-data.setCell(9, 3, 22);
+data.setCell(9, 1, 'TC_404_ToolTip')
+data.setCell(9, 2, 'afterLoginIn.TestSetA')
+data.setCell(9, 3, 18704);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'F1')
-data.setCell(10, 2, 'Group')
-data.setCell(10, 3, 6);
+data.setCell(10, 1, 'TC_403_VerifyFieldsInLoginPage')
+data.setCell(10, 2, 'afterLoginIn.TestSetA')
+data.setCell(10, 3, 11769);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'test2')
-data.setCell(11, 2, 'FirstClassWith2methods')
-data.setCell(11, 3, 3);
+data.setCell(11, 1, 'F1')
+data.setCell(11, 2, 'Group')
+data.setCell(11, 3, 8);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'F2')
+data.setCell(12, 1, 'F4')
 data.setCell(12, 2, 'Group')
 data.setCell(12, 3, 2);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'D')
-data.setCell(13, 2, 'Priotization')
-data.setCell(13, 3, 1);
+data.setCell(13, 1, 'F2')
+data.setCell(13, 2, 'Group')
+data.setCell(13, 3, 2);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'A')
 data.setCell(14, 2, 'Priotization')
 data.setCell(14, 3, 1);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'F4')
-data.setCell(15, 2, 'Group')
+data.setCell(15, 1, 'E')
+data.setCell(15, 2, 'Priotization')
 data.setCell(15, 3, 1);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'F5')
+data.setCell(16, 1, 'F6')
 data.setCell(16, 2, 'Group')
 data.setCell(16, 3, 1);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'F3')
+data.setCell(17, 1, 'F5')
 data.setCell(17, 2, 'Group')
 data.setCell(17, 3, 1);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'test2')
-data.setCell(18, 2, 'SecondClasssWith2Methods')
+data.setCell(18, 1, 'F')
+data.setCell(18, 2, 'Priotization')
 data.setCell(18, 3, 1);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'C')
-data.setCell(19, 2, 'Priotization')
+data.setCell(19, 1, 'test2')
+data.setCell(19, 2, 'FirstClassWith2methods')
 data.setCell(19, 3, 1);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'E')
+data.setCell(20, 1, 'D')
 data.setCell(20, 2, 'Priotization')
-data.setCell(20, 3, 0);
+data.setCell(20, 3, 1);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'F6')
-data.setCell(21, 2, 'Group')
-data.setCell(21, 3, 0);
+data.setCell(21, 1, 'test2')
+data.setCell(21, 2, 'SecondClasssWith2Methods')
+data.setCell(21, 3, 1);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'F')
+data.setCell(22, 1, 'C')
 data.setCell(22, 2, 'Priotization')
 data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'G')
+data.setCell(23, 2, 'Priotization')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'F3')
+data.setCell(24, 2, 'Group')
+data.setCell(24, 3, 0);
 window.suiteTableData['all']= { tableData: data, tableDiv: 'times-div-all'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 minutes</span>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
               <div id="times-div-all">
               </div> <!-- times-div-all -->
             </div> <!-- times-div -->
@@ -738,196 +804,214 @@ return data;
               <div class="chronological-class-name">SecondClasssWith2Methods</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">doFirst</span>
-                <span class="method-start">1431 ms</span>
+                <span class="method-start">772 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">afterLoginIn.TestSetA</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">SetUpPreData</span>
-                <span class="method-start">1832 ms</span>
+                <span class="method-start">1416 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">walmart.TestSetB</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">SetUpPreData</span>
-                <span class="method-start">1983 ms</span>
+                <span class="method-start">1672 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Group</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">F1</span>
-                <span class="method-start">2153 ms</span>
+                <span class="method-start">1906 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">F2</span>
-                <span class="method-start">2160 ms</span>
+                <span class="method-start">1917 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">F3</span>
-                <span class="method-start">2164 ms</span>
+                <span class="method-start">1921 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">F4</span>
-                <span class="method-start">2167 ms</span>
+                <span class="method-start">1923 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">F5</span>
-                <span class="method-start">2170 ms</span>
+                <span class="method-start">1926 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">F6</span>
-                <span class="method-start">2173 ms</span>
+                <span class="method-start">1928 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Priotization</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">A</span>
-                <span class="method-start">2176 ms</span>
+                <span class="method-start">1933 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">FirstClassWith2methods</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">doBeforeEveryMethod</span>
-                <span class="method-start">2178 ms</span>
+                <span class="method-start">1936 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UsersAreAbleToSearch</span>
-                <span class="method-start">2639 ms</span>
+                <span class="method-start">2239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">doBeforeEveryMethod</span>
-                <span class="method-start">169634 ms</span>
+                <span class="method-start">124974 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test2</span>
-                <span class="method-start">170206 ms</span>
+                <span class="method-start">125378 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SecondClasssWith2Methods</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">doBeforeEveryMethod</span>
-                <span class="method-start">170217 ms</span>
+                <span class="method-start">125380 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UsersAreAbleToSearch</span>
-                <span class="method-start">170671 ms</span>
+                <span class="method-start">125737 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">doBeforeEveryMethod</span>
-                <span class="method-start">266849 ms</span>
+                <span class="method-start">217023 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test2</span>
-                <span class="method-start">267661 ms</span>
+                <span class="method-start">217426 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">afterLoginIn.TestSetA</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUpPreDataMethod</span>
-                <span class="method-start">267668 ms</span>
+                <span class="method-start">217434 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC_401_Login_And_LogOut</span>
-                <span class="method-start">267992 ms</span>
+                <span class="method-start">217636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">SetUpPreDataMethod</span>
-                <span class="method-start">307009 ms</span>
+                <span class="method-start">259833 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC_402_Login_NegativeTest</span>
-                <span class="method-start">307215 ms</span>
+                <span class="method-start">260039 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">SetUpPreDataMethod</span>
-                <span class="method-start">332552 ms</span>
+                <span class="method-start">281314 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_403_VerifyFieldsInLoginPage</span>
-                <span class="method-start">332914 ms</span>
+                <span class="method-start">281516 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">SetUpPreDataMethod</span>
-                <span class="method-start">348463 ms</span>
+                <span class="method-start">293286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_404_ToolTip</span>
-                <span class="method-start">348720 ms</span>
+                <span class="method-start">293488 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">walmart.TestSetB</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUpPreDataMethod</span>
-                <span class="method-start">367797 ms</span>
+                <span class="method-start">312194 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_501_UsersAreAbleToSearch</span>
-                <span class="method-start">368050 ms</span>
+                <span class="method-start">312408 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">SetUpPreDataMethod</span>
-                <span class="method-start">696851 ms</span>
+                <span class="method-start">547671 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_502_SelectDropdownValue</span>
-                <span class="method-start">697056 ms</span>
+                <span class="method-start">547923 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">SetUpPreDataMethod</span>
-                <span class="method-start">790978 ms</span>
+                <span class="method-start">621544 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_503_mouseOver</span>
-                <span class="method-start">791181 ms</span>
+                <span class="method-start">621746 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUpPreDataMethod</span>
+                <span class="method-start">665778 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_504_Credit_Cards</span>
+                <span class="method-start">666155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUpPreDataMethod</span>
+                <span class="method-start">733725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidLogin</span>
+                <span class="method-start">733928 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Priotization</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">F</span>
-                <span class="method-start">845286 ms</span>
+                <span class="method-start">769722 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">D</span>
-                <span class="method-start">845287 ms</span>
+                <span class="method-start">769725 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">E</span>
-                <span class="method-start">845290 ms</span>
+                <span class="method-start">769727 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">C</span>
-                <span class="method-start">845292 ms</span>
+                <span class="method-start">769729 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">G</span>
-                <span class="method-start">845295 ms</span>
+                <span class="method-start">769731 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">FirstClassWith2methods</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">doLast</span>
-                <span class="method-start">845329 ms</span>
+                <span class="method-start">769732 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SecondClasssWith2Methods</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">doLast</span>
-                <span class="method-start">845329 ms</span>
+                <span class="method-start">769733 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
