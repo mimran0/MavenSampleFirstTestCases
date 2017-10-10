@@ -7,6 +7,7 @@
 			<class name="SecondClasssWith2Methods" />
 			<class name="afterLoginIn.TestSetA" />	
 			<class name="walmart.TestSetB" />
+			<class name="hsbc.TestSetC" />
 		</classes>
 	</test>
 </suite>

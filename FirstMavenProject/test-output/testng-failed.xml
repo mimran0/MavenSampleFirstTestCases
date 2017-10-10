@@ -6,7 +6,7 @@
       <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_504_Credit_Cards"/>
+          <include name="ValidLogin"/>
           <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
         </methods>

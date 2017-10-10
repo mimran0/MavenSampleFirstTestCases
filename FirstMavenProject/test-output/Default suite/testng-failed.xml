@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="walmart.TestSetB">
+      <class name="hsbc.TestSetC">
         <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="ValidLogin"/>
-          <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="SetUpPreData"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="scrollUpAndDown"/>
         </methods>
-      </class> <!-- walmart.TestSetB -->
+      </class> <!-- hsbc.TestSetC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
