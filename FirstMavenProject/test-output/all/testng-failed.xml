@@ -22,6 +22,16 @@
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
+      <class name="facebook.testSetD">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="LoginAndLogout_IE"/>
+          <include name="SetUpPreData"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="LoginAndLogout_MicrosoftEdge"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- facebook.testSetD -->
     </classes>
   </test> <!-- all(failed) -->
 </suite> <!-- Failed suite [all] -->

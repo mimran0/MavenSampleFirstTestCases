@@ -172,7 +172,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 				ArrayList<String> list=new ArrayList<String>();
 				list.add("IE");
 				for(String v:list){
-					String vBaseURL = "http://www.facebook.com";
+					String vBaseURL = "https://www.facebook.com";
 					CommonAPI CommonAPI = new CommonAPI();
 					WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
 					waitTime(5000);

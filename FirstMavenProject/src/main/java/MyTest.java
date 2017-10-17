@@ -1,9 +1,11 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.os.WindowsUtils;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class MyTest {
 
@@ -19,7 +21,8 @@ public class MyTest {
 			
 		MyTest MyTest=new MyTest();
 		WebDriver driver;
-		driver=MyTest.getDriver("IE", "http://www.hsbc.com/");
+		driver=MyTest.getDriver("MICROSOFE EDGE", "https://www.facebook.com/");
+		
 
 	}
     
@@ -76,7 +79,7 @@ public class MyTest {
 	    	break;
 	    case "IE":	    	
 	    	System.setProperty("webdriver.ie.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\IEDriverServer.exe");
-	    	driver = new InternetExplorerDriver();			
+	    	driver = new InternetExplorerDriver();		    	
 	    	break;		
 	    }
 	    driver.get(url);
