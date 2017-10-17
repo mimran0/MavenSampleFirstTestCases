@@ -116,4 +116,41 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 					j++;
 				}
 			}
+			
+			//Note: Below Script covers 3 test requirements in 3 different browsers.Total 9 test cases.
+			//Requirement 602: Users are able to select all countries from online banking page and cancel pop-up window on the next page.
+			//Requirement 603: Pop up Window opens up for each country selected with valid expected texts. 
+			//Requirement 604: Users are able to close pop up window for each country selected. 	
+				@Test(enabled=false)// disabling because different browser has different locator for each browser. Therefore need separate script for each browser. Because of this 1 automation script can't cover 9 manual test cases.
+				public void CountryListOnOnlineBanking3Browsers(){
+					String[] BrowserName=new String[3];
+					BrowserName[0]="firefox";BrowserName[1]="MICROSOFE EDGE";BrowserName[2]="IE";					
+					for(String v:BrowserName){
+						String vBaseURL = "http://www.hsbc.com";
+						CommonAPI CommonAPI = new CommonAPI();
+						WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
+						waitTime(3000);
+						driver.manage().window().maximize();
+						waitTime(2000);
+						driver.findElement(By.id("GoToInternetBanking")).click();
+						waitTime(5000);
+						for(int i=2;i<40;i++){
+							driver.findElement(By.xpath("//*[@id=\"Form1\"]/div[3]/div[5]/div/div[2]/div/article[3]/section[1]/fieldset/div/div/div[1]/div[2]/span")).click();
+							waitTime(2000);
+							driver.findElement(By.xpath("//*[@id=\"Form1\"]/div[3]/div[5]/div/div[2]/div/article[3]/section[1]/fieldset/div/div/div[2]/div[1]/a["+i+"]")).click();
+							waitTime(2000);
+							driver.findElement(By.xpath("//*[@id=\"Form1\"]/div[3]/div[5]/div/div[2]/div/article[3]/section[1]/fieldset/div/a/span")).click();
+							waitTime(2000);
+							String vCheckPointText_Actual=driver.findElement(By.id("externalLink")).getText();
+							System.out.println(vCheckPointText_Actual);
+					        String vCheckPointText_Expected = "You are leaving HSBC.com\n"
+							+ "Please be aware that the external site policies, or those of another HSBC Group website, may differ from our website terms and conditions and privacy policy. The next site will open in a new browser window or tab.\n"
+							+ "Cancel\n" + "I understand, let’s proceed\n"
+							+ "Note: HSBC is not responsible for any content on third party sites, nor does a link suggest endorsement of those sites and/or their content.";
+						    Assert.assertEquals(vCheckPointText_Expected, vCheckPointText_Actual);				   
+						    driver.findElement(By.id("contentplaceholder_0_CloseWindow")).click();
+						    waitTime(2000);
+						}												
+					}					
+				}
 }

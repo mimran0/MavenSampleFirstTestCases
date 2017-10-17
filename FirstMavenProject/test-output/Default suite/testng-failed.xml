@@ -8,7 +8,7 @@
           <include name="SetUpPreDataMethod"/>
           <include name="SetUpPreData"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="scrollUpAndDown"/>
+          <include name="CountryListOnOnlineBanking3Browsers"/>
         </methods>
       </class> <!-- hsbc.TestSetC -->
     </classes>

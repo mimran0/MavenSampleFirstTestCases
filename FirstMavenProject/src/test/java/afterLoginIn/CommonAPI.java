@@ -3,6 +3,9 @@ package afterLoginIn;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.os.WindowsUtils;
 import org.testng.annotations.BeforeMethod;
 
@@ -67,6 +70,39 @@ public class CommonAPI {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
 			driver=new ChromeDriver();
 			driver.get(url);			
+		    return driver;
+		}
+		
+		   //Open Specific browser (Developed by Imran on 10/13/2017)(Anyone can Re-use now or 40 years later for any client)
+		   //Getting webDriver and navigate the provided URL 
+		   //Input: URL of the webpage, Browser Name.
+		   //Output: driver
+		   //Drawback: It opens few browsers. (This is the overloaded method to cover more browsers)
+		public WebDriver getDriver(String BrowserName,String url) {
+			WindowsUtils.killByName("chromedriver.exe");
+			WindowsUtils.killByName("geckodriver.exe");
+			WindowsUtils.killByName("edgedriver.exe");
+			WindowsUtils.killByName("iedriver.exe");
+			BrowserName=BrowserName.toUpperCase();
+		    switch (BrowserName){
+		    case "CHROME":
+		    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
+				driver=new ChromeDriver();
+		    	break;
+		    case "FIREFOX":	    	
+		    	System.setProperty("webdriver.gecko.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\geckodriver.exe");
+				driver=new FirefoxDriver();			
+		    	break;	
+		    case "MICROSOFE EDGE":	    	
+		    	System.setProperty("webdriver.edge.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\MicrosoftWebDriver.exe");
+		    	driver = new EdgeDriver();			
+		    	break;
+		    case "IE":	    	
+		    	System.setProperty("webdriver.ie.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\IEDriverServer.exe");
+		    	driver = new InternetExplorerDriver();			
+		    	break;		
+		    }
+		    driver.get(url);
 		    return driver;
 		}
 		
