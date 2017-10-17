@@ -78,7 +78,7 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 					System.out.println(vCheckPointText_Actual);
 			        String vCheckPointText_Expected = "You are leaving HSBC.com\n"
 					+ "Please be aware that the external site policies, or those of another HSBC Group website, may differ from our website terms and conditions and privacy policy. The next site will open in a new browser window or tab.\n"
-					+ "Cancel\n" + "I understand, let’s proceed\n"
+					+ "Cancel\n" + "I understand, letâ€™s proceed\n"
 					+ "Note: HSBC is not responsible for any content on third party sites, nor does a link suggest endorsement of those sites and/or their content.";
 				    Assert.assertEquals(vCheckPointText_Expected, vCheckPointText_Actual);				   
 				    driver.findElement(By.id("contentplaceholder_0_CloseWindow")).click();
@@ -121,7 +121,7 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 			//Requirement 602: Users are able to select all countries from online banking page and cancel pop-up window on the next page.
 			//Requirement 603: Pop up Window opens up for each country selected with valid expected texts. 
 			//Requirement 604: Users are able to close pop up window for each country selected. 	
-				@Test(enabled=false)// disabling because different browser has different locator for each browser. Therefore need separate script for each browser. Because of this 1 automation script can't cover 9 manual test cases.
+				@Test(enabled=false)// disabling because different browser has different locator for each webElement or object. Therefore need separate script for each browser. Because of this 1 automation script can't cover these 9 manual test cases.
 				public void CountryListOnOnlineBanking3Browsers(){
 					String[] BrowserName=new String[3];
 					BrowserName[0]="firefox";BrowserName[1]="MICROSOFE EDGE";BrowserName[2]="IE";					
@@ -145,7 +145,7 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 							System.out.println(vCheckPointText_Actual);
 					        String vCheckPointText_Expected = "You are leaving HSBC.com\n"
 							+ "Please be aware that the external site policies, or those of another HSBC Group website, may differ from our website terms and conditions and privacy policy. The next site will open in a new browser window or tab.\n"
-							+ "Cancel\n" + "I understand, let’s proceed\n"
+							+ "Cancel\n" + "I understand, letâ€™s proceed\n"
 							+ "Note: HSBC is not responsible for any content on third party sites, nor does a link suggest endorsement of those sites and/or their content.";
 						    Assert.assertEquals(vCheckPointText_Expected, vCheckPointText_Actual);				   
 						    driver.findElement(By.id("contentplaceholder_0_CloseWindow")).click();
