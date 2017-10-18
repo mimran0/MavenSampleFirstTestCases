@@ -7,6 +7,7 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_503_mouseOver"/>
+          <include name="TC_501_UsersAreAbleToSearch"/>
           <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
           <include name="SetUpPreData"/>
@@ -24,12 +25,15 @@
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="facebook.testSetD">
         <methods>
+          <include name="LoginAndLogout_Chrome"/>
           <include name="doBeforeEveryMethod"/>
           <include name="LoginAndLogout_IE"/>
           <include name="SetUpPreData"/>
+          <include name="LoginAndLogout_4Browses"/>
           <include name="SetUpPreDataMethod"/>
           <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
+          <include name="LoginAndLogout_Firefox"/>
         </methods>
       </class> <!-- facebook.testSetD -->
     </classes>
