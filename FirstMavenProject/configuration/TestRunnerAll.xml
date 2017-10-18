@@ -8,7 +8,8 @@
 			<class name="afterLoginIn.TestSetA" />	
 			<class name="walmart.TestSetB" />
 			<class name="hsbc.TestSetC" />	
-			<class name="facebook.testSetD" />		
+			<class name="facebook.testSetD" />	
+			<class name="groupon.TestSet_E" />	
 		</classes>
 	</test>
 </suite>
