@@ -8,7 +8,7 @@
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
           <include name="aftermethod"/>
-          <include name="TC_801_testOne"/>
+          <include name="Highlignt"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->

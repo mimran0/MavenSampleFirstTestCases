@@ -89,7 +89,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 	
 	
 	//Requirement402: Find out how many links on a webpage and highlight all of those
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void TC_402_LinkCount(){
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -110,12 +110,36 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 		 
 		System.out.println(links.size());
 		for(WebElement v:links){
-			System.out.println(v.getText());
+			System.out.println(v.getText()); //printing out the text property value of those links
 			//highlight those elements/(Links)
 			JavascriptExecutor jse = (JavascriptExecutor) driver;
 	        jse.executeScript("arguments[0].style.border='3px solid red'", v);
 	        
 		}
+	}
+	
+	//Requirement403: Highlight one specific link (signin link)
+	@Test
+	public void Highlignt(){
+		String vBaseURL = "https://www.groupon.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX",vBaseURL);
+		waitTime(15000);		
+		//driver.manage().window().maximize();
+		//Optional Steps start here
+		try {
+			if (driver.findElement(By.id("nothx")).isDisplayed()){
+				driver.findElement(By.id("nothx")).click(); //closing the PopUp window if opens
+			}
+		} catch (Exception e) {
+			System.out.println("Sign Up Popup window did not open up or display");
+		}
+		//Optional Steps Ends here
+		WebElement signin=driver.findElement(By.id("ls-user-signin"));
+		//highlight those elements/(Links)
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].style.border='3px solid red'", signin);
+        
 	}
 
 }
