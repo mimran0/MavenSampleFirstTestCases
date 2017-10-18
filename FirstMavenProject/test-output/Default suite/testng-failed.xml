@@ -5,7 +5,6 @@
     <classes>
       <class name="facebook.testSetD">
         <methods>
-          <include name="LoginAndLogout_Chrome"/>
           <include name="doBeforeEveryMethod"/>
           <include name="LoginAndLogout_IE"/>
           <include name="SetUpPreData"/>
