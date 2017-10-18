@@ -1,4 +1,5 @@
 package afterLoginIn;
+import org.openqa.selenium.JavascriptExecutor;
 //import org.junit.Assert;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -79,10 +80,7 @@ public class CommonAPI {
 		   //Output: driver
 		   //Drawback: It opens few browsers. (This is the overloaded method to cover more browsers)
 		public WebDriver getDriver(String BrowserName,String url) {
-			WindowsUtils.killByName("chromedriver.exe");
-			WindowsUtils.killByName("geckodriver.exe");
-			WindowsUtils.killByName("edgedriver.exe");
-			WindowsUtils.killByName("iedriver.exe");
+			
 			BrowserName=BrowserName.toUpperCase();
 		    switch (BrowserName){
 		    case "CHROME":
@@ -104,6 +102,30 @@ public class CommonAPI {
 		    }
 		    driver.get(url);
 		    return driver;
+		}
+		
+		
+		public static void ScrollDownAndUp(WebDriver driver){
+			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			//ScrollDown
+			jse.executeScript("window.scrollBy(0,250)", "");
+			waitTime(2000);
+			jse.executeScript("window.scrollBy(0,500)", "");
+			waitTime(2000);
+			jse.executeScript("window.scrollBy(0,750)", "");
+			waitTime(2000);
+			jse.executeScript("window.scrollBy(0,1000)", "");
+			//ScrollUp
+			int j,m;
+			j=0;
+			m=-250;
+			while(j<4){					
+				//System.out.println(m);
+				waitTime(2000);
+				jse.executeScript("window.scrollBy(0,"+m+")", "");
+				m=m-250;
+				j++;
+			}
 		}
 		
 }
