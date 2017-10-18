@@ -6,6 +6,7 @@ package groupon;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.os.WindowsUtils;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
@@ -46,7 +47,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 	
 	
 	//801:Requirement: Users are able to search
-	@Test
+	@Test (enabled=false)
 	public void TC_801_testOne(){
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -84,6 +85,37 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 		//Scroll down and up
 		ScrollDownAndUp(driver); //calling a static method
 	
+	}
+	
+	
+	//Requirement402: Find out how many links on a webpage and highlight all of those
+	@Test(enabled=true)
+	public void TC_402_LinkCount(){
+		String vBaseURL = "https://www.groupon.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX",vBaseURL);
+		waitTime(15000);		
+		//driver.manage().window().maximize();
+		//Optional Steps start here
+		try {
+			if (driver.findElement(By.id("nothx")).isDisplayed()){
+				driver.findElement(By.id("nothx")).click(); //closing the PopUp window if opens
+			}
+		} catch (Exception e) {
+			System.out.println("Sign Up Popup window did not open up or display");
+		}
+		//Optional Steps Ends here
+		
+		java.util.List<WebElement> links = driver.findElements(By.tagName("a"));
+		 
+		System.out.println(links.size());
+		for(WebElement v:links){
+			System.out.println(v.getText());
+			//highlight those elements/(Links)
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+	        jse.executeScript("arguments[0].style.border='3px solid red'", v);
+	        
+		}
 	}
 
 }
