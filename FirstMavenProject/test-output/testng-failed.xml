@@ -30,15 +30,6 @@
           <include name="CountryListOnOnlineBanking"/>
         </methods>
       </class> <!-- hsbc.TestSetC -->
-      <class name="groupon.TestSet_E">
-        <methods>
-          <include name="SetUpPreDataMethod"/>
-          <include name="doBeforeEveryMethod"/>
-          <include name="aftermethod"/>
-          <include name="Highlignt"/>
-          <include name="SetUpPreData"/>
-        </methods>
-      </class> <!-- groupon.TestSet_E -->
       <class name="facebook.testSetD">
         <methods>
           <include name="doBeforeEveryMethod"/>
