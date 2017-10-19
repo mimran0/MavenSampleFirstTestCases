@@ -5,8 +5,8 @@
     <classes>
       <class name="groupon.TestSet_E">
         <methods>
+          <include name="TC_407_Searchability_Public_Library"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="aftermethod"/>
           <include name="SetUpPreData"/>
