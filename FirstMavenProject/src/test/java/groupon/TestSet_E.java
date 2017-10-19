@@ -3,10 +3,13 @@
  */
 package groupon;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
@@ -119,7 +122,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 	}
 	
 	//Requirement403: Highlight one specific link (signin link)
-	@Test
+	@Test(enabled=false)
 	public void Highlignt(){
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -141,5 +144,43 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
         jse.executeScript("arguments[0].style.border='3px solid red'", signin);
         
 	}
-
+     //Requirement 404: Highlight all the elements under coupon link in the landing page.
+	@Test(enabled=true)
+	public void TC_404_HighlightElementsUnderCOUPON(){
+		String vBaseURL = "https://www.groupon.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX",vBaseURL);
+		waitTime(15000);		
+		//driver.manage().window().maximize();
+		//Optional Steps start here
+		try {
+			if (driver.findElement(By.id("nothx")).isDisplayed()){
+				driver.findElement(By.id("nothx")).click(); //closing the PopUp window if opens
+			}
+		} catch (Exception e) {
+			System.out.println("Sign Up Popup window did not open up or display");
+		}
+		//Optional Steps Ends here
+		WebElement oCoupon=driver.findElement(By.id("sls-aria-5"));
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].style.border='3px solid red'", oCoupon);
+		//Mouseover starts here
+		Actions action = new Actions(driver);		
+		action.moveToElement(oCoupon).build().perform();
+		waitTime(2000);
+		//mouseover ends here
+		ArrayList<String> list=new ArrayList<String>();
+		list.add("amazon-coupons");list.add("bloomingdale-s-coupons");list.add("saks-off-5th-coupons");list.add("guitar-center-coupons");list.add("bed-bath-beyond-coupons");list.add("ebay-coupons");list.add("express-coupons");list.add("express-coupons");list.add("target-coupons");list.add("kohl-s-coupons");list.add("turbotax-coupons");list.add("old-navy-coupons");list.add("best-buy-coupons");list.add("babiesrus-coupons");list.add("saks-fifth-avenue-coupons");list.add("best-buy-coupons");list.add("shutterfly-coupons");list.add("nordstrom-coupons");list.add("vistaprint-coupons");list.add("macy-s-coupons");
+		list.add("h-r-block-at-home-coupons");list.add("finish-line-coupons");list.add("walmart-coupons");list.add("all-stores");list.add("lowe-s-coupons");list.add("foot-locker-coupons");list.add("neiman-marcus-coupons");list.add("nike-coupons");list.add("home-depot-coupons");list.add("american-eagle-coupons");
+		//highlight those elements/(Links)
+		int i;
+		i=0;
+		while(i<list.size()){
+			System.out.println(list.get(i));
+			WebElement obj=driver.findElement(By.id(list.get(i)));			
+			//JavascriptExecutor jse = (JavascriptExecutor) driver; //commented out because jse is already created above Coupon mouseover. line 165
+	        jse.executeScript("arguments[0].style.border='3px solid red'", obj);
+	        i++;
+		}
+	}
 }

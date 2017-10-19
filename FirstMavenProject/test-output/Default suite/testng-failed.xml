@@ -6,9 +6,9 @@
       <class name="groupon.TestSet_E">
         <methods>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="aftermethod"/>
-          <include name="Highlignt"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
