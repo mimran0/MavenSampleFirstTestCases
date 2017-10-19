@@ -50,7 +50,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 	
 	
 	//801:Requirement: Users are able to search
-	@Test (enabled=false)
+	@Test (enabled=true)
 	public void TC_801_testOne(){
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -92,7 +92,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 	
 	
 	//Requirement402: Find out how many links on a webpage and highlight all of those
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void TC_402_LinkCount(){
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -122,7 +122,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 	}
 	
 	//Requirement403: Highlight one specific link (signin link)
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void Highlignt(){
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
