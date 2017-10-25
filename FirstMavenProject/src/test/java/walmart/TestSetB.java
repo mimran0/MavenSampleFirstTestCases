@@ -107,7 +107,7 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 		WebDriver driver = CommonAPI.getDriver(vBaseURL);
 		waitTime(5000);
 		driver.manage().window().maximize();
-		driver.findElement(By.id("header-GlobalEyebrowNav-link-6")).click();
+		driver.findElement(By.id("header-GlobalEyebrowNav-link-4")).click();
 		waitTime(2000);
 		//list of id's
 		String[] list = new String[11];
@@ -152,12 +152,12 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 	// Requirement 505: Users are able to login into walmart website using valid credentials
 	@Test(enabled=true)
 	public void ValidLogin(){
-		String vBaseURL = "http://www.walmart.com";
+		String vBaseURL = "https://www.walmart.com/account/login?tid=0&returnUrl=%2F";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver(vBaseURL);
 		waitTime(5000);
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a")).click();
+		//driver.findElement(By.xpath("/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a")).click();
 		waitTime(2000);
 		driver.findElement(By.name("email")).sendKeys("imranlimon00@gmail.com");
 		driver.findElement(By.name("password")).sendKeys("1234560y");
