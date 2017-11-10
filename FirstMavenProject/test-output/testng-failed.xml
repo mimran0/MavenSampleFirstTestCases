@@ -35,7 +35,9 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
+          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
@@ -61,7 +63,6 @@
           <include name="SetUpPreData"/>
           <include name="LoginAndLogout_4Browses"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
         </methods>
       </class> <!-- facebook.testSetD -->
