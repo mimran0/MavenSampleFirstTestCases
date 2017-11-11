@@ -10,6 +10,7 @@
 			<class name="hsbc.TestSetC" />	
 			<class name="facebook.testSetD" />	
 			<class name="groupon.TestSet_E" />	
+			<class name="amazon.TestSetAmazon" />	
 		</classes>
 	</test>
 </suite>

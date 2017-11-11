@@ -7,7 +7,7 @@ public class RegTest {
 		// TODO Auto-generated method stub
 		String line = "This order was placed for QT3000! OK? lhvu";
 	      
-	   String pattern = ".*";	      
+	   String pattern = ".+order.*";	      
 	   // Create a Pattern object
 	   Pattern r = Pattern.compile(pattern);	      
 	   // Now create matcher object.

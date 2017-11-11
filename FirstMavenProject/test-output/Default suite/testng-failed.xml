@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="groupon.TestSet_E">
+      <class name="amzon.TestSetAmazon">
         <methods>
-          <include name="TC_407_Searchability_Public_Library"/>
-          <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="aftermethod"/>
-          <include name="SetUpPreData"/>
+          <include name="TC_102"/>
+          <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- groupon.TestSet_E -->
+      </class> <!-- amzon.TestSetAmazon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
