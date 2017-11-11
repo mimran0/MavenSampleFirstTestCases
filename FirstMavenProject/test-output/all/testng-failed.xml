@@ -37,15 +37,15 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
+          <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="aftermethod"/>
-          <include name="TC_410_Searchability_yoga"/>
           <include name="TC_409_Searchability_Fitness"/>
-          <include name="TC_801_testOne"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->

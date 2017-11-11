@@ -23,6 +23,8 @@ public class StringToArray {
 		//display 2 elements value by hard coding
 		System.out.println(myArray[3]);
 		System.out.println(myArray[2]);
+		
+		System.out.println(myArray.length);
 
 	}
 
