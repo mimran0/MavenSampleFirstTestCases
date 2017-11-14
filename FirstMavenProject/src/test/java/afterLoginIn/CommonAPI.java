@@ -128,6 +128,29 @@ public class CommonAPI {
 			}
 		}
 		
-		
+		//Method overloading (Updated on 11/13/2017)
+		public static void ScrollDownAndUp(WebDriver driver,int UpperBound){
+			JavascriptExecutor jse = (JavascriptExecutor)driver;
+			//ScrollDown				
+			int count=UpperBound/100;
+			count=Math.round(count);
+			int k;k=100;
+			for(int i=0;i<count-1;i++){
+				jse.executeScript("window.scrollBy(0,"+k+")", "");
+				waitTime(2000);
+				k=k+100;
+			}			
+			//ScrollUp
+			int j,m;
+			j=0;
+			m=-100;
+			while(j<count){					
+				//System.out.println(m);
+				waitTime(2000);
+				jse.executeScript("window.scrollBy(0,"+m+")", "");
+				m=m-100;
+				j++;
+			}
+		}
 		
 }

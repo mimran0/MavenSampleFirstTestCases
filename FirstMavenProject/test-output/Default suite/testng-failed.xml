@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="amzon.TestSetAmazon">
+      <class name="amazon.TestSetAmazon">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_102"/>
+          <include name="TestCase_103"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- amzon.TestSetAmazon -->
+      </class> <!-- amazon.TestSetAmazon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
