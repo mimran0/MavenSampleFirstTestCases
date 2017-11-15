@@ -57,7 +57,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					CommonAPI CommonAPI = new CommonAPI();
 					WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
 					waitTime(5000);
-					driver.manage().window().maximize();
+					//driver.manage().window().maximize();
 					driver.findElement(By.id("email")).sendKeys("imranlimon00@gmail.com");
 					driver.findElement(By.id("pass")).sendKeys("1234560y");
 					driver.findElement(By.id("loginbutton")).click();				
@@ -92,7 +92,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					CommonAPI CommonAPI = new CommonAPI();
 					WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
 					waitTime(5000);
-					driver.manage().window().maximize();
+					//driver.manage().window().maximize();
 					driver.findElement(By.id("email")).sendKeys("imranlimon00@gmail.com");
 					driver.findElement(By.id("pass")).sendKeys("1234560y");
 					driver.findElement(By.id("loginbutton")).click();				
@@ -124,7 +124,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					CommonAPI CommonAPI = new CommonAPI();
 					WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
 					waitTime(5000);
-					driver.manage().window().maximize();
+					//driver.manage().window().maximize();
 					driver.findElement(By.id("email")).sendKeys("imranlimon00@gmail.com");
 					driver.findElement(By.id("pass")).sendKeys("1234560y");
 					driver.findElement(By.id("loginbutton")).click();				
@@ -156,7 +156,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					CommonAPI CommonAPI = new CommonAPI();
 					WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
 					waitTime(5000);
-					driver.manage().window().maximize();
+					//driver.manage().window().maximize();
 					driver.findElement(By.id("email")).sendKeys("imranlimon00@gmail.com");
 					driver.findElement(By.id("pass")).sendKeys("1234560y");
 					driver.findElement(By.id("loginbutton")).click();				
@@ -198,7 +198,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					CommonAPI CommonAPI = new CommonAPI();
 					WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
 					waitTime(5000);
-					driver.manage().window().maximize();
+					//driver.manage().window().maximize();
 					driver.findElement(By.id("email")).sendKeys("imranlimon00@gmail.com");
 					driver.findElement(By.id("pass")).sendKeys("1234560y");
 					driver.findElement(By.id("loginbutton")).click();				

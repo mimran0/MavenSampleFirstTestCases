@@ -45,7 +45,7 @@ public class TestSetA extends CommonAPI{
 		driver.findElement(By.id("ap_password")).sendKeys("1234560y");
 		driver.findElement(By.id("signInSubmit")).click();
 		waitTime(4000);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		String vActualUserName=driver.findElement(By.id("nav-link-accountList")).getText();
 		System.out.println(vActualUserName);
 		Assert.assertEquals("Hello, limon", vActualUserName.substring(0, 12));

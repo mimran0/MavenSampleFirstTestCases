@@ -35,7 +35,7 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 				CommonAPI CommonAPI = new CommonAPI();
 				WebDriver driver = CommonAPI.getDriver(vBaseURL);
 				waitTime(3000);
-				driver.manage().window().maximize();
+				//driver.manage().window().maximize();
 				waitTime(2000);
 				//list of id's
 				String[] list = new String[5];
@@ -63,7 +63,7 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 				CommonAPI CommonAPI = new CommonAPI();
 				WebDriver driver = CommonAPI.getDriver(vBaseURL);
 				waitTime(3000);
-				driver.manage().window().maximize();
+				//driver.manage().window().maximize();
 				waitTime(2000);
 				driver.findElement(By.id("GoToInternetBanking")).click();
 				waitTime(5000);
@@ -94,7 +94,7 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 				CommonAPI CommonAPI = new CommonAPI();
 				WebDriver driver = CommonAPI.getDriver(vBaseURL);
 				waitTime(3000);
-				driver.manage().window().maximize();			
+				//driver.manage().window().maximize();			
 				JavascriptExecutor jse = (JavascriptExecutor)driver;
 				//ScrollDown
 				jse.executeScript("window.scrollBy(0,250)", "");
@@ -130,7 +130,7 @@ public class TestSetC extends afterLoginIn.CommonAPI{
 						CommonAPI CommonAPI = new CommonAPI();
 						WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
 						waitTime(3000);
-						driver.manage().window().maximize();
+						//driver.manage().window().maximize();
 						waitTime(2000);
 						driver.findElement(By.id("GoToInternetBanking")).click();
 						waitTime(5000);

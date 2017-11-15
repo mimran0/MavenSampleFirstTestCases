@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="amazon.TestSetAmazon">
+      <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TestCase_103"/>
+          <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
+          <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- amazon.TestSetAmazon -->
+      </class> <!-- walmart.TestSetB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

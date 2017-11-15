@@ -26,7 +26,7 @@ public class FirstClassWith2methods extends CommonAPI{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver(); // creating an instance of ChromeDriver.
 		driver.get("https://www.amazon.com/"); //Navigating to Amazon home page after launching Google Chrome browser(driver).
-		driver.manage().window().maximize();	//Maximizing the browser	
+		//driver.manage().window().maximize();	//Maximizing the browser	
 		String[] arr=new String[4]; //declaring an array of string with 4 elements.
 		//initializing 4 values into the 4 elements
 		arr[0]="black hair";arr[1]="red eyes";arr[2]="pink Lips";arr[3]="T-Shartviuawebby9ipvvvvvvvvpiyru";
