@@ -31,6 +31,10 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 	public void SetUpPreDataMethod() {
 		System.out.println("Before Each Test  executed");
 		WindowsUtils.killByName("chromedriver.exe");
+		WindowsUtils.killByName("iexplore.exe");
+		WindowsUtils.killByName("geckodriver.exe");
+		WindowsUtils.killByName("MicrosoftWebDriver.exe");
+		WindowsUtils.killByName("MicrosoftEdge.exe");
 	}
 
 	// Requirement 501: Users are able to search text in walmart website
@@ -212,7 +216,7 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 		String vBaseURL = "http://www.walmart.com";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver(BrowserName, vBaseURL);
-		waitTime(9000);
+		waitTime(15000);
 		// driver.manage().window().maximize();
 		driver.findElement(By.id("header-GlobalEyebrowNav-button-5")).click();
 		driver.get("https://www.walmart.com/store/finder");
@@ -231,30 +235,87 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 		ScrollDownAndUp(driver, 300);
 	}
 
-	// Requirement 506: Users are able to find store map with nearby walmart stores in Google Chrome Browser
+	// Requirement 506: Users are able to find store map with nearby walmart
+	// stores in Google Chrome Browser
 	@Test(enabled = true)
 	public void TC_506_StoreFinder_GoogleChromeBrowser() {
 		TestSetB TestSetB = new TestSetB();
 		TestSetB.StoreFinder("CHROME");
 	}
 
-	// Requirement 507: Users are able to find store map with nearby walmart stores in Google Firefox
+	// Requirement 507: Users are able to find store map with nearby walmart
+	// stores in Firefox
 	@Test(enabled = true)
 	public void TC_506_StoreFinder_FireFoxBrowser() {
 		TestSetB TestSetB = new TestSetB();
 		TestSetB.StoreFinder("FIREFOX");
 	}
 
-	// Requirement 508: Users are able to find store map with nearby walmart stores in Microsoft Edge
+	// Requirement 508: Users are able to find store map with nearby walmart
+	// stores in Microsoft Edge
 	@Test(enabled = true)
 	public void TC_506_StoreFinder_MicrosoftEdgeBrowser() {
 		TestSetB TestSetB = new TestSetB();
 		TestSetB.StoreFinder("MICROSOFE EDGE");
 	}
-	// Requirement 509: Users are able to find store map with nearby walmart stores in Internet Explorer
-		@Test(enabled = true)
-		public void TC_506_StoreFinder_InternetExplorerBrowser() {
-			TestSetB TestSetB = new TestSetB();
-			TestSetB.StoreFinder("IE");
-		}
+
+	// Requirement 509: Users are able to find store map with nearby walmart
+	// stores in Internet Explorer
+	@Test(enabled = true)
+	public void TC_506_StoreFinder_InternetExplorerBrowser() {
+		TestSetB TestSetB = new TestSetB();
+		TestSetB.StoreFinder("IE");
+	}
+
+	// this is not TestNG test. this is re-used for creating TestNG tests.
+	public void WeeklyAdd(String wBrowser) {
+		String vBaseURL = "http://www.walmart.com";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(15000);
+		driver.get("https://www.walmart.com/store/2003/north-brunswick-nj/weekly-ads");
+		waitTime(2000);
+		ScrollDownAndUp(driver, 700);
+	}
+
+	// Requirement 510: Users are able to see all weekly adds in Google Chrome
+	// Browser
+	@Test(enabled = true)
+	public void TC_510_WeeklyAdd_GoogleChrome() {
+		TestSetB TestSetB = new TestSetB();
+		TestSetB.WeeklyAdd("CHROME");
+	}
+
+	// Requirement 511: Users are able to see all weekly adds in Google Firefox
+	// Browser
+	@Test(enabled = true)
+	public void TC_511_WeeklyAdd_Firefox() {
+		TestSetB TestSetB = new TestSetB();
+		TestSetB.WeeklyAdd("FIREFOX");
+	}
+
+	// Requirement 512: Users are able to see all weekly adds in Google
+	// MicrosoftEdge
+	// Browser
+	@Test(enabled = true)
+	public void TC_512_WeeklyAdd_MicorsoftEdge() {
+		TestSetB TestSetB = new TestSetB();
+		TestSetB.WeeklyAdd("MICROSOFE EDGE");
+	}
+
+	// Requirement 513: Users are able to see all weekly adds in Internet Explorer
+	@Test(enabled = true)
+	public void TC_513_WeeklyAdd_InternetExplorer() {
+		TestSetB TestSetB = new TestSetB();
+		TestSetB.WeeklyAdd("IE");
+	}
+	
+	//Requirement 514: TBD
+	@Test
+	public void TC_514(){
+		String vBaseURL = "http://www.walmart.com";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(3000);
+	}
 }

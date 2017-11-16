@@ -6,7 +6,8 @@
       <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
+          <include name="TC_513_WeeklyAdd_InternetExplorer"/>
+          <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
           <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
