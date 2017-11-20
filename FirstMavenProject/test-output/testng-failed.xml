@@ -17,11 +17,11 @@
       <class name="afterLoginIn.TestSetA">
         <methods>
           <include name="TC_402_Login_NegativeTest"/>
+          <include name="TC_403_VerifyFieldsInLoginPage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_401_Login_And_LogOut"/>
           <include name="SetUpPreDataMethod"/>
           <include name="SetUpPreData"/>
-          <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="hsbc.TestSetC">
@@ -34,14 +34,13 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_407_Searchability_Public_Library"/>
-          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
           <include name="aftermethod"/>
-          <include name="TC_801_testOne"/>
+          <include name="TC_409_Searchability_Fitness"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
