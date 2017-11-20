@@ -17,11 +17,11 @@
       <class name="afterLoginIn.TestSetA">
         <methods>
           <include name="TC_402_Login_NegativeTest"/>
-          <include name="TC_403_VerifyFieldsInLoginPage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_401_Login_And_LogOut"/>
           <include name="SetUpPreDataMethod"/>
           <include name="SetUpPreData"/>
+          <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="hsbc.TestSetC">
@@ -35,22 +35,34 @@
       <class name="groupon.TestSet_E">
         <methods>
           <include name="TC_407_Searchability_Public_Library"/>
+          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
-          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="aftermethod"/>
+          <include name="TC_801_testOne"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
+      <class name="amazon.TestSetAmazon">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TestCase_103"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- amazon.TestSetAmazon -->
       <class name="facebook.testSetD">
         <methods>
+          <include name="LoginAndLogout_Chrome"/>
           <include name="doBeforeEveryMethod"/>
           <include name="LoginAndLogout_IE"/>
           <include name="SetUpPreData"/>
+          <include name="LoginAndLogout_4Browses"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
+          <include name="LoginAndLogout_Firefox"/>
         </methods>
       </class> <!-- facebook.testSetD -->
     </classes>
