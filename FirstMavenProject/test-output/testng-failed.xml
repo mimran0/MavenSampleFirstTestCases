@@ -9,6 +9,7 @@
           <include name="TC_503_mouseOver"/>
           <include name="TC_513_WeeklyAdd_InternetExplorer"/>
           <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
           <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
@@ -17,7 +18,6 @@
       <class name="afterLoginIn.TestSetA">
         <methods>
           <include name="TC_402_Login_NegativeTest"/>
-          <include name="TC_403_VerifyFieldsInLoginPage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_401_Login_And_LogOut"/>
           <include name="SetUpPreDataMethod"/>
@@ -34,13 +34,15 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
+          <include name="TC_407_Searchability_Public_Library"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
           <include name="aftermethod"/>
-          <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_801_testOne"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
