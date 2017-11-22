@@ -74,7 +74,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					waitTime(4000);
 					
 					//driver.findElement(By.xpath("//*[@id=\"js_c\"]/div/div/ul/li[14]/a/span/span")).click();
-					driver.findElement(By.xpath("/html/body/div[8]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
+					driver.findElement(By.xpath("/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
 					waitTime(2000);
 					Boolean LogoutCheckpoint=driver.findElement(By.id("email")).isDisplayed();
 					Assert.assertTrue(LogoutCheckpoint);
@@ -107,7 +107,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					}
 					driver.findElement(By.id("pageLoginAnchor")).click();
 					waitTime(4000);
-					driver.findElement(By.xpath("/html/body/div[8]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
+					driver.findElement(By.xpath("/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
 					waitTime(2000);
 					Boolean LogoutCheckpoint=driver.findElement(By.id("email")).isDisplayed();
 					Assert.assertTrue(LogoutCheckpoint);
@@ -139,8 +139,8 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					}
 					driver.findElement(By.id("pageLoginAnchor")).click();
 					waitTime(4000);
-					driver.findElement(By.xpath("/html/body/div[8]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
-					waitTime(2000);
+					driver.findElement(By.xpath("/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
+					waitTime(9000);
 					Boolean LogoutCheckpoint=driver.findElement(By.id("email")).isDisplayed();
 					Assert.assertTrue(LogoutCheckpoint);
 				}
@@ -171,19 +171,20 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					}					
 					//optional steps start here						
 						try {
-							boolean a=driver.findElement(By.xpath("/html/body/div[8]/div[2]/div/div/div/div/div[3]/div/div/div[2]/div/a[1]")).isDisplayed();
+							boolean a=driver.findElement(By.xpath("/html/body/div[19]/div[2]/div/div/div/div/div[3]/div/div/div[2]/div/a[1]")).isDisplayed();
 							if (a){
 								System.out.println("try block got executed");
-								driver.findElement(By.xpath("/html/body/div[8]/div[2]/div/div/div/div/div[3]/div/div/div[2]/div/a[1]")).click();
+								driver.findElement(By.xpath("/html/body/div[19]/div[2]/div/div/div/div/div[3]/div/div/div[2]/div/a[1]")).click();
+							    waitTime(8000);
 							}
 						} catch (Exception e) {
 							System.out.println("popup window did not display"+e);
 						}					         
 					//Optional steps end here
 					driver.findElement(By.id("pageLoginAnchor")).click();
-					waitTime(4000);					
-					driver.findElement(By.xpath("/html/body/div[8]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
-					waitTime(2000);
+					waitTime(8000);					
+					driver.findElement(By.xpath("/html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
+					waitTime(10000);
 					Boolean LogoutCheckpoint=driver.findElement(By.id("email")).isDisplayed();
 					Assert.assertTrue(LogoutCheckpoint);
 				}
@@ -197,7 +198,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					String vBaseURL = "https://www.facebook.com";
 					CommonAPI CommonAPI = new CommonAPI();
 					WebDriver driver = CommonAPI.getDriver(v,vBaseURL);
-					waitTime(5000);
+					waitTime(25000);
 					//driver.manage().window().maximize();
 					driver.findElement(By.id("email")).sendKeys("imranlimon00@gmail.com");
 					driver.findElement(By.id("pass")).sendKeys("1234560y");
@@ -213,7 +214,7 @@ public class testSetD extends afterLoginIn.CommonAPI{
 					}
 					driver.findElement(By.id("pageLoginAnchor")).click();
 					waitTime(4000);
-					driver.findElement(By.xpath("/html/body/div[8]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
+					driver.findElement(By.xpath("/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span")).click();
 					waitTime(2000);
 					Boolean LogoutCheckpoint=driver.findElement(By.id("email")).isDisplayed();
 					Assert.assertTrue(LogoutCheckpoint);

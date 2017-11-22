@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="walmart.TestSetB">
+      <class name="facebook.testSetD">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_513_WeeklyAdd_InternetExplorer"/>
-          <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="LoginAndLogout_IE"/>
           <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="aftermethod"/>
+          <include name="LoginAndLogout_Firefox"/>
         </methods>
-      </class> <!-- walmart.TestSetB -->
+      </class> <!-- facebook.testSetD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -55,7 +55,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("FIREFOX",vBaseURL);
-		waitTime(15000);		
+		waitTime(25000);		
 		//driver.manage().window().maximize();
 		//Optional Steps start here
 		try {
@@ -189,7 +189,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 		String vBaseURL = "https://www.groupon.com/";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("FIREFOX",vBaseURL);
-		waitTime(15000);		
+		waitTime(25000);		
 		//driver.manage().window().maximize();
 		//Optional Steps start here
 		try {
@@ -262,4 +262,15 @@ public class TestSet_E extends afterLoginIn.CommonAPI{
 		TestSet_E.CommonSearcOnLandingPAGE("SPA message", "11372");
 	}
 	
+	@Test
+	public void TC_412_Searchability_DunkinDonuts(){
+		TestSet_E TestSet_E=new TestSet_E();
+		TestSet_E.CommonSearcOnLandingPAGE("DunkinDonuts", "08810");
+	}
+	
+	@Test
+	public void TC_413_Searchability_SeaFoodStores(){
+		TestSet_E TestSet_E=new TestSet_E();
+		TestSet_E.CommonSearcOnLandingPAGE("Sea Food Stores", "08810");
+	}
 }

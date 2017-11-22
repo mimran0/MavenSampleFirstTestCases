@@ -37,12 +37,11 @@
           <include name="TC_407_Searchability_Public_Library"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
           <include name="aftermethod"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_801_testOne"/>
+          <include name="TC_409_Searchability_Fitness"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
@@ -55,13 +54,10 @@
       </class> <!-- amazon.TestSetAmazon -->
       <class name="facebook.testSetD">
         <methods>
-          <include name="LoginAndLogout_Chrome"/>
           <include name="doBeforeEveryMethod"/>
           <include name="LoginAndLogout_IE"/>
           <include name="SetUpPreData"/>
-          <include name="LoginAndLogout_4Browses"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
           <include name="LoginAndLogout_Firefox"/>
         </methods>
