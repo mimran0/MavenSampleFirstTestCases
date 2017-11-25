@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>all</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>44/16/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>40/20/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 21 21:07:45 EST 2017</td>
+<td>Started on:</td><td>Fri Nov 24 21:57:49 EST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>2925 seconds (2925525 ms)</td>
+<tr><td>Total time:</td><td>2768 seconds (2768874 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -84,8 +84,8 @@ Note: HSBC...&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at hsbc.TestSetC.CountryListOnOnlineBanking(TestSetC.java:83)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace68326648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace68326648'><pre>org.junit.ComparisonFailure: expected:&lt;...el
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332691311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1332691311'><pre>org.junit.ComparisonFailure: expected:&lt;...el
 I understand, let[â€™]s proceed
 Note: HSBC...&gt; but was:&lt;...el
 I understand, let[’]s proceed
@@ -119,8 +119,87 @@ Note: HSBC...&gt;
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>32</td>
+<td>25</td>
 <td>hsbc.TestSetC@1bce4f0a</td></tr>
+<tr>
+<td title='facebook.testSetD.LoginAndLogout_4Browses()'><b>LoginAndLogout_4Browses</b><br>Test class: facebook.testSetD</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at facebook.testSetD.LoginAndLogout_4Browses(testSetD.java:58)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:27777/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 35 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 36 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace195801026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace195801026'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at facebook.testSetD.LoginAndLogout_4Browses(testSetD.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:27777/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 35 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 36 more
+</pre></div></td>
+<td>50</td>
+<td>facebook.testSetD@5e3a8624</td></tr>
 <tr>
 <td title='facebook.testSetD.LoginAndLogout_Firefox()'><b>LoginAndLogout_Firefox</b><br>Test class: facebook.testSetD</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span
@@ -128,8 +207,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.4njmReMPmhoK, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=14792, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 27025b48-7b6e-4456-b4b9-980de6f0a948
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.xHoMMn5PzQ7y, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10632, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: f837ef85-e2eb-447d-bc5e-fb2db767bf70
 *** Element info: {Using=xpath, value=/html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
@@ -142,14 +221,14 @@ Session ID: 27025b48-7b6e-4456-b4b9-980de6f0a948
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at facebook.testSetD.LoginAndLogout_Firefox(testSetD.java:186)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace967576586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace967576586'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24293395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24293395'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.4njmReMPmhoK, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=14792, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 27025b48-7b6e-4456-b4b9-980de6f0a948
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.xHoMMn5PzQ7y, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10632, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: f837ef85-e2eb-447d-bc5e-fb2db767bf70
 *** Element info: {Using=xpath, value=/html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -192,38 +271,32 @@ Session ID: 27025b48-7b6e-4456-b4b9-980de6f0a948
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>34</td>
+<td>45</td>
 <td>facebook.testSetD@5e3a8624</td></tr>
 <tr>
 <td title='facebook.testSetD.LoginAndLogout_IE()'><b>LoginAndLogout_IE</b><br>Test class: facebook.testSetD</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #email
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to navigate to https://www.facebook.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:29391/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: aa6b9d6d-f3f4-42cc-81bc-fa1a97041253
-*** Element info: {Using=id, value=email}
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:48844/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: a19371b4-109c-4d28-947b-94de0715ba14
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at facebook.testSetD.LoginAndLogout_IE(testSetD.java:203)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace432430300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace432430300'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #email
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at facebook.testSetD.LoginAndLogout_IE(testSetD.java:200)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1375394559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1375394559'><pre>org.openqa.selenium.WebDriverException: Failed to navigate to https://www.facebook.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:29391/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: aa6b9d6d-f3f4-42cc-81bc-fa1a97041253
-*** Element info: {Using=id, value=email}
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:48844/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: a19371b4-109c-4d28-947b-94de0715ba14
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -234,11 +307,171 @@ Session ID: aa6b9d6d-f3f4-42cc-81bc-fa1a97041253
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at facebook.testSetD.LoginAndLogout_IE(testSetD.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>1</td>
+<td>facebook.testSetD@5e3a8624</td></tr>
+<tr>
+<td title='facebook.testSetD.LoginAndLogout_MicrosoftEdge()'><b>LoginAndLogout_MicrosoftEdge</b><br>Test class: facebook.testSetD</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at facebook.testSetD.LoginAndLogout_MicrosoftEdge(testSetD.java:125)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:25285/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 35 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 36 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace746115872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace746115872'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at facebook.testSetD.LoginAndLogout_MicrosoftEdge(testSetD.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:25285/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 35 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 36 more
+</pre></div></td>
+<td>20</td>
+<td>facebook.testSetD@5e3a8624</td></tr>
+<tr>
+<td title='afterLoginIn.TestSetA.TC_401_Login_And_LogOut()'><b>TC_401_Login_And_LogOut</b><br>Test class: afterLoginIn.TestSetA</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;nav-link-accountList&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12388_11926}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a5ae818c22b0aa67197c1bb45084520b
+*** Element info: {Using=id, value=nav-link-accountList}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
 	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at facebook.testSetD.LoginAndLogout_IE(testSetD.java:203)
+	at afterLoginIn.TestSetA.TC_401_Login_And_LogOut(TestSetA.java:49)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515877023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515877023'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;nav-link-accountList&quot;}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12388_11926}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a5ae818c22b0aa67197c1bb45084520b
+*** Element info: {Using=id, value=nav-link-accountList}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at afterLoginIn.TestSetA.TC_401_Login_And_LogOut(TestSetA.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -266,102 +499,19 @@ Session ID: aa6b9d6d-f3f4-42cc-81bc-fa1a97041253
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
 <td>28</td>
-<td>facebook.testSetD@5e3a8624</td></tr>
-<tr>
-<td title='afterLoginIn.TestSetA.TC_401_Login_And_LogOut()'><b>TC_401_Login_And_LogOut</b><br>Test class: afterLoginIn.TestSetA</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;nav-link-accountList&quot;}
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
-System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12676_20118}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4b387971ced64b89493cb81fcb2e9cc9
-*** Element info: {Using=id, value=nav-link-accountList}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at afterLoginIn.TestSetA.TC_401_Login_And_LogOut(TestSetA.java:49)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace159290353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace159290353'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;nav-link-accountList&quot;}
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
-System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12676_20118}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4b387971ced64b89493cb81fcb2e9cc9
-*** Element info: {Using=id, value=nav-link-accountList}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at afterLoginIn.TestSetA.TC_401_Login_And_LogOut(TestSetA.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div></td>
-<td>27</td>
 <td>afterLoginIn.TestSetA@42d80b78</td></tr>
 <tr>
 <td title='afterLoginIn.TestSetA.TC_402_Login_NegativeTest()'><b>TC_402_Login_NegativeTest</b><br>Test class: afterLoginIn.TestSetA</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span&quot;}
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12608_19949}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9c3530f9bbf638e36461bcea66d21e9f
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir5760_1736}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ee1901033febe59e1b01f8603a4a3545
 *** Element info: {Using=xpath, value=//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -376,17 +526,17 @@ Session ID: 9c3530f9bbf638e36461bcea66d21e9f
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at afterLoginIn.TestSetA.TC_402_Login_NegativeTest(TestSetA.java:78)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace116669570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace116669570'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1572256205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1572256205'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span&quot;}
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12608_19949}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9c3530f9bbf638e36461bcea66d21e9f
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir5760_1736}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ee1901033febe59e1b01f8603a4a3545
 *** Element info: {Using=xpath, value=//*[@id=&quot;auth-error-message-box&quot;]/div/div/ul/li/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -440,8 +590,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.kY4RaWM6y0py, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=376, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: a97e0aba-7d0e-4603-9b4e-a5117145d7d5
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.vtAs9kFk99bI, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10644, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 17344ade-6ece-4e1a-8621-1532154f9d98
 *** Element info: {Using=id, value=ls-user-signin}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
@@ -454,14 +604,14 @@ Session ID: a97e0aba-7d0e-4603-9b4e-a5117145d7d5
 	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at groupon.TestSet_E.TC_403_Highlignt(TestSet_E.java:141)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1424108509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1424108509'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #ls\-user\-signin
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1767230265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1767230265'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #ls\-user\-signin
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.kY4RaWM6y0py, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=376, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: a97e0aba-7d0e-4603-9b4e-a5117145d7d5
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.vtAs9kFk99bI, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10644, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 17344ade-6ece-4e1a-8621-1532154f9d98
 *** Element info: {Using=id, value=ls-user-signin}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -478,79 +628,6 @@ Session ID: a97e0aba-7d0e-4603-9b4e-a5117145d7d5
 	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at groupon.TestSet_E.TC_403_Highlignt(TestSet_E.java:141)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div></td>
-<td>25</td>
-<td>groupon.TestSet_E@5c3bd550</td></tr>
-<tr>
-<td title='groupon.TestSet_E.TC_404_HighlightElementsUnderCOUPON()'><b>TC_404_HighlightElementsUnderCOUPON</b><br>Test class: groupon.TestSet_E</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #amazon\-coupons
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
-System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.hDH6qfhY8XfY, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8784, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 398e22d0-58d1-4492-aeb5-6503848e21a0
-*** Element info: {Using=id, value=amazon-coupons}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at groupon.TestSet_E.TC_404_HighlightElementsUnderCOUPON(TestSet_E.java:180)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1586151649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1586151649'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #amazon\-coupons
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
-System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.hDH6qfhY8XfY, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8784, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 398e22d0-58d1-4492-aeb5-6503848e21a0
-*** Element info: {Using=id, value=amazon-coupons}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at groupon.TestSet_E.TC_404_HighlightElementsUnderCOUPON(TestSet_E.java:180)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -580,30 +657,35 @@ Session ID: 398e22d0-58d1-4492-aeb5-6503848e21a0
 <td>26</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
-<td title='groupon.TestSet_E.TC_406_Searchability_restaurants()'><b>TC_406_Searchability_restaurants</b><br>Test class: groupon.TestSet_E</td>
-<td><div><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
+<td title='groupon.TestSet_E.TC_404_HighlightElementsUnderCOUPON()'><b>TC_404_HighlightElementsUnderCOUPON</b><br>Test class: groupon.TestSet_E</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #amazon\-coupons
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.I6oZAH7vzssD, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=2164, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: cc618713-59a6-4255-8e68-36c1f59320ab
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.S4nApM0bmCY3, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=7564, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 35171476-fb74-4a2f-944a-7fbf2786a660
+*** Element info: {Using=id, value=amazon-coupons}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
-	at groupon.TestSet_E.TC_406_Searchability_restaurants(TestSet_E.java:237)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace192428201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace192428201'><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at groupon.TestSet_E.TC_404_HighlightElementsUnderCOUPON(TestSet_E.java:180)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2015301874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2015301874'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #amazon\-coupons
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.I6oZAH7vzssD, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=2164, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: cc618713-59a6-4255-8e68-36c1f59320ab
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.S4nApM0bmCY3, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=7564, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 35171476-fb74-4a2f-944a-7fbf2786a660
+*** Element info: {Using=id, value=amazon-coupons}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -614,10 +696,11 @@ Session ID: cc618713-59a6-4255-8e68-36c1f59320ab
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
-	at groupon.TestSet_E.TC_406_Searchability_restaurants(TestSet_E.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at groupon.TestSet_E.TC_404_HighlightElementsUnderCOUPON(TestSet_E.java:180)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -644,74 +727,7 @@ Session ID: cc618713-59a6-4255-8e68-36c1f59320ab
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>35</td>
-<td>groupon.TestSet_E@5c3bd550</td></tr>
-<tr>
-<td title='groupon.TestSet_E.TC_407_Searchability_Public_Library()'><b>TC_407_Searchability_Public_Library</b><br>Test class: groupon.TestSet_E</td>
-<td><div><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
-System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.IM7xif2skNic, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12796, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: cabef664-8491-448a-99d4-d199cdfa4b7f
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
-	at groupon.TestSet_E.TC_407_Searchability_Public_Library(TestSet_E.java:242)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406848276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1406848276'><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
-System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.IM7xif2skNic, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12796, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: cabef664-8491-448a-99d4-d199cdfa4b7f
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
-	at groupon.TestSet_E.TC_407_Searchability_Public_Library(TestSet_E.java:242)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div></td>
-<td>34</td>
+<td>29</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
 <td title='groupon.TestSet_E.TC_409_Searchability_Fitness()'><b>TC_409_Searchability_Fitness</b><br>Test class: groupon.TestSet_E</td>
@@ -719,8 +735,8 @@ Session ID: cabef664-8491-448a-99d4-d199cdfa4b7f
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.mLNHv2cutK0j, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12424, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 3d75cce0-5700-4e40-a85d-d57285bf5e1e
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.qzJ0lcIrUpJt, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8436, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: c72b29ec-9fda-4f56-a9d6-a2675382eb0c
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -731,13 +747,13 @@ Session ID: 3d75cce0-5700-4e40-a85d-d57285bf5e1e
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
 	at groupon.TestSet_E.TC_409_Searchability_Fitness(TestSet_E.java:252)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1429483328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1429483328'><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace998242313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace998242313'><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.mLNHv2cutK0j, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12424, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 3d75cce0-5700-4e40-a85d-d57285bf5e1e
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.qzJ0lcIrUpJt, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8436, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: c72b29ec-9fda-4f56-a9d6-a2675382eb0c
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -752,6 +768,140 @@ Session ID: 3d75cce0-5700-4e40-a85d-d57285bf5e1e
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
 	at groupon.TestSet_E.TC_409_Searchability_Fitness(TestSet_E.java:252)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>38</td>
+<td>groupon.TestSet_E@5c3bd550</td></tr>
+<tr>
+<td title='groupon.TestSet_E.TC_411_Searchability_spaMessage()'><b>TC_411_Searchability_spaMessage</b><br>Test class: groupon.TestSet_E</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.i8IEEoa1poIs, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=6828, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: e3154979-09e9-452d-9949-a3c59ea8b068
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
+	at groupon.TestSet_E.TC_411_Searchability_spaMessage(TestSet_E.java:262)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace576894497", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576894497'><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.i8IEEoa1poIs, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=6828, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: e3154979-09e9-452d-9949-a3c59ea8b068
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
+	at groupon.TestSet_E.TC_411_Searchability_spaMessage(TestSet_E.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>36</td>
+<td>groupon.TestSet_E@5c3bd550</td></tr>
+<tr>
+<td title='groupon.TestSet_E.TC_412_Searchability_DunkinDonuts()'><b>TC_412_Searchability_DunkinDonuts</b><br>Test class: groupon.TestSet_E</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.XTaETqt3UYV7, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8668, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 23ca3b06-626e-4b6e-8d88-b45e5ae3e47b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
+	at groupon.TestSet_E.TC_412_Searchability_DunkinDonuts(TestSet_E.java:268)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace817689537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace817689537'><pre>org.openqa.selenium.InvalidElementStateException: Element is not enabled
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.XTaETqt3UYV7, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8668, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 23ca3b06-626e-4b6e-8d88-b45e5ae3e47b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
+	at groupon.TestSet_E.TC_412_Searchability_DunkinDonuts(TestSet_E.java:268)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -784,14 +934,14 @@ Session ID: 3d75cce0-5700-4e40-a85d-d57285bf5e1e
 <td title='walmart.TestSetB.TC_503_mouseOver()'><b>TC_503_mouseOver</b><br>Test class: walmart.TestSetB</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;header-GlobalEyebrowNav-button-0&quot;}
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8752_22637}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 39bf2e8ee4e4cf354830a0cc1298f004
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir10060_7300}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f73cf9a0b51dd3bfe2a53a29d20da8d7
 *** Element info: {Using=id, value=header-GlobalEyebrowNav-button-0}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -806,17 +956,17 @@ Session ID: 39bf2e8ee4e4cf354830a0cc1298f004
 	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at walmart.TestSetB.TC_503_mouseOver(TestSetB.java:117)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace932257672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace932257672'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;header-GlobalEyebrowNav-button-0&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1864116663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1864116663'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;header-GlobalEyebrowNav-button-0&quot;}
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8752_22637}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 39bf2e8ee4e4cf354830a0cc1298f004
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir10060_7300}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f73cf9a0b51dd3bfe2a53a29d20da8d7
 *** Element info: {Using=id, value=header-GlobalEyebrowNav-button-0}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -861,19 +1011,19 @@ Session ID: 39bf2e8ee4e4cf354830a0cc1298f004
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>16</td>
+<td>14</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='walmart.TestSetB.TC_504_Credit_Cards()'><b>TC_504_Credit_Cards</b><br>Test class: walmart.TestSetB</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;header-GlobalEyebrowNav-link&quot; data-uid=&quot;OOn--_d4&quot; href=&quot;/cp/Walmart-Credit-Card/632402&quot; alt=&quot;Credit Card&quot; role=&quot;&quot; id=&quot;header-GlobalEyebrowNav-link-4&quot; tabindex=&quot;&quot; data-tl-id=&quot;header-GlobalEyebrowNav-link-4&quot;&gt;...&lt;/a&gt; is not clickable at point (747, 116). Other element would receive the click: &lt;div class=&quot;flowtip-flyout-modal flowtip-flyout-modal-bottom&quot; style=&quot;width: auto; position: absolute; left: -75px; top: 57px;&quot;&gt;...&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;header-GlobalEyebrowNav-link&quot; data-uid=&quot;0pu8ySOJ&quot; href=&quot;/cp/Walmart-Credit-Card/632402&quot; alt=&quot;Credit Card&quot; role=&quot;&quot; id=&quot;header-GlobalEyebrowNav-link-4&quot; tabindex=&quot;&quot; data-tl-id=&quot;header-GlobalEyebrowNav-link-4&quot;&gt;...&lt;/a&gt; is not clickable at point (747, 116). Other element would receive the click: &lt;div class=&quot;flowtip-flyout-modal flowtip-flyout-modal-bottom&quot; style=&quot;width: auto; position: absolute; left: -75px; top: 57px;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir4312_16399}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bf4be31fb99d6616fc442adf3558906c
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13276_20164}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2f30ac2e9a930849a519cc4355146416
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -885,16 +1035,16 @@ Session ID: bf4be31fb99d6616fc442adf3558906c
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at walmart.TestSetB.TC_504_Credit_Cards(TestSetB.java:132)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace749927456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace749927456'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;header-GlobalEyebrowNav-link&quot; data-uid=&quot;OOn--_d4&quot; href=&quot;/cp/Walmart-Credit-Card/632402&quot; alt=&quot;Credit Card&quot; role=&quot;&quot; id=&quot;header-GlobalEyebrowNav-link-4&quot; tabindex=&quot;&quot; data-tl-id=&quot;header-GlobalEyebrowNav-link-4&quot;&gt;...&lt;/a&gt; is not clickable at point (747, 116). Other element would receive the click: &lt;div class=&quot;flowtip-flyout-modal flowtip-flyout-modal-bottom&quot; style=&quot;width: auto; position: absolute; left: -75px; top: 57px;&quot;&gt;...&lt;/div&gt;
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1330400026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1330400026'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;header-GlobalEyebrowNav-link&quot; data-uid=&quot;0pu8ySOJ&quot; href=&quot;/cp/Walmart-Credit-Card/632402&quot; alt=&quot;Credit Card&quot; role=&quot;&quot; id=&quot;header-GlobalEyebrowNav-link-4&quot; tabindex=&quot;&quot; data-tl-id=&quot;header-GlobalEyebrowNav-link-4&quot;&gt;...&lt;/a&gt; is not clickable at point (747, 116). Other element would receive the click: &lt;div class=&quot;flowtip-flyout-modal flowtip-flyout-modal-bottom&quot; style=&quot;width: auto; position: absolute; left: -75px; top: 57px;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir4312_16399}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bf4be31fb99d6616fc442adf3558906c
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13276_20164}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2f30ac2e9a930849a519cc4355146416
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -940,35 +1090,29 @@ Session ID: bf4be31fb99d6616fc442adf3558906c
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='walmart.TestSetB.TC_506_StoreFinder_InternetExplorerBrowser()'><b>TC_506_StoreFinder_InternetExplorerBrowser</b><br>Test class: walmart.TestSetB</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #header\-GlobalEyebrowNav\-button\-5
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:42997/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 1caa7f1d-f6d2-4844-a353-d3ca1c07350f
-*** Element info: {Using=id, value=header-GlobalEyebrowNav-button-5}
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:13454/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 8fe6bb8f-9c12-4b89-952c-2ac0f08018c6
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at walmart.TestSetB.StoreFinder(TestSetB.java:221)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at walmart.TestSetB.StoreFinder(TestSetB.java:218)
 	at walmart.TestSetB.TC_506_StoreFinder_InternetExplorerBrowser(TestSetB.java:267)
 ... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace62343880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace62343880'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #header\-GlobalEyebrowNav\-button\-5
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<div class='stack-trace' id='stack-trace62343880'><pre>org.openqa.selenium.WebDriverException: Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:42997/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 1caa7f1d-f6d2-4844-a353-d3ca1c07350f
-*** Element info: {Using=id, value=header-GlobalEyebrowNav-button-5}
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:13454/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 8fe6bb8f-9c12-4b89-952c-2ac0f08018c6
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -979,11 +1123,9 @@ Session ID: 1caa7f1d-f6d2-4844-a353-d3ca1c07350f
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at walmart.TestSetB.StoreFinder(TestSetB.java:221)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at walmart.TestSetB.StoreFinder(TestSetB.java:218)
 	at walmart.TestSetB.TC_506_StoreFinder_InternetExplorerBrowser(TestSetB.java:267)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1011,33 +1153,195 @@ Session ID: 1caa7f1d-f6d2-4844-a353-d3ca1c07350f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>18</td>
+<td>8</td>
+<td>walmart.TestSetB@3bfdc050</td></tr>
+<tr>
+<td title='walmart.TestSetB.TC_506_StoreFinder_MicrosoftEdgeBrowser()'><b>TC_506_StoreFinder_MicrosoftEdgeBrowser</b><br>Test class: walmart.TestSetB</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at walmart.TestSetB.StoreFinder(TestSetB.java:218)
+	at walmart.TestSetB.TC_506_StoreFinder_MicrosoftEdgeBrowser(TestSetB.java:259)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:7806/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 36 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 37 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1558103808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1558103808'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at walmart.TestSetB.StoreFinder(TestSetB.java:218)
+	at walmart.TestSetB.TC_506_StoreFinder_MicrosoftEdgeBrowser(TestSetB.java:259)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:7806/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 36 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 37 more
+</pre></div></td>
+<td>20</td>
+<td>walmart.TestSetB@3bfdc050</td></tr>
+<tr>
+<td title='walmart.TestSetB.TC_512_WeeklyAdd_MicorsoftEdge()'><b>TC_512_WeeklyAdd_MicorsoftEdge</b><br>Test class: walmart.TestSetB</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at walmart.TestSetB.WeeklyAdd(TestSetB.java:274)
+	at walmart.TestSetB.TC_512_WeeklyAdd_MicorsoftEdge(TestSetB.java:303)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:26886/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 36 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 37 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace970535245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace970535245'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:150)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:139)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
+	at walmart.TestSetB.WeeklyAdd(TestSetB.java:274)
+	at walmart.TestSetB.TC_512_WeeklyAdd_MicorsoftEdge(TestSetB.java:303)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:26886/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
+	... 36 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 37 more
+</pre></div></td>
+<td>20</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='walmart.TestSetB.TC_513_WeeklyAdd_InternetExplorer()'><b>TC_513_WeeklyAdd_InternetExplorer</b><br>Test class: walmart.TestSetB</td>
-<td><div><pre>org.openqa.selenium.JavascriptException: JavaScript error
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:33291/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 2f852ad2-210a-4885-8202-e1c5b69a9331
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:24007/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 03ed5b93-f4d8-49b7-a664-e4d2551eefdd
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:522)
-	at afterLoginIn.CommonAPI.ScrollDownAndUp(CommonAPI.java:139)
-	at walmart.TestSetB.WeeklyAdd(TestSetB.java:278)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at walmart.TestSetB.WeeklyAdd(TestSetB.java:274)
 	at walmart.TestSetB.TC_513_WeeklyAdd_InternetExplorer(TestSetB.java:310)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1932332324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1932332324'><pre>org.openqa.selenium.JavascriptException: JavaScript error
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace464400749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace464400749'><pre>org.openqa.selenium.WebDriverException: Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:33291/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 2f852ad2-210a-4885-8202-e1c5b69a9331
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:24007/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 03ed5b93-f4d8-49b7-a664-e4d2551eefdd
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1048,9 +1352,9 @@ Session ID: 2f852ad2-210a-4885-8202-e1c5b69a9331
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:522)
-	at afterLoginIn.CommonAPI.ScrollDownAndUp(CommonAPI.java:139)
-	at walmart.TestSetB.WeeklyAdd(TestSetB.java:278)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at walmart.TestSetB.WeeklyAdd(TestSetB.java:274)
 	at walmart.TestSetB.TC_513_WeeklyAdd_InternetExplorer(TestSetB.java:310)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -1078,7 +1382,7 @@ Session ID: 2f852ad2-210a-4885-8202-e1c5b69a9331
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>31</td>
+<td>2</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='amazon.TestSetAmazon.TestCase_103()'><b>TestCase_103</b><br>Test class: amazon.TestSetAmazon</td>
@@ -1086,8 +1390,8 @@ Session ID: 2f852ad2-210a-4885-8202-e1c5b69a9331
 	at junit.framework.Assert.assertEquals(Assert.java:100)
 	at junit.framework.Assert.assertEquals(Assert.java:107)
 	at amazon.TestSetAmazon.TestCase_103(TestSetAmazon.java:132)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace70978270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace70978270'><pre>junit.framework.ComparisonFailure: expected:&lt;[Pass]&gt; but was:&lt;[Fail]&gt;
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1791589252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1791589252'><pre>junit.framework.ComparisonFailure: expected:&lt;[Pass]&gt; but was:&lt;[Fail]&gt;
 	at junit.framework.Assert.assertEquals(Assert.java:100)
 	at junit.framework.Assert.assertEquals(Assert.java:107)
 	at amazon.TestSetAmazon.TestCase_103(TestSetAmazon.java:132)
@@ -1117,20 +1421,20 @@ Session ID: 2f852ad2-210a-4885-8202-e1c5b69a9331
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>21</td>
+<td>25</td>
 <td>amazon.TestSetAmazon@6a4f787b</td></tr>
 <tr>
 <td title='walmart.TestSetB.ValidLogin()'><b>ValidLogin</b><br>Test class: walmart.TestSetB</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a&quot;}
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13012_5978}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9e80737b32401a9a01cc266578c70df4
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir9736_25178}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59d2eaea2834f2b868a458054105aa9f
 *** Element info: {Using=xpath, value=/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -1145,17 +1449,17 @@ Session ID: 9e80737b32401a9a01cc266578c70df4
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
 	at walmart.TestSetB.ValidLogin(TestSetB.java:200)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394940518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1394940518'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1860491691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1860491691'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a&quot;}
   (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
 System info: host: &apos;DESKTOP-75OLIUH&apos;, ip: &apos;192.168.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13012_5978}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9e80737b32401a9a01cc266578c70df4
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir9736_25178}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59d2eaea2834f2b868a458054105aa9f
 *** Element info: {Using=xpath, value=/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1271,34 +1575,24 @@ Session ID: 9e80737b32401a9a01cc266578c70df4
 <td>0</td>
 <td>Priotization@604ed9f0</td></tr>
 <tr>
-<td title='facebook.testSetD.LoginAndLogout_4Browses()'><b>LoginAndLogout_4Browses</b><br>Test class: facebook.testSetD</td>
-<td></td>
-<td>50</td>
-<td>facebook.testSetD@5e3a8624</td></tr>
-<tr>
 <td title='facebook.testSetD.LoginAndLogout_Chrome()'><b>LoginAndLogout_Chrome</b><br>Test class: facebook.testSetD</td>
 <td></td>
-<td>30</td>
-<td>facebook.testSetD@5e3a8624</td></tr>
-<tr>
-<td title='facebook.testSetD.LoginAndLogout_MicrosoftEdge()'><b>LoginAndLogout_MicrosoftEdge</b><br>Test class: facebook.testSetD</td>
-<td></td>
-<td>27</td>
+<td>28</td>
 <td>facebook.testSetD@5e3a8624</td></tr>
 <tr>
 <td title='amazon.TestSetAmazon.SearchOnLandingPage()'><b>SearchOnLandingPage</b><br>Test class: amazon.TestSetAmazon</td>
 <td></td>
-<td>143</td>
+<td>106</td>
 <td>amazon.TestSetAmazon@6a4f787b</td></tr>
 <tr>
 <td title='amazon.TestSetAmazon.TC_102()'><b>TC_102</b><br>Test class: amazon.TestSetAmazon</td>
 <td></td>
-<td>675</td>
+<td>653</td>
 <td>amazon.TestSetAmazon@6a4f787b</td></tr>
 <tr>
 <td title='groupon.TestSet_E.TC_402_LinkCount()'><b>TC_402_LinkCount</b><br>Test class: groupon.TestSet_E</td>
 <td></td>
-<td>35</td>
+<td>37</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
 <td title='afterLoginIn.TestSetA.TC_403_VerifyFieldsInLoginPage()'><b>TC_403_VerifyFieldsInLoginPage</b><br>Test class: afterLoginIn.TestSetA</td>
@@ -1313,32 +1607,32 @@ Session ID: 9e80737b32401a9a01cc266578c70df4
 <tr>
 <td title='groupon.TestSet_E.TC_405_Searchability_SPA_11372()'><b>TC_405_Searchability_SPA_11372</b><br>Test class: groupon.TestSet_E</td>
 <td></td>
-<td>78</td>
+<td>81</td>
+<td>groupon.TestSet_E@5c3bd550</td></tr>
+<tr>
+<td title='groupon.TestSet_E.TC_406_Searchability_restaurants()'><b>TC_406_Searchability_restaurants</b><br>Test class: groupon.TestSet_E</td>
+<td></td>
+<td>80</td>
+<td>groupon.TestSet_E@5c3bd550</td></tr>
+<tr>
+<td title='groupon.TestSet_E.TC_407_Searchability_Public_Library()'><b>TC_407_Searchability_Public_Library</b><br>Test class: groupon.TestSet_E</td>
+<td></td>
+<td>81</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
 <td title='groupon.TestSet_E.TC_408_Searchability_Grocery()'><b>TC_408_Searchability_Grocery</b><br>Test class: groupon.TestSet_E</td>
 <td></td>
-<td>78</td>
+<td>87</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
 <td title='groupon.TestSet_E.TC_410_Searchability_yoga()'><b>TC_410_Searchability_yoga</b><br>Test class: groupon.TestSet_E</td>
 <td></td>
-<td>77</td>
-<td>groupon.TestSet_E@5c3bd550</td></tr>
-<tr>
-<td title='groupon.TestSet_E.TC_411_Searchability_spaMessage()'><b>TC_411_Searchability_spaMessage</b><br>Test class: groupon.TestSet_E</td>
-<td></td>
-<td>79</td>
-<td>groupon.TestSet_E@5c3bd550</td></tr>
-<tr>
-<td title='groupon.TestSet_E.TC_412_Searchability_DunkinDonuts()'><b>TC_412_Searchability_DunkinDonuts</b><br>Test class: groupon.TestSet_E</td>
-<td></td>
-<td>79</td>
+<td>80</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
 <td title='groupon.TestSet_E.TC_413_Searchability_SeaFoodStores()'><b>TC_413_Searchability_SeaFoodStores</b><br>Test class: groupon.TestSet_E</td>
 <td></td>
-<td>78</td>
+<td>80</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
 <td title='walmart.TestSetB.TC_501_UsersAreAbleToSearch()'><b>TC_501_UsersAreAbleToSearch</b><br>Test class: walmart.TestSetB</td>
@@ -1348,7 +1642,7 @@ Session ID: 9e80737b32401a9a01cc266578c70df4
 <tr>
 <td title='walmart.TestSetB.TC_502_SelectDropdownValue()'><b>TC_502_SelectDropdownValue</b><br>Test class: walmart.TestSetB</td>
 <td></td>
-<td>75</td>
+<td>72</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='walmart.TestSetB.TC_506_StoreFinder_FireFoxBrowser()'><b>TC_506_StoreFinder_FireFoxBrowser</b><br>Test class: walmart.TestSetB</td>
@@ -1361,34 +1655,24 @@ Session ID: 9e80737b32401a9a01cc266578c70df4
 <td>39</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
-<td title='walmart.TestSetB.TC_506_StoreFinder_MicrosoftEdgeBrowser()'><b>TC_506_StoreFinder_MicrosoftEdgeBrowser</b><br>Test class: walmart.TestSetB</td>
-<td></td>
-<td>39</td>
-<td>walmart.TestSetB@3bfdc050</td></tr>
-<tr>
 <td title='walmart.TestSetB.TC_510_WeeklyAdd_GoogleChrome()'><b>TC_510_WeeklyAdd_GoogleChrome</b><br>Test class: walmart.TestSetB</td>
 <td></td>
-<td>67</td>
+<td>143</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='walmart.TestSetB.TC_511_WeeklyAdd_Firefox()'><b>TC_511_WeeklyAdd_Firefox</b><br>Test class: walmart.TestSetB</td>
 <td></td>
-<td>106</td>
-<td>walmart.TestSetB@3bfdc050</td></tr>
-<tr>
-<td title='walmart.TestSetB.TC_512_WeeklyAdd_MicorsoftEdge()'><b>TC_512_WeeklyAdd_MicorsoftEdge</b><br>Test class: walmart.TestSetB</td>
-<td></td>
-<td>81</td>
+<td>67</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='walmart.TestSetB.TC_514()'><b>TC_514</b><br>Test class: walmart.TestSetB</td>
 <td></td>
-<td>13</td>
+<td>15</td>
 <td>walmart.TestSetB@3bfdc050</td></tr>
 <tr>
 <td title='groupon.TestSet_E.TC_801_testOne()'><b>TC_801_testOne</b><br>Test class: groupon.TestSet_E</td>
 <td></td>
-<td>69</td>
+<td>70</td>
 <td>groupon.TestSet_E@5c3bd550</td></tr>
 <tr>
 <td title='amazon.TestSetAmazon.TestCase_104()'><b>TestCase_104</b><br>Test class: amazon.TestSetAmazon</td>
@@ -1403,22 +1687,22 @@ Session ID: 9e80737b32401a9a01cc266578c70df4
 <tr>
 <td title='FirstClassWith2methods.UsersAreAbleToSearch()'><b>UsersAreAbleToSearch</b><br>Test class: FirstClassWith2methods</td>
 <td></td>
-<td>59</td>
+<td>64</td>
 <td>FirstClassWith2methods@77caeb3e</td></tr>
 <tr>
 <td title='SecondClasssWith2Methods.UsersAreAbleToSearch()'><b>UsersAreAbleToSearch</b><br>Test class: SecondClasssWith2Methods</td>
 <td></td>
-<td>59</td>
+<td>57</td>
 <td>SecondClasssWith2Methods@1e88b3c</td></tr>
 <tr>
 <td title='hsbc.TestSetC.displayMousOverDropdownList()'><b>displayMousOverDropdownList</b><br>Test class: hsbc.TestSetC</td>
 <td></td>
-<td>27</td>
+<td>22</td>
 <td>hsbc.TestSetC@1bce4f0a</td></tr>
 <tr>
 <td title='hsbc.TestSetC.scrollUpAndDown()'><b>scrollUpAndDown</b><br>Test class: hsbc.TestSetC</td>
 <td></td>
-<td>24</td>
+<td>27</td>
 <td>hsbc.TestSetC@1bce4f0a</td></tr>
 <tr>
 <td title='FirstClassWith2methods.test2()'><b>test2</b><br>Test class: FirstClassWith2methods</td>

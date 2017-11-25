@@ -8,6 +8,8 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_503_mouseOver"/>
           <include name="TC_513_WeeklyAdd_InternetExplorer"/>
+          <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
+          <include name="TC_512_WeeklyAdd_MicorsoftEdge"/>
           <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
           <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
@@ -34,14 +36,14 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_407_Searchability_Public_Library"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
-          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
           <include name="aftermethod"/>
           <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
@@ -57,7 +59,9 @@
           <include name="doBeforeEveryMethod"/>
           <include name="LoginAndLogout_IE"/>
           <include name="SetUpPreData"/>
+          <include name="LoginAndLogout_4Browses"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
           <include name="LoginAndLogout_Firefox"/>
         </methods>
