@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="facebook.testSetD">
+      <class name="MC.TestSetF">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="LoginAndLogout_IE"/>
-          <include name="SetUpPreData"/>
+          <include name="TC_409_MC_GC_B"/>
+          <include name="TC_408_MC_GC_A"/>
+          <include name="TC_10_MC_GC_C"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="aftermethod"/>
-          <include name="LoginAndLogout_Firefox"/>
         </methods>
-      </class> <!-- facebook.testSetD -->
+      </class> <!-- MC.TestSetF -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

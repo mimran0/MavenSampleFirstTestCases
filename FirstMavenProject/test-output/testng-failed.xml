@@ -8,10 +8,7 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_503_mouseOver"/>
           <include name="TC_513_WeeklyAdd_InternetExplorer"/>
-          <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
-          <include name="TC_512_WeeklyAdd_MicorsoftEdge"/>
           <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
-          <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
           <include name="SetUpPreData"/>
           <include name="SetUpPreDataMethod"/>
@@ -38,9 +35,9 @@
         <methods>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
           <include name="aftermethod"/>
           <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_412_Searchability_DunkinDonuts"/>
@@ -56,6 +53,7 @@
       </class> <!-- amazon.TestSetAmazon -->
       <class name="facebook.testSetD">
         <methods>
+          <include name="LoginAndLogout_Chrome"/>
           <include name="doBeforeEveryMethod"/>
           <include name="LoginAndLogout_IE"/>
           <include name="SetUpPreData"/>
@@ -63,7 +61,6 @@
           <include name="SetUpPreDataMethod"/>
           <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
-          <include name="LoginAndLogout_Firefox"/>
         </methods>
       </class> <!-- facebook.testSetD -->
     </classes>

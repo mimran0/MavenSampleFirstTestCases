@@ -303,16 +303,17 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 		TestSetB.WeeklyAdd("MICROSOFE EDGE");
 	}
 
-	// Requirement 513: Users are able to see all weekly adds in Internet Explorer
+	// Requirement 513: Users are able to see all weekly adds in Internet
+	// Explorer
 	@Test(enabled = true)
 	public void TC_513_WeeklyAdd_InternetExplorer() {
 		TestSetB TestSetB = new TestSetB();
 		TestSetB.WeeklyAdd("IE");
 	}
-	
-	//Requirement 514: TBD
+
+	// Requirement 514: TBD
 	@Test
-	public void TC_514(){
+	public void TC_514() {
 		String vBaseURL = "http://www.walmart.com";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);

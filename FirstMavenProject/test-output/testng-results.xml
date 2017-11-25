@@ -1,98 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="20" ignored="2" total="62" passed="40">
+<testng-results skipped="0" failed="17" ignored="2" total="72" passed="53">
   <reporter-output>
   </reporter-output>
-  <suite name="all" duration-ms="2768874" started-at="2017-11-25T02:57:49Z" finished-at="2017-11-25T03:43:58Z">
+  <suite name="all" duration-ms="3223647" started-at="2017-11-25T18:31:27Z" finished-at="2017-11-25T19:25:10Z">
     <groups>
       <group name="A">
-        <method signature="Group.F1()[pri:0, instance:Group@91161c7]" name="F1" class="Group"/>
-        <method signature="Group.F3()[pri:0, instance:Group@91161c7]" name="F3" class="Group"/>
-        <method signature="Group.F6()[pri:0, instance:Group@91161c7]" name="F6" class="Group"/>
+        <method signature="Group.F1()[pri:0, instance:Group@604ed9f0]" name="F1" class="Group"/>
+        <method signature="Group.F3()[pri:0, instance:Group@604ed9f0]" name="F3" class="Group"/>
+        <method signature="Group.F6()[pri:0, instance:Group@604ed9f0]" name="F6" class="Group"/>
       </group> <!-- A -->
       <group name="B">
-        <method signature="Group.F2()[pri:0, instance:Group@91161c7]" name="F2" class="Group"/>
-        <method signature="Group.F5()[pri:0, instance:Group@91161c7]" name="F5" class="Group"/>
+        <method signature="Group.F2()[pri:0, instance:Group@604ed9f0]" name="F2" class="Group"/>
+        <method signature="Group.F5()[pri:0, instance:Group@604ed9f0]" name="F5" class="Group"/>
       </group> <!-- B -->
       <group name="C">
-        <method signature="Group.F4()[pri:0, instance:Group@91161c7]" name="F4" class="Group"/>
+        <method signature="Group.F4()[pri:0, instance:Group@604ed9f0]" name="F4" class="Group"/>
       </group> <!-- C -->
     </groups>
-    <test name="all" duration-ms="2768874" started-at="2017-11-25T02:57:49Z" finished-at="2017-11-25T03:43:58Z">
-      <class name="Group">
-        <test-method status="PASS" signature="F1()[pri:0, instance:Group@91161c7]" name="F1" duration-ms="7" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F1 -->
-        <test-method status="PASS" signature="F2()[pri:0, instance:Group@91161c7]" name="F2" duration-ms="2" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F2 -->
-        <test-method status="PASS" signature="F3()[pri:0, instance:Group@91161c7]" name="F3" duration-ms="1" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F3 -->
-        <test-method status="PASS" signature="F4()[pri:0, instance:Group@91161c7]" name="F4" duration-ms="2" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F4 -->
-        <test-method status="PASS" signature="F5()[pri:0, instance:Group@91161c7]" name="F5" duration-ms="4" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F5 -->
-        <test-method status="PASS" signature="F6()[pri:0, instance:Group@91161c7]" name="F6" duration-ms="2" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F6 -->
-      </class> <!-- Group -->
+    <test name="all" duration-ms="3223647" started-at="2017-11-25T18:31:27Z" finished-at="2017-11-25T19:25:10Z">
       <class name="Priotization">
-        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@604ed9f0]" name="A" duration-ms="2" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
+        <test-method status="PASS" signature="A()[pri:0, instance:Priotization@6a4f787b]" name="A" duration-ms="2" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A -->
-        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@604ed9f0]" name="F" duration-ms="0" started-at="2017-11-24T22:43:58Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="F()[pri:1, instance:Priotization@6a4f787b]" name="F" duration-ms="1" started-at="2017-11-25T14:25:10Z" finished-at="2017-11-25T14:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- F -->
-        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@604ed9f0]" name="D" duration-ms="0" started-at="2017-11-24T22:43:58Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="D()[pri:2, instance:Priotization@6a4f787b]" name="D" duration-ms="0" started-at="2017-11-25T14:25:10Z" finished-at="2017-11-25T14:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- D -->
-        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@604ed9f0]" name="E" duration-ms="1" started-at="2017-11-24T22:43:58Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="E()[pri:3, instance:Priotization@6a4f787b]" name="E" duration-ms="0" started-at="2017-11-25T14:25:10Z" finished-at="2017-11-25T14:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- E -->
-        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@604ed9f0]" name="C" duration-ms="0" started-at="2017-11-24T22:43:58Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="C()[pri:5, instance:Priotization@6a4f787b]" name="C" duration-ms="0" started-at="2017-11-25T14:25:10Z" finished-at="2017-11-25T14:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- C -->
-        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@604ed9f0]" name="G" duration-ms="0" started-at="2017-11-24T22:43:58Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="G()[pri:6, instance:Priotization@6a4f787b]" name="G" duration-ms="1" started-at="2017-11-25T14:25:10Z" finished-at="2017-11-25T14:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- G -->
       </class> <!-- Priotization -->
-      <class name="hsbc.TestSetC">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:hsbc.TestSetC@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="204" started-at="2017-11-24T22:11:56Z" finished-at="2017-11-24T22:11:56Z">
+      <class name="Group">
+        <test-method status="PASS" signature="F1()[pri:0, instance:Group@604ed9f0]" name="F1" duration-ms="5" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F1 -->
+        <test-method status="PASS" signature="F2()[pri:0, instance:Group@604ed9f0]" name="F2" duration-ms="3" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F2 -->
+        <test-method status="PASS" signature="F3()[pri:0, instance:Group@604ed9f0]" name="F3" duration-ms="3" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F3 -->
+        <test-method status="PASS" signature="F4()[pri:0, instance:Group@604ed9f0]" name="F4" duration-ms="1" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F4 -->
+        <test-method status="PASS" signature="F5()[pri:0, instance:Group@604ed9f0]" name="F5" duration-ms="4" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F5 -->
+        <test-method status="PASS" signature="F6()[pri:0, instance:Group@604ed9f0]" name="F6" duration-ms="2" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F6 -->
+      </class> <!-- Group -->
+      <class name="MC.TestSetF">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="738" started-at="2017-11-25T14:17:19Z" finished-at="2017-11-25T14:17:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="CountryListOnOnlineBanking()[pri:0, instance:hsbc.TestSetC@1bce4f0a]" name="CountryListOnOnlineBanking" duration-ms="25810" started-at="2017-11-24T22:11:56Z" finished-at="2017-11-24T22:12:22Z">
-          <exception class="org.junit.ComparisonFailure">
+        <test-method status="PASS" signature="CalculateMortgatePayment_HardCodedValues()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="CalculateMortgatePayment_HardCodedValues" duration-ms="46978" started-at="2017-11-25T14:17:20Z" finished-at="2017-11-25T14:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalculateMortgatePayment_HardCodedValues -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="555" started-at="2017-11-25T14:18:07Z" finished-at="2017-11-25T14:18:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_10_MC_ME_C()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_10_MC_ME_C" duration-ms="40123" started-at="2017-11-25T14:18:08Z" finished-at="2017-11-25T14:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_10_MC_ME_C -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="508" started-at="2017-11-25T14:18:48Z" finished-at="2017-11-25T14:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_402_MC_GC_A()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_402_MC_GC_A" duration-ms="47103" started-at="2017-11-25T14:18:48Z" finished-at="2017-11-25T14:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_402_MC_GC_A -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="557" started-at="2017-11-25T14:19:35Z" finished-at="2017-11-25T14:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_403_MC_GC_B()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_403_MC_GC_B" duration-ms="48011" started-at="2017-11-25T14:19:36Z" finished-at="2017-11-25T14:20:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_403_MC_GC_B -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="553" started-at="2017-11-25T14:20:24Z" finished-at="2017-11-25T14:20:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_404_MC_GC_C()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_404_MC_GC_C" duration-ms="47704" started-at="2017-11-25T14:20:24Z" finished-at="2017-11-25T14:21:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_404_MC_GC_C -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="658" started-at="2017-11-25T14:21:12Z" finished-at="2017-11-25T14:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_405_MC_FF_A()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_405_MC_FF_A" duration-ms="53634" started-at="2017-11-25T14:21:13Z" finished-at="2017-11-25T14:22:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_405_MC_FF_A -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="504" started-at="2017-11-25T14:22:06Z" finished-at="2017-11-25T14:22:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_406_MC_FF_B()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_406_MC_FF_B" duration-ms="49879" started-at="2017-11-25T14:22:07Z" finished-at="2017-11-25T14:22:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_406_MC_FF_B -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="717" started-at="2017-11-25T14:22:57Z" finished-at="2017-11-25T14:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_407_MC_FF_C()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_407_MC_FF_C" duration-ms="51662" started-at="2017-11-25T14:22:58Z" finished-at="2017-11-25T14:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_407_MC_FF_C -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="505" started-at="2017-11-25T14:23:49Z" finished-at="2017-11-25T14:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_408_MC_ME_A()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_408_MC_ME_A" duration-ms="39891" started-at="2017-11-25T14:23:50Z" finished-at="2017-11-25T14:24:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_408_MC_ME_A -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="SetUpPreDataMethod" is-config="true" duration-ms="506" started-at="2017-11-25T14:24:30Z" finished-at="2017-11-25T14:24:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_409_MC_ME_B()[pri:0, instance:MC.TestSetF@6a41eaa2]" name="TC_409_MC_ME_B" duration-ms="40121" started-at="2017-11-25T14:24:30Z" finished-at="2017-11-25T14:25:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_409_MC_ME_B -->
+      </class> <!-- MC.TestSetF -->
+      <class name="hsbc.TestSetC">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:hsbc.TestSetC@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="102" started-at="2017-11-25T13:46:01Z" finished-at="2017-11-25T13:46:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="FAIL" signature="CountryListOnOnlineBanking()[pri:0, instance:hsbc.TestSetC@5e3a8624]" name="CountryListOnOnlineBanking" duration-ms="12266" started-at="2017-11-25T13:46:01Z" finished-at="2017-11-25T13:46:13Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected:<...el
-I understand, let[â€™]s proceed
-Note: HSBC...> but was:<...el
-I understand, let[’]s proceed
-Note: HSBC...>]]>
+              <![CDATA[unknown error: Element <a href="/online-banking" id="GoToInternetBanking" title="Go to internet banking" class="go-to-ib dark-background" role="button">...</a> is not clickable at point (935, 147). Other element would receive the click: <div class="menu-overlay" style="width: 1236px; height: 2296px;"></div>
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir620_13954}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f10f45f0b2e349277182bd818ada8fed]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.junit.ComparisonFailure: expected:<...el
-I understand, let[â€™]s proceed
-Note: HSBC...> but was:<...el
-I understand, let[’]s proceed
-Note: HSBC...>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at hsbc.TestSetC.CountryListOnOnlineBanking(TestSetC.java:83)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <a href="/online-banking" id="GoToInternetBanking" title="Go to internet banking" class="go-to-ib dark-background" role="button">...</a> is not clickable at point (935, 147). Other element would receive the click: <div class="menu-overlay" style="width: 1236px; height: 2296px;"></div>
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir620_13954}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f10f45f0b2e349277182bd818ada8fed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at hsbc.TestSetC.CountryListOnOnlineBanking(TestSetC.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -120,33 +222,33 @@ Note: HSBC...>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.junit.ComparisonFailure -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountryListOnOnlineBanking -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:hsbc.TestSetC@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="104" started-at="2017-11-24T22:12:22Z" finished-at="2017-11-24T22:12:22Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:hsbc.TestSetC@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="152" started-at="2017-11-25T13:46:13Z" finished-at="2017-11-25T13:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="displayMousOverDropdownList()[pri:0, instance:hsbc.TestSetC@1bce4f0a]" name="displayMousOverDropdownList" duration-ms="22255" started-at="2017-11-24T22:12:22Z" finished-at="2017-11-24T22:12:45Z">
+        <test-method status="PASS" signature="displayMousOverDropdownList()[pri:0, instance:hsbc.TestSetC@5e3a8624]" name="displayMousOverDropdownList" duration-ms="22776" started-at="2017-11-25T13:46:14Z" finished-at="2017-11-25T13:46:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayMousOverDropdownList -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:hsbc.TestSetC@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="109" started-at="2017-11-24T22:12:45Z" finished-at="2017-11-24T22:12:45Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:hsbc.TestSetC@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="153" started-at="2017-11-25T13:46:36Z" finished-at="2017-11-25T13:46:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="scrollUpAndDown()[pri:0, instance:hsbc.TestSetC@1bce4f0a]" name="scrollUpAndDown" duration-ms="27584" started-at="2017-11-24T22:12:45Z" finished-at="2017-11-24T22:13:12Z">
+        <test-method status="PASS" signature="scrollUpAndDown()[pri:0, instance:hsbc.TestSetC@5e3a8624]" name="scrollUpAndDown" duration-ms="24836" started-at="2017-11-25T13:46:36Z" finished-at="2017-11-25T13:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollUpAndDown -->
       </class> <!-- hsbc.TestSetC -->
       <class name="afterLoginIn.TestSetA">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="SetUpPreDataMethod" is-config="true" duration-ms="101" started-at="2017-11-24T21:59:54Z" finished-at="2017-11-24T21:59:54Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="106" started-at="2017-11-25T13:33:25Z" finished-at="2017-11-25T13:33:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_401_Login_And_LogOut()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="TC_401_Login_And_LogOut" duration-ms="28606" started-at="2017-11-24T21:59:54Z" finished-at="2017-11-24T22:00:23Z">
+        <test-method status="FAIL" signature="TC_401_Login_And_LogOut()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="TC_401_Login_And_LogOut" duration-ms="25941" started-at="2017-11-25T13:33:25Z" finished-at="2017-11-25T13:33:51Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"nav-link-accountList"}
@@ -157,8 +259,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12388_11926}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a5ae818c22b0aa67197c1bb45084520b
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir2728_24193}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7c37fcfc6be58d64d3b52f1f5ad74c02
 *** Element info: {Using=id, value=nav-link-accountList}]]>
             </message>
             <full-stacktrace>
@@ -170,8 +272,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12388_11926}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a5ae818c22b0aa67197c1bb45084520b
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir2728_24193}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7c37fcfc6be58d64d3b52f1f5ad74c02
 *** Element info: {Using=id, value=nav-link-accountList}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -221,11 +323,11 @@ Session ID: a5ae818c22b0aa67197c1bb45084520b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_401_Login_And_LogOut -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="SetUpPreDataMethod" is-config="true" duration-ms="153" started-at="2017-11-24T22:00:23Z" finished-at="2017-11-24T22:00:23Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="101" started-at="2017-11-25T13:33:51Z" finished-at="2017-11-25T13:33:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_402_Login_NegativeTest()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="TC_402_Login_NegativeTest" duration-ms="16182" started-at="2017-11-24T22:00:23Z" finished-at="2017-11-24T22:00:39Z">
+        <test-method status="FAIL" signature="TC_402_Login_NegativeTest()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="TC_402_Login_NegativeTest" duration-ms="16622" started-at="2017-11-25T13:33:51Z" finished-at="2017-11-25T13:34:08Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="auth-error-message-box"]/div/div/ul/li/span"}
@@ -236,8 +338,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir5760_1736}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee1901033febe59e1b01f8603a4a3545
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8340_7382}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 629364a6e730a7164547614bf711edc7
 *** Element info: {Using=xpath, value=//*[@id="auth-error-message-box"]/div/div/ul/li/span}]]>
             </message>
             <full-stacktrace>
@@ -249,8 +351,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir5760_1736}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee1901033febe59e1b01f8603a4a3545
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8340_7382}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 629364a6e730a7164547614bf711edc7
 *** Element info: {Using=xpath, value=//*[@id="auth-error-message-box"]/div/div/ul/li/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -300,140 +402,64 @@ Session ID: ee1901033febe59e1b01f8603a4a3545
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_402_Login_NegativeTest -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="SetUpPreDataMethod" is-config="true" duration-ms="104" started-at="2017-11-24T22:00:39Z" finished-at="2017-11-24T22:00:39Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="153" started-at="2017-11-25T13:34:08Z" finished-at="2017-11-25T13:34:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_403_VerifyFieldsInLoginPage()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="TC_403_VerifyFieldsInLoginPage" duration-ms="11454" started-at="2017-11-24T22:00:39Z" finished-at="2017-11-24T22:00:50Z">
+        <test-method status="PASS" signature="TC_403_VerifyFieldsInLoginPage()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="TC_403_VerifyFieldsInLoginPage" duration-ms="12105" started-at="2017-11-25T13:34:08Z" finished-at="2017-11-25T13:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_403_VerifyFieldsInLoginPage -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="SetUpPreDataMethod" is-config="true" duration-ms="101" started-at="2017-11-24T22:00:50Z" finished-at="2017-11-24T22:00:51Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="101" started-at="2017-11-25T13:34:20Z" finished-at="2017-11-25T13:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_404_ToolTip()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="TC_404_ToolTip" duration-ms="14161" started-at="2017-11-24T22:00:51Z" finished-at="2017-11-24T22:01:05Z">
+        <test-method status="PASS" signature="TC_404_ToolTip()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="TC_404_ToolTip" duration-ms="16127" started-at="2017-11-25T13:34:20Z" finished-at="2017-11-25T13:34:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_404_ToolTip -->
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="facebook.testSetD">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="457" started-at="2017-11-24T22:13:12Z" finished-at="2017-11-24T22:13:13Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="455" started-at="2017-11-25T13:47:01Z" finished-at="2017-11-25T13:47:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="LoginAndLogout_4Browses()[pri:0, instance:facebook.testSetD@5e3a8624]" name="LoginAndLogout_4Browses" duration-ms="50328" started-at="2017-11-24T22:13:13Z" finished-at="2017-11-24T22:14:03Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:150)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:139)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
-	at facebook.testSetD.LoginAndLogout_4Browses(testSetD.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:27777/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-	... 35 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAndLogout_4Browses -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="aftermethod" is-config="true" duration-ms="456" started-at="2017-11-24T22:14:03Z" finished-at="2017-11-24T22:14:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="403" started-at="2017-11-24T22:14:04Z" finished-at="2017-11-24T22:14:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="LoginAndLogout_Chrome()[pri:0, instance:facebook.testSetD@5e3a8624]" name="LoginAndLogout_Chrome" duration-ms="28098" started-at="2017-11-24T22:14:04Z" finished-at="2017-11-24T22:14:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAndLogout_Chrome -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="aftermethod" is-config="true" duration-ms="453" started-at="2017-11-24T22:14:32Z" finished-at="2017-11-24T22:14:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="407" started-at="2017-11-24T22:14:33Z" finished-at="2017-11-24T22:14:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="LoginAndLogout_Firefox()[pri:0, instance:facebook.testSetD@5e3a8624]" name="LoginAndLogout_Firefox" duration-ms="45522" started-at="2017-11-24T22:14:33Z" finished-at="2017-11-24T22:15:18Z">
+        <test-method status="FAIL" signature="LoginAndLogout_4Browses()[pri:0, instance:facebook.testSetD@5c3bd550]" name="LoginAndLogout_4Browses" duration-ms="27074" started-at="2017-11-25T13:47:02Z" finished-at="2017-11-25T13:47:29Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: /html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.xHoMMn5PzQ7y, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10632, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: f837ef85-e2eb-447d-bc5e-fb2db767bf70
-*** Element info: {Using=xpath, value=/html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir11836_31895}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dfa37fd21793192201f9863a42d855b0
+*** Element info: {Using=xpath, value=/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.xHoMMn5PzQ7y, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10632, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: f837ef85-e2eb-447d-bc5e-fb2db767bf70
-*** Element info: {Using=xpath, value=/html/body/div[19]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir11836_31895}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dfa37fd21793192201f9863a42d855b0
+*** Element info: {Using=xpath, value=/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
@@ -441,7 +467,7 @@ Session ID: f837ef85-e2eb-447d-bc5e-fb2db767bf70
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at facebook.testSetD.LoginAndLogout_Firefox(testSetD.java:186)
+	at facebook.testSetD.LoginAndLogout_4Browses(testSetD.java:77)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -472,32 +498,127 @@ Session ID: f837ef85-e2eb-447d-bc5e-fb2db767bf70
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginAndLogout_Firefox -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="aftermethod" is-config="true" duration-ms="458" started-at="2017-11-24T22:15:18Z" finished-at="2017-11-24T22:15:19Z">
+        </test-method> <!-- LoginAndLogout_4Browses -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="aftermethod" is-config="true" duration-ms="456" started-at="2017-11-25T13:47:29Z" finished-at="2017-11-25T13:47:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="405" started-at="2017-11-24T22:15:19Z" finished-at="2017-11-24T22:15:19Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="453" started-at="2017-11-25T13:47:29Z" finished-at="2017-11-25T13:47:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="LoginAndLogout_IE()[pri:0, instance:facebook.testSetD@5e3a8624]" name="LoginAndLogout_IE" duration-ms="1083" started-at="2017-11-24T22:15:19Z" finished-at="2017-11-24T22:15:20Z">
+        <test-method status="FAIL" signature="LoginAndLogout_Chrome()[pri:0, instance:facebook.testSetD@5c3bd550]" name="LoginAndLogout_Chrome" duration-ms="24722" started-at="2017-11-25T13:47:30Z" finished-at="2017-11-25T13:47:54Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8484_31076}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e30c094c68f31aadf8f3d115c6cb11c2
+*** Element info: {Using=xpath, value=/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir8484_31076}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e30c094c68f31aadf8f3d115c6cb11c2
+*** Element info: {Using=xpath, value=/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at facebook.testSetD.LoginAndLogout_Chrome(testSetD.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAndLogout_Chrome -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="aftermethod" is-config="true" duration-ms="453" started-at="2017-11-25T13:47:54Z" finished-at="2017-11-25T13:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="404" started-at="2017-11-25T13:47:55Z" finished-at="2017-11-25T13:47:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="LoginAndLogout_Firefox()[pri:0, instance:facebook.testSetD@5c3bd550]" name="LoginAndLogout_Firefox" duration-ms="53864" started-at="2017-11-25T13:47:55Z" finished-at="2017-11-25T13:48:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAndLogout_Firefox -->
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="aftermethod" is-config="true" duration-ms="452" started-at="2017-11-25T13:48:49Z" finished-at="2017-11-25T13:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="402" started-at="2017-11-25T13:48:50Z" finished-at="2017-11-25T13:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="FAIL" signature="LoginAndLogout_IE()[pri:0, instance:facebook.testSetD@5c3bd550]" name="LoginAndLogout_IE" duration-ms="1069" started-at="2017-11-25T13:48:50Z" finished-at="2017-11-25T13:48:51Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Failed to navigate to https://www.facebook.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:48844/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: a19371b4-109c-4d28-947b-94de0715ba14]]>
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:16680/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 3250d492-381b-4b2f-9542-b88837c69f63]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Failed to navigate to https://www.facebook.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:48844/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: a19371b4-109c-4d28-947b-94de0715ba14
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:16680/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 3250d492-381b-4b2f-9542-b88837c69f63
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -509,7 +630,7 @@ Session ID: a19371b4-109c-4d28-947b-94de0715ba14
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:115)
 	at facebook.testSetD.LoginAndLogout_IE(testSetD.java:200)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -542,38 +663,54 @@ Session ID: a19371b4-109c-4d28-947b-94de0715ba14
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAndLogout_IE -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="aftermethod" is-config="true" duration-ms="404" started-at="2017-11-24T22:15:20Z" finished-at="2017-11-24T22:15:21Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="aftermethod" is-config="true" duration-ms="402" started-at="2017-11-25T13:48:51Z" finished-at="2017-11-25T13:48:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="SetUpPreDataMethod" is-config="true" duration-ms="454" started-at="2017-11-24T22:15:21Z" finished-at="2017-11-24T22:15:21Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="404" started-at="2017-11-25T13:48:52Z" finished-at="2017-11-25T13:48:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="LoginAndLogout_MicrosoftEdge()[pri:0, instance:facebook.testSetD@5e3a8624]" name="LoginAndLogout_MicrosoftEdge" duration-ms="20010" started-at="2017-11-24T22:15:21Z" finished-at="2017-11-24T22:15:41Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="LoginAndLogout_MicrosoftEdge()[pri:0, instance:facebook.testSetD@5c3bd550]" name="LoginAndLogout_MicrosoftEdge" duration-ms="18559" started-at="2017-11-25T13:48:52Z" finished-at="2017-11-25T13:49:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Timed out waiting for driver server to start.
+              <![CDATA[No such element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver]]>
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 44E33CF2-B05A-4035-A6EF-0048892F34E3
+*** Element info: {Using=xpath, value=/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: No such element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, InPrivate=false, pageLoadStrategy=normal, platform=WINDOWS, acceptSslCerts=true, browserVersion=41.16299.15.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, takesElementScreenshot=true, javascriptEnabled=true, platformName=WINDOWS}]
+Session ID: 44E33CF2-B05A-4035-A6EF-0048892F34E3
+*** Element info: {Using=xpath, value=/html/body/div[20]/div/div/div/div/div[1]/div/div/ul/li[14]/a/span/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:150)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:139)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
-	at facebook.testSetD.LoginAndLogout_MicrosoftEdge(testSetD.java:125)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at facebook.testSetD.LoginAndLogout_MicrosoftEdge(testSetD.java:142)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -599,48 +736,39 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:25285/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-	... 35 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 36 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAndLogout_MicrosoftEdge -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5e3a8624]" name="aftermethod" is-config="true" duration-ms="402" started-at="2017-11-24T22:15:41Z" finished-at="2017-11-24T22:15:42Z">
+        <test-method status="PASS" signature="aftermethod()[pri:0, instance:facebook.testSetD@5c3bd550]" name="aftermethod" is-config="true" duration-ms="533" started-at="2017-11-25T13:49:10Z" finished-at="2017-11-25T13:49:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
       </class> <!-- facebook.testSetD -->
       <class name="amazon.TestSetAmazon">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="SetUpPreDataMethod" is-config="true" duration-ms="102" started-at="2017-11-24T22:28:36Z" finished-at="2017-11-24T22:28:36Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="102" started-at="2017-11-25T14:01:46Z" finished-at="2017-11-25T14:01:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="SearchOnLandingPage()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="SearchOnLandingPage" duration-ms="106304" started-at="2017-11-24T22:28:36Z" finished-at="2017-11-24T22:30:23Z">
+        <test-method status="PASS" signature="SearchOnLandingPage()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="SearchOnLandingPage" duration-ms="99625" started-at="2017-11-25T14:01:46Z" finished-at="2017-11-25T14:03:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchOnLandingPage -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="SetUpPreDataMethod" is-config="true" duration-ms="155" started-at="2017-11-24T22:30:23Z" finished-at="2017-11-24T22:30:23Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="152" started-at="2017-11-25T14:03:25Z" finished-at="2017-11-25T14:03:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_102()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="TC_102" duration-ms="653910" started-at="2017-11-24T22:30:23Z" finished-at="2017-11-24T22:41:17Z">
+        <test-method status="PASS" signature="TC_102()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="TC_102" duration-ms="669375" started-at="2017-11-25T14:03:25Z" finished-at="2017-11-25T14:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_102 -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="SetUpPreDataMethod" is-config="true" duration-ms="306" started-at="2017-11-24T22:41:17Z" finished-at="2017-11-24T22:41:17Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="303" started-at="2017-11-25T14:14:35Z" finished-at="2017-11-25T14:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TestCase_103()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="TestCase_103" duration-ms="25441" started-at="2017-11-24T22:41:17Z" finished-at="2017-11-24T22:41:42Z">
+        <test-method status="FAIL" signature="TestCase_103()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="TestCase_103" duration-ms="24618" started-at="2017-11-25T14:14:35Z" finished-at="2017-11-25T14:15:00Z">
           <exception class="junit.framework.ComparisonFailure">
             <message>
               <![CDATA[expected:<[Pass]> but was:<[Fail]>]]>
@@ -681,117 +809,117 @@ Caused by: java.util.concurrent.TimeoutException
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_103 -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="SetUpPreDataMethod" is-config="true" duration-ms="153" started-at="2017-11-24T22:41:42Z" finished-at="2017-11-24T22:41:43Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="153" started-at="2017-11-25T14:15:00Z" finished-at="2017-11-25T14:15:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TestCase_104()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="TestCase_104" duration-ms="53520" started-at="2017-11-24T22:41:43Z" finished-at="2017-11-24T22:42:36Z">
+        <test-method status="PASS" signature="TestCase_104()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="TestCase_104" duration-ms="56203" started-at="2017-11-25T14:15:00Z" finished-at="2017-11-25T14:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_104 -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="SetUpPreDataMethod" is-config="true" duration-ms="152" started-at="2017-11-24T22:42:36Z" finished-at="2017-11-24T22:42:36Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="160" started-at="2017-11-25T14:15:56Z" finished-at="2017-11-25T14:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TestCase_105()[pri:0, instance:amazon.TestSetAmazon@6a4f787b]" name="TestCase_105" duration-ms="81820" started-at="2017-11-24T22:42:36Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="TestCase_105()[pri:0, instance:amazon.TestSetAmazon@685cb137]" name="TestCase_105" duration-ms="83053" started-at="2017-11-25T14:15:56Z" finished-at="2017-11-25T14:17:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase_105 -->
       </class> <!-- amazon.TestSetAmazon -->
       <class name="FirstClassWith2methods">
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@77caeb3e]" name="doFirst" is-config="true" duration-ms="573" started-at="2017-11-24T21:57:49Z" finished-at="2017-11-24T21:57:50Z">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:FirstClassWith2methods@1e88b3c]" name="doFirst" is-config="true" duration-ms="268" started-at="2017-11-25T13:31:27Z" finished-at="2017-11-25T13:31:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@1e88b3c]" name="doFirst" is-config="true" duration-ms="253" started-at="2017-11-24T21:57:50Z" finished-at="2017-11-24T21:57:50Z">
+        <test-method status="PASS" signature="doFirst()[pri:0, instance:SecondClasssWith2Methods@42d80b78]" name="doFirst" is-config="true" duration-ms="200" started-at="2017-11-25T13:31:27Z" finished-at="2017-11-25T13:31:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doFirst -->
-        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:afterLoginIn.TestSetA@42d80b78]" name="SetUpPreData" is-config="true" duration-ms="101" started-at="2017-11-24T21:57:50Z" finished-at="2017-11-24T21:57:50Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:afterLoginIn.TestSetA@3bfdc050]" name="SetUpPreData" is-config="true" duration-ms="101" started-at="2017-11-25T13:31:27Z" finished-at="2017-11-25T13:31:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreData -->
-        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreData" is-config="true" duration-ms="100" started-at="2017-11-24T21:57:50Z" finished-at="2017-11-24T21:57:50Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreData" is-config="true" duration-ms="102" started-at="2017-11-25T13:31:27Z" finished-at="2017-11-25T13:31:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreData -->
-        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:hsbc.TestSetC@1bce4f0a]" name="SetUpPreData" is-config="true" duration-ms="101" started-at="2017-11-24T21:57:50Z" finished-at="2017-11-24T21:57:50Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:hsbc.TestSetC@5e3a8624]" name="SetUpPreData" is-config="true" duration-ms="100" started-at="2017-11-25T13:31:27Z" finished-at="2017-11-25T13:31:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreData -->
-        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreData" is-config="true" duration-ms="101" started-at="2017-11-24T21:57:50Z" finished-at="2017-11-24T21:57:50Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreData" is-config="true" duration-ms="102" started-at="2017-11-25T13:31:27Z" finished-at="2017-11-25T13:31:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreData -->
-        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:facebook.testSetD@5e3a8624]" name="SetUpPreData" is-config="true" duration-ms="101" started-at="2017-11-24T21:57:50Z" finished-at="2017-11-24T21:57:50Z">
+        <test-method status="PASS" signature="SetUpPreData()[pri:0, instance:facebook.testSetD@5c3bd550]" name="SetUpPreData" is-config="true" duration-ms="100" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreData -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@77caeb3e]" name="doBeforeEveryMethod" is-config="true" duration-ms="202" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:57:51Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@1e88b3c]" name="doBeforeEveryMethod" is-config="true" duration-ms="202" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:31:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@77caeb3e]" name="UsersAreAbleToSearch" duration-ms="64456" started-at="2017-11-24T21:57:51Z" finished-at="2017-11-24T21:58:55Z">
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:FirstClassWith2methods@1e88b3c]" name="UsersAreAbleToSearch" duration-ms="59317" started-at="2017-11-25T13:31:28Z" finished-at="2017-11-25T13:32:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@77caeb3e]" name="doBeforeEveryMethod" is-config="true" duration-ms="253" started-at="2017-11-24T21:58:55Z" finished-at="2017-11-24T21:58:55Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:FirstClassWith2methods@1e88b3c]" name="doBeforeEveryMethod" is-config="true" duration-ms="251" started-at="2017-11-25T13:32:27Z" finished-at="2017-11-25T13:32:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@77caeb3e]" name="test2" duration-ms="1" started-at="2017-11-24T21:58:55Z" finished-at="2017-11-24T21:58:55Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:FirstClassWith2methods@1e88b3c]" name="test2" duration-ms="1" started-at="2017-11-25T13:32:27Z" finished-at="2017-11-25T13:32:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@77caeb3e]" name="doLast" is-config="true" duration-ms="0" started-at="2017-11-24T22:43:58Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="doLast()[pri:0, instance:FirstClassWith2methods@1e88b3c]" name="doLast" is-config="true" duration-ms="0" started-at="2017-11-25T14:25:10Z" finished-at="2017-11-25T14:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLast -->
-        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@1e88b3c]" name="doLast" is-config="true" duration-ms="0" started-at="2017-11-24T22:43:58Z" finished-at="2017-11-24T22:43:58Z">
+        <test-method status="PASS" signature="doLast()[pri:0, instance:SecondClasssWith2Methods@42d80b78]" name="doLast" is-config="true" duration-ms="0" started-at="2017-11-25T14:25:10Z" finished-at="2017-11-25T14:25:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLast -->
       </class> <!-- FirstClassWith2methods -->
       <class name="SecondClasssWith2Methods">
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@1e88b3c]" name="doBeforeEveryMethod" is-config="true" duration-ms="203" started-at="2017-11-24T21:58:55Z" finished-at="2017-11-24T21:58:56Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@42d80b78]" name="doBeforeEveryMethod" is-config="true" duration-ms="203" started-at="2017-11-25T13:32:27Z" finished-at="2017-11-25T13:32:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@1e88b3c]" name="UsersAreAbleToSearch" duration-ms="57907" started-at="2017-11-24T21:58:56Z" finished-at="2017-11-24T21:59:54Z">
+        <test-method status="PASS" signature="UsersAreAbleToSearch()[pri:0, instance:SecondClasssWith2Methods@42d80b78]" name="UsersAreAbleToSearch" duration-ms="57261" started-at="2017-11-25T13:32:28Z" finished-at="2017-11-25T13:33:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@1e88b3c]" name="doBeforeEveryMethod" is-config="true" duration-ms="254" started-at="2017-11-24T21:59:54Z" finished-at="2017-11-24T21:59:54Z">
+        <test-method status="PASS" signature="doBeforeEveryMethod()[pri:0, instance:SecondClasssWith2Methods@42d80b78]" name="doBeforeEveryMethod" is-config="true" duration-ms="255" started-at="2017-11-25T13:33:25Z" finished-at="2017-11-25T13:33:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeEveryMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@1e88b3c]" name="test2" duration-ms="2" started-at="2017-11-24T21:59:54Z" finished-at="2017-11-24T21:59:54Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:SecondClasssWith2Methods@42d80b78]" name="test2" duration-ms="1" started-at="2017-11-25T13:33:25Z" finished-at="2017-11-25T13:33:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
       </class> <!-- SecondClasssWith2Methods -->
       <class name="walmart.TestSetB">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="557" started-at="2017-11-24T22:01:05Z" finished-at="2017-11-24T22:01:05Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="559" started-at="2017-11-25T13:34:36Z" finished-at="2017-11-25T13:34:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_501_UsersAreAbleToSearch()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_501_UsersAreAbleToSearch" duration-ms="149490" started-at="2017-11-24T22:01:05Z" finished-at="2017-11-24T22:03:35Z">
+        <test-method status="PASS" signature="TC_501_UsersAreAbleToSearch()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_501_UsersAreAbleToSearch" duration-ms="142329" started-at="2017-11-25T13:34:37Z" finished-at="2017-11-25T13:36:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_501_UsersAreAbleToSearch -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="558" started-at="2017-11-24T22:03:35Z" finished-at="2017-11-24T22:03:35Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="559" started-at="2017-11-25T13:36:59Z" finished-at="2017-11-25T13:37:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_502_SelectDropdownValue()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_502_SelectDropdownValue" duration-ms="72315" started-at="2017-11-24T22:03:35Z" finished-at="2017-11-24T22:04:48Z">
+        <test-method status="PASS" signature="TC_502_SelectDropdownValue()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_502_SelectDropdownValue" duration-ms="71973" started-at="2017-11-25T13:37:00Z" finished-at="2017-11-25T13:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_502_SelectDropdownValue -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="561" started-at="2017-11-24T22:04:48Z" finished-at="2017-11-24T22:04:48Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="558" started-at="2017-11-25T13:38:12Z" finished-at="2017-11-25T13:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_503_mouseOver()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_503_mouseOver" duration-ms="14465" started-at="2017-11-24T22:04:48Z" finished-at="2017-11-24T22:05:03Z">
+        <test-method status="FAIL" signature="TC_503_mouseOver()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_503_mouseOver" duration-ms="15343" started-at="2017-11-25T13:38:12Z" finished-at="2017-11-25T13:38:28Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"header-GlobalEyebrowNav-button-0"}
@@ -802,8 +930,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir10060_7300}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f73cf9a0b51dd3bfe2a53a29d20da8d7
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12432_5666}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9e4e56a5e7dd07fa9cdc3020a9cbc558
 *** Element info: {Using=id, value=header-GlobalEyebrowNav-button-0}]]>
             </message>
             <full-stacktrace>
@@ -815,8 +943,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir10060_7300}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f73cf9a0b51dd3bfe2a53a29d20da8d7
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir12432_5666}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9e4e56a5e7dd07fa9cdc3020a9cbc558
 *** Element info: {Using=id, value=header-GlobalEyebrowNav-button-0}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -866,116 +994,51 @@ Session ID: f73cf9a0b51dd3bfe2a53a29d20da8d7
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_503_mouseOver -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="557" started-at="2017-11-24T22:05:03Z" finished-at="2017-11-24T22:05:03Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="557" started-at="2017-11-25T13:38:28Z" finished-at="2017-11-25T13:38:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_504_Credit_Cards()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_504_Credit_Cards" duration-ms="14850" started-at="2017-11-24T22:05:03Z" finished-at="2017-11-24T22:05:18Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <a class="header-GlobalEyebrowNav-link" data-uid="0pu8ySOJ" href="/cp/Walmart-Credit-Card/632402" alt="Credit Card" role="" id="header-GlobalEyebrowNav-link-4" tabindex="" data-tl-id="header-GlobalEyebrowNav-link-4">...</a> is not clickable at point (747, 116). Other element would receive the click: <div class="flowtip-flyout-modal flowtip-flyout-modal-bottom" style="width: auto; position: absolute; left: -75px; top: 57px;">...</div>
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13276_20164}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f30ac2e9a930849a519cc4355146416]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <a class="header-GlobalEyebrowNav-link" data-uid="0pu8ySOJ" href="/cp/Walmart-Credit-Card/632402" alt="Credit Card" role="" id="header-GlobalEyebrowNav-link-4" tabindex="" data-tl-id="header-GlobalEyebrowNav-link-4">...</a> is not clickable at point (747, 116). Other element would receive the click: <div class="flowtip-flyout-modal flowtip-flyout-modal-bottom" style="width: auto; position: absolute; left: -75px; top: 57px;">...</div>
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13276_20164}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f30ac2e9a930849a519cc4355146416
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at walmart.TestSetB.TC_504_Credit_Cards(TestSetB.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="TC_504_Credit_Cards()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_504_Credit_Cards" duration-ms="94824" started-at="2017-11-25T13:38:28Z" finished-at="2017-11-25T13:40:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_504_Credit_Cards -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="556" started-at="2017-11-24T22:05:18Z" finished-at="2017-11-24T22:05:19Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="556" started-at="2017-11-25T13:40:03Z" finished-at="2017-11-25T13:40:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_506_StoreFinder_FireFoxBrowser()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_506_StoreFinder_FireFoxBrowser" duration-ms="46028" started-at="2017-11-24T22:05:19Z" finished-at="2017-11-24T22:06:05Z">
+        <test-method status="PASS" signature="TC_506_StoreFinder_FireFoxBrowser()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_506_StoreFinder_FireFoxBrowser" duration-ms="45533" started-at="2017-11-25T13:40:04Z" finished-at="2017-11-25T13:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_506_StoreFinder_FireFoxBrowser -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="566" started-at="2017-11-24T22:06:05Z" finished-at="2017-11-24T22:06:05Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="507" started-at="2017-11-25T13:40:49Z" finished-at="2017-11-25T13:40:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_506_StoreFinder_GoogleChromeBrowser()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_506_StoreFinder_GoogleChromeBrowser" duration-ms="39681" started-at="2017-11-24T22:06:05Z" finished-at="2017-11-24T22:06:45Z">
+        <test-method status="PASS" signature="TC_506_StoreFinder_GoogleChromeBrowser()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_506_StoreFinder_GoogleChromeBrowser" duration-ms="39802" started-at="2017-11-25T13:40:50Z" finished-at="2017-11-25T13:41:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_506_StoreFinder_GoogleChromeBrowser -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="631" started-at="2017-11-24T22:06:45Z" finished-at="2017-11-24T22:06:46Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="554" started-at="2017-11-25T13:41:30Z" finished-at="2017-11-25T13:41:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_506_StoreFinder_InternetExplorerBrowser()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_506_StoreFinder_InternetExplorerBrowser" duration-ms="8766" started-at="2017-11-24T22:06:46Z" finished-at="2017-11-24T22:06:54Z">
+        <test-method status="FAIL" signature="TC_506_StoreFinder_InternetExplorerBrowser()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_506_StoreFinder_InternetExplorerBrowser" duration-ms="3752" started-at="2017-11-25T13:41:30Z" finished-at="2017-11-25T13:41:34Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:13454/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 8fe6bb8f-9c12-4b89-952c-2ac0f08018c6]]>
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:17343/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 27d6013b-edcb-4517-9682-9c94f45169fe]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:13454/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 8fe6bb8f-9c12-4b89-952c-2ac0f08018c6
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:17343/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: 27d6013b-edcb-4517-9682-9c94f45169fe
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -987,7 +1050,7 @@ Session ID: 8fe6bb8f-9c12-4b89-952c-2ac0f08018c6
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:115)
 	at walmart.TestSetB.StoreFinder(TestSetB.java:218)
 	at walmart.TestSetB.TC_506_StoreFinder_InternetExplorerBrowser(TestSetB.java:267)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1021,181 +1084,59 @@ Session ID: 8fe6bb8f-9c12-4b89-952c-2ac0f08018c6
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_506_StoreFinder_InternetExplorerBrowser -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="507" started-at="2017-11-24T22:06:54Z" finished-at="2017-11-24T22:06:55Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="506" started-at="2017-11-25T13:41:34Z" finished-at="2017-11-25T13:41:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_506_StoreFinder_MicrosoftEdgeBrowser()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_506_StoreFinder_MicrosoftEdgeBrowser" duration-ms="20008" started-at="2017-11-24T22:06:55Z" finished-at="2017-11-24T22:07:15Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:150)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:139)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
-	at walmart.TestSetB.StoreFinder(TestSetB.java:218)
-	at walmart.TestSetB.TC_506_StoreFinder_MicrosoftEdgeBrowser(TestSetB.java:259)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:7806/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-	... 36 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="TC_506_StoreFinder_MicrosoftEdgeBrowser()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_506_StoreFinder_MicrosoftEdgeBrowser" duration-ms="35087" started-at="2017-11-25T13:41:34Z" finished-at="2017-11-25T13:42:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_506_StoreFinder_MicrosoftEdgeBrowser -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="560" started-at="2017-11-24T22:07:15Z" finished-at="2017-11-24T22:07:15Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="503" started-at="2017-11-25T13:42:09Z" finished-at="2017-11-25T13:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_510_WeeklyAdd_GoogleChrome()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_510_WeeklyAdd_GoogleChrome" duration-ms="143364" started-at="2017-11-24T22:07:15Z" finished-at="2017-11-24T22:09:39Z">
+        <test-method status="PASS" signature="TC_510_WeeklyAdd_GoogleChrome()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_510_WeeklyAdd_GoogleChrome" duration-ms="61238" started-at="2017-11-25T13:42:10Z" finished-at="2017-11-25T13:43:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_510_WeeklyAdd_GoogleChrome -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="555" started-at="2017-11-24T22:09:39Z" finished-at="2017-11-24T22:09:39Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="660" started-at="2017-11-25T13:43:11Z" finished-at="2017-11-25T13:43:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_511_WeeklyAdd_Firefox()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_511_WeeklyAdd_Firefox" duration-ms="67295" started-at="2017-11-24T22:09:39Z" finished-at="2017-11-24T22:10:47Z">
+        <test-method status="PASS" signature="TC_511_WeeklyAdd_Firefox()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_511_WeeklyAdd_Firefox" duration-ms="66925" started-at="2017-11-25T13:43:12Z" finished-at="2017-11-25T13:44:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_511_WeeklyAdd_Firefox -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="559" started-at="2017-11-24T22:10:47Z" finished-at="2017-11-24T22:10:47Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="559" started-at="2017-11-25T13:44:19Z" finished-at="2017-11-25T13:44:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_512_WeeklyAdd_MicorsoftEdge()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_512_WeeklyAdd_MicorsoftEdge" duration-ms="20007" started-at="2017-11-24T22:10:47Z" finished-at="2017-11-24T22:11:07Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:140)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:150)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:139)
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:96)
-	at walmart.TestSetB.WeeklyAdd(TestSetB.java:274)
-	at walmart.TestSetB.TC_512_WeeklyAdd_MicorsoftEdge(TestSetB.java:303)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:26886/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-	... 36 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:147)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="TC_512_WeeklyAdd_MicorsoftEdge()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_512_WeeklyAdd_MicorsoftEdge" duration-ms="57753" started-at="2017-11-25T13:44:19Z" finished-at="2017-11-25T13:45:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_512_WeeklyAdd_MicorsoftEdge -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="504" started-at="2017-11-24T22:11:07Z" finished-at="2017-11-24T22:11:08Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="504" started-at="2017-11-25T13:45:17Z" finished-at="2017-11-25T13:45:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_513_WeeklyAdd_InternetExplorer()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_513_WeeklyAdd_InternetExplorer" duration-ms="2323" started-at="2017-11-24T22:11:08Z" finished-at="2017-11-24T22:11:10Z">
+        <test-method status="FAIL" signature="TC_513_WeeklyAdd_InternetExplorer()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_513_WeeklyAdd_InternetExplorer" duration-ms="1351" started-at="2017-11-25T13:45:18Z" finished-at="2017-11-25T13:45:19Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:24007/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 03ed5b93-f4d8-49b7-a664-e4d2551eefdd]]>
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:12712/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: d97b0d6f-50ed-48cf-a54c-ef6626df6057]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Failed to navigate to http://www.walmart.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:24007/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
-Session ID: 03ed5b93-f4d8-49b7-a664-e4d2551eefdd
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:12712/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, platform=WINDOWS}]
+Session ID: d97b0d6f-50ed-48cf-a54c-ef6626df6057
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1207,9 +1148,9 @@ Session ID: 03ed5b93-f4d8-49b7-a664-e4d2551eefdd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:103)
+	at afterLoginIn.CommonAPI.getDriver(CommonAPI.java:115)
 	at walmart.TestSetB.WeeklyAdd(TestSetB.java:274)
-	at walmart.TestSetB.TC_513_WeeklyAdd_InternetExplorer(TestSetB.java:310)
+	at walmart.TestSetB.TC_513_WeeklyAdd_InternetExplorer(TestSetB.java:311)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1241,19 +1182,19 @@ Session ID: 03ed5b93-f4d8-49b7-a664-e4d2551eefdd
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_513_WeeklyAdd_InternetExplorer -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="571" started-at="2017-11-24T22:11:10Z" finished-at="2017-11-24T22:11:11Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="506" started-at="2017-11-25T13:45:19Z" finished-at="2017-11-25T13:45:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_514()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="TC_514" duration-ms="15611" started-at="2017-11-24T22:11:11Z" finished-at="2017-11-24T22:11:26Z">
+        <test-method status="PASS" signature="TC_514()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="TC_514" duration-ms="12817" started-at="2017-11-25T13:45:19Z" finished-at="2017-11-25T13:45:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_514 -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="SetUpPreDataMethod" is-config="true" duration-ms="555" started-at="2017-11-24T22:11:26Z" finished-at="2017-11-24T22:11:27Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="SetUpPreDataMethod" is-config="true" duration-ms="558" started-at="2017-11-25T13:45:32Z" finished-at="2017-11-25T13:45:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="ValidLogin()[pri:0, instance:walmart.TestSetB@3bfdc050]" name="ValidLogin" duration-ms="29465" started-at="2017-11-24T22:11:27Z" finished-at="2017-11-24T22:11:56Z">
+        <test-method status="FAIL" signature="ValidLogin()[pri:0, instance:walmart.TestSetB@1bce4f0a]" name="ValidLogin" duration-ms="28163" started-at="2017-11-25T13:45:33Z" finished-at="2017-11-25T13:46:01Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a"}
@@ -1264,8 +1205,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir9736_25178}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 59d2eaea2834f2b868a458054105aa9f
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13104_21368}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ff22d87fb8c2ca364891147d5c8082a9
 *** Element info: {Using=xpath, value=/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a}]]>
             </message>
             <full-stacktrace>
@@ -1277,8 +1218,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir9736_25178}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 59d2eaea2834f2b868a458054105aa9f
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\imran\AppData\Local\Temp\scoped_dir13104_21368}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ff22d87fb8c2ca364891147d5c8082a9
 *** Element info: {Using=xpath, value=/html/body/div/div/div/div/header/div/div[2]/div/div/div/div/div/div[6]/div/div/div/div[1]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1330,19 +1271,19 @@ Session ID: 59d2eaea2834f2b868a458054105aa9f
         </test-method> <!-- ValidLogin -->
       </class> <!-- walmart.TestSetB -->
       <class name="groupon.TestSet_E">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="403" started-at="2017-11-24T22:15:42Z" finished-at="2017-11-24T22:15:42Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="404" started-at="2017-11-25T13:49:11Z" finished-at="2017-11-25T13:49:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_402_LinkCount()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_402_LinkCount" duration-ms="37885" started-at="2017-11-24T22:15:42Z" finished-at="2017-11-24T22:16:20Z">
+        <test-method status="PASS" signature="TC_402_LinkCount()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_402_LinkCount" duration-ms="42364" started-at="2017-11-25T13:49:11Z" finished-at="2017-11-25T13:49:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_402_LinkCount -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="405" started-at="2017-11-24T22:16:20Z" finished-at="2017-11-24T22:16:20Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="461" started-at="2017-11-25T13:49:54Z" finished-at="2017-11-25T13:49:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_403_Highlignt()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_403_Highlignt" duration-ms="26811" started-at="2017-11-24T22:16:20Z" finished-at="2017-11-24T22:16:47Z">
+        <test-method status="FAIL" signature="TC_403_Highlignt()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_403_Highlignt" duration-ms="26473" started-at="2017-11-25T13:49:54Z" finished-at="2017-11-25T13:50:21Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: #ls\-user\-signin
@@ -1350,8 +1291,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.vtAs9kFk99bI, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10644, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 17344ade-6ece-4e1a-8621-1532154f9d98
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.VRMo0q8GsGdL, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8004, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: ce92479a-a7b2-407d-82d9-71e730d8eed1
 *** Element info: {Using=id, value=ls-user-signin}]]>
             </message>
             <full-stacktrace>
@@ -1360,8 +1301,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.vtAs9kFk99bI, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=10644, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 17344ade-6ece-4e1a-8621-1532154f9d98
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.VRMo0q8GsGdL, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8004, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: ce92479a-a7b2-407d-82d9-71e730d8eed1
 *** Element info: {Using=id, value=ls-user-signin}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1409,11 +1350,11 @@ Session ID: 17344ade-6ece-4e1a-8621-1532154f9d98
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_403_Highlignt -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="452" started-at="2017-11-24T22:16:47Z" finished-at="2017-11-24T22:16:48Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="453" started-at="2017-11-25T13:50:21Z" finished-at="2017-11-25T13:50:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_404_HighlightElementsUnderCOUPON()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_404_HighlightElementsUnderCOUPON" duration-ms="29620" started-at="2017-11-24T22:16:48Z" finished-at="2017-11-24T22:17:17Z">
+        <test-method status="FAIL" signature="TC_404_HighlightElementsUnderCOUPON()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_404_HighlightElementsUnderCOUPON" duration-ms="28103" started-at="2017-11-25T13:50:21Z" finished-at="2017-11-25T13:50:49Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: #amazon\-coupons
@@ -1421,8 +1362,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.S4nApM0bmCY3, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=7564, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 35171476-fb74-4a2f-944a-7fbf2786a660
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.FOgsqAeJE9XN, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12776, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 5ca6c26f-b9a9-478d-af44-888245a544b8
 *** Element info: {Using=id, value=amazon-coupons}]]>
             </message>
             <full-stacktrace>
@@ -1431,8 +1372,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.S4nApM0bmCY3, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=7564, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 35171476-fb74-4a2f-944a-7fbf2786a660
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.FOgsqAeJE9XN, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12776, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 5ca6c26f-b9a9-478d-af44-888245a544b8
 *** Element info: {Using=id, value=amazon-coupons}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1480,59 +1421,117 @@ Session ID: 35171476-fb74-4a2f-944a-7fbf2786a660
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_404_HighlightElementsUnderCOUPON -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="604" started-at="2017-11-24T22:17:17Z" finished-at="2017-11-24T22:17:18Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="462" started-at="2017-11-25T13:50:49Z" finished-at="2017-11-25T13:50:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_405_Searchability_SPA_11372()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_405_Searchability_SPA_11372" duration-ms="81128" started-at="2017-11-24T22:17:18Z" finished-at="2017-11-24T22:18:39Z">
+        <test-method status="PASS" signature="TC_405_Searchability_SPA_11372()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_405_Searchability_SPA_11372" duration-ms="79327" started-at="2017-11-25T13:50:50Z" finished-at="2017-11-25T13:52:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_405_Searchability_SPA_11372 -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="453" started-at="2017-11-24T22:18:39Z" finished-at="2017-11-24T22:18:39Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="455" started-at="2017-11-25T13:52:09Z" finished-at="2017-11-25T13:52:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_406_Searchability_restaurants()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_406_Searchability_restaurants" duration-ms="80895" started-at="2017-11-24T22:18:39Z" finished-at="2017-11-24T22:20:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_406_Searchability_restaurants -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="619" started-at="2017-11-24T22:20:00Z" finished-at="2017-11-24T22:20:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_407_Searchability_Public_Library()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_407_Searchability_Public_Library" duration-ms="81588" started-at="2017-11-24T22:20:01Z" finished-at="2017-11-24T22:21:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_407_Searchability_Public_Library -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="459" started-at="2017-11-24T22:21:23Z" finished-at="2017-11-24T22:21:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_408_Searchability_Grocery()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_408_Searchability_Grocery" duration-ms="87588" started-at="2017-11-24T22:21:23Z" finished-at="2017-11-24T22:22:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_408_Searchability_Grocery -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="454" started-at="2017-11-24T22:22:51Z" finished-at="2017-11-24T22:22:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_409_Searchability_Fitness()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_409_Searchability_Fitness" duration-ms="38314" started-at="2017-11-24T22:22:51Z" finished-at="2017-11-24T22:23:29Z">
+        <test-method status="FAIL" signature="TC_406_Searchability_restaurants()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_406_Searchability_restaurants" duration-ms="34869" started-at="2017-11-25T13:52:10Z" finished-at="2017-11-25T13:52:44Z">
           <exception class="org.openqa.selenium.InvalidElementStateException">
             <message>
               <![CDATA[Element is not enabled
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.qzJ0lcIrUpJt, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8436, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: c72b29ec-9fda-4f56-a9d6-a2675382eb0c]]>
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.6cXt7dSmfucR, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=3332, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 55c42907-83e8-4b47-a51a-5998e99c4040]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.InvalidElementStateException: Element is not enabled
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.qzJ0lcIrUpJt, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8436, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: c72b29ec-9fda-4f56-a9d6-a2675382eb0c
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.6cXt7dSmfucR, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=3332, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 55c42907-83e8-4b47-a51a-5998e99c4040
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
+	at groupon.TestSet_E.TC_406_Searchability_restaurants(TestSet_E.java:237)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_406_Searchability_restaurants -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="453" started-at="2017-11-25T13:52:44Z" finished-at="2017-11-25T13:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_407_Searchability_Public_Library()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_407_Searchability_Public_Library" duration-ms="79900" started-at="2017-11-25T13:52:45Z" finished-at="2017-11-25T13:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_407_Searchability_Public_Library -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="455" started-at="2017-11-25T13:54:05Z" finished-at="2017-11-25T13:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="PASS" signature="TC_408_Searchability_Grocery()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_408_Searchability_Grocery" duration-ms="79637" started-at="2017-11-25T13:54:05Z" finished-at="2017-11-25T13:55:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_408_Searchability_Grocery -->
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="455" started-at="2017-11-25T13:55:25Z" finished-at="2017-11-25T13:55:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpPreDataMethod -->
+        <test-method status="FAIL" signature="TC_409_Searchability_Fitness()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_409_Searchability_Fitness" duration-ms="34914" started-at="2017-11-25T13:55:25Z" finished-at="2017-11-25T13:56:00Z">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[Element is not enabled
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.PtiIguhEoliT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12768, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 12fd1c63-ddee-40dd-b0fb-28d75f41802f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: Element is not enabled
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.PtiIguhEoliT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=12768, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 12fd1c63-ddee-40dd-b0fb-28d75f41802f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1578,101 +1577,43 @@ Session ID: c72b29ec-9fda-4f56-a9d6-a2675382eb0c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_409_Searchability_Fitness -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="505" started-at="2017-11-24T22:23:29Z" finished-at="2017-11-24T22:23:30Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="455" started-at="2017-11-25T13:56:00Z" finished-at="2017-11-25T13:56:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_410_Searchability_yoga()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_410_Searchability_yoga" duration-ms="80114" started-at="2017-11-24T22:23:30Z" finished-at="2017-11-24T22:24:50Z">
+        <test-method status="PASS" signature="TC_410_Searchability_yoga()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_410_Searchability_yoga" duration-ms="79608" started-at="2017-11-25T13:56:01Z" finished-at="2017-11-25T13:57:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_410_Searchability_yoga -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="455" started-at="2017-11-24T22:24:50Z" finished-at="2017-11-24T22:24:50Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="452" started-at="2017-11-25T13:57:20Z" finished-at="2017-11-25T13:57:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_411_Searchability_spaMessage()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_411_Searchability_spaMessage" duration-ms="36619" started-at="2017-11-24T22:24:50Z" finished-at="2017-11-24T22:25:27Z">
-          <exception class="org.openqa.selenium.InvalidElementStateException">
-            <message>
-              <![CDATA[Element is not enabled
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.i8IEEoa1poIs, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=6828, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: e3154979-09e9-452d-9949-a3c59ea8b068]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidElementStateException: Element is not enabled
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.i8IEEoa1poIs, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=6828, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: e3154979-09e9-452d-9949-a3c59ea8b068
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at groupon.TestSet_E.CommonSearcOnLandingPAGE(TestSet_E.java:206)
-	at groupon.TestSet_E.TC_411_Searchability_spaMessage(TestSet_E.java:262)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+        <test-method status="PASS" signature="TC_411_Searchability_spaMessage()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_411_Searchability_spaMessage" duration-ms="78190" started-at="2017-11-25T13:57:21Z" finished-at="2017-11-25T13:58:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_411_Searchability_spaMessage -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="503" started-at="2017-11-24T22:25:27Z" finished-at="2017-11-24T22:25:28Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="503" started-at="2017-11-25T13:58:39Z" finished-at="2017-11-25T13:58:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="FAIL" signature="TC_412_Searchability_DunkinDonuts()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_412_Searchability_DunkinDonuts" duration-ms="36630" started-at="2017-11-24T22:25:28Z" finished-at="2017-11-24T22:26:04Z">
+        <test-method status="FAIL" signature="TC_412_Searchability_DunkinDonuts()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_412_Searchability_DunkinDonuts" duration-ms="35821" started-at="2017-11-25T13:58:39Z" finished-at="2017-11-25T13:59:15Z">
           <exception class="org.openqa.selenium.InvalidElementStateException">
             <message>
               <![CDATA[Element is not enabled
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.XTaETqt3UYV7, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8668, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 23ca3b06-626e-4b6e-8d88-b45e5ae3e47b]]>
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.YR0uVuR4wNli, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=11456, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 8a49153b-2fcd-4622-9148-68813eaa270a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.InvalidElementStateException: Element is not enabled
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
 System info: host: 'DESKTOP-75OLIUH', ip: '192.168.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.XTaETqt3UYV7, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=8668, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
-Session ID: 23ca3b06-626e-4b6e-8d88-b45e5ae3e47b
+Capabilities [{moz:profile=C:\Users\imran\AppData\Local\Temp\rust_mozprofile.YR0uVuR4wNli, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=57.0, platformVersion=10.0, moz:processID=11456, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=false}]
+Session ID: 8a49153b-2fcd-4622-9148-68813eaa270a
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1718,19 +1659,19 @@ Session ID: 23ca3b06-626e-4b6e-8d88-b45e5ae3e47b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_412_Searchability_DunkinDonuts -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="506" started-at="2017-11-24T22:26:04Z" finished-at="2017-11-24T22:26:05Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="460" started-at="2017-11-25T13:59:15Z" finished-at="2017-11-25T13:59:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_413_Searchability_SeaFoodStores()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_413_Searchability_SeaFoodStores" duration-ms="80878" started-at="2017-11-24T22:26:05Z" finished-at="2017-11-24T22:27:26Z">
+        <test-method status="PASS" signature="TC_413_Searchability_SeaFoodStores()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_413_Searchability_SeaFoodStores" duration-ms="79771" started-at="2017-11-25T13:59:16Z" finished-at="2017-11-25T14:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_413_Searchability_SeaFoodStores -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="SetUpPreDataMethod" is-config="true" duration-ms="509" started-at="2017-11-24T22:27:26Z" finished-at="2017-11-24T22:27:26Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:groupon.TestSet_E@91161c7]" name="SetUpPreDataMethod" is-config="true" duration-ms="458" started-at="2017-11-25T14:00:35Z" finished-at="2017-11-25T14:00:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_801_testOne()[pri:0, instance:groupon.TestSet_E@5c3bd550]" name="TC_801_testOne" duration-ms="70058" started-at="2017-11-24T22:27:26Z" finished-at="2017-11-24T22:28:36Z">
+        <test-method status="PASS" signature="TC_801_testOne()[pri:0, instance:groupon.TestSet_E@91161c7]" name="TC_801_testOne" duration-ms="69674" started-at="2017-11-25T14:00:36Z" finished-at="2017-11-25T14:01:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_801_testOne -->
