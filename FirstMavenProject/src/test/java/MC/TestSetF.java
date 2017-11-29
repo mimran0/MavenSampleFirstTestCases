@@ -165,4 +165,37 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 				"$1,757.27");
 	}
 
+	// ScrollDown and up
+	public void SUD(String wBroser) {
+		WindowsUtils.killByName("chromedriver.exe");
+		String vBaseURL = "https://www.mortgagecalculator.org/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBroser, vBaseURL);
+		waitTime(15000);
+		ScrollDownAndUp(driver, 1000);
+	}
+
+	// Requirement 411: Users are able to scroll down and up in Google Chorme
+	// browser
+	@Test
+	public void TC_411_DownAndUPonly_CHROME() {
+		TestSetF TestSetF = new TestSetF();
+		TestSetF.SUD("CHROME");
+	}
+
+	// Requirement 412: Users are able to scroll down and up in firefox browser
+	@Test(enabled=true)
+	public void TC_412_DownAndUPonly_FF() {
+		TestSetF TestSetF = new TestSetF();
+		TestSetF.SUD("FIREFOX");
+	}
+
+	// Requirement 413: Users are able to scroll down and up in Micorsoft Edge
+	// browser
+	@Test
+	public void TC_413_DownAndUPonly_ME() {
+		TestSetF TestSetF = new TestSetF();
+		TestSetF.SUD("MICROSOFE EDGE");
+	}
+
 }
