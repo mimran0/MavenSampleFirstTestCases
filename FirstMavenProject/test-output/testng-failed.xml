@@ -17,6 +17,7 @@
       <class name="afterLoginIn.TestSetA">
         <methods>
           <include name="TC_402_Login_NegativeTest"/>
+          <include name="TC_403_VerifyFieldsInLoginPage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_401_Login_And_LogOut"/>
           <include name="SetUpPreDataMethod"/>
@@ -35,6 +36,7 @@
         <methods>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="aftermethod"/>
