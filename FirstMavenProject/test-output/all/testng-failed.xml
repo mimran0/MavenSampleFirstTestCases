@@ -21,7 +21,6 @@
           <include name="TC_401_Login_And_LogOut"/>
           <include name="SetUpPreDataMethod"/>
           <include name="SetUpPreData"/>
-          <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="hsbc.TestSetC">
@@ -34,14 +33,15 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_407_Searchability_Public_Library"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="aftermethod"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_410_Searchability_yoga"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
+          <include name="TC_801_testOne"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
@@ -62,6 +62,7 @@
           <include name="SetUpPreDataMethod"/>
           <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
+          <include name="LoginAndLogout_Firefox"/>
         </methods>
       </class> <!-- facebook.testSetD -->
     </classes>

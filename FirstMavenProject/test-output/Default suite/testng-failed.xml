@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="MC.TestSetF">
+      <class name="automationPractive.TestSetG">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_409_MC_GC_B"/>
-          <include name="TC_408_MC_GC_A"/>
-          <include name="TC_10_MC_GC_C"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="test_701_display_WebTableCellValues"/>
         </methods>
-      </class> <!-- MC.TestSetF -->
+      </class> <!-- automationPractive.TestSetG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
