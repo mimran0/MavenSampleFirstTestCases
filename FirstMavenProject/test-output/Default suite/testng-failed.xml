@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="automationPractive.TestSetG">
+      <class name="levis.TestSetH">
         <methods>
+          <include name="TC101_TBD"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="test_701_display_WebTableCellValues"/>
         </methods>
-      </class> <!-- automationPractive.TestSetG -->
+      </class> <!-- levis.TestSetH -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

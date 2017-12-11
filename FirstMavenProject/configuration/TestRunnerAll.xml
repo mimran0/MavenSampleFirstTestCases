@@ -2,17 +2,18 @@
 	<test name="all">
 		<classes>
 			<class name="Group" />
-			<class name="Priotization"/>
-			<class name="FirstClassWith2methods" />		
+			<class name="Priotization" />
+			<class name="FirstClassWith2methods" />
 			<class name="SecondClasssWith2Methods" />
-			<class name="afterLoginIn.TestSetA" />	
+			<class name="afterLoginIn.TestSetA" />
 			<class name="walmart.TestSetB" />
-			<class name="hsbc.TestSetC" />	
-			<class name="facebook.testSetD" />	
-			<class name="groupon.TestSet_E" />	
-			<class name="amazon.TestSetAmazon" />	
-			<class name="MC.TestSetF" />	
-			<class name="automationPractive.TestSetG" />	
+			<class name="hsbc.TestSetC" />
+			<class name="facebook.testSetD" />
+			<class name="groupon.TestSet_E" />
+			<class name="amazon.TestSetAmazon" />
+			<class name="MC.TestSetF" />
+			<class name="automationPractive.TestSetG" />
+			<class name="levis.TestSetH" />
 		</classes>
 	</test>
 </suite>
