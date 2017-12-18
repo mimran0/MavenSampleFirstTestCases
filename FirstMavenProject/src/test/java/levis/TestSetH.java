@@ -197,6 +197,7 @@ public class TestSetH extends afterLoginIn.CommonAPI {
 			jse.executeScript("arguments[0].style.border='3px solid red'", v);
 		}
 		scrolldown(driver, 900);
+		CAPTURESCREEN (driver);
 	}
 
 }

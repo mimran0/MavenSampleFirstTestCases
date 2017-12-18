@@ -1,6 +1,7 @@
 <suite name="all">
 	<test name="all">
 		<classes>
+			<class name="ApplyFirst" />
 			<class name="Group" />
 			<class name="Priotization" />
 			<class name="FirstClassWith2methods" />
