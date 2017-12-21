@@ -212,6 +212,26 @@ public class CommonAPI {
 			}
 		}
 		
+		//Method OverLoading (updated on 12/20/17)
+		public static void CAPTURESCREEN(WebDriver driver, String Text) {
+			// Take screenshot and store as a file format
+			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			if (src.exists()) {
+				System.out.println("src has value");
+			}
+			//System.out.println(src.exists());
+			// now copy the screenshot to desired location using copyFile method
+			try {
+				//FileUtils.copyFile(src, new File("c:\\tmp\\screenshot" + System.currentTimeMillis() + ".png"));
+				FileUtils.copyFile(src, new File("C:\\Users\\imran\\workspace6\\FirstMavenProject\\ScreenShots\\"+Text + System.currentTimeMillis() + ".png"));
+				System.out.println("Try block executed");
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
 		// DeletAllFilesFromTheFolder ((Developed by Imran on 12/17/2017)(Anyone can Re-use now
 		// or 40 years later for any client)).
 		// This method will delete all files from a given folder.

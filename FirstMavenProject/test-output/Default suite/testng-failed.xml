@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="levis.TestSetH">
+      <class name="bbb.TestSetI">
         <methods>
-          <include name="TC101_TBD"/>
-          <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_902"/>
         </methods>
-      </class> <!-- levis.TestSetH -->
+      </class> <!-- bbb.TestSetI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

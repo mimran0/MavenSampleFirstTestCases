@@ -15,6 +15,7 @@
 			<class name="MC.TestSetF" />
 			<class name="automationPractive.TestSetG" />
 			<class name="levis.TestSetH" />
+			<class name="bbb.TestSetI" />
 		</classes>
 	</test>
 </suite>
