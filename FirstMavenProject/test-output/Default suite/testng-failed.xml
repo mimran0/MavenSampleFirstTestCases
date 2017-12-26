@@ -6,8 +6,8 @@
       <class name="bbb.TestSetI">
         <methods>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_902"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
     </classes>
