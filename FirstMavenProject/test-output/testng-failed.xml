@@ -24,13 +24,6 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- walmart.TestSetB -->
-      <class name="MC.TestSetF">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_413_DownAndUPonly_ME"/>
-          <include name="SetUpPreDataMethod"/>
-        </methods>
-      </class> <!-- MC.TestSetF -->
       <class name="facebook.testSetD">
         <methods>
           <include name="LoginAndLogout_Chrome"/>
@@ -41,14 +34,12 @@
           <include name="SetUpPreDataMethod"/>
           <include name="LoginAndLogout_MicrosoftEdge"/>
           <include name="aftermethod"/>
-          <include name="LoginAndLogout_Firefox"/>
         </methods>
       </class> <!-- facebook.testSetD -->
       <class name="amazon.TestSetAmazon">
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TestCase_103"/>
-          <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
@@ -62,33 +53,27 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
+          <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="aftermethod"/>
           <include name="TC_409_Searchability_Fitness"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_801_testOne"/>
+          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
       <class name="levis.TestSetH">
         <methods>
-          <include name="TC_104_FindStoresMap"/>
           <include name="TC_103_womens_dress"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- levis.TestSetH -->
-      <class name="bbb.TestSetI">
-        <methods>
-          <include name="SetUpPreDataMethod"/>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_901"/>
-        </methods>
-      </class> <!-- bbb.TestSetI -->
     </classes>
   </test> <!-- all(failed) -->
 </suite> <!-- Failed suite [all] -->
