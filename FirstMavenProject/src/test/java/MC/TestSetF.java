@@ -1,7 +1,9 @@
 package MC;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.os.WindowsUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -40,7 +42,13 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 		waitTime(2000);
 		driver.findElement(By.name("cal")).click();
 		waitTime(7000);
-		scrolldown(driver, 300);
+		scrolldown(driver, 300);		
+		//Highlighting the object that will be used for checkpoint		(updated on 1/17/2018)
+		WebElement v=driver.findElement(By.xpath("//*[@id=\"calc\"]/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[1]/div[1]/h3"));		
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].style.border='3px solid red'", v);
+        waitTime(7000);
+        //putting check point
 		String vOutput = driver
 				.findElement(By
 						.xpath("//*[@id=\"calc\"]/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[1]/div[1]/h3"))
@@ -90,7 +98,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 402: Users are able to calculate mortgage payment -Google
 	// Chrome
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_402_MC_GC_A() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("CHROME", "200000", "100000", "4", "30", "4.5", "1.26", "1500",
@@ -99,7 +107,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 403: Users are able to calculate mortgage payment -Google
 	// Chrome
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_403_MC_GC_B() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("CHROME", "200000", "100000", "5", "15", "4.7", "1.26", "1500",
@@ -108,7 +116,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 404: Users are able to calculate mortgage payment -Google
 	// Chrome
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_404_MC_GC_C() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("CHROME", "200000", "100000", "3", "10", "4.0", "1.26", "1500",
@@ -117,7 +125,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 405: Users are able to calculate mortgage payment -FF
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_405_MC_FF_A() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("FIREFOX", "200000", "100000", "4", "30", "4.5", "1.26", "1500",
@@ -126,7 +134,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 406: Users are able to calculate mortgage payment -FF
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_406_MC_FF_B() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("FIREFOX", "200000", "100000", "5", "15", "4.7", "1.26", "1500",
@@ -134,7 +142,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 407: Users are able to calculate mortgage payment -FF
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_407_MC_FF_C() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("FIREFOX", "200000", "100000", "3", "10", "4.0", "1.26", "1500",
@@ -142,7 +150,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 408: Users are able to calculate mortgage payment -ME
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_408_MC_ME_A() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("MICROSOFE EDGE", "200000", "100000", "4", "30", "4.5", "1.26", "1500",
@@ -150,7 +158,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 409: Users are able to calculate mortgage payment -ME
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_409_MC_ME_B() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("MICROSOFE EDGE", "200000", "100000", "5", "15", "4.7", "1.26", "1500",
@@ -158,7 +166,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 410: Users are able to calculate mortgage payment -ME
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_10_MC_ME_C() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("MICROSOFE EDGE", "200000", "100000", "3", "10", "4.0", "1.26", "1500",
@@ -177,14 +185,14 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 411: Users are able to scroll down and up in Google Chorme
 	// browser
-	@Test
+	@Test(enabled=false)
 	public void TC_411_DownAndUPonly_CHROME() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("CHROME");
 	}
 
 	// Requirement 412: Users are able to scroll down and up in firefox browser
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void TC_412_DownAndUPonly_FF() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("FIREFOX");
@@ -192,7 +200,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 413: Users are able to scroll down and up in Micorsoft Edge
 	// browser
-	@Test
+	@Test(enabled=false)
 	public void TC_413_DownAndUPonly_ME() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("MICROSOFE EDGE");
