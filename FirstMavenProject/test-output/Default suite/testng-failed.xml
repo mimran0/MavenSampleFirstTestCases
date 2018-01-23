@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bbb.TestSetI">
+      <class name="usps.TestSetJ">
         <methods>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_01_FindZipCode"/>
         </methods>
-      </class> <!-- bbb.TestSetI -->
+      </class> <!-- usps.TestSetJ -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
