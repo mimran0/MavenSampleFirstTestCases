@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -25,7 +26,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		WindowsUtils.killByName("MicrosoftEdge.exe");
 	}
 
-	// Requirement: Users are able to find ZIPCode using address in USPS web
+	// Requirement 01: Users are able to find ZIPCode using address in USPS web
 	// site.
 	@Test(enabled = true)
 	public void TC_01_FindZipCode() {
@@ -69,6 +70,52 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		// then test fail.)
 		Assert.assertEquals("08810", vZIPCode);
 		// Capture screenshot of the automation test
-		CAPTURESCREEN(driver, "USPC_FindZipCode_");
+		CAPTURESCREEN(driver, "USPC_TC01_");
+	}
+
+	// Requirement 02: Calculate a price
+	@Test(enabled = true)
+	public void TC_02_CalculateAprice() {
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
+		// Mouseover on "mail & ship" tab
+		Actions action = new Actions(driver);
+		WebElement we = driver.findElement(By.xpath("//*[@id=\"global-menu\"]/div/nav/ol/li[3]/a/span[1]"));
+		action.moveToElement(we).build().perform();
+		waitTime(2000);
+		// highlight the "Calculate A Price" for visual pleasure
+		WebElement obj_LookUpAZipCode = driver
+				.findElement(By.xpath("//*[@id=\"global-menu\"]/div/nav/ol/li[3]/ol/li[4]/a"));
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_LookUpAZipCode);
+		waitTime(7000);
+		// Click on "Calculate A Price" link from the drop down list
+		obj_LookUpAZipCode.click();
+		// select destination country from the dropdown list
+		Select objCountry = new Select(driver.findElement(By.id("CountryID")));
+		objCountry.selectByVisibleText("Bangladesh");
+		waitTime(2000);
+		// Enter item value in the edit field
+		driver.findElement(By.name("ItemValue")).sendKeys("100");
+		// check the "Only Nonnegotiable documents(s)" checkbox.
+		boolean isSelected_OnlyNonnegotiableDocument = driver.findElement(By.name("NonnegotiableDocument"))
+				.isSelected();
+		if (!isSelected_OnlyNonnegotiableDocument) {
+			driver.findElement(By.name("NonnegotiableDocument")).click();
+		}
+		// click on "calculate PostCard price" .
+		driver.findElement(By.name("action")).click();
+		driver.findElement(By.id("quantity-0")).sendKeys("3");
+		waitTime(1000);
+		driver.findElement(By.xpath("//*[@id=\"continue-section\"]/input")).click();
+		waitTime(1000);
+		String vTotalPrice = driver.findElement(By.id("total")).getText();
+		System.out.println("Total price is " + vTotalPrice);
+		// checkpoint
+		Assert.assertEquals("$3.45", vTotalPrice);
+		// capture screenshot
+		CAPTURESCREEN(driver, "USPC_TC02_");
 	}
 }
