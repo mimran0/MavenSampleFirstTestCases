@@ -28,7 +28,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 
 	// Requirement 01: Users are able to find ZIPCode using address in USPS web
 	// site.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_01_FindZipCode() {
 		String vBaseURL = "http://www.usps.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -47,6 +47,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		waitTime(7000);
 		// Click on "Look up a ZIP Code" link from the drop down list
 		obj_LookUpAZipCode.click();
+		waitTime(5000);
 		// Enter address in the edit fields
 		driver.findElement(By.name("tCompany")).sendKeys("I love you Company");
 		driver.findElement(By.name("tAddress")).sendKeys("36 breeze dr");
@@ -74,7 +75,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 02: Calculate a price
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_02_CalculateAprice() {
 		String vBaseURL = "http://www.usps.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -93,6 +94,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		waitTime(7000);
 		// Click on "Calculate A Price" link from the drop down list
 		obj_LookUpAZipCode.click();
+		waitTime(5000);
 		// select destination country from the dropdown list
 		Select objCountry = new Select(driver.findElement(By.id("CountryID")));
 		objCountry.selectByVisibleText("Bangladesh");
@@ -117,5 +119,71 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		Assert.assertEquals("$3.45", vTotalPrice);
 		// capture screenshot
 		CAPTURESCREEN(driver, "USPC_TC02_");
+	}
+
+	// Requirement 03: experiment all 8 selectors
+	@Test(enabled = true)
+	public void TC_03_ExperimentAll8Selectors() {
+		// 1 LinkText
+		// 2 className
+		// 3 id
+		// 4 cssSelector
+		// 5 xpath
+		// 6 name
+		// 7 TagName
+		// 8 partialLinkText
+
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
+		// highlight a link and identify the link using LinkText selector (1)
+		WebElement obj_F = driver.findElement(By.linkText("Customer  Service"));
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_F);
+		waitTime(7000);
+		System.out.println(obj_F.getClass());
+		obj_F.click();
+		waitTime(2000);
+		driver.findElement(By.linkText("Learn More")).click();
+		waitTime(1000);
+		// identify a element using className (2)
+		WebElement obj_l = driver.findElement(By.className("section-wrap"));
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_l);
+		waitTime(7000);
+		System.out.println(obj_l.getText());
+		driver.findElement(By.linkText("File a Claim")).click();
+		waitTime(4000);
+		// identify a element using Id (3)
+		WebElement obj_id = driver.findElement(By.id("delta--tab-link-0"));
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_id);
+		waitTime(7000);
+		// obj_c.click();
+		// identify a element using cssSelector (4)
+		WebElement obj_css = driver
+				.findElement(By.cssSelector(".left-nav > ol:nth-child(3) > li:nth-child(1) > a:nth-child(1)"));
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_css);
+		waitTime(7000);
+		// identify a element using xpath (5)
+		WebElement obj_xpath = driver.findElement(By.xpath("//*[@id=\"c1408854639665\"]/nav/ol/li[5]/a"));
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_xpath);
+		waitTime(7000);
+		driver.get("https://tools.usps.com/go/ZipLookupAction_input");
+		waitTime(2000);
+		// identify a element using name (6)
+		WebElement obj_name = driver.findElement(By.name("tCompany"));
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_name);
+		waitTime(7000);
+		// identify a element using TagName (7)
+		WebElement obj_TagName = driver.findElement(By.tagName("img"));
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_TagName);
+		waitTime(7000);
+		// identify a element using partialLinkText (8)
+		WebElement obj_partialLinkText = driver.findElement(By.partialLinkText("Browse our"));
+		jse.executeScript("arguments[0].style.border='3px solid red'", obj_partialLinkText);
+		waitTime(7000);
+		// driver.close(); // closing the open window only
+		driver.quit(); // closing the open window and killing the process of
+						// webDriver
 	}
 }

@@ -7,6 +7,7 @@
         <methods>
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_02_CalculateAprice"/>
           <include name="TC_01_FindZipCode"/>
         </methods>
       </class> <!-- usps.TestSetJ -->
