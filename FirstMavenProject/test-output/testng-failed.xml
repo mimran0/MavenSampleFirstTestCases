@@ -1,16 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [all]">
+  <test name="all(failed)">
     <classes>
-      <class name="usps.TestSetJ">
+      <class name="afterLoginIn.TestSetA">
+        <methods>
+          <include name="TC_402_Login_NegativeTest"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_401_Login_And_LogOut"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="SetUpPreData"/>
+        </methods>
+      </class> <!-- afterLoginIn.TestSetA -->
+      <class name="walmart.TestSetB">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_503_mouseOver"/>
+          <include name="TC_513_WeeklyAdd_InternetExplorer"/>
+          <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
+          <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
+          <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="TC_504_Credit_Cards"/>
+          <include name="ValidLogin"/>
+          <include name="SetUpPreData"/>
+          <include name="TC_506_StoreFinder_FireFoxBrowser"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- walmart.TestSetB -->
+      <class name="facebook.testSetD">
+        <methods>
+          <include name="LoginAndLogout_Chrome"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="LoginAndLogout_IE"/>
+          <include name="SetUpPreData"/>
+          <include name="LoginAndLogout_4Browses"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="LoginAndLogout_MicrosoftEdge"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- facebook.testSetD -->
+      <class name="amazon.TestSetAmazon">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TestCase_103"/>
+          <include name="TC_102"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- amazon.TestSetAmazon -->
+      <class name="hsbc.TestSetC">
+        <methods>
+          <include name="SetUpPreDataMethod"/>
+          <include name="SetUpPreData"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="CountryListOnOnlineBanking"/>
+        </methods>
+      </class> <!-- hsbc.TestSetC -->
+      <class name="groupon.TestSet_E">
+        <methods>
+          <include name="TC_408_Searchability_Grocery"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="TC_406_Searchability_restaurants"/>
+          <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
+          <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_801_testOne"/>
+          <include name="TC_413_Searchability_SeaFoodStores"/>
+          <include name="SetUpPreData"/>
+        </methods>
+      </class> <!-- groupon.TestSet_E -->
+      <class name="levis.TestSetH">
+        <methods>
+          <include name="TC_102_scrollUpAndDown"/>
+          <include name="TC_104_FindStoresMap"/>
+          <include name="TC_103_womens_dress"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- levis.TestSetH -->
+      <class name="bbb.TestSetI">
         <methods>
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_02_CalculateAprice"/>
-          <include name="TC_01_FindZipCode"/>
+          <include name="TC_901"/>
+          <include name="TC_903_MouseOver"/>
+          <include name="TC_904"/>
         </methods>
-      </class> <!-- usps.TestSetJ -->
+      </class> <!-- bbb.TestSetI -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- all(failed) -->
+</suite> <!-- Failed suite [all] -->

@@ -28,7 +28,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 
 	// Requirement 01: Users are able to find ZIPCode using address in USPS web
 	// site.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_01_FindZipCode() {
 		String vBaseURL = "http://www.usps.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -75,7 +75,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 02: Calculate a price
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_02_CalculateAprice() {
 		String vBaseURL = "http://www.usps.com/";
 		CommonAPI CommonAPI = new CommonAPI();

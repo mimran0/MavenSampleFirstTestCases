@@ -57,19 +57,25 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
+          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_406_Searchability_restaurants"/>
+          <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
-          <include name="aftermethod"/>
-          <include name="TC_410_Searchability_yoga"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_801_testOne"/>
+          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
       <class name="levis.TestSetH">
         <methods>
+          <include name="TC_102_scrollUpAndDown"/>
           <include name="TC_104_FindStoresMap"/>
           <include name="TC_103_womens_dress"/>
           <include name="doBeforeEveryMethod"/>
@@ -82,6 +88,7 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
+          <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
     </classes>
