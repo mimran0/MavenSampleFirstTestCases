@@ -12,19 +12,28 @@
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
+      <class name="usps.TestSetJ">
+        <methods>
+          <include name="TC_03_ExperimentAll8Selectors"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="doBeforeEveryMethod"/>
+        </methods>
+      </class> <!-- usps.TestSetJ -->
       <class name="walmart.TestSetB">
         <methods>
-          <include name="doBeforeEveryMethod"/>
           <include name="TC_503_mouseOver"/>
           <include name="TC_513_WeeklyAdd_InternetExplorer"/>
           <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
-          <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
-          <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="TC_501_UsersAreAbleToSearch"/>
           <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
-          <include name="SetUpPreData"/>
           <include name="TC_506_StoreFinder_FireFoxBrowser"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
+          <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="TC_502_SelectDropdownValue"/>
+          <include name="SetUpPreData"/>
         </methods>
       </class> <!-- walmart.TestSetB -->
       <class name="facebook.testSetD">
@@ -45,6 +54,7 @@
           <include name="TestCase_103"/>
           <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TestCase_105"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
       <class name="hsbc.TestSetC">
@@ -57,29 +67,25 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_408_Searchability_Grocery"/>
+          <include name="TC_407_Searchability_Public_Library"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_406_Searchability_restaurants"/>
-          <include name="aftermethod"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="aftermethod"/>
           <include name="TC_409_Searchability_Fitness"/>
-          <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
       <class name="levis.TestSetH">
         <methods>
-          <include name="TC_102_scrollUpAndDown"/>
+          <include name="TC101_MouseOver_OnMajorElements"/>
           <include name="TC_104_FindStoresMap"/>
           <include name="TC_103_womens_dress"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_105_HighlightAllLinks"/>
         </methods>
       </class> <!-- levis.TestSetH -->
       <class name="bbb.TestSetI">
@@ -88,7 +94,6 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
-          <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
     </classes>

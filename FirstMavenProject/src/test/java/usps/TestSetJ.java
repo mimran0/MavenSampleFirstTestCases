@@ -1,5 +1,7 @@
 package usps;
 
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -185,5 +187,36 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		// driver.close(); // closing the open window only
 		driver.quit(); // closing the open window and killing the process of
 						// webDriver
+	}
+
+	// Requirement 04: Capture The Stamps Count
+	@Test(enabled = true)
+	public void TC_O4_CaptureTheStampsCount() {
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
+		// click on "Buy Stamps" link.
+		driver.findElement(By.linkText("Buy Stamps")).click();
+		waitTime(2000);
+		// capture the count of available stamps to buy.
+		String vSearchResults = driver.findElement(By.className("results-numerical")).getText();
+		String ArrCount[] = vSearchResults.split(" "); // splitting the string
+														// into an Array by one
+														// space.
+		String vCount = ArrCount[4]; // Retrieving the stamps count.
+		Date date = new Date(); // creating instance so that system date can be
+								// retrieve.
+		System.out.println("Total " + vCount + " Stamps are available to buy as of" + date);
+		driver.quit(); // killing the WebDriver process.
+	}
+
+	// Requirement 05:
+	@Test(enabled = true)
+	public void TC_05_TBD() {
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
 	}
 }
