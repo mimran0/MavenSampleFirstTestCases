@@ -211,12 +211,110 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		driver.quit(); // killing the WebDriver process.
 	}
 
-	// Requirement 05:
+	// Requirement 05: find out how many usps locations near a zipcode
 	@Test(enabled = true)
-	public void TC_05_TBD() {
+	public void TC_05_FindOutUSPS_Locations() {
 		String vBaseURL = "http://www.usps.com/";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
 		waitTime(5000);
+		// Mouseover on "mail & ship" tab
+		Actions action = new Actions(driver);
+		WebElement we = driver.findElement(By.xpath("//*[@id=\"global-menu\"]/div/nav/ol/li[3]/a/span[1]"));
+		action.moveToElement(we).build().perform();
+		waitTime(2000);
+		driver.findElement(By.linkText("Find USPS Locations")).click();
+		waitTime(3000);
+		driver.findElement(By.name("address")).sendKeys("08810");
+		waitTime(1000);
+		driver.findElement(By.className("buttons")).click();
+		waitTime(2000);
+		String vResult = driver.findElement(By.className("status")).getText();
+		System.out.println(vResult);
+		String[] arrResult = vResult.split("of"); // splitting string into array
+													// by "of".
+		String vPage = arrResult[1].trim(); // removing spaces from the string.
+		int vPage1 = Integer.parseInt(vPage); // converting string to integer.
+		System.out.println("Total " + vPage1 + " pages displayed");
+
+	}
+
+	// requirement 06: find out how many usps locations near a zipcode and
+	// capturing results of all available radios.
+	@Test(enabled = true)
+	public void TC_O6_USPS_Locations_AllRadios() {
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
+		// Mouseover on "mail & ship" tab
+		Actions action = new Actions(driver);
+		WebElement we = driver.findElement(By.xpath("//*[@id=\"global-menu\"]/div/nav/ol/li[3]/a/span[1]"));
+		action.moveToElement(we).build().perform();
+		waitTime(2000);
+		driver.findElement(By.linkText("Find USPS Locations")).click();
+		waitTime(3000);
+		driver.findElement(By.name("address")).sendKeys("08810");
+		waitTime(1000);
+		driver.findElement(By.className("buttons")).click();
+		waitTime(2000);
+		String vResult = driver.findElement(By.className("status")).getText();
+		System.out.println(vResult);
+		// capturing results of all available radios
+		int i = 1;
+		while (i < 101) {
+			driver.findElement(By.xpath("//*[@id=\"sWithinList\"]/div[1]/span")).click();
+			waitTime(1000);
+			driver.findElement(By.partialLinkText("" + i + "")).click();
+			waitTime(1000);
+			driver.findElement(By.className("buttons")).click();
+			waitTime(2000);
+			String vResult_L = driver.findElement(By.className("status")).getText();
+			System.out.println("'" + vResult_L + "'" + " when radias is " + i + " mile or miles");
+			switch (i) {
+			case 1:
+				i = i + 4;
+				break;
+			case 5:
+				i = i + 5;
+				break;
+			case 10:
+				i = i + 5;
+				break;
+			case 15:
+				i = i + 5;
+				break;
+			case 20:
+				i = i + 20;
+				break;
+			case 40:
+				i = i + 20;
+				break;
+			case 60:
+				i = i + 20;
+				break;
+			case 80:
+				i = i + 20;
+				break;
+			default:
+				System.out.println("Ends");
+				i = 101;
+			}// ends switch
+		} // ends while
+	} // ends TestNG test
+
+	// Requirement 07: Some Random clicks
+	@Test(enabled = false)
+	public void TC_07_RandomClicks() {
+		String vBaseURL = "http://faq.usps.com/?searchString=find%20locations";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
+		driver.findElement(By.id("dijit__TreeNode_7_label")).click();
+		waitTime(1000);
+		driver.findElement(By.id("dijit__TreeNode_18_label")).click();
+		waitTime(1000);
+		driver.findElement(By.id("dijit__TreeNode_25_label")).click();
+
 	}
 }
