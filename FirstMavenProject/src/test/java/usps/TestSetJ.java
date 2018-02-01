@@ -1,5 +1,8 @@
 package usps;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -304,7 +307,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 	} // ends TestNG test
 
 	// Requirement 07: Some Random clicks
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_07_RandomClicks() {
 		String vBaseURL = "http://faq.usps.com/?searchString=find%20locations";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -315,6 +318,62 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 		driver.findElement(By.id("dijit__TreeNode_18_label")).click();
 		waitTime(1000);
 		driver.findElement(By.id("dijit__TreeNode_25_label")).click();
+		driver.quit();
+
+	}
+
+	// Requirement 08: "Not Trackable" error message displays if tracking number
+	// is wrong.
+	@Test(enabled = true)
+	public void TC_08_ErrorMessageVerificationOnWrongTrackingNumber() {
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(9000);
+		driver.findElement(By.cssSelector(".quickMenuInput")).click();
+		driver.findElement(By.cssSelector(".quickMenuInput")).clear();
+		driver.findElement(By.cssSelector(".quickMenuInput")).sendKeys("abc123");
+		waitTime(2000);
+		driver.findElement(By.id("trackButton")).click();
+		waitTime(2000);
+		String vErrorMessage = driver.findElement(By.tagName("strong")).getText();
+		System.out.println(vErrorMessage);
+		Assert.assertEquals(vErrorMessage, "Not Trackable"); // check point
+		driver.quit();
+	}
+
+	// Requirement 09: verify validity of sign up eligibility of valid US
+	// zipcode.
+	@Test(enabled = true)
+	public void TC_09_SignUpEligibility() {
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(9000);
+		driver.findElement(By.partialLinkText("Sign Up for Free")).click();
+		waitTime(2000);
+		driver.findElement(By.name("zipcodeForm")).sendKeys("08810");
+		// Hit enter from the keyboard starts here
+		Robot r = null;
+		try {
+			r = new Robot();
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		// Hit enter from the keyboard Ends here
+		waitTime(3000);
+		scrolldown(driver, 300); // scroll down little bit
+		waitTime(2000);
+		String vOutput = driver.findElement(By.xpath("//*[@id=\"primary-content\"]/div/div/div/div[3]/div[5]/span"))
+				.getText();
+		System.out.println(vOutput);
+		// Checkpoint
+		Assert.assertEquals(vOutput,
+				"Your ZIP Code™ is eligible. Sign up now to see if Informed Delivery™ is available for your address.");
+		driver.quit();
 
 	}
 }
