@@ -6,6 +6,7 @@
       <class name="afterLoginIn.TestSetA">
         <methods>
           <include name="TC_402_Login_NegativeTest"/>
+          <include name="TC_403_VerifyFieldsInLoginPage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_401_Login_And_LogOut"/>
           <include name="SetUpPreDataMethod"/>
@@ -17,6 +18,8 @@
           <include name="TC_03_ExperimentAll8Selectors"/>
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_09_SignUpEligibility"/>
+          <include name="TC_13_VerifySignUpLinkInInternetExplorerBrowser"/>
           <include name="TC_07_RandomClicks"/>
         </methods>
       </class> <!-- usps.TestSetJ -->
@@ -77,6 +80,7 @@
           <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
@@ -95,7 +99,6 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
         </methods>
       </class> <!-- bbb.TestSetI -->

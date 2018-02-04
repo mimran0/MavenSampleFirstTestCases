@@ -7,7 +7,7 @@
         <methods>
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
+          <include name="TC_13_VerifySignUpLinkInInternetExplorerBrowser"/>
         </methods>
       </class> <!-- usps.TestSetJ -->
     </classes>

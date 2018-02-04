@@ -348,7 +348,7 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 	public void TC_09_SignUpEligibility() {
 		String vBaseURL = "http://www.usps.com/";
 		CommonAPI CommonAPI = new CommonAPI();
-		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
 		waitTime(9000);
 		driver.findElement(By.partialLinkText("Sign Up for Free")).click();
 		waitTime(2000);
@@ -375,5 +375,57 @@ public class TestSetJ extends afterLoginIn.CommonAPI {
 				"Your ZIP Code™ is eligible. Sign up now to see if Informed Delivery™ is available for your address.");
 		driver.quit();
 
+	}
+
+	// Requirement 10: "About USPS Home" link displays in USPS's homepage in
+	// Firefox
+	// browser.
+	@Test(enabled = true)
+	public void TC_10_VerifySignUpLinkInFirefoxBrowser() {
+		TestSetJ TestSetJ = new TestSetJ();
+		TestSetJ.VerifyAboutUSPSHomeLink_Presence("FIREFOX");
+	}
+
+	// Requirement 11: "About USPS Home" link displays in USPS's homepage in
+	// Microsoft Edge
+	// browser.
+	@Test(enabled = true)
+	public void TC_11_VerifySignUpLinkInMicrosoftEdgeBrowser() {
+		TestSetJ TestSetJ = new TestSetJ();
+		TestSetJ.VerifyAboutUSPSHomeLink_Presence("MICROSOFE EDGE");
+	}
+
+	// Requirement 12: "About USPS Home" link displays in USPS's homepage in
+	// Google Chrome
+	// browser.
+	@Test(enabled = true)
+	public void TC_12_VerifySignUpLinkInGoogleChromeBrowser() {
+		TestSetJ TestSetJ = new TestSetJ();
+		TestSetJ.VerifyAboutUSPSHomeLink_Presence("CHROME");
+	}
+
+	// Requirement 13: "About USPS Home" link displays in USPS's homepage in
+	// Internet Explorer
+	// browser.
+	@Test(enabled = true)
+	public void TC_13_VerifySignUpLinkInInternetExplorerBrowser() {
+		TestSetJ TestSetJ = new TestSetJ();
+		TestSetJ.VerifyAboutUSPSHomeLink_Presence("IE");
+	}
+
+	// this is not TestNG test. this is a reusable method which will be reused
+	// in TestNG tests.
+	public void VerifyAboutUSPSHomeLink_Presence(String wBrowser) {
+		String vBaseURL = "http://www.usps.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		// Firefox Browser
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(9000);
+		scrolldown(driver, 500); // scroll down little bit
+		waitTime(2000);
+		boolean isPresent = driver.findElement(By.linkText("About USPS Home")).isDisplayed();
+		Assert.assertEquals(isPresent, true);
+		System.out.println(driver.findElement(By.linkText("About USPS Home")).getText());
+		driver.quit(); // closing and killing Firefox browser process
 	}
 }
