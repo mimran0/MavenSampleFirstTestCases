@@ -105,7 +105,117 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 		driver.findElement(By.id("addon_step")).click();
 		waitTime(3000);
 		driver.findElement(By.xpath("//*[@id=\"callToAction_btn\"]/span[2]/img")).click();
+		waitTime(7000);
+		boolean isCheckOutNowDisplay = driver.findElement(By.partialLinkText("CHECKOUT NOW")).isDisplayed();
+		Assert.assertEquals(isCheckOutNowDisplay, true);
+		// dealing with popup window starts here. (It is 'Optional Steps' if
+		// compared with UFT or QTP)
+		try {
+			WebElement PopUpWindow = driver.findElement(By.partialLinkText("I PREFER TO PAY FULL PRICE"));
+			boolean IsPopUpWindowDisplayed = PopUpWindow.isDisplayed();
+			if (IsPopUpWindowDisplayed) {
+				PopUpWindow.click();
+			}
+		} catch (Exception e) {
+		}
+		// dealing with popup wind ends here.
+	}
+
+	// Requirement 105: Mouseover all links
+	@Test(enabled = true)
+	public void MousOverAllLinks() {
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("MICROSOFE EDGE", vBaseURL);
+		waitTime(4000);
+		// declaring and initialization of an array in one line.
+		String[] ImranARRAY = new String[] { "OCCASION", "FLOWERS", "PLANTS & GIFTS", "COLORS", "DEALS", "SAME DAY" };
+		// MouseOver on 6 different fields
+		for (String v : ImranARRAY) {
+			Actions action = new Actions(driver);
+			WebElement we = driver.findElement(By.partialLinkText(v));
+			action.moveToElement(we).build().perform();
+			waitTime(4000);
+		}
+
+	}
+
+	// Requirement 106: Users are able to search on the home page.
+	@Test(enabled = true)
+	public void SearchAbility() {
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "MICROSOFE EDGE";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		// declaring and initialization of an array in one line.
+		String[] ImranARRAY = new String[] { "Red", "Yellow", "Green", "Black", "Pink", "Purple" };
+
+		for (String v : ImranARRAY) {
+			driver.findElement(By.id("toolbar_search_box")).clear();
+			driver.findElement(By.id("toolbar_search_box")).sendKeys(v);
+			driver.findElement(By.id("Search")).click();
+			waitTime(5000); // Synchronization
+			ProcessCheckOut(driver, wBrowser);
+		}
+
+	}
+
+	public static void ProcessCheckOut(WebDriver driver, String wBrowser) {
+		// pop up window starts here (If exist)
+		try {
+			driver.findElement(By.id("dropdown_delDate")).click();
+			waitTime(4000);
+			// driver.findElement(By.xpath("/html/body/div[8]/table/thead/tr[1]/td[3]")).click();
+			waitTime(4000);
+			driver.findElement(By.xpath("//*[@id=\"modalContent\"]/button")).click();
+			waitTime(4000);
+		} catch (Exception e1) {
+		}
+		// Pop up window ends here
+		driver.findElement(By.xpath("//*[@id=\"c1\"]/div/a/img")).click();
 		waitTime(3000);
+		// Optional Steps
+		try {
+			boolean IsImageExist = driver
+					.findElement(By.xpath("//*[@id=\"prod_step\"]/div[2]/div[1]/div[1]/div/div[1]/img")).isDisplayed();
+			if (IsImageExist == true) {
+				driver.findElement(By.xpath("//*[@id=\"prod_step\"]/div[2]/div[1]/div[1]/div/div[1]/img")).click();
+				waitTime(3000);
+			}
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		driver.findElement(By.id("zip_step")).click();
+		waitTime(3000);
+		driver.findElement(By.name("STZIP")).sendKeys("08810");
+		waitTime(4000);
+		if (wBrowser == "IE") {
+			driver.findElement(By.id("ppDelLoc")).click();
+			waitTime(3000);
+			driver.findElement(By.xpath("//*[@id=\"ppDelLoc\"]/option[2]")).click();
+		} else {
+			Select dropdown2 = new Select(driver.findElement(By.id("ppDelLoc")));
+			dropdown2.selectByVisibleText("Residence");
+			waitTime(3000);
+		}
+		driver.findElement(By.id("deldate_step")).click();
+		waitTime(7000);
+		// Optional Steps
+		try {
+			boolean IsAddonExist = driver.findElement(By.id("addon_step")).isDisplayed();
+			if (IsAddonExist) {
+				driver.findElement(By.id("addon_step")).click();
+				waitTime(7000);
+			}
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		driver.findElement(By.xpath("//*[@id=\"callToAction_btn\"]/span[2]/img")).click();
+		waitTime(7000);
 		boolean isCheckOutNowDisplay = driver.findElement(By.partialLinkText("CHECKOUT NOW")).isDisplayed();
 		Assert.assertEquals(isCheckOutNowDisplay, true);
 		// dealing with popup window starts here. (It is 'Optional Steps' if

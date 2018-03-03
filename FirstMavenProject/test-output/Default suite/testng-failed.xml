@@ -5,7 +5,7 @@
     <classes>
       <class name="FTD.TestSetK">
         <methods>
-          <include name="SelectA_Rose_FireFox"/>
+          <include name="SearchAbility"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
