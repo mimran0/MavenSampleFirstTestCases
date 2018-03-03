@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="usps.TestSetJ">
+      <class name="FTD.TestSetK">
         <methods>
-          <include name="SetUpPreDataMethod"/>
+          <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_13_VerifySignUpLinkInInternetExplorerBrowser"/>
+          <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- usps.TestSetJ -->
+      </class> <!-- FTD.TestSetK -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

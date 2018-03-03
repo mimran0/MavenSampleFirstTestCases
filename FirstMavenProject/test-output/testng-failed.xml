@@ -19,7 +19,6 @@
           <include name="TC_03_ExperimentAll8Selectors"/>
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_13_VerifySignUpLinkInInternetExplorerBrowser"/>
           <include name="TC_07_RandomClicks"/>
         </methods>
       </class> <!-- usps.TestSetJ -->
@@ -27,7 +26,6 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_503_mouseOver"/>
-          <include name="TC_513_WeeklyAdd_InternetExplorer"/>
           <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
           <include name="TC_501_UsersAreAbleToSearch"/>
           <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
@@ -68,7 +66,6 @@
       </class> <!-- hsbc.TestSetC -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
@@ -79,7 +76,7 @@
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
@@ -96,10 +93,19 @@
       <class name="bbb.TestSetI">
         <methods>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_903_MouseOver"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
+      <class name="FTD.TestSetK">
+        <methods>
+          <include name="SelectA_Rose_MicorsoftEdge"/>
+          <include name="SelectA_Rose_FireFox"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- FTD.TestSetK -->
     </classes>
   </test> <!-- all(failed) -->
 </suite> <!-- Failed suite [all] -->

@@ -17,6 +17,7 @@
 			<class name="levis.TestSetH" />
 			<class name="bbb.TestSetI" />
 			<class name="usps.TestSetJ" />
+			<class name="FTD.TestSetK" />
 		</classes>
 	</test>
 </suite>
