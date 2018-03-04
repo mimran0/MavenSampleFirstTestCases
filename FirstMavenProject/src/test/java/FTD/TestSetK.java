@@ -156,6 +156,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 			driver.findElement(By.id("toolbar_search_box")).sendKeys(v);
 			driver.findElement(By.id("Search")).click();
 			waitTime(5000); // Synchronization
+			CAPTURESCREEN( driver, "FTD"+v);
 			ProcessCheckOut(driver, wBrowser);
 		}
 

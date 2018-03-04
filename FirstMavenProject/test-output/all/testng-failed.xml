@@ -19,8 +19,6 @@
           <include name="TC_03_ExperimentAll8Selectors"/>
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
-          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_07_RandomClicks"/>
         </methods>
       </class> <!-- usps.TestSetJ -->
@@ -32,6 +30,7 @@
           <include name="TC_501_UsersAreAbleToSearch"/>
           <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
           <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
           <include name="SetUpPreData"/>
           <include name="TC_506_StoreFinder_FireFoxBrowser"/>
@@ -54,7 +53,6 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TestCase_103"/>
-          <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
@@ -72,16 +70,14 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
-          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
