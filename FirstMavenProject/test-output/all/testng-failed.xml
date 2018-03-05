@@ -30,7 +30,6 @@
           <include name="TC_501_UsersAreAbleToSearch"/>
           <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
           <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
-          <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
           <include name="SetUpPreData"/>
           <include name="TC_506_StoreFinder_FireFoxBrowser"/>
@@ -53,6 +52,7 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TestCase_103"/>
+          <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
@@ -75,14 +75,16 @@
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_801_testOne"/>
+          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
       <class name="levis.TestSetH">
         <methods>
+          <include name="TC101_MouseOver_OnMajorElements"/>
           <include name="TC_104_FindStoresMap"/>
           <include name="TC_103_womens_dress"/>
           <include name="doBeforeEveryMethod"/>
@@ -99,7 +101,6 @@
       </class> <!-- bbb.TestSetI -->
       <class name="FTD.TestSetK">
         <methods>
-          <include name="SearchAbility"/>
           <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
