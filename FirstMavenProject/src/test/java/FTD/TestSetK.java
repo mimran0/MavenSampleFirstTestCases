@@ -156,7 +156,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 			driver.findElement(By.id("toolbar_search_box")).sendKeys(v);
 			driver.findElement(By.id("Search")).click();
 			waitTime(5000); // Synchronization
-			CAPTURESCREEN( driver, "FTD"+v);
+			CAPTURESCREEN(driver, "FTD" + v);
 			ProcessCheckOut(driver, wBrowser);
 		}
 
@@ -230,6 +230,92 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 		} catch (Exception e) {
 		}
 		// dealing with popup wind ends here.
+	}
+
+	// Requirement 107: Verify Error message displays for login attempt with
+	// wrong credentials. Use all 8 selectors to identify objects or elements.
+	@Test(enabled = true)
+	public void TC_107_All8selectors_EMWRLA() {
+		// 1. ClassName selector
+		// 2. cssSelector selector
+		// 3. name selector
+		// 4. id selector
+		// 5. xpath selector
+		// 6. TagName selector
+		// 7. LinkTest selector
+		// 8. PartialLinkTest selector
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "FIREFOX";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+
+		// 1. Identify object using class selector.
+		// dealing with popup window.
+		try {
+			WebElement obj_X = driver.findElement(By.className("bx-close-x-adaptive-2"));
+			boolean IsXdisplay = obj_X.isDisplayed();
+			// System.out.println(IsXdisplay);
+			// System.out.println(obj_X.getTagName());
+			if (IsXdisplay) {
+				obj_X.click();
+			}
+		} catch (Exception e) {
+			Assert.fail(" Pop up window did not display.");
+		}
+
+		waitTime(3000);
+		// 2. Identify object using cssSelector selector
+		WebElement obj_SignIn = driver.findElement(By.cssSelector(".sign-in"));
+		obj_SignIn.click();
+		waitTime(3000); // Synchronization 3 seconds.
+
+		// 3. Identify object usnig name selector
+		WebElement obj_emailAddress = driver.findElement(By.name("email"));
+		obj_emailAddress.sendKeys("wrongEmail@love.com");
+		waitTime(3000);
+
+		// 4. Identify object using id selector
+		WebElement obj_Password = driver.findElement(By.id("lm_password"));
+		obj_Password.sendKeys("wrongPassword");
+		waitTime(3000);
+
+		// 5. Identify object using xpath selector
+		WebElement obj_SignIn2 = driver
+				.findElement(By.xpath("//*[@id=\"purchasepath_FTDsignin\"]/div[6]/div[2]/button"));
+		obj_SignIn2.click();
+		waitTime(3000);
+
+		// checkpoint starts here
+		WebElement obj_ErrorMessage = driver.findElement(By.cssSelector("div.pplm_error:nth-child(1)"));
+		String v_ErrorMessage = obj_ErrorMessage.getText();
+		System.out.println(v_ErrorMessage);
+		Assert.assertEquals("Email address and password do not match. Please review and re-submit.", v_ErrorMessage);
+		// checkpoint ends here
+
+		waitTime(3000);
+		// 6. Identify object using tagName selector
+		WebElement obj_X = driver.findElement(By.tagName("button"));
+		obj_X.click();
+
+		waitTime(3000);
+		// 7. Identify object using LinkText selector
+		WebElement obj_CustomerService = driver.findElement(By.linkText("CUSTOMER SERVICE"));
+		obj_CustomerService.click();
+		waitTime(3000);
+
+		// 8. Identify object using PartialLinkText selector
+		WebElement obj_ChangeMyOrder = driver.findElement(By.partialLinkText("Change My O"));
+		obj_ChangeMyOrder.click();
+		waitTime(3000);
+
+		// Checkpoint starts here
+		WebElement obj_OrderInformation = driver.findElement(By.cssSelector(
+				"table.custserv_text:nth-child(6) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > font:nth-child(1) > b:nth-child(1)"));
+		String v_OrderInformation = obj_OrderInformation.getText();
+		System.out.println(v_OrderInformation);
+		Assert.assertEquals("Order Information", v_OrderInformation);
+		// Checkpoinnt ends here
 	}
 
 }

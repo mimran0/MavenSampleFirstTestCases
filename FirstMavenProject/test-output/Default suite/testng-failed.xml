@@ -5,10 +5,8 @@
     <classes>
       <class name="FTD.TestSetK">
         <methods>
-          <include name="SearchAbility"/>
-          <include name="SelectA_Rose_FireFox"/>
+          <include name="TC_107_All8selectors"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="SelectA_Rose_GoogleChrome"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
