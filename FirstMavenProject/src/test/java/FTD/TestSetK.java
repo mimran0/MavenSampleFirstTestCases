@@ -1,6 +1,9 @@
 package FTD;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -216,7 +219,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 		}
 
 		driver.findElement(By.xpath("//*[@id=\"callToAction_btn\"]/span[2]/img")).click();
-		waitTime(7000);
+		waitTime(10000);
 		boolean isCheckOutNowDisplay = driver.findElement(By.partialLinkText("CHECKOUT NOW")).isDisplayed();
 		Assert.assertEquals(isCheckOutNowDisplay, true);
 		// dealing with popup window starts here. (It is 'Optional Steps' if
@@ -316,6 +319,133 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 		System.out.println(v_OrderInformation);
 		Assert.assertEquals("Order Information", v_OrderInformation);
 		// Checkpoinnt ends here
+	}
+
+	// Requirement 108: Users are able to search on the home page based on
+	// flower type.
+	@Test(enabled = true)
+	public void SearchAbility_FlowerType() {
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "MICROSOFE EDGE";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		// declaring and initialization of an array in one line.
+		String[] ImranARRAY = new String[] { "Rose", "Lily", "Freesia", "Peony", "Orchids", "Tulip" };
+
+		for (String v : ImranARRAY) {
+			driver.findElement(By.id("toolbar_search_box")).clear();
+			driver.findElement(By.id("toolbar_search_box")).sendKeys(v);
+			driver.findElement(By.id("Search")).click();
+			waitTime(5000); // Synchronization
+			CAPTURESCREEN(driver, "FTD_" + v);
+			ProcessCheckOut(driver, wBrowser);
+		}
+
+	}
+
+	// Requirement 109: Users are able to search on the home page based on
+	// Keyword.
+	@Test(enabled = true)
+	public void SearchAbility_Keyword() {
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "MICROSOFE EDGE";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		// declaring and initialization of an array in one line.
+		String[] ImranARRAY = new String[] { "Birthday", "Love", "Love & Romance", "Thank You", "Anniversary" };
+
+		for (String v : ImranARRAY) {
+			driver.findElement(By.id("toolbar_search_box")).clear();
+			driver.findElement(By.id("toolbar_search_box")).sendKeys(v);
+			driver.findElement(By.id("Search")).click();
+			waitTime(5000); // Synchronization
+			CAPTURESCREEN(driver, "FTD_" + v);
+			ProcessCheckOut(driver, wBrowser);
+		}
+
+	}
+
+	// Requirement 110: Verify that Social Networking images display on homepage
+	// and works.
+	@Test(enabled = true)
+	public void Tc_110_SNI() {
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "FIREFOX";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(10000);
+
+		// Checking if Facebook image display or not and Clicking on the image
+		// open new tab or not.
+		WebElement obj_Facebook = driver.findElement(By.cssSelector(".sprite-icon-facebook"));
+		String vPageTytle = "FTD Flowers - Home | Facebook";
+		SocialNetworkingImageCheck(driver, obj_Facebook, vPageTytle);
+
+		// Checking if Twitter image display or not and Clicking on the image
+		// open new tab or not.
+		WebElement obj_Twitter = driver.findElement(By.cssSelector(".sprite-icon-twitter"));
+		String vPageTytle_Twitter = "FTD Flowers (@ftdflowers) | Twitter";
+		SocialNetworkingImageCheck(driver, obj_Twitter, vPageTytle_Twitter);
+
+		// Checking if Pign image display or not and Clicking on the image
+		// open new tab or not.
+		WebElement obj_Pign = driver.findElement(By.cssSelector(".sprite-icon-pinterest"));
+		String vPageTytle_Pign = "FTD Flowers (ftdflowers) on Pinterest";
+		SocialNetworkingImageCheck(driver, obj_Pign, vPageTytle_Pign);
+
+		// Checking if Youtube image display or not and Clicking on the image
+		// open new tab or not.
+		WebElement obj_Youtube = driver.findElement(By.cssSelector(".sprite-icon-youtube"));
+		String vPageTytle_Youtube = "FTD Flowers - YouTube - YouTube";
+		SocialNetworkingImageCheck(driver, obj_Youtube, vPageTytle_Youtube);
+
+		// Checking if Google image display or not and Clicking on the image
+		// open new tab or not.
+		WebElement obj_Google = driver.findElement(By.cssSelector(".sprite-icon-google"));
+		String vPageTytle_Google = "FTD Flowers - Google+";
+		SocialNetworkingImageCheck(driver, obj_Google, vPageTytle_Google);
+
+		// Checking if Instagram image display or not and Clicking on the image
+		// open new tab or not.
+		WebElement obj_Instagram = driver.findElement(By.cssSelector(".sprite-icon-instagram"));
+		String vPageTytle_Instagram = "FTD Flowers (@ftdflowers) • Instagram photos and videos";
+		SocialNetworkingImageCheck(driver, obj_Instagram, vPageTytle_Instagram);
+
+		// Checking if FTD_Blog image display or not and Clicking on the image
+		// open new tab or not.
+		WebElement obj_FTD_Blog = driver.findElement(By.cssSelector(".sprite-icon-blog"));
+		String vPageTytle_FTD_Blog = "FTD.com - Floral tips, design, inspiration, and ideas from FTD";
+		SocialNetworkingImageCheck(driver, obj_FTD_Blog, vPageTytle_FTD_Blog);
+	}
+
+	public static void SocialNetworkingImageCheck(WebDriver driver, WebElement obj_Facebook, String vPageTytle) {
+		try {
+			// obj_Facebook =
+			// driver.findElement(By.cssSelector(".sprite-icon-facebook"));
+			boolean v_Facebook = obj_Facebook.isDisplayed();
+			System.out.println(v_Facebook);
+			if (v_Facebook) {
+				// making the image click able (below 2 lines)
+				JavascriptExecutor jse = (JavascriptExecutor) driver;
+				jse.executeScript("arguments[0].scrollIntoView()", obj_Facebook);
+				obj_Facebook.click();
+				waitTime(3000);
+				// dealing with 2 tabs
+				ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+				driver.switchTo().window(tabs2.get(1));
+				waitTime(5000);
+				System.out.println(driver.getTitle());
+				// checkpoint: checking the new tab opens facebook home page
+				// (below 1 line).
+				Assert.assertEquals(vPageTytle, driver.getTitle());
+				driver.close(); // closing the 2nd Tab that contains Facebook
+				driver.switchTo().window(tabs2.get(0));
+			}
+		} catch (Exception e) {
+			Assert.fail("FaceBook image did not work properly");
+		}
 	}
 
 }

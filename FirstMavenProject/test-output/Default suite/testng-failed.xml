@@ -5,7 +5,7 @@
     <classes>
       <class name="FTD.TestSetK">
         <methods>
-          <include name="TC_107_All8selectors"/>
+          <include name="Tc_110_TBD"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
