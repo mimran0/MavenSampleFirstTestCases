@@ -5,7 +5,7 @@
     <classes>
       <class name="FTD.TestSetK">
         <methods>
-          <include name="Tc_110_TBD"/>
+          <include name="TC_111_AnalystCoverage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
         </methods>

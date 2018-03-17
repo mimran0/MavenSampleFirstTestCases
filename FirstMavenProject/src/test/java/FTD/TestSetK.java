@@ -420,6 +420,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 		SocialNetworkingImageCheck(driver, obj_FTD_Blog, vPageTytle_FTD_Blog);
 	}
 
+	// this is a reusable method which is reused to create TestNG test.
 	public static void SocialNetworkingImageCheck(WebDriver driver, WebElement obj_Facebook, String vPageTytle) {
 		try {
 			// obj_Facebook =
@@ -446,6 +447,56 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 		} catch (Exception e) {
 			Assert.fail("FaceBook image did not work properly");
 		}
+	}
+
+	// Requirement 111: Verify that Analyst Coverage of Investor relation
+	// displays.
+	@Test(enabled = true)
+	public void TC_111_AnalystCoverage() {
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(10000);
+
+		WebElement obj_InvestorRelations = driver.findElement(By.linkText("Investor Relations"));
+		boolean v_InvestorRelations = obj_InvestorRelations.isDisplayed();
+		if (v_InvestorRelations == true) {
+			// making the image click able (below 2 lines)
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("arguments[0].scrollIntoView()", obj_InvestorRelations);
+			obj_InvestorRelations.click();
+			waitTime(3000);
+		} else {
+			Assert.fail("Investor Relations link was not clicked.");
+		}
+		// dealing with 2 tabs
+		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1)); // getting the 2nd browser tab.
+		waitTime(5000);
+		// System.out.println(driver.getTitle());
+		String v_StockPrice = driver.findElement(By.className("price")).getText();
+		System.out.println("Today's stock price is " + v_StockPrice);
+		WebElement obj_InvestorRelationTab = driver.findElement(By.id("current"));
+		// mouseover on the tab
+		Actions action = new Actions(driver);
+		action.moveToElement(obj_InvestorRelationTab).build().perform();
+		waitTime(4000);
+		WebElement obj_StockInfo = driver.findElement(By.linkText("Stock Information"));
+		// mouseover on the tab
+		action.moveToElement(obj_StockInfo).build().perform();
+		waitTime(4000);
+		WebElement obj_AnalyseCoverage = driver.findElement(By.linkText("Analyst Coverage"));
+		obj_AnalyseCoverage.click();
+		WebElement obj_AnalystCoverageTable = driver.findElement(By.xpath(
+				"//*[@id=\"block-nir-pid1451-content\"]/article/div/div/div/div/div/div/div/div[1]/div/div/div[2]/table/tbody"));
+		System.out.println(obj_AnalystCoverageTable.getText());
+		driver.close(); // closing 2nd Browser tab.
+		driver.switchTo().window(tabs2.get(0)); // getting 1st browser tab.
+		System.out.println(driver.getTitle()); // checking first Browser tab is
+												// open.
+		Assert.assertEquals("Roses", driver.getTitle()); // checkpoint.
+		driver.quit(); // closing 1st tab and killing the process.
 	}
 
 }
