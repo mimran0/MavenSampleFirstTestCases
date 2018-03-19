@@ -1,3 +1,4 @@
+
 <suite name="all">
 	<test name="all">
 		<classes>
