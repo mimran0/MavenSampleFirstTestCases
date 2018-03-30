@@ -3,15 +3,25 @@
 <suite name="Failed suite [all]">
   <test name="all(failed)">
     <classes>
+      <class name="afterLoginIn.TestSetA">
+        <methods>
+          <include name="TC_402_Login_NegativeTest"/>
+          <include name="TC_403_VerifyFieldsInLoginPage"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_401_Login_And_LogOut"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="SetUpPreData"/>
+          <include name="TC_404_ToolTip"/>
+        </methods>
+      </class> <!-- afterLoginIn.TestSetA -->
       <class name="usps.TestSetJ">
         <methods>
           <include name="TC_03_ExperimentAll8Selectors"/>
-          <include name="TC_12_VerifySignUpLinkInGoogleChromeBrowser"/>
           <include name="SetUpPreDataMethod"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
-          <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
+          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>
@@ -23,7 +33,6 @@
           <include name="TC_503_mouseOver"/>
           <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
           <include name="TC_501_UsersAreAbleToSearch"/>
-          <include name="TC_510_WeeklyAdd_GoogleChrome"/>
           <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
           <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
           <include name="ValidLogin"/>
@@ -34,17 +43,15 @@
       </class> <!-- walmart.TestSetB -->
       <class name="MC.TestSetF">
         <methods>
-          <include name="TC_408_MC_ME_A"/>
-          <include name="TC_409_MC_ME_B"/>
-          <include name="TC_411_DownAndUPonly_CHROME"/>
-          <include name="TC_403_MC_GC_B"/>
-          <include name="TC_404_MC_GC_C"/>
           <include name="TC_10_MC_ME_C"/>
           <include name="TC_405_MC_FF_A"/>
           <include name="TC_406_MC_FF_B"/>
+          <include name="TC_408_MC_ME_A"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_409_MC_ME_B"/>
           <include name="TC_402_MC_GC_A"/>
-          <include name="CalculateMortgatePayment_HardCodedValues"/>
+          <include name="TC_403_MC_GC_B"/>
+          <include name="TC_404_MC_GC_C"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_407_MC_FF_C"/>
         </methods>
@@ -65,13 +72,9 @@
       <class name="amazon.TestSetAmazon">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="SearchOnLandingPage"/>
           <include name="TestCase_103"/>
-          <include name="TestCase_104"/>
           <include name="TC_102"/>
-          <include name="TestCase_106_UpAndDown"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TestCase_105"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
       <class name="hsbc.TestSetC">
@@ -79,10 +82,27 @@
           <include name="SetUpPreDataMethod"/>
           <include name="SetUpPreData"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="scrollUpAndDown"/>
           <include name="CountryListOnOnlineBanking"/>
         </methods>
       </class> <!-- hsbc.TestSetC -->
+      <class name="groupon.TestSet_E">
+        <methods>
+          <include name="TC_408_Searchability_Grocery"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="TC_406_Searchability_restaurants"/>
+          <include name="aftermethod"/>
+          <include name="TC_407_Searchability_Public_Library"/>
+          <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="TC_410_Searchability_yoga"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_413_Searchability_SeaFoodStores"/>
+          <include name="SetUpPreData"/>
+        </methods>
+      </class> <!-- groupon.TestSet_E -->
       <class name="levis.TestSetH">
         <methods>
           <include name="TC101_MouseOver_OnMajorElements"/>
@@ -102,67 +122,14 @@
       </class> <!-- bbb.TestSetI -->
       <class name="FTD.TestSetK">
         <methods>
-          <include name="TC_111_AnalystCoverage"/>
           <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SearchAbility_FlowerType"/>
           <include name="SelectA_Rose_GoogleChrome"/>
           <include name="Tc_110_SNI"/>
-          <include name="SearchAbility_Keyword"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
-      <class name="afterLoginIn.TestSetA">
-        <methods>
-          <include name="TC_402_Login_NegativeTest"/>
-          <include name="TC_403_VerifyFieldsInLoginPage"/>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_401_Login_And_LogOut"/>
-          <include name="SetUpPreDataMethod"/>
-          <include name="SetUpPreData"/>
-          <include name="TC_404_ToolTip"/>
-        </methods>
-      </class> <!-- afterLoginIn.TestSetA -->
-      <class name="SecondClasssWith2Methods">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="UsersAreAbleToSearch"/>
-          <include name="doLast"/>
-          <include name="doFirst"/>
-        </methods>
-      </class> <!-- SecondClasssWith2Methods -->
-      <class name="groupon.TestSet_E">
-        <methods>
-          <include name="SetUpPreDataMethod"/>
-          <include name="TC_406_Searchability_restaurants"/>
-          <include name="aftermethod"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
-          <include name="TC_407_Searchability_Public_Library"/>
-          <include name="TC_404_HighlightElementsUnderCOUPON"/>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
-          <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_409_Searchability_Fitness"/>
-          <include name="SetUpPreData"/>
-        </methods>
-      </class> <!-- groupon.TestSet_E -->
-      <class name="FirstClassWith2methods">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="doLast"/>
-          <include name="UsersAreAbleToSearch"/>
-          <include name="doFirst"/>
-        </methods>
-      </class> <!-- FirstClassWith2methods -->
-      <class name="automationPractive.TestSetG">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="SetUpPreDataMethod"/>
-          <include name="test_701_display_WebTableCellValues"/>
-        </methods>
-      </class> <!-- automationPractive.TestSetG -->
     </classes>
   </test> <!-- all(failed) -->
 </suite> <!-- Failed suite [all] -->

@@ -19,7 +19,7 @@ public class FirstClassWith2methods extends CommonAPI{
 	public void doLast(){
 		System.out.println("All test cases are executed.");
 	}
-	@Test
+	@Test(enabled=true)
 	public void UsersAreAbleToSearch(){
 		//WindowsUtils.killByName("chromedriver.exe"); //closing chromedriver browser if open any. 
 		//setting the path of chrome driver
@@ -56,7 +56,7 @@ public class FirstClassWith2methods extends CommonAPI{
 	
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void test2(){
 		System.out.println("This is test 2");
 	}
