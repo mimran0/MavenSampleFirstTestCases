@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="FirstClassWith2methods">
+      <class name="MC.TestSetF">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="doLast"/>
-          <include name="UsersAreAbleToSearch"/>
-          <include name="doFirst"/>
+          <include name="TC_404_MC_GC_C"/>
+          <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- FirstClassWith2methods -->
+      </class> <!-- MC.TestSetF -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

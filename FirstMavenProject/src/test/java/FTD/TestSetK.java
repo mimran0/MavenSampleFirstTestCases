@@ -98,6 +98,10 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 			driver.findElement(By.id("ppDelLoc")).click();
 			waitTime(3000);
 			driver.findElement(By.xpath("//*[@id=\"ppDelLoc\"]/option[2]")).click();
+		} else if (wBrowser == "FIREFOX") {
+			driver.findElement(By.id("pp_del_overlay")).click();
+			waitTime(3000);
+			driver.findElement(By.xpath("//*[@id=\"ppDelLoc\"]/option[2]")).click();
 		} else {
 			Select dropdown2 = new Select(driver.findElement(By.id("ppDelLoc")));
 			dropdown2.selectByVisibleText("Residence");

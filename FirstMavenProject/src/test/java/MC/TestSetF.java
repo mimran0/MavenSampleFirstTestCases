@@ -42,13 +42,15 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 		waitTime(2000);
 		driver.findElement(By.name("cal")).click();
 		waitTime(7000);
-		scrolldown(driver, 300);		
-		//Highlighting the object that will be used for checkpoint		(updated on 1/17/2018)
-		WebElement v=driver.findElement(By.xpath("//*[@id=\"calc\"]/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[1]/div[1]/h3"));		
+		scrolldown(driver, 300);
+		// Highlighting the object that will be used for checkpoint (updated on
+		// 1/17/2018)
+		WebElement v = driver.findElement(By.xpath(
+				"//*[@id=\"calc\"]/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[1]/div[1]/h3"));
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].style.border='3px solid red'", v);
-        waitTime(7000);
-        //putting check point
+		jse.executeScript("arguments[0].style.border='3px solid red'", v);
+		waitTime(7000);
+		// putting check point
 		String vOutput = driver
 				.findElement(By
 						.xpath("//*[@id=\"calc\"]/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[1]/div[1]/h3"))
@@ -72,12 +74,19 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
 		waitTime(15000);
 		scrolldown(driver, 300);
+		driver.findElement(By.name("param[homevalue]")).clear();
 		driver.findElement(By.name("param[homevalue]")).sendKeys(vhomevalue);
+		driver.findElement(By.name("param[principal]")).clear();
 		driver.findElement(By.name("param[principal]")).sendKeys(vprincipal);
+		driver.findElement(By.name("param[interest_rate]")).clear();
 		driver.findElement(By.name("param[interest_rate]")).sendKeys(vinterest_rate);
+		driver.findElement(By.name("param[term]")).clear();
 		driver.findElement(By.name("param[term]")).sendKeys(vterm);
+		driver.findElement(By.name("param[property_tax]")).clear();
 		driver.findElement(By.name("param[property_tax]")).sendKeys(vproperty_tax);
+		driver.findElement(By.name("param[pmi]")).clear();
 		driver.findElement(By.name("param[pmi]")).sendKeys(vpmi);
+		driver.findElement(By.name("param[hoi]")).clear();
 		driver.findElement(By.name("param[hoi]")).sendKeys(vhoi);
 		waitTime(2000);
 		driver.findElement(By.name("cal")).click();
@@ -185,14 +194,14 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 411: Users are able to scroll down and up in Google Chorme
 	// browser
-	@Test(enabled=true)
+	@Test(enabled = true)
 	public void TC_411_DownAndUPonly_CHROME() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("CHROME");
 	}
 
 	// Requirement 412: Users are able to scroll down and up in firefox browser
-	@Test(enabled=true)
+	@Test(enabled = true)
 	public void TC_412_DownAndUPonly_FF() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("FIREFOX");
@@ -200,7 +209,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 413: Users are able to scroll down and up in Micorsoft Edge
 	// browser
-	@Test(enabled=true)
+	@Test(enabled = true)
 	public void TC_413_DownAndUPonly_ME() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("MICROSOFE EDGE");

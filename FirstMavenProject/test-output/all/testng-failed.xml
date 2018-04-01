@@ -41,21 +41,6 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- walmart.TestSetB -->
-      <class name="MC.TestSetF">
-        <methods>
-          <include name="TC_10_MC_ME_C"/>
-          <include name="TC_405_MC_FF_A"/>
-          <include name="TC_406_MC_FF_B"/>
-          <include name="TC_408_MC_ME_A"/>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_409_MC_ME_B"/>
-          <include name="TC_402_MC_GC_A"/>
-          <include name="TC_403_MC_GC_B"/>
-          <include name="TC_404_MC_GC_C"/>
-          <include name="SetUpPreDataMethod"/>
-          <include name="TC_407_MC_FF_C"/>
-        </methods>
-      </class> <!-- MC.TestSetF -->
       <class name="facebook.testSetD">
         <methods>
           <include name="LoginAndLogout_Chrome"/>
@@ -91,14 +76,15 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
@@ -122,11 +108,11 @@
       </class> <!-- bbb.TestSetI -->
       <class name="FTD.TestSetK">
         <methods>
+          <include name="SearchAbility"/>
           <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SearchAbility_FlowerType"/>
-          <include name="SelectA_Rose_GoogleChrome"/>
-          <include name="Tc_110_SNI"/>
+          <include name="SearchAbility_Keyword"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
