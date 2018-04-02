@@ -2,6 +2,7 @@ package afterLoginIn;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,6 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 //import org.junit.Assert;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -86,7 +88,8 @@ public class CommonAPI {
 		return driver;
 	}
 
-	// Open Specific browser (Developed by Imran on 10/13/2017)(Anyone can
+	// Open Specific browser (Developed by md shahajada Imran on
+	// 10/13/2017)(Anyone can
 	// Re-use now or 40 years later for any client)
 	// Getting webDriver and navigate the provided URL
 	// Input: URL of the webpage, Browser Name.
@@ -185,81 +188,120 @@ public class CommonAPI {
 			k = k + 50;
 		}
 	}
-	
-	
-	        // CAPTURESCREEN ((Developed by Imran on 12/16/2017)(Anyone can Re-use now or 40 years later for any client))
-			// This function/method will capture screen shot of current page and save in C:\\temp\\ folder.
-			// Output: This function/method will not return anything. it will save a png file in the mentioned location.
-			// Input: WebDriver driver
-		    //drawback: Location where files will be saved is Hard coded. 
-			
-		public static void CAPTURESCREEN(WebDriver driver) {
-			// Take screenshot and store as a file format
-			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			if (src.exists()) {
-				System.out.println("src has value");
-			}
-			//System.out.println(src.exists());
-			// now copy the screenshot to desired location using copyFile method
-			try {
-				//FileUtils.copyFile(src, new File("c:\\tmp\\screenshot" + System.currentTimeMillis() + ".png"));
-				FileUtils.copyFile(src, new File("C:\\Users\\imran\\workspace6\\FirstMavenProject\\ScreenShots\\screenshot" + System.currentTimeMillis() + ".png"));
-				System.out.println("Try block executed");
 
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		
-		//Method OverLoading (updated on 12/20/17)
-		public static void CAPTURESCREEN(WebDriver driver, String Text) {
-			// Take screenshot and store as a file format
-			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			if (src.exists()) {
-				System.out.println("src has value");
-			}
-			//System.out.println(src.exists());
-			// now copy the screenshot to desired location using copyFile method
-			try {
-				//FileUtils.copyFile(src, new File("c:\\tmp\\screenshot" + System.currentTimeMillis() + ".png"));
-				FileUtils.copyFile(src, new File("C:\\Users\\imran\\workspace6\\FirstMavenProject\\ScreenShots\\"+Text + System.currentTimeMillis() + ".png"));
-				System.out.println("Try block executed");
+	// CAPTURESCREEN ((Developed by md shahajada Imran on 12/16/2017)(Anyone can
+	// Re-use now or 40 years later for any client))
+	// This function/method will capture screen shot of current page and save in
+	// C:\\temp\\ folder.
+	// Output: This function/method will not return anything. it will save a png
+	// file in the mentioned location.
+	// Input: WebDriver driver
+	// drawback: Location where files will be saved is Hard coded.
 
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+	public static void CAPTURESCREEN(WebDriver driver) {
+		// Take screenshot and store as a file format
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		if (src.exists()) {
+			System.out.println("src has value");
 		}
-		
-		// DeletAllFilesFromTheFolder ((Developed by Imran on 12/17/2017)(Anyone can Re-use now
-		// or 40 years later for any client)).
-		// This method will delete all files from a given folder.
-		// Output: This method will not return anything. it will delete all files from a folder.
-		// Input: String FolderPath. The path of the folder that contains all the files.
-		public static void DeletAllFilesFromTheFolder(String FolderPath) {
-			// Set the path of the folder that contains all the files
-			File file = new File(FolderPath);
-			// Creating the list of files and store in the "files" variable.
-			File[] files = file.listFiles();
-			int len = files.length;
-			if (len == 0) {
-				System.out.println("The folder '"+FolderPath+"' is already empty. Therefore nothing to delete");
-			}
-			// System.out.println(len);
-			// For each file in the folder, first print the name in the console then
-			// delete it.
-			int i = 0;
-			for (File f : files) {
-				if (i == 0) {
-					System.out.println("Total " + len + " files have been deleted");
-					System.out.println("Below is the list of files that have been deleted");
-				}
-				System.out.println(f.getName());
-				f.delete();
-				i++;
-			}
-		}
+		// System.out.println(src.exists());
+		// now copy the screenshot to desired location using copyFile method
+		try {
+			// FileUtils.copyFile(src, new File("c:\\tmp\\screenshot" +
+			// System.currentTimeMillis() + ".png"));
+			FileUtils.copyFile(src, new File("C:\\Users\\imran\\workspace6\\FirstMavenProject\\ScreenShots\\screenshot"
+					+ System.currentTimeMillis() + ".png"));
+			System.out.println("Try block executed");
 
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	// Method OverLoading (updated on 12/20/17)
+	public static void CAPTURESCREEN(WebDriver driver, String Text) {
+		// Take screenshot and store as a file format
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		if (src.exists()) {
+			System.out.println("src has value");
+		}
+		// System.out.println(src.exists());
+		// now copy the screenshot to desired location using copyFile method
+		try {
+			// FileUtils.copyFile(src, new File("c:\\tmp\\screenshot" +
+			// System.currentTimeMillis() + ".png"));
+			FileUtils.copyFile(src, new File("C:\\Users\\imran\\workspace6\\FirstMavenProject\\ScreenShots\\" + Text
+					+ System.currentTimeMillis() + ".png"));
+			System.out.println("Try block executed");
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	// DeletAllFilesFromTheFolder ((Developed by Imran on 12/17/2017)(Anyone can
+	// Re-use now
+	// or 40 years later for any client)).
+	// This method will delete all files from a given folder.
+	// Output: This method will not return anything. it will delete all files
+	// from a folder.
+	// Input: String FolderPath. The path of the folder that contains all the
+	// files.
+	public static void DeletAllFilesFromTheFolder(String FolderPath) {
+		// Set the path of the folder that contains all the files
+		File file = new File(FolderPath);
+		// Creating the list of files and store in the "files" variable.
+		File[] files = file.listFiles();
+		int len = files.length;
+		if (len == 0) {
+			System.out.println("The folder '" + FolderPath + "' is already empty. Therefore nothing to delete");
+		}
+		// System.out.println(len);
+		// For each file in the folder, first print the name in the console then
+		// delete it.
+		int i = 0;
+		for (File f : files) {
+			if (i == 0) {
+				System.out.println("Total " + len + " files have been deleted");
+				System.out.println("Below is the list of files that have been deleted");
+			}
+			System.out.println(f.getName());
+			f.delete();
+			i++;
+		}
+	}
+
+	// HighLight_Element ((Developed by md shahajada Imran on 04/02/2018)(Anyone
+	// can
+	// Re-use now or 40 years later for any client)).
+	// This method will Highlight only one element.
+	// Output: N/A
+	// Input arguments: WebDriver driver, WebElement object
+
+	public static void HighLight_Element(WebDriver driver, WebElement object) {
+		// highlight only one element.
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].style.border='3px solid red'", object);
+	}
+
+	// HighLight_Elements ((Developed by md shahajada Imran on
+	// 04/02/2018)(Anyone can
+	// Re-use now or 40 years later for any client)).
+	// This method will Highlight a list of elements.
+	// Output: N/A
+	// Input arguments: WebDriver driver, List<WebElement> objects
+	public static void HighLight_Elements(WebDriver driver, List<WebElement> objects) {
+		System.out.println(
+				"There are total " + objects.size() + " elements in the list and those elements are written below.");
+		for (WebElement v : objects) {
+			System.out.println(v.getText());
+			// highlight those elements
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("arguments[0].style.border='3px solid red'", v);
+
+		}
+	}
 
 }
