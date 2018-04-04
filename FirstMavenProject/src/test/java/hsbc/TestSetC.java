@@ -12,7 +12,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import afterLoginIn.CommonAPI;
-
+/**
+ * @author md shahajada imran
+ *
+ */
 public class TestSetC extends afterLoginIn.CommonAPI{
 	        //This method will be executed once before the test set that contains by this class "TestSetA"
 			@BeforeTest

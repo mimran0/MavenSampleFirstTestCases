@@ -15,7 +15,10 @@ import org.testng.annotations.Test;
 
 import afterLoginIn.CommonAPI;
 import junit.framework.Assert;
-
+/**
+ * @author md shahajada imran
+ *
+ */
 public class TestSetAmazon extends afterLoginIn.CommonAPI {
 
 	// this method will be executed before every test
@@ -106,7 +109,7 @@ public class TestSetAmazon extends afterLoginIn.CommonAPI {
 			r.keyRelease(KeyEvent.VK_ENTER);
 			// Hit enter from the keyboard Ends here
 			waitTime(5000);
-			CAPTURESCREEN (driver);
+			//CAPTURESCREEN (driver);
 			driver.findElement(By.id("twotabsearchtextbox")).clear();
 			i++;
 		}

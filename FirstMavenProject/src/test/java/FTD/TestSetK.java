@@ -18,6 +18,10 @@ import org.testng.annotations.Test;
 import afterLoginIn.CommonAPI;
 import junit.framework.Assert;
 
+/**
+ * @author md shahajada imran
+ *
+ */
 public class TestSetK extends afterLoginIn.CommonAPI {
 
 	// this method will be executed before every test
@@ -32,7 +36,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 101: select a red rose in Google Chrome
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SelectA_Rose_GoogleChrome() {
 		String wBrowser = "CHROME";
 		TestSetK TestSetK = new TestSetK();
@@ -40,7 +44,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 102: select a red rose in Firefox Browser
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SelectA_Rose_FireFox() {
 		String wBrowser = "FIREFOX";
 		TestSetK TestSetK = new TestSetK();
@@ -49,7 +53,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 103: select a red rose in Microsoft Edge
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SelectA_Rose_MicorsoftEdge() {
 		String wBrowser = "MICROSOFE EDGE";
 		TestSetK TestSetK = new TestSetK();
@@ -57,7 +61,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 104: select a red rose in Internet Explorer
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SelectA_Rose_InternetExplorer() {
 		String wBrowser = "IE";
 		TestSetK TestSetK = new TestSetK();
@@ -132,7 +136,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 105: Mouseover all links
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void MousOverAllLinks() {
 		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -151,7 +155,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 106: Users are able to search on the home page.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SearchAbility() {
 		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
 		String wBrowser = "MICROSOFE EDGE";
@@ -244,7 +248,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 
 	// Requirement 107: Verify Error message displays for login attempt with
 	// wrong credentials. Use all 8 selectors to identify objects or elements.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_107_All8selectors_EMWRLA() {
 		// 1. ClassName selector
 		// 2. cssSelector selector
@@ -330,7 +334,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 
 	// Requirement 108: Users are able to search on the home page based on
 	// flower type.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SearchAbility_FlowerType() {
 		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
 		String wBrowser = "MICROSOFE EDGE";
@@ -353,7 +357,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 
 	// Requirement 109: Users are able to search on the home page based on
 	// Keyword.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SearchAbility_Keyword() {
 		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
 		String wBrowser = "MICROSOFE EDGE";
@@ -376,7 +380,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 
 	// Requirement 110: Verify that Social Networking images display on homepage
 	// and works.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void Tc_110_SNI() {
 		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
 		String wBrowser = "FIREFOX";
@@ -458,7 +462,7 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 
 	// Requirement 111: Verify that Analyst Coverage of Investor relation
 	// displays.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_111_AnalystCoverage() {
 		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
 		String wBrowser = "CHROME";
@@ -505,67 +509,70 @@ public class TestSetK extends afterLoginIn.CommonAPI {
 		Assert.assertEquals("Roses", driver.getTitle()); // checkpoint.
 		driver.quit(); // closing 1st tab and killing the process.
 	}
-	
+
 	// Requirement 111: Verify that Social Networking images display on homepage
-		// and works using Page Factory.
+	// and works using Page Factory.
 	@FindBy(how = How.CSS, using = ".sprite-icon-facebook")
-    private WebElement obj_Facebook;
+	private WebElement obj_Facebook;
 	@FindBy(how = How.CSS, using = ".sprite-icon-twitter")
-    private WebElement obj_Twitter;
+	private WebElement obj_Twitter;
 	@FindBy(how = How.CSS, using = ".sprite-icon-pinterest")
-    private WebElement obj_Pign;
+	private WebElement obj_Pign;
 	@FindBy(how = How.CSS, using = ".sprite-icon-youtube")
-    private WebElement obj_Youtube;
+	private WebElement obj_Youtube;
 	@FindBy(how = How.CSS, using = ".sprite-icon-google")
-    private WebElement obj_Google;
+	private WebElement obj_Google;
 	@FindBy(how = How.CSS, using = ".sprite-icon-instagram")
-    private WebElement obj_Instagram;
+	private WebElement obj_Instagram;
 	@FindBy(how = How.CSS, using = ".sprite-icon-blog")
-    private WebElement obj_FTD_Blog;
-		@Test(enabled = true)
-		public void Tc_110_SNI_UsingFindBy() {
-			String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
-			String wBrowser = "FIREFOX";
-			CommonAPI CommonAPI = new CommonAPI();
-			WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
-			waitTime(10000);
-			PageFactory.initElements(driver, this); //initializing elements inside this testNG which were created class level using FindBy or Page Factory.
-			// Checking if Facebook image display or not and Clicking on the image
-			// open new tab or not.				 
-			System.out.println(obj_Facebook.getTagName());
-			String vPageTytle = "FTD Flowers - Home | Facebook";
-			SocialNetworkingImageCheck(driver, obj_Facebook, vPageTytle);
+	private WebElement obj_FTD_Blog;
 
-			// Checking if Twitter image display or not and Clicking on the image
-			// open new tab or not.			
-			String vPageTytle_Twitter = "FTD Flowers (@ftdflowers) | Twitter";
-			SocialNetworkingImageCheck(driver, obj_Twitter, vPageTytle_Twitter);
+	@Test(enabled = true)
+	public void Tc_110_SNI_UsingFindBy() {
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "FIREFOX";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(10000);
+		PageFactory.initElements(driver, this); // initializing elements inside
+												// this testNG which were
+												// created class level using
+												// FindBy or Page Factory.
+		// Checking if Facebook image display or not and Clicking on the image
+		// open new tab or not.
+		System.out.println(obj_Facebook.getTagName());
+		String vPageTytle = "FTD Flowers - Home | Facebook";
+		SocialNetworkingImageCheck(driver, obj_Facebook, vPageTytle);
 
-			// Checking if Pign image display or not and Clicking on the image
-			// open new tab or not.			
-			String vPageTytle_Pign = "FTD Flowers (ftdflowers) on Pinterest";
-			SocialNetworkingImageCheck(driver, obj_Pign, vPageTytle_Pign);
+		// Checking if Twitter image display or not and Clicking on the image
+		// open new tab or not.
+		String vPageTytle_Twitter = "FTD Flowers (@ftdflowers) | Twitter";
+		SocialNetworkingImageCheck(driver, obj_Twitter, vPageTytle_Twitter);
 
-			// Checking if Youtube image display or not and Clicking on the image
-			// open new tab or not.		
-			String vPageTytle_Youtube = "FTD Flowers - YouTube - YouTube";
-			SocialNetworkingImageCheck(driver, obj_Youtube, vPageTytle_Youtube);
+		// Checking if Pign image display or not and Clicking on the image
+		// open new tab or not.
+		String vPageTytle_Pign = "FTD Flowers (ftdflowers) on Pinterest";
+		SocialNetworkingImageCheck(driver, obj_Pign, vPageTytle_Pign);
 
-			// Checking if Google image display or not and Clicking on the image
-			// open new tab or not.			
-			String vPageTytle_Google = "FTD Flowers - Google+";
-			SocialNetworkingImageCheck(driver, obj_Google, vPageTytle_Google);
+		// Checking if Youtube image display or not and Clicking on the image
+		// open new tab or not.
+		String vPageTytle_Youtube = "FTD Flowers - YouTube - YouTube";
+		SocialNetworkingImageCheck(driver, obj_Youtube, vPageTytle_Youtube);
 
-			// Checking if Instagram image display or not and Clicking on the image
-			// open new tab or not.			
-			String vPageTytle_Instagram = "FTD Flowers (@ftdflowers) • Instagram photos and videos";
-			SocialNetworkingImageCheck(driver, obj_Instagram, vPageTytle_Instagram);
+		// Checking if Google image display or not and Clicking on the image
+		// open new tab or not.
+		String vPageTytle_Google = "FTD Flowers - Google+";
+		SocialNetworkingImageCheck(driver, obj_Google, vPageTytle_Google);
 
-			// Checking if FTD_Blog image display or not and Clicking on the image
-			// open new tab or not.			
-			String vPageTytle_FTD_Blog = "FTD.com - Floral tips, design, inspiration, and ideas from FTD";
-			SocialNetworkingImageCheck(driver, obj_FTD_Blog, vPageTytle_FTD_Blog);
-		}
+		// Checking if Instagram image display or not and Clicking on the image
+		// open new tab or not.
+		String vPageTytle_Instagram = "FTD Flowers (@ftdflowers) • Instagram photos and videos";
+		SocialNetworkingImageCheck(driver, obj_Instagram, vPageTytle_Instagram);
 
+		// Checking if FTD_Blog image display or not and Clicking on the image
+		// open new tab or not.
+		String vPageTytle_FTD_Blog = "FTD.com - Floral tips, design, inspiration, and ideas from FTD";
+		SocialNetworkingImageCheck(driver, obj_FTD_Blog, vPageTytle_FTD_Blog);
+	}
 
 }

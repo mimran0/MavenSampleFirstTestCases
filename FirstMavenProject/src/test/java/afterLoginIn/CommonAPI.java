@@ -18,7 +18,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.os.WindowsUtils;
 import org.testng.annotations.BeforeMethod;
-
+/**
+ * @author md shahajada imran
+ *
+ */
 public class CommonAPI {
 
 	// method to wait a specific time

@@ -7,7 +7,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import afterLoginIn.CommonAPI;
-
+/**
+ * @author md shahajada imran
+ *
+ */
 public class TestSetG extends afterLoginIn.CommonAPI {
 	// this method will be executed before every test
 	@BeforeMethod

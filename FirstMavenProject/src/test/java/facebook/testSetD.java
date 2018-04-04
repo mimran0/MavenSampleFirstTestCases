@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 import afterLoginIn.CommonAPI;
 
 /**
- * @author imran
+ * @author md shahajada imran
  *
  */
 public class testSetD extends afterLoginIn.CommonAPI{

@@ -9,7 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
+/**
+ * @author md shahajada imran
+ *
+ */
 public class TestSetA extends CommonAPI{
 	
 	//Pre-requisite: Capcha must be disabled by developers else TC 401 and TC 402 will fail.

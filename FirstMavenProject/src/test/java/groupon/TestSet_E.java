@@ -125,6 +125,7 @@ public class TestSet_E extends afterLoginIn.CommonAPI {
 			jse.executeScript("arguments[0].style.border='3px solid red'", v);
 
 		}
+		CAPTURESCREEN(driver, "Groupon_AllLinksAreHighlighted");
 	}
 
 	// Requirement403: Highlight one specific link (signin link)
@@ -274,55 +275,55 @@ public class TestSet_E extends afterLoginIn.CommonAPI {
 	// By Definition, Parameterization is using same method/script for different
 	/// set's of input data.
 	// Requirement 405: Users are able to search.
-	@Test
+	@Test(enabled = true)
 	public void TC_405_Searchability_SPA_11372() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("SPA", "11372");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_406_Searchability_restaurants() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("restaurants", "11369");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_407_Searchability_Public_Library() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("Public Library", "08810");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_408_Searchability_Grocery() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("Grocery", "08810");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_409_Searchability_Fitness() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("Fitness Center", "08810");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_410_Searchability_yoga() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("yoga", "08810");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_411_Searchability_spaMessage() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("SPA message", "11372");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_412_Searchability_DunkinDonuts() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("DunkinDonuts", "08810");
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void TC_413_Searchability_SeaFoodStores() {
 		TestSet_E TestSet_E = new TestSet_E();
 		TestSet_E.CommonSearcOnLandingPAGE("Sea Food Stores", "08810");

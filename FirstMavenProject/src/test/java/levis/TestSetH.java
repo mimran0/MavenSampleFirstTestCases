@@ -13,6 +13,10 @@ import org.testng.annotations.Test;
 
 import afterLoginIn.CommonAPI;
 
+/**
+ * @author md shahajada imran
+ *
+ */
 public class TestSetH extends afterLoginIn.CommonAPI {
 	// this method will be executed before every test
 	@BeforeMethod
@@ -197,7 +201,7 @@ public class TestSetH extends afterLoginIn.CommonAPI {
 			jse.executeScript("arguments[0].style.border='3px solid red'", v);
 		}
 		scrolldown(driver, 900);
-		CAPTURESCREEN (driver);
+		CAPTURESCREEN(driver, "Levis");
 	}
 
 }

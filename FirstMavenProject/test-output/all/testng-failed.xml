@@ -74,7 +74,6 @@
         <methods>
           <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
           <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
@@ -109,11 +108,9 @@
       </class> <!-- bbb.TestSetI -->
       <class name="FTD.TestSetK">
         <methods>
-          <include name="SearchAbility"/>
           <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="SearchAbility_FlowerType"/>
-          <include name="SearchAbility_Keyword"/>
+          <include name="Tc_110_SNI_UsingFindBy"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- FTD.TestSetK -->

@@ -16,6 +16,10 @@ import org.testng.annotations.Test;
 
 import afterLoginIn.CommonAPI;
 
+/**
+ * @author md shahajada imran
+ *
+ */
 public class TestSetB extends afterLoginIn.CommonAPI {
 
 	// This method will be executed once before the test set that contains by
@@ -211,7 +215,7 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 	}
 
 	// This is a method that is called in TestNG method to cover
-	// parameterization
+	// parameterization.
 	public void StoreFinder(String BrowserName) {
 		String vBaseURL = "http://www.walmart.com";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -236,7 +240,7 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 506: Users are able to find store map with nearby walmart
-	// stores in Google Chrome Browser
+	// stores in Google Chrome Browser.
 	@Test(enabled = true)
 	public void TC_506_StoreFinder_GoogleChromeBrowser() {
 		TestSetB TestSetB = new TestSetB();
@@ -276,6 +280,7 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 		driver.get("https://www.walmart.com/store/2003/north-brunswick-nj/weekly-ads");
 		waitTime(2000);
 		ScrollDownAndUp(driver, 700);
+		CAPTURESCREEN(driver, "WalmartWeeklyAdds");
 	}
 
 	// Requirement 510: Users are able to see all weekly adds in Google Chrome
@@ -312,7 +317,7 @@ public class TestSetB extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 514: TBD
-	@Test
+	@Test(enabled = false)
 	public void TC_514() {
 		String vBaseURL = "http://www.walmart.com";
 		CommonAPI CommonAPI = new CommonAPI();
