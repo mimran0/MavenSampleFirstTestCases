@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="12" total="13" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50316" started-at="2018-04-04T01:53:17Z" finished-at="2018-04-04T01:54:07Z">
+  <suite name="Default suite" duration-ms="56094" started-at="2018-04-05T01:13:45Z" finished-at="2018-04-05T01:14:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50316" started-at="2018-04-04T01:53:17Z" finished-at="2018-04-04T01:54:07Z">
-      <class name="MC.TestSetF">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:MC.TestSetF@3ffc5af1]" name="SetUpPreDataMethod" is-config="true" duration-ms="871" started-at="2018-04-03T21:53:17Z" finished-at="2018-04-03T21:53:18Z">
+    <test name="Default test" duration-ms="56094" started-at="2018-04-05T01:13:45Z" finished-at="2018-04-05T01:14:41Z">
+      <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:AOL_AutomationScripts.Automation_Test_SuiteOne@3532ec19]" name="SetUpPreDataMethod" is-config="true" duration-ms="943" started-at="2018-04-04T21:13:45Z" finished-at="2018-04-04T21:13:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_402_MC_GC_A()[pri:0, instance:MC.TestSetF@3ffc5af1]" name="TC_402_MC_GC_A" duration-ms="49420" started-at="2018-04-03T21:53:18Z" finished-at="2018-04-03T21:54:07Z">
+        <test-method status="PASS" signature="TC_101_LoginCheck()[pri:0, instance:AOL_AutomationScripts.Automation_Test_SuiteOne@3532ec19]" name="TC_101_LoginCheck" duration-ms="55122" started-at="2018-04-04T21:13:46Z" finished-at="2018-04-04T21:14:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_402_MC_GC_A -->
-      </class> <!-- MC.TestSetF -->
+        </test-method> <!-- TC_101_LoginCheck -->
+      </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

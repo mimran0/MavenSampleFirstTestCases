@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="MC.TestSetF">
+      <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
+          <include name="TC_101_LoginCheck"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_402_MC_GC_A"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- MC.TestSetF -->
+      </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -18,6 +19,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.os.WindowsUtils;
 import org.testng.annotations.BeforeMethod;
+
 /**
  * @author md shahajada imran
  *
@@ -305,6 +307,13 @@ public class CommonAPI {
 			jse.executeScript("arguments[0].style.border='3px solid red'", v);
 
 		}
+	}
+
+	// Method Overloading (04/04/2018)
+	public static void HighLight_Element(WebDriver driver, By object) {
+		// highlight only one element.
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].style.border='3px solid red'", object);
 	}
 
 }
