@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;driver&apos; to &apos;FirstPageObjectModel&apos;&#x0D;&#x0A;- Original project: &apos;FirstMavenProject&apos;&#x0D;&#x0A;- Destination element: &apos;FirstPageObjectModel&apos;&#x0D;&#x0A;- Original element: &apos;driver&apos;" description="Copy folder" destination="=FirstPageObjectModel" element1="driver" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1507668039207" units="0" version="1.0"/>
+</session>

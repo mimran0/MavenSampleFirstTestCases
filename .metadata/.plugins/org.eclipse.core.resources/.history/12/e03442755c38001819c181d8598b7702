@@ -1,0 +1,44 @@
+package AOL_ObjectRepositoryAndFunctionLibrary;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.os.WindowsUtils;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import afterLoginIn.CommonAPI;
+
+public class LoginPasswordPage extends afterLoginIn.CommonAPI {
+
+	// Objects are created below..
+	@FindBy(how = How.ID, using = "login-passwd")
+	private WebElement obj_Password;	
+	@FindBy(how = How.TAG_NAME, using = "button")
+	private WebElement obj_SignInButton;
+	
+	
+
+	// Reusable Methods/Functions are created below..
+	// To be Developed. (TBD)
+
+	// Temporary Method will be deleted once Framework is Up and Running.
+	@Test(enabled = true)
+	public void TemporaryMethod() {
+		WindowsUtils.killByName("chromedriver.exe");
+		String vBaseURL = "https://login.aol.com/account/challenge/password?authMechanism=primary&display=login&yid=mdshahajadaimran&done=https%3A%2F%2Fwww.aol.com%2F&sessionIndex=QQ--&acrumb=s1o4xWxV";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(10000);
+		PageFactory.initElements(driver, this);
+		// WebElement object = driver.findElement(By.id("login-username"));
+		HighLight_Element(driver, obj_Password);
+		HighLight_Element(driver, obj_SignInButton);
+		// List<WebElement> links = driver.findElements(By.tagName("a"));
+		// HighLight_Elements(driver, links);
+
+	}
+
+}

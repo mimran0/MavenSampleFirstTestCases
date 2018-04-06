@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;amzon&apos; to &apos;amazon&apos;&#x0D;&#x0A;- Original project: &apos;FirstMavenProject&apos;&#x0D;&#x0A;- Original element: &apos;FirstMavenProject/src/test/java/amzon&apos;&#x0D;&#x0A;- Renamed element: &apos;FirstMavenProject/src/test/java/amazon&apos;&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;amzon&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;amzon" name="amazon" qualified="false" references="false" stamp="1510360493414" textual="false" version="1.0"/>
+</session>

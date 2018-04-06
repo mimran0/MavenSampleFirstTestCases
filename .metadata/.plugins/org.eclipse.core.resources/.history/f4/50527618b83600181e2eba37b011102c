@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package experiment;
+
+import org.openqa.selenium.WebDriver;
+
+import afterLoginIn.CommonAPI;
+
+/**
+ * @author md shahajada imran
+ *
+ */
+public class ImranExperiment extends afterLoginIn.CommonAPI {
+
+	public static void main(String[] args) {
+		String vBaseURL = "https://login.aol.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(10000);
+	}
+
+}
