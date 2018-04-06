@@ -22,7 +22,8 @@ import afterLoginIn.CommonAPI;
  */
 public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 
-	private String vMyPassword = "selenium12345"; //Always delete password before make code public
+	private String vMyPassword = "selenium54321"; // Always delete password
+													// before make code public
 
 	@BeforeMethod
 	public void SetUpPreDataMethod() {
@@ -36,7 +37,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 
 	// Requirement 101: Users are able to login into AOL web site using Valid
 	// Login Credentials.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_101_LoginCheck_AutomationObjectModel() {
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "CHROME";
@@ -80,7 +81,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 
 	// Requirement 102: Users are able to scroll down on Personal Finance news
 	// page.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_102_POM_ScrollDownOnPersonalFinancePage() {
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "CHROME";
@@ -115,7 +116,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 103: Users are able to view email count in the inbox.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_103_POM_EmailCountInTheInbox() {
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "FIREFOX";
@@ -159,7 +160,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 	@Test(enabled = true)
 	public void TC_104_POM_SendEmailAutomatically() {
 		String vBaseURL = "https://login.aol.com/";
-		String wBrowser = "CHROME";
+		String wBrowser = "FIREFOX";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
 		waitTime(4000);
@@ -196,13 +197,23 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 		AOL_MailPage.obj_Email_Body().sendKeys("test");
 		AOL_MailPage.obj_Email_Send().click();
 		// Checkpoint
-		boolean vCheckpoint = AOL_MailPage.obj_Email_SendSucessfullMessage().isDisplayed();
-		if (vCheckpoint == true) {
-			System.out.println("Test Passed");
-		} else {
-			Assert.fail("Email was not send successfully");
+		for (int i = 0; i < 10; i++) {
+			waitTime(3000);
+			boolean vCheckpoint = false;
+			try {
+				vCheckpoint = AOL_MailPage.obj_Email_SendSucessfullMessage().isDisplayed();
+			} catch (Exception e) {				
+			}
+			if (vCheckpoint == true) {
+				System.out.println("Test Passed");
+				break;
+			} else {
+				AOL_MailPage.obj_Email_Send().click();
+				if (i == 9) {
+					Assert.fail("Email was not send successfully");
+				}
+			}
 		}
-
 	}
 
 }

@@ -28,17 +28,25 @@ public class AOL_LogOutVerificationPage extends afterLoginIn.CommonAPI {
 	}// empty constructor.
 		// Constructor creation ends here
 
-	/*
-	 * // Below is the temporary method. Will be deleted.
-	 * 
-	 * @Test(enabled = true) public void TemporaryMethod_LogOutVerification() {
-	 * AOL_HomePage AOL_HomePage = new AOL_HomePage(); WebDriver driver =
-	 * AOL_HomePage.TemporaryMethod_HomePage(); PageFactory.initElements(driver,
-	 * this); HighLight_Element(driver, obj_Yes_sign_me_out); waitTime(3000);
-	 * obj_Yes_sign_me_out.click(); waitTime(3000); HighLight_Element(driver,
-	 * AOL_HomePage.obj_LoginOrJoin()); boolean isLoginOrJoinDisplayed =
-	 * AOL_HomePage.obj_LoginOrJoin().isDisplayed(); if (isLoginOrJoinDisplayed)
-	 * { System.out.println("Log Out Successfull"); } else { Assert.fail(
-	 * "LogOut Failed."); } driver.close(); driver.quit(); }
-	 */
+	// Below is the temporary method. Will be deleted.
+	@Test(enabled = true)
+	public void TemporaryMethod_LogOutVerification() {
+		AOL_HomePage AOL_HomePage = new AOL_HomePage();
+		WebDriver driver = AOL_HomePage.TemporaryMethod_HomePage();
+		PageFactory.initElements(driver, this);
+		HighLight_Element(driver, obj_Yes_sign_me_out);
+		waitTime(3000);
+		obj_Yes_sign_me_out.click();
+		waitTime(3000);
+		HighLight_Element(driver, AOL_HomePage.obj_LoginOrJoin());
+		boolean isLoginOrJoinDisplayed = AOL_HomePage.obj_LoginOrJoin().isDisplayed();
+		if (isLoginOrJoinDisplayed) {
+			System.out.println("Log Out Successfull");
+		} else {
+			Assert.fail("LogOut Failed.");
+		}
+		driver.close();
+		driver.quit();
+	}
+
 }

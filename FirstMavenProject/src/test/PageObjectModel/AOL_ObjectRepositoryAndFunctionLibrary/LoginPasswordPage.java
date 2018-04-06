@@ -2,13 +2,10 @@ package AOL_ObjectRepositoryAndFunctionLibrary;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.os.WindowsUtils;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
-import afterLoginIn.CommonAPI;
 
 public class LoginPasswordPage extends afterLoginIn.CommonAPI {
 
@@ -31,20 +28,33 @@ public class LoginPasswordPage extends afterLoginIn.CommonAPI {
 		PageFactory.initElements(driver, this);
 	}
 
-	/*
-	 * // Temporary Method will be deleted once Framework is Up and Running.
-	 * // @Test(enabled = true) public WebDriver
-	 * TemporaryMethod_LoginPasswordPage() { LoginPage LoginPage = new
-	 * LoginPage(); WebDriver driver = LoginPage.TemporaryMethod();
-	 * PageFactory.initElements(driver, this); waitTime(5000); // WebElement
-	 * object = driver.findElement(By.id("login-username"));
-	 * HighLight_Element(driver, obj_Password); HighLight_Element(driver,
-	 * obj_SignInButton); // List<WebElement> links =
-	 * driver.findElements(By.tagName("a")); // HighLight_Elements(driver,
-	 * links); waitTime(3000); obj_Password.sendKeys("");
-	 * waitTime(2000); obj_SignInButton.click(); return driver;
-	 * 
-	 * }
-	 */
+	// Temporary Method will be deleted once Framework is Up and Running.
+	public WebDriver TemporaryMethod_LoginPasswordPage() {
+		LoginPage LoginPage = new LoginPage();
+		WebDriver driver = LoginPage.TemporaryMethod();
+		PageFactory.initElements(driver, this);
+		waitTime(5000);
+		// HighLight_Element(driver, obj_Password);
+		// HighLight_Element(driver, obj_SignInButton);
+		waitTime(3000);
+		obj_Password.sendKeys("selenium54321");
+		waitTime(2000);
+		obj_SignInButton.click();
+		return driver;
+
+	}
+
+	// Temporary method is used to check if created elements get highlighted or
+	// not.
+	@Test(enabled = true)
+	public void TemporaryMethod_LoginPasswordPage2() {
+		LoginPage LoginPage = new LoginPage();
+		WebDriver driver = LoginPage.TemporaryMethod();
+		PageFactory.initElements(driver, this);
+		waitTime(5000);
+		HighLight_Element(driver, obj_Password);
+		HighLight_Element(driver, obj_SignInButton);
+
+	}
 
 }

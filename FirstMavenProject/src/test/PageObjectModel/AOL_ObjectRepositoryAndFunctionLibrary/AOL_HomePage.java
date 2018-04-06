@@ -22,8 +22,7 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 	private WebElement obj_PersonalFinance;
 	@FindBy(how = How.CSS, using = "li.channel:nth-child(2) > a:nth-child(1) > span:nth-child(3)")
 	private WebElement obj_Mail;
-	
-	
+
 	// Object Creation Ends here..
 
 	// Reusable Methods/Functions are created below..
@@ -46,11 +45,11 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 	public WebElement obj_PersonalFinance() {
 		return obj_PersonalFinance;
 	}
+
 	public WebElement obj_Mail() {
 		return obj_Mail;
 	}
-	
-	
+
 	// Reusable Method/Function creation ends here. ...
 
 	// Constructors are created below
@@ -62,13 +61,29 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 	}// empty constructor.
 		// Constructor creation ends here
 
-	/*
-	 * // @Test(enabled=true) public WebDriver TemporaryMethod_HomePage() {
-	 * 
-	 * LoginPasswordPage LoginPasswordPage = new LoginPasswordPage(); WebDriver
-	 * driver = LoginPasswordPage.TemporaryMethod_LoginPasswordPage();
-	 * PageFactory.initElements(driver, this); waitTime(3000);
-	 * HighLight_Element(driver, obj_UserName); HighLight_Element(driver,
-	 * obj_LogOut); waitTime(3000); obj_LogOut.click(); return driver; }
-	 */
+	// Temporary Method.
+	public WebDriver TemporaryMethod_HomePage() {
+		LoginPasswordPage LoginPasswordPage = new LoginPasswordPage();
+		WebDriver driver = LoginPasswordPage.TemporaryMethod_LoginPasswordPage();
+		PageFactory.initElements(driver, this);
+		waitTime(3000);
+		//HighLight_Element(driver, obj_UserName);
+		//HighLight_Element(driver, obj_LogOut);
+		waitTime(3000);
+		obj_LogOut.click();
+		return driver;
+	}
+
+	// Temporary method is used to check if created elements are getting
+	// highlighted or not.
+	@Test(enabled = true)
+	public void TemporaryMethod_HomePage2() {
+		LoginPasswordPage LoginPasswordPage = new LoginPasswordPage();
+		WebDriver driver = LoginPasswordPage.TemporaryMethod_LoginPasswordPage();
+		PageFactory.initElements(driver, this);
+		waitTime(3000);
+		HighLight_Element(driver, obj_UserName);
+		HighLight_Element(driver, obj_LogOut);
+	}
+
 }

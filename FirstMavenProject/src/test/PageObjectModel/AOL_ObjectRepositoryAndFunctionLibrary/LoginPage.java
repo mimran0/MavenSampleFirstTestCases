@@ -15,8 +15,6 @@ import org.testng.annotations.Test;
 import afterLoginIn.CommonAPI;
 
 public class LoginPage extends afterLoginIn.CommonAPI {
-	
-	
 
 	// By obj_UserName=By.id("login-username");
 
@@ -27,20 +25,38 @@ public class LoginPage extends afterLoginIn.CommonAPI {
 	private WebElement obj_NextButton;
 
 	// Reusable Methods/Functions are created below..
-	public WebElement obj_UserName(){
+	public WebElement obj_UserName() {
 		return obj_UserName;
 	}
-	public WebElement obj_NextButton(){
+
+	public WebElement obj_NextButton() {
 		return obj_NextButton;
 	}
-	public void ActivateAllObjectsAndMethodsOfThisPage(WebDriver driver){
+
+	public void ActivateAllObjectsAndMethodsOfThisPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
-	/* Commented Out instead of delete. 
-	// Temporary Method will be deleted once Framework is Up and Running.
-	//@Test(enabled = true)
 	public WebDriver TemporaryMethod() {
+		WindowsUtils.killByName("chromedriver.exe");
+		String vBaseURL = "https://login.aol.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(10000);
+		PageFactory.initElements(driver, this);
+		//HighLight_Element(driver, obj_UserName);
+		//HighLight_Element(driver, obj_NextButton);
+		obj_UserName.sendKeys("mdshahajadaimran");
+		waitTime(3000);
+		obj_NextButton.click();
+		return driver;
+	}
+
+	// Temporary method is used to check if created elements get highlighted or
+	// not.
+	@Test(enabled = true)
+	public void TemporaryMethod2() {
 		WindowsUtils.killByName("chromedriver.exe");
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "CHROME";
@@ -51,12 +67,6 @@ public class LoginPage extends afterLoginIn.CommonAPI {
 		// WebElement object = driver.findElement(By.id("login-username"));
 		HighLight_Element(driver, obj_UserName);
 		HighLight_Element(driver, obj_NextButton);
-		// List<WebElement> links = driver.findElements(By.tagName("a"));
-		// HighLight_Elements(driver, links);
-		obj_UserName.sendKeys("mdshahajadaimran");
-		waitTime(3000);
-		obj_NextButton.click();
-        return driver;
-	}*/
+	}
 
 }
