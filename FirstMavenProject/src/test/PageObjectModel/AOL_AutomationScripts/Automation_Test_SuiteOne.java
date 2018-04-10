@@ -1,8 +1,15 @@
 package AOL_AutomationScripts;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.os.WindowsUtils;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -53,7 +60,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 		waitTime(2000);
 		LoginPasswordPage LoginPasswordPage = new LoginPasswordPage();
 		LoginPasswordPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
-		LoginPasswordPage.obj_Password().sendKeys("selenium12345");
+		LoginPasswordPage.obj_Password().sendKeys(vMyPassword);
 		waitTime(2000);
 		LoginPasswordPage.obj_SignInButton().click();
 		waitTime(2000);
@@ -195,14 +202,28 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 		Random rm = new Random();
 		AOL_MailPage.obj_Email_Subject().sendKeys(rm.nextInt(10000000) + "Imran Test");
 		AOL_MailPage.obj_Email_Body().sendKeys("test");
-		AOL_MailPage.obj_Email_Send().click();
+		// AOL_MailPage.obj_Email_Send().click();
+		// Sending email starts here.
+		Robot r = null;
+		try {
+			r = new Robot();
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		// Sending email ends here.
+		waitTime(5000);
 		// Checkpoint
 		for (int i = 0; i < 10; i++) {
 			waitTime(3000);
 			boolean vCheckpoint = false;
 			try {
 				vCheckpoint = AOL_MailPage.obj_Email_SendSucessfullMessage().isDisplayed();
-			} catch (Exception e) {				
+			} catch (Exception e) {
 			}
 			if (vCheckpoint == true) {
 				System.out.println("Test Passed");
@@ -214,6 +235,130 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 				}
 			}
 		}
+		driver.close();
+		WindowsUtils.killByName("geckodriver.exe");
+	}
+
+	// Requirement 105: Users are able to search after login into AOL with valid
+	// credentials.
+	@Test(enabled = true)
+	public void TC_105_SearchCheckAfterLogin() {
+		// Storing 5 string values into a LinkedList
+		LinkedList<String> dsMyList = new LinkedList<String>();
+		dsMyList.add(0, "red rose");
+		dsMyList.add(1, "md shahajada imran");
+		dsMyList.add(2, "My Pen");
+		dsMyList.add(3, "Today's news");
+		dsMyList.add(4, "My Love");
+
+		String vBaseURL = "https://login.aol.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		LoginPage LoginPage = new LoginPage();
+		LoginPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		waitTime(2000);
+		LoginPage.obj_UserName().sendKeys("mdshahajadaimran");
+		waitTime(2000);
+		LoginPage.obj_NextButton().click();
+		waitTime(2000);
+		LoginPasswordPage LoginPasswordPage = new LoginPasswordPage();
+		LoginPasswordPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		LoginPasswordPage.obj_Password().sendKeys(vMyPassword);
+		waitTime(2000);
+		LoginPasswordPage.obj_SignInButton().click();
+		waitTime(2000);
+		// driver.manage().window().maximize();
+		AOL_HomePage AOL_HomePage = new AOL_HomePage(driver);
+		int i = 0;
+		while (i <= dsMyList.size() - 1) {
+			AOL_HomePage.obj_SearchBox().clear();
+			AOL_HomePage.obj_SearchBox().sendKeys(dsMyList.get(i));
+			waitTime(3000);
+			AOL_HomePage.obj_SearchButton().click();
+			waitTime(5000);
+			System.out.println(AOL_HomePage.obj_SearchResult().getText() + " found for " + dsMyList.get(i));
+			HighLight_Element(driver, AOL_HomePage.obj_SearchResult());
+			i++;
+			driver.get("https://www.aol.com/");
+		}
+	}
+
+	// Requirement 106: Users are able to search and view search result in Image
+	// format.
+	@Test(enabled = true)
+	public void TC_106_SearchResultInImageFormate() {
+		// Storing 5 string values into a LinkedList
+		LinkedList<String> dsMyList = new LinkedList<String>();
+		dsMyList.add(0, "red rose");
+		dsMyList.add(1, "md shahajada imran");
+		dsMyList.add(2, "My Pen");
+		dsMyList.add(3, "Today's news");
+		dsMyList.add(4, "My Love");
+
+		String vBaseURL = "https://login.aol.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		LoginPage LoginPage = new LoginPage();
+		LoginPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		waitTime(2000);
+		LoginPage.obj_UserName().sendKeys("mdshahajadaimran");
+		waitTime(2000);
+		LoginPage.obj_NextButton().click();
+		waitTime(2000);
+		LoginPasswordPage LoginPasswordPage = new LoginPasswordPage();
+		LoginPasswordPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		LoginPasswordPage.obj_Password().sendKeys(vMyPassword);
+		waitTime(2000);
+		LoginPasswordPage.obj_SignInButton().click();
+		waitTime(2000);
+		// driver.manage().window().maximize();
+		AOL_HomePage AOL_HomePage = new AOL_HomePage(driver);
+		int i = 0;
+		while (i <= dsMyList.size() - 1) {
+			AOL_HomePage.obj_SearchBox().clear();
+			AOL_HomePage.obj_SearchBox().sendKeys(dsMyList.get(i));
+			waitTime(3000);
+			AOL_HomePage.obj_SearchButton().click();
+			waitTime(5000);
+			AOL_HomePage.obj_Images().click();
+			waitTime(5000);
+			scrolldown(driver, 500);
+			i++;
+			driver.get("https://www.aol.com/");
+		}
+	}
+
+	// Requirement 107: TBD
+	@Test(enabled = true)
+	public void TC_107_TBD() {
+		String vBaseURL = "https://login.aol.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		LoginPage LoginPage = new LoginPage();
+		LoginPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		waitTime(2000);
+		LoginPage.obj_UserName().sendKeys("mdshahajadaimran");
+		waitTime(2000);
+		LoginPage.obj_NextButton().click();
+		waitTime(2000);
+		LoginPasswordPage LoginPasswordPage = new LoginPasswordPage();
+		LoginPasswordPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		LoginPasswordPage.obj_Password().sendKeys(vMyPassword);
+		waitTime(2000);
+		LoginPasswordPage.obj_SignInButton().click();
+		waitTime(2000);
+		AOL_HomePage AOL_HomePage = new AOL_HomePage(driver);
+		AOL_HomePage.obj_UserName().click();
+		waitTime(2000);
+		// Highlight all links from the Personal info page.
+		List<WebElement> obj_All_Links = driver.findElements(By.tagName("a"));
+		HighLight_Elements(driver, obj_All_Links);
 	}
 
 }

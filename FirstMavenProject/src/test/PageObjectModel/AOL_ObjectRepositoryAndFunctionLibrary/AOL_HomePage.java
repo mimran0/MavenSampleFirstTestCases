@@ -22,6 +22,14 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 	private WebElement obj_PersonalFinance;
 	@FindBy(how = How.CSS, using = "li.channel:nth-child(2) > a:nth-child(1) > span:nth-child(3)")
 	private WebElement obj_Mail;
+	@FindBy(how = How.NAME, using = "q")
+	private WebElement obj_SearchBox;
+	@FindBy(how = How.CLASS_NAME, using = "navigation-search-btn-text")
+	private WebElement obj_SearchButton;
+	@FindBy(how = How.CLASS_NAME, using = " fz-13")
+	private WebElement obj_SearchResult;
+	@FindBy(how = How.LINK_TEXT, using = "Images")
+	private WebElement obj_Images;
 
 	// Object Creation Ends here..
 
@@ -50,6 +58,22 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 		return obj_Mail;
 	}
 
+	public WebElement obj_SearchBox() {
+		return obj_SearchBox;
+	}
+
+	public WebElement obj_SearchButton() {
+		return obj_SearchButton;
+	}
+
+	public WebElement obj_SearchResult() {
+		return obj_SearchResult;
+	}
+	
+	public WebElement obj_Images() {
+		return obj_Images;
+	}
+
 	// Reusable Method/Function creation ends here. ...
 
 	// Constructors are created below
@@ -67,8 +91,8 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 		WebDriver driver = LoginPasswordPage.TemporaryMethod_LoginPasswordPage();
 		PageFactory.initElements(driver, this);
 		waitTime(3000);
-		//HighLight_Element(driver, obj_UserName);
-		//HighLight_Element(driver, obj_LogOut);
+		// HighLight_Element(driver, obj_UserName);
+		// HighLight_Element(driver, obj_LogOut);
 		waitTime(3000);
 		obj_LogOut.click();
 		return driver;
