@@ -6,6 +6,7 @@
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_LoginCheck_AutomationObjectModel"/>
           <include name="TC_104_POM_SendEmailAutomatically"/>
           <include name="SetUpPreDataMethod"/>
         </methods>

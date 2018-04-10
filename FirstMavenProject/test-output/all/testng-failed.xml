@@ -25,8 +25,11 @@
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_102_POM_ScrollDownOnPersonalFinancePage"/>
+          <include name="TC_101_LoginCheck_AutomationObjectModel"/>
           <include name="TC_104_POM_SendEmailAutomatically"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
       <class name="amazon.TestSetAmazon">
@@ -52,7 +55,6 @@
           <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
           <include name="TC_412_Searchability_DunkinDonuts"/>
-          <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
@@ -60,6 +62,7 @@
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
@@ -80,11 +83,12 @@
       </class> <!-- walmart.TestSetB -->
       <class name="FTD.TestSetK">
         <methods>
+          <include name="SelectA_Rose_MicorsoftEdge"/>
           <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="Tc_110_SNI"/>
-          <include name="Tc_110_SNI_UsingFindBy"/>
+          <include name="SearchAbility_FlowerType"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_107_All8selectors_EMWRLA"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
       <class name="facebook.testSetD">
@@ -116,7 +120,6 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
-          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>

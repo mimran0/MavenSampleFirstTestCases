@@ -37,7 +37,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 
 	// Requirement 101: Users are able to login into AOL web site using Valid
 	// Login Credentials.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_101_LoginCheck_AutomationObjectModel() {
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "CHROME";
@@ -81,7 +81,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 
 	// Requirement 102: Users are able to scroll down on Personal Finance news
 	// page.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_102_POM_ScrollDownOnPersonalFinancePage() {
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "CHROME";
@@ -116,7 +116,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 103: Users are able to view email count in the inbox.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_103_POM_EmailCountInTheInbox() {
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "FIREFOX";

@@ -28,7 +28,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 601: Users are able to calculate mortgage payment
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void CalculateMortgatePayment_HardCodedValues() {
 		WindowsUtils.killByName("chromedriver.exe");
 		String vBaseURL = "https://www.mortgagecalculator.org/";
@@ -164,7 +164,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 403: Users are able to calculate mortgage payment -Google
 	// Chrome
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_403_MC_GC_B() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("CHROME", "200000", "100000", "5", "15", "4.7", "1.26", "1500",
@@ -173,7 +173,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 404: Users are able to calculate mortgage payment -Google
 	// Chrome
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_404_MC_GC_C() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("CHROME", "200000", "100000", "3", "10", "4.0", "1.26", "1500",
@@ -182,7 +182,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 405: Users are able to calculate mortgage payment -FF
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_405_MC_FF_A() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("FIREFOX", "200000", "100000", "4", "30", "4.5", "1.26", "1500",
@@ -191,7 +191,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 406: Users are able to calculate mortgage payment -FF
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_406_MC_FF_B() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("FIREFOX", "200000", "100000", "5", "15", "4.7", "1.26", "1500",
@@ -199,7 +199,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 407: Users are able to calculate mortgage payment -FF
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_407_MC_FF_C() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("FIREFOX", "200000", "100000", "3", "10", "4.0", "1.26", "1500",
@@ -207,7 +207,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 408: Users are able to calculate mortgage payment -ME
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_408_MC_ME_A() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("MICROSOFE EDGE", "200000", "100000", "4", "30", "4.5", "1.26", "1500",
@@ -215,7 +215,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 409: Users are able to calculate mortgage payment -ME
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_409_MC_ME_B() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("MICROSOFE EDGE", "200000", "100000", "5", "15", "4.7", "1.26", "1500",
@@ -223,7 +223,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 410: Users are able to calculate mortgage payment -ME
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_10_MC_ME_C() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.CalculateMortgatePayment_P("MICROSOFE EDGE", "200000", "100000", "3", "10", "4.0", "1.26", "1500",
@@ -242,14 +242,14 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 411: Users are able to scroll down and up in Google Chorme
 	// browser
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_411_DownAndUPonly_CHROME() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("CHROME");
 	}
 
 	// Requirement 412: Users are able to scroll down and up in firefox browser
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_412_DownAndUPonly_FF() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("FIREFOX");
@@ -257,7 +257,7 @@ public class TestSetF extends afterLoginIn.CommonAPI {
 
 	// Requirement 413: Users are able to scroll down and up in Micorsoft Edge
 	// browser
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_413_DownAndUPonly_ME() {
 		TestSetF TestSetF = new TestSetF();
 		TestSetF.SUD("MICROSOFE EDGE");
