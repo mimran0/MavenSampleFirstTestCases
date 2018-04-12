@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.os.WindowsUtils;
@@ -19,6 +20,7 @@ import org.testng.annotations.Test;
 import AOL_ObjectRepositoryAndFunctionLibrary.AOL_HomePage;
 import AOL_ObjectRepositoryAndFunctionLibrary.AOL_LogOutVerificationPage;
 import AOL_ObjectRepositoryAndFunctionLibrary.AOL_MailPage;
+import AOL_ObjectRepositoryAndFunctionLibrary.AOL_WeatherPage;
 import AOL_ObjectRepositoryAndFunctionLibrary.LoginPage;
 import AOL_ObjectRepositoryAndFunctionLibrary.LoginPasswordPage;
 import afterLoginIn.CommonAPI;
@@ -29,7 +31,7 @@ import afterLoginIn.CommonAPI;
  */
 public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 
-	private String vMyPassword = "selenium54321"; // Always delete password
+	private String vMyPassword = "selenium12345"; // Always delete password
 													// before make code public
 
 	@BeforeMethod
@@ -332,9 +334,9 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 		}
 	}
 
-	// Requirement 107: TBD
+	// Requirement 107: Highlight_All_Links
 	@Test(enabled = true)
-	public void TC_107_TBD() {
+	public void TC_107_HighlightAllLinks() {
 		String vBaseURL = "https://login.aol.com/";
 		String wBrowser = "CHROME";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -359,6 +361,63 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 		// Highlight all links from the Personal info page.
 		List<WebElement> obj_All_Links = driver.findElements(By.tagName("a"));
 		HighLight_Elements(driver, obj_All_Links);
+	}
+
+	// Requirement 108: Users are able to navigate to weather info page
+	@Test(enabled = true)
+	public void TC_108_WeatherInfo() {
+		String vBaseURL = "https://login.aol.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		LoginPage LoginPage = new LoginPage();
+		LoginPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		waitTime(2000);
+		LoginPage.obj_UserName().sendKeys("mdshahajadaimran");
+		waitTime(2000);
+		LoginPage.obj_NextButton().click();
+		waitTime(2000);
+		LoginPasswordPage LoginPasswordPage = new LoginPasswordPage();
+		LoginPasswordPage.ActivateAllObjectsAndMethodsOfThisPage(driver);
+		LoginPasswordPage.obj_Password().sendKeys(vMyPassword);
+		waitTime(2000);
+		LoginPasswordPage.obj_SignInButton().click();
+		waitTime(2000);
+		AOL_HomePage AOL_HomePage = new AOL_HomePage(driver);
+		waitTime(5000);
+		JavascriptExecutor ex = (JavascriptExecutor) driver;
+		ex.executeScript("arguments[0].click()", AOL_HomePage.obj_WeatherLink());
+		CAPTURESCREEN(driver, "AOL_Weather_");
+	}
+
+	// Requirement 109: Users are able to navigate to Weather page without login
+	// in.
+	@Test(enabled = true)
+	public void TC_109_NavigateToWeatherPage() {
+		String vBaseURL = "https://www.aol.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(2000);
+		AOL_HomePage AOL_HomePage = new AOL_HomePage(driver);
+		waitTime(5000);
+		JavascriptExecutor ex = (JavascriptExecutor) driver;
+		ex.executeScript("arguments[0].click()", AOL_HomePage.obj_WeatherLink());
+		waitTime(4000);
+		AOL_WeatherPage AOL_WeatherPage = new AOL_WeatherPage(driver);
+		AOL_WeatherPage.obj_WeatherSearch().sendKeys("08810");
+		// enter from Keyboard
+		Robot r = null;
+		try {
+			r = new Robot();
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		// enter from keyboard ends here
 	}
 
 }

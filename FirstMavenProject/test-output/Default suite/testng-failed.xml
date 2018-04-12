@@ -5,10 +5,9 @@
     <classes>
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
+          <include name="TC_108_TBD"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_104_POM_SendEmailAutomatically"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
     </classes>

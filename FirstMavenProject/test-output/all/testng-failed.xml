@@ -50,7 +50,6 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
-          <include name="TC_402_LinkCount"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
@@ -63,6 +62,7 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_503_mouseOver"/>
+          <include name="TC_513_WeeklyAdd_InternetExplorer"/>
           <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
           <include name="TC_501_UsersAreAbleToSearch"/>
           <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
@@ -75,8 +75,9 @@
       </class> <!-- walmart.TestSetB -->
       <class name="FTD.TestSetK">
         <methods>
+          <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="SearchAbility_FlowerType"/>
+          <include name="SelectA_Rose_InternetExplorer"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
@@ -109,6 +110,7 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
+          <include name="TC_13_VerifySignUpLinkInInternetExplorerBrowser"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>

@@ -30,6 +30,9 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 	private WebElement obj_SearchResult;
 	@FindBy(how = How.LINK_TEXT, using = "Images")
 	private WebElement obj_Images;
+	@FindBy(how = How.CSS, using = ".navicon-weather-new")
+	private WebElement obj_WeatherLink;
+	
 
 	// Object Creation Ends here..
 
@@ -69,11 +72,14 @@ public class AOL_HomePage extends afterLoginIn.CommonAPI {
 	public WebElement obj_SearchResult() {
 		return obj_SearchResult;
 	}
-	
+
 	public WebElement obj_Images() {
 		return obj_Images;
 	}
 
+	public WebElement obj_WeatherLink(){
+		return obj_WeatherLink;
+	}
 	// Reusable Method/Function creation ends here. ...
 
 	// Constructors are created below
