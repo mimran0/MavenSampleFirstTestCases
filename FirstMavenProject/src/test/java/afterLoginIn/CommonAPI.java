@@ -1,10 +1,17 @@
 package afterLoginIn;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -316,4 +323,63 @@ public class CommonAPI {
 		jse.executeScript("arguments[0].style.border='3px solid red'", object);
 	}
 
+	// Developed by Imran on 10/11/2017
+		// This function/method will return specific Excel Cell data using row
+		// number and column number
+		// Input: Row Number, Column Number
+		// Output: Specific cell value
+		// Drawback: Excel FilePath is hard Coded.
+		// Required jar files/ dependency list: poi-ooxml-3.17,
+		// poi-ooxml-schemas-3.17, xmlbeans-2.6.0,
+		// poi-3.17, commons-collections4-4.1
+		public String ReadCellData(int vRow, int vColumn) {
+			String Result = null;
+			Workbook wb = null;
+			try {
+				FileInputStream fis = new FileInputStream("C:\\Users\\imran\\workspace_Test\\MyExcel.xlsx");
+				wb = new XSSFWorkbook(fis);
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			Sheet sheet = wb.getSheetAt(0);
+			Row row = sheet.getRow(vRow);
+			Cell cell = row.getCell(vColumn);
+			// System.out.print(cell.getStringCellValue());
+			Result = cell.getStringCellValue();
+			return Result;
+		}
+
+		// Mothod Overloading (updated on 04/14/2018)
+		// Developed by md shahajada imran.
+		// This function/method will return specific Excel Cell data using row
+		// number, column number, Excel Path.
+		// Input: Row Number, Column Number, Excel Path
+		// Output: Specific cell value
+		// Required jar files/ dependency list: poi-ooxml-3.17,
+		// poi-ooxml-schemas-3.17, xmlbeans-2.6.0,
+		// poi-3.17, commons-collections4-4.1
+		public String ReadCellData(int vRow, int vColumn, String vExcelPath) {
+			String Result = null;
+			Workbook wb = null;
+			try {
+				FileInputStream fis = new FileInputStream(vExcelPath);
+				wb = new XSSFWorkbook(fis);
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			Sheet sheet = wb.getSheetAt(0);
+			Row row = sheet.getRow(vRow);
+			Cell cell = row.getCell(vColumn);
+			// System.out.print(cell.getStringCellValue());
+			Result = cell.getStringCellValue();
+			return Result;
+		}
 }

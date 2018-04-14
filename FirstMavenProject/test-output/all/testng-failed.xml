@@ -22,6 +22,13 @@
           <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
+      <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_102_POM_ScrollDownOnPersonalFinancePage"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
       <class name="amazon.TestSetAmazon">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -77,7 +84,9 @@
         <methods>
           <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="SearchAbility_FlowerType"/>
           <include name="SelectA_Rose_InternetExplorer"/>
+          <include name="Tc_110_SNI"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
