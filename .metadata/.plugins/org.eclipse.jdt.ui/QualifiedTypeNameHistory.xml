@@ -39,4 +39,5 @@
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Sheet"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
 </qualifiedTypeNameHistroy>
