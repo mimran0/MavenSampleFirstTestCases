@@ -18,6 +18,7 @@
 			<class name="bbb.TestSetI" />
 			<class name="usps.TestSetJ" />
 			<class name="FTD.TestSetK" />
+			<class name="bing.TestSetBing" />
 			<class name="AOL_AutomationScripts.Automation_Test_SuiteOne" />
 		</classes>
 	</test>
