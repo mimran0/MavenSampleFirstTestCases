@@ -6,7 +6,7 @@
       <class name="bing.TestSetBing">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_101_TBD"/>
+          <include name="TC_103_ExpectedMessageDisplay"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- bing.TestSetBing -->

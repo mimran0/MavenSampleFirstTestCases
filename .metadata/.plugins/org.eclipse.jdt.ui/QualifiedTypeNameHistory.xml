@@ -29,7 +29,6 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="AOL_ObjectRepositoryAndFunctionLibrary.LoginPage"/>
 <fullyQualifiedTypeName name="AOL_ObjectRepositoryAndFunctionLibrary.LoginPasswordPage"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="com.google.common.collect.Table.Cell"/>
 <fullyQualifiedTypeName name="org.apache.poi.sl.usermodel.Sheet"/>
@@ -40,4 +39,5 @@
 <fullyQualifiedTypeName name="afterLoginIn.CommonAPI"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

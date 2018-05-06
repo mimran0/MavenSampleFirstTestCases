@@ -11,7 +11,6 @@
           <include name="TC_401_Login_And_LogOut"/>
           <include name="SetUpPreDataMethod"/>
           <include name="SetUpPreData"/>
-          <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="hsbc.TestSetC">
@@ -26,13 +25,16 @@
         <methods>
           <include name="SelectA_Rose_MicorsoftEdge"/>
           <include name="TC_111_AnalystCoverage"/>
+          <include name="SearchAbility"/>
+          <include name="SelectA_Rose_FireFox"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="SearchAbility_FlowerType"/>
+          <include name="SelectA_Rose_GoogleChrome"/>
           <include name="SelectA_Rose_InternetExplorer"/>
           <include name="Tc_110_SNI"/>
           <include name="Tc_110_SNI_UsingFindBy"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_107_All8selectors_EMWRLA"/>
+          <include name="MousOverAllLinks"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
       <class name="amazon.TestSetAmazon">
@@ -82,30 +84,33 @@
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
+          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
       <class name="walmart.TestSetB">
         <methods>
-          <include name="doBeforeEveryMethod"/>
           <include name="TC_503_mouseOver"/>
           <include name="TC_513_WeeklyAdd_InternetExplorer"/>
           <include name="TC_506_StoreFinder_MicrosoftEdgeBrowser"/>
           <include name="TC_501_UsersAreAbleToSearch"/>
-          <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
-          <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="TC_504_Credit_Cards"/>
           <include name="ValidLogin"/>
-          <include name="SetUpPreData"/>
           <include name="TC_506_StoreFinder_FireFoxBrowser"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_506_StoreFinder_GoogleChromeBrowser"/>
+          <include name="TC_506_StoreFinder_InternetExplorerBrowser"/>
+          <include name="TC_502_SelectDropdownValue"/>
+          <include name="SetUpPreData"/>
         </methods>
       </class> <!-- walmart.TestSetB -->
       <class name="bbb.TestSetI">
         <methods>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_903_MouseOver"/>
         </methods>
