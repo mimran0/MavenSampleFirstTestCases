@@ -125,4 +125,104 @@ public class TestSetBing extends afterLoginIn.CommonAPI {
 		}
 	}
 
+	// Requirement 104: Users are able to navigate to Microsoft web site from
+	// bing web site and view available apps for windows 10.
+	@Test(enabled = true)
+	public void TC_104_MicrosoftAppsForWindows() {
+		String vBaseURL = "https://www.bing.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		driver.findElement(By.linkText("Outlook.com")).click();
+		waitTime(5000);
+		// dealing with 2 tabs
+		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));
+		waitTime(1000);
+		driver.findElement(By.cssSelector("div.linkButtonFixedHeader")).click();
+		waitTime(2000);
+		HighLight_Element(driver, driver.findElement(By.linkText("Windows 10")));
+		driver.findElement(By.linkText("Windows 10")).click();
+		waitTime(3000);
+		// closing the Microsoft store window.
+		WindowsUtils.killByName("WinStore.App.exe");
+		// using try-catch block as the pop up window displays dynamically.
+		try {
+			driver.findElement(By.cssSelector(".c-text-field")).clear();
+			driver.findElement(By.cssSelector(".c-text-field")).sendKeys("mdshahajadaimran@aol.com");
+			waitTime(2000);
+			driver.findElement(By.xpath("/html/body/div[5]/div[2]/form/div[2]/button")).click();
+		} catch (Exception e) {
+		}
+		scrolldown(driver, 1000);
+		driver.quit(); // Closing all tabs and killing the process
+	}
+
+	// Requirement 105: Users are able to navigate to Microsoft web site from
+	// bing web site and view available apps for Iphone.
+	@Test(enabled = true)
+	public void TC_105_MicrosoftAppsForIphone() {
+		String vBaseURL = "https://www.bing.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
+		driver.manage().window().maximize();
+		waitTime(2000);
+		driver.findElement(By.linkText("Outlook.com")).click();
+		waitTime(5000);
+		// dealing with 2 tabs
+		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));
+		waitTime(1000);
+		driver.findElement(By.cssSelector("div.linkButtonFixedHeader")).click();
+		waitTime(2000);
+		HighLight_Element(driver, driver.findElement(By.linkText("iPhone")));
+		driver.findElement(By.linkText("iPhone")).click();
+		waitTime(3000);
+		// closing the Microsoft store window.
+		WindowsUtils.killByName("WinStore.App.exe");
+		// using try-catch block as the pop up window displays dynamically.
+		try {
+			driver.findElement(By.cssSelector(".c-text-field")).clear();
+			driver.findElement(By.cssSelector(".c-text-field")).sendKeys("mdshahajadaimran@aol.com");
+			waitTime(2000);
+			driver.findElement(By.xpath("/html/body/div[5]/div[2]/form/div[2]/button")).click();
+		} catch (Exception e) {
+		}
+		scrolldown(driver, 1000);
+		driver.quit(); // close all tabs and killing the process
+	}
+
+	// Requirement 106: Users are able to navigate to Microsoft web site from
+	// bing web site and view available apps for Android.
+	@Test(enabled = true)
+	public void TC_106_MicrosoftAppsForAndroid() {
+		String vBaseURL = "https://www.bing.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("MICROSOFE EDGE", vBaseURL);
+		waitTime(5000);
+		driver.findElement(By.linkText("Outlook.com")).click();
+		waitTime(5000);
+		// dealing with 2 tabs
+		ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));
+		waitTime(1000);
+		driver.findElement(By.cssSelector("div.linkButtonFixedHeader")).click();
+		waitTime(2000);
+		HighLight_Element(driver, driver.findElement(By.linkText("Android")));
+		driver.findElement(By.linkText("Android")).click();
+		waitTime(3000);
+		// closing the Microsoft store window.
+		WindowsUtils.killByName("WinStore.App.exe");
+		// using try-catch block as the pop up window displays dynamically.
+		try {
+			driver.findElement(By.cssSelector(".c-text-field")).clear();
+			driver.findElement(By.cssSelector(".c-text-field")).sendKeys("mdshahajadaimran@aol.com");
+			waitTime(2000);
+			driver.findElement(By.xpath("/html/body/div[5]/div[2]/form/div[2]/button")).click();
+		} catch (Exception e) {
+		}
+		scrolldown(driver, 1000);
+		driver.quit(); // close all tabs and killing the process
+	}
 }

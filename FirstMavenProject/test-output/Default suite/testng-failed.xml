@@ -6,8 +6,8 @@
       <class name="bing.TestSetBing">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_103_ExpectedMessageDisplay"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_105_MicrosoftAppsForIphone"/>
         </methods>
       </class> <!-- bing.TestSetBing -->
     </classes>
