@@ -79,7 +79,6 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
@@ -89,7 +88,6 @@
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
-          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
@@ -151,8 +149,13 @@
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
+          <include name="TC_108_WeatherInfo"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_102_POM_ScrollDownOnPersonalFinancePage"/>
           <include name="TC_101_LoginCheck_AutomationObjectModel"/>
+          <include name="TC_106_SearchResultInImageFormate"/>
+          <include name="TC_104_POM_SendEmailAutomatically"/>
+          <include name="TC_105_SearchCheckAfterLogin"/>
           <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_103_POM_EmailCountInTheInbox"/>
