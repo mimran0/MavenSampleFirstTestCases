@@ -3,13 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bing.TestSetBing">
+      <class name="FTD.TestSetK">
         <methods>
+          <include name="SelectA_Rose_FireFox"/>
+          <include name="SearchAbility_FlowerType"/>
+          <include name="SelectA_Rose_GoogleChrome"/>
+          <include name="SelectA_Rose_InternetExplorer"/>
+          <include name="Tc_110_SNI"/>
+          <include name="SearchAbility_Keyword"/>
+          <include name="TC_107_All8selectors_EMWRLA"/>
+          <include name="MousOverAllLinks"/>
+          <include name="SelectA_Rose_MicorsoftEdge"/>
+          <include name="TC_111_AnalystCoverage"/>
+          <include name="SearchAbility"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="Tc_110_SNI_UsingFindBy"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_105_MicrosoftAppsForIphone"/>
         </methods>
-      </class> <!-- bing.TestSetBing -->
+      </class> <!-- FTD.TestSetK -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

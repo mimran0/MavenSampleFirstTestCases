@@ -31,7 +31,7 @@ import afterLoginIn.CommonAPI;
  */
 public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 
-	private String vMyPassword = ""; // Always delete password
+	private String vMyPassword = "selenium272727"; // Always delete password
 													// before make code public
 
 	@BeforeMethod

@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package FromYouFlowers;
+
+import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.BeforeMethod;
+
+/**
+ * @author md shahajada imran
+ *
+ */
+public class FYF {
+	@BeforeMethod
+	public void SetUpPreDataMethod() {
+		System.out.println("Before Each Test  executed");
+		WindowsUtils.killByName("chromedriver.exe");
+		WindowsUtils.killByName("iexplore.exe");
+		WindowsUtils.killByName("geckodriver.exe");
+		WindowsUtils.killByName("MicrosoftWebDriver.exe");
+		WindowsUtils.killByName("MicrosoftEdge.exe");
+	}
+}
