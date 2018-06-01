@@ -33,7 +33,6 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TestCase_103"/>
-          <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
@@ -66,7 +65,6 @@
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_11_VerifySignUpLinkInMicrosoftEdgeBrowser"/>
           <include name="TC_02_CalculateAprice"/>
-          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_13_VerifySignUpLinkInInternetExplorerBrowser"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
@@ -100,6 +98,7 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_409_MC_ME_B"/>
           <include name="TC_413_DownAndUPonly_ME"/>
+          <include name="CalculateMortgatePayment_HardCodedValues"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- MC.TestSetF -->
@@ -126,7 +125,10 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
+          <include name="TC_905"/>
+          <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
       <class name="levis.TestSetH">
