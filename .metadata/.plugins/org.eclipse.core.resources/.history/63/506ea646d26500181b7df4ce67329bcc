@@ -1,0 +1,31 @@
+package FTD_Version2;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import afterLoginIn.CommonAPI;
+
+public class LetsFuck extends afterLoginIn.CommonAPI {
+	
+	@BeforeMethod
+	public void SetUpPreDataMethod() {
+		System.out.println("Before Each Test  executed");
+		WindowsUtils.killByName("chromedriver.exe");
+		WindowsUtils.killByName("iexplore.exe");
+		WindowsUtils.killByName("geckodriver.exe");
+		WindowsUtils.killByName("MicrosoftWebDriver.exe");
+		WindowsUtils.killByName("MicrosoftEdge.exe");
+	}
+
+	@Test(enabled=true)
+	public void My_Dick_In_Your_Mouth(){
+		String vBaseURL = "https://www.ftd.com/roses-ctg/product-roses-alt4";
+		String wBrowser = "MICROSOFE EDGE";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+	}
+
+}
