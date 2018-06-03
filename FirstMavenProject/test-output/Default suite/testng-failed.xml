@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="FTD_Version2.LetsFuck">
+      <class name="FromYouFlowers.FYF">
         <methods>
-          <include name="My_Dick_In_Your_Mouth"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_MouseOver"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- FTD_Version2.LetsFuck -->
+      </class> <!-- FromYouFlowers.FYF -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

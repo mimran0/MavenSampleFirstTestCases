@@ -20,6 +20,7 @@
 			<class name="FTD.TestSetK" />
 			<class name="bing.TestSetBing" />
 			<class name="AOL_AutomationScripts.Automation_Test_SuiteOne" />
+			<class name="FromYouFlowers.FYF" />
 		</classes>
 	</test>
 </suite>

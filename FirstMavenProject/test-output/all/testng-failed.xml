@@ -41,7 +41,6 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_102_ViewImages"/>
           <include name="TC_101_searchOnBingHomePage"/>
           <include name="TC_106_MicrosoftAppsForAndroid"/>
         </methods>
@@ -84,6 +83,7 @@
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
