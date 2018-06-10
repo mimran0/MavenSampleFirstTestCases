@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="205567" started-at="2018-06-03T06:56:44Z" finished-at="2018-06-03T07:00:09Z">
+  <suite name="Default suite" duration-ms="35642" started-at="2018-06-10T04:55:43Z" finished-at="2018-06-10T04:56:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="205567" started-at="2018-06-03T06:56:44Z" finished-at="2018-06-03T07:00:09Z">
-      <class name="FromYouFlowers.FYF">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="888" started-at="2018-06-03T02:56:44Z" finished-at="2018-06-03T02:56:45Z">
+    <test name="Default test" duration-ms="35642" started-at="2018-06-10T04:55:43Z" finished-at="2018-06-10T04:56:19Z">
+      <class name="Dividend.TestSedDividend">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:Dividend.TestSedDividend@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="837" started-at="2018-06-10T00:55:43Z" finished-at="2018-06-10T00:55:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_02_HighlightAllInputs()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="TC_02_HighlightAllInputs" duration-ms="37389" started-at="2018-06-03T02:56:45Z" finished-at="2018-06-03T02:57:22Z">
+        <test-method status="PASS" signature="TC_103()[pri:0, instance:Dividend.TestSedDividend@685cb137]" name="TC_103" duration-ms="34773" started-at="2018-06-10T00:55:44Z" finished-at="2018-06-10T00:56:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_HighlightAllInputs -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="843" started-at="2018-06-03T02:57:22Z" finished-at="2018-06-03T02:57:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_03_SearchByColor()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="TC_03_SearchByColor" duration-ms="100457" started-at="2018-06-03T02:57:23Z" finished-at="2018-06-03T02:59:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_SearchByColor -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="814" started-at="2018-06-03T02:59:04Z" finished-at="2018-06-03T02:59:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_04_PrintPropertyValueInTheConsole()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="TC_04_PrintPropertyValueInTheConsole" duration-ms="16132" started-at="2018-06-03T02:59:04Z" finished-at="2018-06-03T02:59:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_PrintPropertyValueInTheConsole -->
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="876" started-at="2018-06-03T02:59:20Z" finished-at="2018-06-03T02:59:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_101_MouseOver()[pri:0, instance:FromYouFlowers.FYF@685cb137]" name="TC_101_MouseOver" duration-ms="48115" started-at="2018-06-03T02:59:21Z" finished-at="2018-06-03T03:00:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_101_MouseOver -->
-      </class> <!-- FromYouFlowers.FYF -->
+        </test-method> <!-- TC_103 -->
+      </class> <!-- Dividend.TestSedDividend -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

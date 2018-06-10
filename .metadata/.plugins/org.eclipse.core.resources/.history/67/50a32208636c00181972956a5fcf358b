@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+package Dividend;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import afterLoginIn.CommonAPI;
+
+/**
+ * @author md shahajada imran
+ *
+ */
+public class TestSedDividend extends afterLoginIn.CommonAPI {
+
+	@BeforeMethod
+	public void SetUpPreDataMethod() {
+		System.out.println("Before Each Test  executed");
+		WindowsUtils.killByName("chromedriver.exe");
+		WindowsUtils.killByName("iexplore.exe");
+		WindowsUtils.killByName("geckodriver.exe");
+		WindowsUtils.killByName("MicrosoftWebDriver.exe");
+		WindowsUtils.killByName("MicrosoftEdge.exe");
+	}
+
+	// Requirement: TBD
+	@Test(enabled = true)
+	public void TC_101_TBD() {
+		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		driver.manage().window().maximize();
+		// passing row and column count to read cell data
+		String sRow = "1";
+		String sCol = "4";
+
+	}
+
+	// red cell data based on row count and column count in WebTable.
+	public static String GetCellData(WebDriver driver, int sRow, int sColumn) {
+		String result;
+		// Here we are locating the xpath by passing variables in the xpath
+		String sCellValue = driver
+				.findElement(By.xpath("//*[@id=\"stocks\"]/tbody/tr[" + sRow + "]/td[" + sColumn + "]")).getText();
+		return result = sCellValue;
+	}
+}
