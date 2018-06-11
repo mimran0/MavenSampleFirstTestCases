@@ -4,9 +4,11 @@
 package Dividend;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.os.WindowsUtils;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -101,8 +103,8 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 103: Users are able to check if the stocks are good to buy or
 	// not on current open page.
-	@Test(enabled = true)
-	public void TC_103() {
+	@Test(enabled = false)
+	public void TC_103_CheckStockOnCurrentPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -114,6 +116,39 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 		for (int i = 1; i <= 25; i++) {
 			GetBuyOrNot(driver, i);
 		}
+
+	}
+
+	// Requirement 104: Users are able to check if the stocks are good to buy or
+	// not on all available pages.
+
+	@Test(enabled = true)
+	public void TC_104_CheckStockOnAllPage() {
+		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		driver.manage().window().maximize();
+		waitTime(4000);
+		// WebElement obj_Next = driver.findElement(By.linkText("Next ›"));
+		// HighLight_Element(driver, obj_Next);
+
+		// Checking all the stocks buy eligibility in all the available pages.
+		int j = 1;
+		do {
+			System.out.println("*******************************************************Page Number: " + j);
+			List<WebElement> rows = driver.findElements(By.xpath("//*[@id=\"stocks\"]/tbody/tr"));
+			int RowCount = rows.size();
+			System.out.println("There are " + RowCount + " rows in the page Number " + j);
+			for (int i = 1; i <= RowCount; i++) {
+				GetBuyOrNot(driver, i);
+			}
+			WebElement obj_Next = driver.findElement(By.linkText("Next ›"));
+			obj_Next.click();
+			waitTime(10000);
+			j++;
+		} while (j < 13);
 
 	}
 

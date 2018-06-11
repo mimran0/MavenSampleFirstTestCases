@@ -26,7 +26,6 @@
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="AOL_ObjectRepositoryAndFunctionLibrary.LoginPage"/>
 <fullyQualifiedTypeName name="AOL_ObjectRepositoryAndFunctionLibrary.LoginPasswordPage"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
@@ -38,7 +37,10 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="com.graphbuilder.struc.LinkedList"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="afterLoginIn.CommonAPI"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.intl.NumberFormat"/>
+<fullyQualifiedTypeName name="java.text.NumberFormat"/>
 </qualifiedTypeNameHistroy>

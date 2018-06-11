@@ -5,9 +5,9 @@
     <classes>
       <class name="Dividend.TestSedDividend">
         <methods>
+          <include name="TC_104_CheckStockOnAllPage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_103"/>
         </methods>
       </class> <!-- Dividend.TestSedDividend -->
     </classes>

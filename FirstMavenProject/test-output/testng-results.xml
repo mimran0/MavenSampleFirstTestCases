@@ -1,20 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="1" ignored="3" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35642" started-at="2018-06-10T04:55:43Z" finished-at="2018-06-10T04:56:19Z">
+  <suite name="Default suite" duration-ms="139823" started-at="2018-06-11T07:17:22Z" finished-at="2018-06-11T07:19:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35642" started-at="2018-06-10T04:55:43Z" finished-at="2018-06-10T04:56:19Z">
+    <test name="Default test" duration-ms="139823" started-at="2018-06-11T07:17:22Z" finished-at="2018-06-11T07:19:42Z">
       <class name="Dividend.TestSedDividend">
-        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:Dividend.TestSedDividend@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="837" started-at="2018-06-10T00:55:43Z" finished-at="2018-06-10T00:55:44Z">
+        <test-method status="PASS" signature="SetUpPreDataMethod()[pri:0, instance:Dividend.TestSedDividend@685cb137]" name="SetUpPreDataMethod" is-config="true" duration-ms="919" started-at="2018-06-11T03:17:22Z" finished-at="2018-06-11T03:17:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpPreDataMethod -->
-        <test-method status="PASS" signature="TC_103()[pri:0, instance:Dividend.TestSedDividend@685cb137]" name="TC_103" duration-ms="34773" started-at="2018-06-10T00:55:44Z" finished-at="2018-06-10T00:56:19Z">
+        <test-method status="FAIL" signature="TC_104_CheckStockOnAllPage()[pri:0, instance:Dividend.TestSedDividend@685cb137]" name="TC_104_CheckStockOnAllPage" duration-ms="138869" started-at="2018-06-11T03:17:23Z" finished-at="2018-06-11T03:19:42Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "1,259.96"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "1,259.96"
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at Dividend.TestSedDividend.GetBuyOrNot(TestSedDividend.java:188)
+	at Dividend.TestSedDividend.TC_104_CheckStockOnAllPage(TestSedDividend.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_103 -->
+        </test-method> <!-- TC_104_CheckStockOnAllPage -->
       </class> <!-- Dividend.TestSedDividend -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
