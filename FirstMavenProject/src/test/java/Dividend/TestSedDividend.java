@@ -32,7 +32,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement: Users are able to read and display webtable data.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_101_TBD() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -81,7 +81,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 102: Users are able to check if a stock is good to buy or
 	// not.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_102() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -103,7 +103,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 103: Users are able to check if the stocks are good to buy or
 	// not on current open page.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_103_CheckStockOnCurrentPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -145,19 +145,32 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 				GetBuyOrNot(driver, i);
 			}
 			WebElement obj_Next = driver.findElement(By.linkText("Next ›"));
-			obj_Next.click();
+			if (j < 12) {
+				obj_Next.click();
+			} else {
+				break;
+			}
 			waitTime(10000);
 			j++;
 		} while (j < 13);
 
 	}
 
-	// red cell data based on row count and column count in WebTable.
+	// red cell data based on row count and column count in WebTable. If there
+	// is no data then return 0.
 	public static String GetCellData(WebDriver driver, int sRow, int sColumn) {
 		String result;
 		// Here we are locating the xpath by passing variables in the xpath
-		String sCellValue = driver
-				.findElement(By.xpath("//*[@id=\"stocks\"]/tbody/tr[" + sRow + "]/td[" + sColumn + "]")).getText();
+		String sCellValue = null;
+		try {
+			sCellValue = driver.findElement(By.xpath("//*[@id=\"stocks\"]/tbody/tr[" + sRow + "]/td[" + sColumn + "]"))
+					.getText();
+		} catch (Exception e) {
+			System.out.println("The field is empty");
+		}
+		if (sCellValue.isEmpty() == true) {
+			sCellValue = "$0.00";
+		}
 		return result = sCellValue;
 	}
 
@@ -184,6 +197,8 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 		String sCurrentMarketPrice = GetCellData(driver, RowNumber, 4);
 		// removing $ sign from the string (Market Price)
 		sCurrentMarketPrice = sCurrentMarketPrice.substring(1);
+		// remove , from from the string (Market Price)
+		sCurrentMarketPrice = sCurrentMarketPrice.replace(",", "");
 		double dCurrentMarketPrice = Double.parseDouble(sCurrentMarketPrice);
 		System.out.println("" + dCurrentMarketPrice);
 		// Comparison

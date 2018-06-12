@@ -21,6 +21,7 @@
 			<class name="bing.TestSetBing" />
 			<class name="AOL_AutomationScripts.Automation_Test_SuiteOne" />
 			<class name="FromYouFlowers.FYF" />
+			<class name="Dividend.TestSedDividend" />
 		</classes>
 	</test>
 </suite>
