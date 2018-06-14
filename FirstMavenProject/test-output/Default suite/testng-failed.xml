@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Dividend.TestSedDividend">
+      <class name="bing.TestSetBing">
         <methods>
-          <include name="TC_104_CheckStockOnAllPage"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_102_ViewImages"/>
         </methods>
-      </class> <!-- Dividend.TestSedDividend -->
+      </class> <!-- bing.TestSetBing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

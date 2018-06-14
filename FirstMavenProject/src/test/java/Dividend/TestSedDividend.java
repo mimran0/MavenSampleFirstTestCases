@@ -9,7 +9,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -32,7 +34,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement: Users are able to read and display webtable data.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_101_TBD() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -81,7 +83,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 102: Users are able to check if a stock is good to buy or
 	// not.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_102() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -103,7 +105,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 103: Users are able to check if the stocks are good to buy or
 	// not on current open page.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_103_CheckStockOnCurrentPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -122,7 +124,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 	// Requirement 104: Users are able to check if the stocks are good to buy or
 	// not on all available pages.
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_104_CheckStockOnAllPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -154,6 +156,100 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 			j++;
 		} while (j < 13);
 
+	}
+
+	// Requirement 105: Clicking upon the the links Social Sites display in new
+	// Browser Tabs.
+	@Test(enabled = true)
+	public void TC_105_Social_Sites_On_New_Tabs() {
+		String vBaseURL = "http://www.dividend.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		driver.manage().window().maximize();
+		waitTime(4000);
+
+		ArrayList<String> tabs2; // Needed to handle 2 browser tabs.
+
+		/// *********************Facebook
+		MouseOverOnSocialSite(driver);
+		WebElement obj_FaceBookLink = driver.findElement(By.cssSelector(
+				"#follow-module-social > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:nth-child(1) > i:nth-child(1)"));
+		obj_FaceBookLink.click();
+		// dealing 2 tabs
+		tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));
+		waitTime(5000);
+		System.out.println(driver.getTitle());
+		// Checkpoint
+		Assert.assertEquals("Dividend.com - Home | Facebook", driver.getTitle());
+		driver.close(); // closing the 2nd Tab that contains Facebook
+		driver.switchTo().window(tabs2.get(0));
+
+		/// *********************Twitter
+		MouseOverOnSocialSite(driver);
+		WebElement obj_Twitter = driver.findElement(By.cssSelector(
+				"#follow-module-social > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > a:nth-child(1) > i:nth-child(1)"));
+		obj_Twitter.click();
+		waitTime(3000);
+		tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1)); // selecting 2nd tab.
+		waitTime(5000);
+		System.out.println(driver.getTitle());
+		// Checkpoint
+		Assert.assertEquals("Dividend.com (@dividenddotcom) | Twitter", driver.getTitle());
+		driver.close(); // closing the 2nd Tab that contains Twitter
+		driver.switchTo().window(tabs2.get(0));
+
+		/// *********************GooglePlus
+		MouseOverOnSocialSite(driver);
+		WebElement obj_GooglePlus = driver.findElement(By.cssSelector(
+				"#follow-module-social > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > a:nth-child(1) > i:nth-child(1)"));
+		obj_GooglePlus.click();
+		waitTime(3000);
+		tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1)); // selecting 2nd tab.
+		waitTime(5000);
+		System.out.println(driver.getTitle());
+		// Checkpoint
+		Assert.assertEquals("Dividend.com - Google+", driver.getTitle());
+		driver.close(); // closing the 2nd Tab that contains Twitter
+		driver.switchTo().window(tabs2.get(0));
+
+		/// *********************LinkedIn
+		MouseOverOnSocialSite(driver);
+		WebElement obj_LinkedIn = driver.findElement(By.cssSelector(
+				"#follow-module-social > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > a:nth-child(1) > i:nth-child(1)"));
+		obj_LinkedIn.click();
+		waitTime(3000);
+		tabs2 = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1)); // selecting 2nd tab.
+		waitTime(5000);
+		System.out.println(driver.getTitle());
+		// Checkpoint
+		Assert.assertEquals("Dividend.com | LinkedIn", driver.getTitle());
+		driver.close(); // closing the 2nd Tab that contains Twitter
+		driver.switchTo().window(tabs2.get(0));
+
+		driver.quit(); // Closing all open browsers.
+
+	}
+
+	// This method will mouse over on a element called "Follow Dividend.com" in
+	// the Dividend Homepage.
+	public static void MouseOverOnSocialSite(WebDriver driver) {
+		List<WebElement> objects = driver.findElements(By.className("social-module-btns"));
+		HighLight_Elements(driver, objects);
+		for (WebElement v : objects) {
+			String vText = v.getText();
+			if (vText.equals("Follow Dividend.com")) {
+				// mouseover
+				Actions action = new Actions(driver);
+				action.moveToElement(v).build().perform();
+				waitTime(2000);
+			}
+		}
 	}
 
 	// red cell data based on row count and column count in WebTable. If there

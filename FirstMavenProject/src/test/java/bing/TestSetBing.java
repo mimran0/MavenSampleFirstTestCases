@@ -73,24 +73,24 @@ public class TestSetBing extends afterLoginIn.CommonAPI {
 		waitTime(5000);
 
 		// ArrayList Data Structure
-		ArrayList<String> dt_MyList = new ArrayList<String>();
-		dt_MyList.add(0, "Red Rose");
-		dt_MyList.add(1, "bird");
-		dt_MyList.add(2, "rain");
-		dt_MyList.add(3, "water");
-		dt_MyList.add(4, "md shahajada imran");
+		ArrayList<String> dt_MyList_f = new ArrayList<String>();
+		dt_MyList_f.add(0, "Red Rose");
+		dt_MyList_f.add(1, "bird");
+		dt_MyList_f.add(2, "rain");
+		dt_MyList_f.add(3, "water");
+		dt_MyList_f.add(4, "md shahajada imran");
 
 		// for loop
-		for (int i = 0; i < dt_MyList.size(); i++) {
+		for (int i = 0; i < dt_MyList_f.size(); i++) {
 			driver.get("https://www.bing.com/");
-			driver.findElement(By.tagName("input")).sendKeys(dt_MyList.get(i));
+			driver.findElement(By.tagName("input")).sendKeys(dt_MyList_f.get(i));
 			waitTime(3000);
 			driver.findElement(By.className("b_searchboxSubmit")).click();
 			waitTime(5000);
 			driver.findElement(By.linkText("Images")).click();
 			waitTime(5000);
 			scrolldown(driver, 500);
-			if ((dt_MyList.get(i)).equals("md shahajada imran")) {
+			if ((dt_MyList_f.get(i)).equals("md shahajada imran")) {
 				driver.findElement(By.linkText("All")).click();
 				waitTime(3000);
 				CAPTURESCREEN(driver, "Bing_md_shahajada_imran");

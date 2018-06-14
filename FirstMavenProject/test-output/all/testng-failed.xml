@@ -29,6 +29,13 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- FTD.TestSetK -->
+      <class name="Dividend.TestSedDividend">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_105_Social_Sites_On_New_Tabs"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- Dividend.TestSedDividend -->
       <class name="amazon.TestSetAmazon">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -78,12 +85,14 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
@@ -131,13 +140,6 @@
           <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
-      <class name="FromYouFlowers.FYF">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="SetUpPreDataMethod"/>
-          <include name="TC_02_HighlightAllInputs"/>
-        </methods>
-      </class> <!-- FromYouFlowers.FYF -->
       <class name="levis.TestSetH">
         <methods>
           <include name="TC101_MouseOver_OnMajorElements"/>

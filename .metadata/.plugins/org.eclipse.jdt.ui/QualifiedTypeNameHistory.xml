@@ -35,12 +35,12 @@
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Sheet"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="com.graphbuilder.struc.LinkedList"/>
 <fullyQualifiedTypeName name="afterLoginIn.CommonAPI"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.intl.NumberFormat"/>
 <fullyQualifiedTypeName name="java.text.NumberFormat"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

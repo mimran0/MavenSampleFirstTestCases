@@ -6,16 +6,18 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="tabs" key="selection"/>
+		<item value="CAPTURESCREEN" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="CAPTURESCREEN"/>
 			<item value="tabs"/>
+			<item value="tab"/>
+			<item value="mouseover"/>
 			<item value="excel"/>
 			<item value="toInputField"/>
-			<item value="CAPTURESCREEN"/>
 			<item value="highlight"/>
 		</list>
 		<list key="replacehistory">
