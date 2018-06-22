@@ -34,7 +34,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement: Users are able to read and display webtable data.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_101_TBD() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -83,7 +83,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 102: Users are able to check if a stock is good to buy or
 	// not.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_102() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -105,7 +105,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 103: Users are able to check if the stocks are good to buy or
 	// not on current open page.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_103_CheckStockOnCurrentPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -124,7 +124,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 	// Requirement 104: Users are able to check if the stocks are good to buy or
 	// not on all available pages.
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_104_CheckStockOnAllPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";

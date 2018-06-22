@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bing.TestSetBing">
+      <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_LoginCheck_AutomationObjectModel"/>
+          <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_102_ViewImages"/>
+          <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
-      </class> <!-- bing.TestSetBing -->
+      </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

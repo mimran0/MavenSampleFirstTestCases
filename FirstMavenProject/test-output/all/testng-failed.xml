@@ -72,7 +72,6 @@
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_11_VerifySignUpLinkInMicrosoftEdgeBrowser"/>
           <include name="TC_02_CalculateAprice"/>
-          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_13_VerifySignUpLinkInInternetExplorerBrowser"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
@@ -83,7 +82,6 @@
         <methods>
           <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
           <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
@@ -162,13 +160,8 @@
       </class> <!-- afterLoginIn.TestSetA -->
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
-          <include name="TC_108_WeatherInfo"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_102_POM_ScrollDownOnPersonalFinancePage"/>
           <include name="TC_101_LoginCheck_AutomationObjectModel"/>
-          <include name="TC_106_SearchResultInImageFormate"/>
-          <include name="TC_104_POM_SendEmailAutomatically"/>
-          <include name="TC_105_SearchCheckAfterLogin"/>
           <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_103_POM_EmailCountInTheInbox"/>

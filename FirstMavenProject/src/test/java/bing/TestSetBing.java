@@ -93,7 +93,7 @@ public class TestSetBing extends afterLoginIn.CommonAPI {
 			if ((dt_MyList_f.get(i)).equals("md shahajada imran")) {
 				driver.findElement(By.linkText("All")).click();
 				waitTime(3000);
-				CAPTURESCREEN(driver, "Bing_md_shahajada_imran");
+				// CAPTURESCREEN(driver, "Bing_md_shahajada_imran");
 			} else {// don't capture screenshot))
 			}
 		}

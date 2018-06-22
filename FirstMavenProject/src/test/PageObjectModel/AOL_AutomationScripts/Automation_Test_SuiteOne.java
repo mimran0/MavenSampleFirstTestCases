@@ -328,6 +328,7 @@ public class Automation_Test_SuiteOne extends afterLoginIn.CommonAPI {
 			waitTime(5000);
 			AOL_HomePage.obj_Images().click();
 			waitTime(5000);
+			CAPTURESCREEN(driver, dsMyList.get(i));
 			scrolldown(driver, 500);
 			i++;
 			driver.get("https://www.aol.com/");
