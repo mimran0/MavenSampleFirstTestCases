@@ -133,7 +133,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 		waitTime(4000);
 		driver.manage().window().maximize();
 		waitTime(4000);
-		// WebElement obj_Next = driver.findElement(By.linkText("Next ›"));
+		// WebElement obj_Next = driver.findElement(By.linkText("Next â€º"));
 		// HighLight_Element(driver, obj_Next);
 
 		// Checking all the stocks buy eligibility in all the available pages.
@@ -146,7 +146,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 			for (int i = 1; i <= RowCount; i++) {
 				GetBuyOrNot(driver, i);
 			}
-			WebElement obj_Next = driver.findElement(By.linkText("Next ›"));
+			WebElement obj_Next = driver.findElement(By.linkText("Next â€º"));
 			if (j < 12) {
 				obj_Next.click();
 			} else {
@@ -173,7 +173,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 		ArrayList<String> tabs2; // Needed to handle 2 browser tabs.
 
 		/// *********************Facebook
-		MouseOverOnSocialSite(driver);
+		MouseOverOnSocialSite(driver); //calling reusable method.
 		WebElement obj_FaceBookLink = driver.findElement(By.cssSelector(
 				"#follow-module-social > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:nth-child(1) > i:nth-child(1)"));
 		obj_FaceBookLink.click();
