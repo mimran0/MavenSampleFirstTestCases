@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -36,32 +38,47 @@ public class FYF extends afterLoginIn.CommonAPI {
 	@Test(priority = 1, enabled = true)
 	public void TC_101_MouseOver() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
-		String wBrowser = "CHROME";
+		String wBrowser = "OPERA";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
 		waitTime(4000);
 		driver.manage().window().maximize();
 		ArrayList<String> myList = new ArrayList<String>();
-		myList.add(0, "Birthday");
-		myList.add(1, "Occasions");
-		myList.add(2, "Get Well");
-		myList.add(3, "SALE");
-		myList.add(4, "Flowers");
-		myList.add(5, "Sympathy");
-		myList.add(6, "Plants");
-		myList.add(7, "Gift Baskets & Food");
-
+		myList.add("Birthday");
+		myList.add("Occasions");
+		myList.add("Get Well");
+		myList.add("SALE");
+		myList.add("Flowers");
+		myList.add("Sympathy");
+		myList.add("Plants");
+		myList.add("Gift Baskets & Food");
+		// Mouse Over
 		for (String v : myList) {
 			Actions action = new Actions(driver);
-			WebElement we = driver.findElement(By.partialLinkText(v));
+			WebElement we = driver.findElement(By.linkText(v));
+			// wait 10 seconds for the element is click able and exit "for"
+			// loop. If not then Reload the
+			// page. Max 10 attempts.
+			for (int i = 0; i < 10; i++) {
+				try {
+					WebDriverWait wait = new WebDriverWait(driver, 4);
+					we = wait.until(ExpectedConditions.elementToBeClickable(we));
+					System.out.println("Clean Execution");
+					break;
+				} catch (Exception e) {
+					System.out.println("Issue at " + i + v);
+					driver.get(vBaseURL);
+					waitTime(4000);
+				}
+			}
 			action.moveToElement(we).build().perform();
-			waitTime(4000);
+			waitTime(2000);
 		}
 
 	}
 
 	// Requirement 102: highlight all elements with tagname input
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_02_HighlightAllInputs() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
 		String wBrowser = "CHROME";
@@ -75,7 +92,7 @@ public class FYF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 103: Users are able to search flowers by color
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_03_SearchByColor() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
 		String wBrowser = "CHROME";
@@ -104,7 +121,7 @@ public class FYF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 104: Users are able to print property value in the console.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_04_PrintPropertyValueInTheConsole() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
 		String wBrowser = "CHROME";

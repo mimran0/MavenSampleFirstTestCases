@@ -41,6 +41,7 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.intl.NumberFormat"/>
 <fullyQualifiedTypeName name="java.text.NumberFormat"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
 </qualifiedTypeNameHistroy>
