@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="FromYouFlowers.FYF">
+      <class name="Dividend.TestSedDividend">
         <methods>
+          <include name="TC_110_TBD"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_101_MouseOver"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
-      </class> <!-- FromYouFlowers.FYF -->
+      </class> <!-- Dividend.TestSedDividend -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

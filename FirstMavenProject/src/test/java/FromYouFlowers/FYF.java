@@ -32,13 +32,14 @@ public class FYF extends afterLoginIn.CommonAPI {
 		WindowsUtils.killByName("geckodriver.exe");
 		WindowsUtils.killByName("MicrosoftWebDriver.exe");
 		WindowsUtils.killByName("MicrosoftEdge.exe");
+		WindowsUtils.killByName("operadriver.exe");
 	}
 
 	// Requirement 101: Users are able to mouse over on random elements
 	@Test(priority = 1, enabled = true)
 	public void TC_101_MouseOver() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
-		String wBrowser = "OPERA";
+		String wBrowser = "CHROME";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
 		waitTime(4000);
@@ -49,7 +50,7 @@ public class FYF extends afterLoginIn.CommonAPI {
 		myList.add("Get Well");
 		myList.add("SALE");
 		myList.add("Flowers");
-		myList.add("Sympathy");
+		// myList.add("Sympathy");
 		myList.add("Plants");
 		myList.add("Gift Baskets & Food");
 		// Mouse Over

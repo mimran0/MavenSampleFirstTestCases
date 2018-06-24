@@ -15,6 +15,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.gargoylesoftware.htmlunit.javascript.host.Iterator;
+
 import afterLoginIn.CommonAPI;
 
 /**
@@ -34,7 +36,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement: Users are able to read and display webtable data.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_101_TBD() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -83,7 +85,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 102: Users are able to check if a stock is good to buy or
 	// not.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_102() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -105,7 +107,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 103: Users are able to check if the stocks are good to buy or
 	// not on current open page.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_103_CheckStockOnCurrentPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -124,7 +126,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 	// Requirement 104: Users are able to check if the stocks are good to buy or
 	// not on all available pages.
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_104_CheckStockOnAllPage() {
 		String vBaseURL = "http://www.dividend.com/dividend-stocks/preferred-dividend-stocks.php#stocks&sort_name=dividend_yield&sort_order=desc&page=1";
 		String wBrowser = "CHROME";
@@ -160,7 +162,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	// Requirement 105: Clicking upon the the links Social Sites display in new
 	// Browser Tabs.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_105_Social_Sites_On_New_Tabs() {
 		String vBaseURL = "http://www.dividend.com/";
 		String wBrowser = "CHROME";
@@ -236,11 +238,11 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	}
 
-	// Requirement 106: TBD
+	// Requirement 106: Highlight a link(Given link).
 	@Test(enabled = true)
 	public void TC_106_TBD() {
 		String vBaseURL = "http://www.dividend.com/";
-		String wBrowser = "CHROME";
+		String wBrowser = "IE";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
 		waitTime(4000);
@@ -248,7 +250,8 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 		waitTime(4000);
 
 		// HighLight
-		WebElement objDividendTools = driver.findElement(By.xpath("/html/body/div[1]/div[7]/div[2]/div/ul/li[5]"));
+		WebElement objDividendTools = driver
+				.findElement(By.cssSelector(".navbar-nav > li:nth-child(8) > a:nth-child(1)"));
 		HighLight_Element(driver, objDividendTools);
 		waitTime(3000);
 		// MouseOver
@@ -258,8 +261,159 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 
 	}
 
+	// Requirement 107: Users are refused to login with wrong credentials.
+	@Test(enabled = true)
+	public void TC_107_Login_NegitiveTest() {
+		String vBaseURL = "http://www.dividend.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		driver.manage().window().maximize();
+		waitTime(4000);
+
+		driver.findElement(By.linkText("Login")).click();
+		waitTime(3000);
+		// Login Attempt with wrong credentials.
+		driver.findElement(By.name("amember_login")).sendKeys("wrongId");
+		driver.findElement(By.name("amember_pass")).sendKeys("wrongpassword");
+		driver.findElement(By.id("login-button")).click();
+		waitTime(1000);
+		String LoginFailAlert = driver.findElement(By.xpath("/html/body/div[7]/div[4]/div[1]/div[3]/div[1]/div[1]"))
+				.getText();
+		// System.out.println(LoginFailAlert);
+		// Checkpoint
+		Assert.assertEquals("Incorrect login credentials. Please try again.", LoginFailAlert);
+
+	}
+
+	// Requirement 108: Login Button is enabled or disabled based on credentials
+	// presence in login fields.
+	@Test(enabled = true)
+	public void TC_108_EnabledOrDisabledField() {
+		String vBaseURL = "http://www.dividend.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		driver.manage().window().maximize();
+		waitTime(4000);
+		driver.findElement(By.linkText("Login")).click();
+
+		// Check Login button is disabled if login credentials is empty.
+		waitTime(3000);
+		WebElement obj_LoginButton = driver.findElement(By.id("login-button"));
+		boolean isDisabled = obj_LoginButton.isEnabled();
+		Assert.assertEquals(false, isDisabled);
+
+		// Check Login button is enabled if login credentials is not empty.
+		driver.findElement(By.name("amember_login")).sendKeys("wrongId");
+		driver.findElement(By.name("amember_pass")).sendKeys("wrongpassword");
+		WebElement obj_LoginButton2 = driver.findElement(By.id("login-button"));
+		boolean isDisabled2 = obj_LoginButton.isEnabled();
+		Assert.assertEquals(true, isDisabled2);
+	}
+
+	// Requirement 109: "remember" check box is checked in login page as
+	// default. Users are able to un check as well.
+	@Test(enabled = true)
+	public void TC_109_CheckOrUnCheckRemember() {
+		String vBaseURL = "http://www.dividend.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		driver.manage().window().maximize();
+		waitTime(4000);
+		driver.findElement(By.linkText("Login")).click();
+
+		// check that "remember" check box is checked as default.
+		WebElement objRemember = driver.findElement(By.id("remember"));
+		boolean IsChecked = objRemember.isSelected();
+		Assert.assertEquals(true, IsChecked);
+
+		// check that users are able to uncheck the "remember" checkbox.
+		objRemember.click();
+		boolean IsChecked2 = objRemember.isSelected();
+		Assert.assertEquals(false, IsChecked2);
+	}
+
+	// Requirement 110: Users are able to search stocks or securities in the
+	// page. Use different loops.
+	@Test(enabled = true)
+	public void TC_110_Search_Securities() {
+		String vBaseURL = "http://www.dividend.com/";
+		String wBrowser = "CHROME";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+		driver.manage().window().maximize();
+		waitTime(4000);
+
+		ArrayList<String> myArray = new ArrayList<String>();
+		myArray.add("BAC");
+		myArray.add("JPM");
+		myArray.add("AVP");
+		myArray.add("NYMT");
+		myArray.add("BP");
+
+		System.out.println("Using 'For Each' loop");
+		int i = 0;
+		for (String v : myArray) {
+			driver.findElement(By.id("sponsored-search-typeahead")).sendKeys(myArray.get(i));
+			driver.findElement(By.name("button")).click();
+			waitTime(2000);
+			String StockName = driver.findElement(By.xpath("/html/body/div[10]/div[4]/div/div/h1/span")).getText();
+			System.out.println(StockName);
+			i++;
+		}
+
+		System.out.println("Using 'Iterator'");
+		java.util.Iterator<String> ite = myArray.iterator();
+		while (ite.hasNext()) {
+			String obj = (String) ite.next();
+			driver.findElement(By.id("sponsored-search-typeahead")).sendKeys(obj);
+			driver.findElement(By.name("button")).click();
+			waitTime(2000);
+			String StockName = driver.findElement(By.xpath("/html/body/div[10]/div[4]/div/div/h1/span")).getText();
+			System.out.println(StockName);
+		}
+
+		System.out.println("Using 'For' loop");
+		for (int j = 0; j < myArray.size(); j++) {
+			driver.findElement(By.id("sponsored-search-typeahead")).sendKeys(myArray.get(j));
+			driver.findElement(By.name("button")).click();
+			waitTime(2000);
+			String StockName = driver.findElement(By.xpath("/html/body/div[10]/div[4]/div/div/h1/span")).getText();
+			System.out.println(StockName);
+		}
+
+		System.out.println("Using 'While' loop");
+		int k = 0;
+		while (k < myArray.size()) {
+			driver.findElement(By.id("sponsored-search-typeahead")).sendKeys(myArray.get(k));
+			driver.findElement(By.name("button")).click();
+			waitTime(2000);
+			String StockName = driver.findElement(By.xpath("/html/body/div[10]/div[4]/div/div/h1/span")).getText();
+			System.out.println(StockName);
+			k++;
+		}
+
+		System.out.println("using 'DO WHILE' loop");
+		int m = 0;
+		do {
+			driver.findElement(By.id("sponsored-search-typeahead")).sendKeys(myArray.get(m));
+			driver.findElement(By.name("button")).click();
+			waitTime(2000);
+			String StockName = driver.findElement(By.xpath("/html/body/div[10]/div[4]/div/div/h1/span")).getText();
+			System.out.println(StockName);
+			m = m + 1;
+		} while (m < myArray.size());
+
+	}
+
 	// This is not TestNG method. It is reused in TestNG methods.
-	// This method will mouse over on a element called "Follow Dividend.com" in
+	// This method will mouse over on a element called "Follow Dividend.com" in'
 	// the Dividend Homepage.
 	public static void MouseOverOnSocialSite(WebDriver driver) {
 		List<WebElement> objects = driver.findElements(By.className("social-module-btns"));

@@ -1,0 +1,15 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.opera.OperaDriver;
+
+public class OperaTest {
+
+	public static void main(String[] args) {
+		WebDriver driver=null;
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+	}
+
+}
