@@ -16,7 +16,6 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.file.File"/>
 <fullyQualifiedTypeName name="com.sun.jna.platform.FileUtils"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.os.WindowsUtils"/>
@@ -24,7 +23,6 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 <fullyQualifiedTypeName name="AOL_ObjectRepositoryAndFunctionLibrary.LoginPage"/>
 <fullyQualifiedTypeName name="AOL_ObjectRepositoryAndFunctionLibrary.LoginPasswordPage"/>
@@ -42,6 +40,9 @@
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.intl.NumberFormat"/>
 <fullyQualifiedTypeName name="java.text.NumberFormat"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.Iterator"/>
 </qualifiedTypeNameHistroy>
