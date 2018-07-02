@@ -8234,3 +8234,4 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2018-06-26 21:14:21,248 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-06-26 21:14:21,251 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-06-26 21:14:21,263 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-02 09:50:25,889 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
