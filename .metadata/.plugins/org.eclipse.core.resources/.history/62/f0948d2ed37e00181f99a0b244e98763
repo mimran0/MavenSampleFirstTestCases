@@ -1,0 +1,17 @@
+
+public class StockApp {
+
+	public static void main(String[] args) {
+		Valiation(45.90, 41.87, 43.00);
+	}
+
+	public static void Valiation(double v52WeeksHigh, double v52WeeksLow, double vCurrentPrice) {
+		double Gap = v52WeeksHigh - v52WeeksLow;
+		if (vCurrentPrice < vCurrentPrice + Gap) {
+			System.out.println("Please Buy");
+		} else {
+			System.out.println("Do Not Buy");
+		}
+	}
+
+}

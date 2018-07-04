@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="self experiment for ant build">
+
+	<target name="run" depends="compile">
+	</target>
+
+	<target name="compile">
+		<javac srcdir="./default package" desdir="staging"></javac>
+	</target>
+
+</project>

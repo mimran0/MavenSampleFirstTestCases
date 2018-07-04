@@ -35,6 +35,7 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_105_Social_Sites_On_New_Tabs"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_110_Search_Securities"/>
         </methods>
       </class> <!-- Dividend.TestSedDividend -->
       <class name="amazon.TestSetAmazon">
@@ -71,6 +72,7 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
+          <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>
@@ -80,8 +82,8 @@
         <methods>
           <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_406_Searchability_restaurants"/>
           <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
@@ -123,11 +125,7 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
-          <include name="TC_905"/>
-          <include name="TC_902"/>
-          <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
       <class name="levis.TestSetH">
@@ -159,6 +157,13 @@
           <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
+      <class name="Google.TestSet_Google">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_SearchResultCount"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- Google.TestSet_Google -->
     </classes>
   </test> <!-- all(failed) -->
 </suite> <!-- Failed suite [all] -->

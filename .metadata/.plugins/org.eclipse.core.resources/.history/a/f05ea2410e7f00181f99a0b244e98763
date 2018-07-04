@@ -1,0 +1,28 @@
+<suite>
+	<test name="all">
+		<classes>
+			<class name="ApplyFirst" />
+			<class name="Group" />
+			<class name="Priotization" />
+			<class name="FirstClassWith2methods" />
+			<class name="SecondClasssWith2Methods" />
+			<class name="afterLoginIn.TestSetA" />
+			<class name="walmart.TestSetB" />
+			<class name="hsbc.TestSetC" />
+			<class name="facebook.testSetD" />
+			<class name="groupon.TestSet_E" />
+			<class name="amazon.TestSetAmazon" />
+			<class name="MC.TestSetF" />
+			<class name="automationPractive.TestSetG" />
+			<class name="levis.TestSetH" />
+			<class name="bbb.TestSetI" />
+			<class name="usps.TestSetJ" />
+			<class name="FTD.TestSetK" />
+			<class name="bing.TestSetBing" />
+			<class name="AOL_AutomationScripts.Automation_Test_SuiteOne" />
+			<class name="FromYouFlowers.FYF" />
+			<class name="Dividend.TestSedDividend" />
+			<class name="Google.TestSet_Google" />
+		</classes>
+	</test>
+</suite>
