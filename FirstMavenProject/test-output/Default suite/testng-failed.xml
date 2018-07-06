@@ -5,8 +5,8 @@
     <classes>
       <class name="Google.TestSet_Google">
         <methods>
-          <include name="TC_103_TBD"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_106_TBD"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- Google.TestSet_Google -->

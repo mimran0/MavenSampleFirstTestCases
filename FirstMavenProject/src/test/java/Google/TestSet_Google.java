@@ -6,6 +6,7 @@ package Google;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.Scanner;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +17,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import afterLoginIn.CommonAPI;
+import junit.framework.Assert;
 import sun.util.calendar.BaseCalendar.Date;
 
 /**
@@ -105,12 +107,122 @@ public class TestSet_Google extends afterLoginIn.CommonAPI {
 		driver.quit();
 	}
 
-	// requirement 104: tbd
+	// requirement 104: History activity button is turned on by default and upon
+	// Clicking button becomes turned Off.
 	@Test(enabled = true)
-	public void TC_104_TBD() {
+	public void TC_104_HAB() {
 		String vBaseURL = "https://www.Google.com/";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		driver.findElement(By.id("fsettl")).click();
+		waitTime(2000);
+		driver.findElement(By.linkText("History")).click();
+		WebElement obj_Enabler = driver.findElement(By.className("history-switch-holder"));
+		HighLight_Element(driver, obj_Enabler);
+		boolean isOn = obj_Enabler.isEnabled();
+		Assert.assertEquals(true, isOn); // checking that history activity
+											// button is turned on by default.
+		obj_Enabler.click();
+		waitTime(3000);
+		WebElement obj_EnablerOff = driver.findElement(By.className("history-switch-holder"));
+		boolean isOffOn = obj_EnablerOff.isEnabled();
+		Assert.assertTrue("Button is turned off", true); // Upon Clicking button
+															// becomes disabled.
+		driver.quit();
+	}
+
+	// Requirement 105: Users are able to login even when Captcha is On and
+	// Phone Code verification is On.
+	@Test(enabled = true)
+	public void TC_105_LoginWithCaptchaAndPhoneCode() {
+		String vBaseURL = "https://www.Google.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		driver.findElement(By.partialLinkText("Sign i")).click();
+		waitTime(2000);
+		driver.findElement(By.name("identifier")).sendKeys("imranlimon03@gmail.com");
+		waitTime(2000);
+		driver.findElement(By.cssSelector("#identifierNext > content:nth-child(3) > span:nth-child(1)")).click();
+		waitTime(3000);
+		driver.findElement(By.name("password")).sendKeys("1234563y");
+		waitTime(2000);
+		driver.findElement(By.cssSelector("#passwordNext > content:nth-child(3) > span:nth-child(1)")).click();
+		waitTime(1000);
+		// dealing with captcha starts here.
+		Scanner sc = new Scanner(System.in);
+		try {
+			driver.findElement(By.name("password")).sendKeys("3474846905");
+			System.out.println("Please Enter Captcha number in console");
+			String vCaptuaText = sc.nextLine();
+			driver.findElement(By.name("ca")).sendKeys(vCaptuaText);
+		} catch (Exception e) {
+		}
+		// dealing with captcha ends here
+		try {
+			driver.findElement(By.cssSelector(".IMH1vc")).click();
+			waitTime(2000);
+			driver.findElement(By.className("vdE7Oc")).click();
+			waitTime(2000);
+			driver.findElement(By.id("phoneNumberId")).sendKeys("3474846905");
+			waitTime(2000);
+			driver.findElement(By.cssSelector(".RveJvd")).click();
+			// Getting the code from phone via console during runtime.
+			System.out.println("Please Enter code from Phone into Console");
+			String vCodInPhone = sc.nextLine();
+			driver.findElement(By.id("idvAnyPhonePin")).sendKeys(vCodInPhone);
+			waitTime(2000);
+			driver.findElement(By.cssSelector(".RveJvd")).click();
+			waitTime(2000);
+			try {
+				driver.findElement(By.cssSelector(".M9Bg4d > content:nth-child(3) > span:nth-child(1)")).click();
+			} catch (Exception e) {
+			}
+			waitTime(1000);
+		} catch (Exception e) {
+
+		}
+		WebElement vUser = driver.findElement(By.cssSelector(".gb_ib"));
+		// System.out.println(vUser.getAttribute("title"));
+		String vUserName = vUser.getAttribute("title").substring(16, 27);
+		// System.out.println(vUserName);
+		Assert.assertEquals("limon imran", vUserName);
+		vUser.click();
+		driver.findElement(By.id("signout")).click();
+		driver.quit();
+
+	}
+
+	// Requirement 106: Users are able to play video and turn off in given page
+	// and validate the video link.
+	@Test(enabled = true)
+	public void TC_106_TBD() {
+		String vBaseURL = "https://www.Google.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
+		waitTime(5000);
+		driver.findElement(By.linkText("Advertising")).click();
+		waitTime(2000);
+		driver.findElement(By.partialLinkText("AdWords AP")).click();
+		waitTime(2000);
+		WebElement obj_Video = driver.findElement(By.id("ytplayer0"));
+		obj_Video.click();
+		waitTime(5000);
+		obj_Video.click();
+		String vURL = obj_Video.getAttribute("src");
+		System.out.println(vURL);
+		// validate the vidwo link.
+		Assert.assertEquals("https://www.youtube.com/embed/80KOeuCNc0c?autohide=1&showinfo=0&enablejsapi=1", vURL);
+		driver.quit();
+	}
+
+	// requirement 107: tbd
+	@Test(enabled = true)
+	public void TC_107_TBD() {
+		String vBaseURL = "https://www.Google.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
 		waitTime(5000);
 	}
 

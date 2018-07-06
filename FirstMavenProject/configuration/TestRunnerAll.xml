@@ -1,4 +1,4 @@
-<suite>
+<suite name="all automation scripts">
 	<test name="all automation scripts">
 		<classes>
 			<class name="ApplyFirst" />
