@@ -23,6 +23,7 @@
 			<class name="FromYouFlowers.FYF" />
 			<class name="Dividend.TestSedDividend" />
 			<class name="Google.TestSet_Google" />
+			<class name="Nasdaq.TestSet_Nasdaq" />
 		</classes>
 	</test>
 </suite>

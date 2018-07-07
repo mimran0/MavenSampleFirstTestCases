@@ -156,19 +156,11 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_101_LoginCheck_AutomationObjectModel"/>
-          <include name="TC_104_POM_SendEmailAutomatically"/>
           <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
-      <class name="Google.TestSet_Google">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_101_SearchResultCount"/>
-          <include name="SetUpPreDataMethod"/>
-        </methods>
-      </class> <!-- Google.TestSet_Google -->
     </classes>
   </test> <!-- all automation scripts(failed) -->
 </suite> <!-- Failed suite [all automation scripts] -->

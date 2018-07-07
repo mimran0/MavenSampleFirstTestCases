@@ -42,10 +42,12 @@
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.Iterator"/>
 <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="afterLoginIn.CommonAPI"/>
 <fullyQualifiedTypeName name="sun.util.calendar.BaseCalendar.Date"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="afterLoginIn.CommonAPI"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>
