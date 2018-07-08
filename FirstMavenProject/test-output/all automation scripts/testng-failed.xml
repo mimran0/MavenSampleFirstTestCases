@@ -33,7 +33,6 @@
         <methods>
           <include name="TC_104_CheckStockOnAllPage"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_105_Social_Sites_On_New_Tabs"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- Dividend.TestSedDividend -->
@@ -48,7 +47,10 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_105_MicrosoftAppsForIphone"/>
           <include name="TC_101_searchOnBingHomePage"/>
+          <include name="TC_104_MicrosoftAppsForWindows"/>
+          <include name="TC_106_MicrosoftAppsForAndroid"/>
         </methods>
       </class> <!-- bing.TestSetBing -->
       <class name="facebook.testSetD">
@@ -92,7 +94,6 @@
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
-          <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>

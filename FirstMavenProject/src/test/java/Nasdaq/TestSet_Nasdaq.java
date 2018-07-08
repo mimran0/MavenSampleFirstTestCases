@@ -1,4 +1,4 @@
-/**
+d/**
  * 
  */
 package Nasdaq;
@@ -6,8 +6,12 @@ package Nasdaq;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -33,7 +37,8 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 		WindowsUtils.killByName("iexplore.exe");
 	}
 
-	// Requirement 101: Users are able to search stock and collect stock name
+	// Business Requirement 101: Users are able to search stock and collect
+	// stock name
 	// and price as pair.
 	@Test(enabled = true)
 	public void TC_101_StockSearch() {
@@ -103,13 +108,53 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 		driver.quit();
 	}
 
-	// Requirement 103: TBD
+	// Technical Requirement 103: get broker name and commission using HashMap
+	// and display using iterator.
 	@Test(enabled = true)
-	public void TC_103_TBD() {
+	public void TC_103_HashMap() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
 		waitTime(5000);
-	}
+		driver.findElement(By.linkText("Online Broker Center")).click();
+		waitTime(3000);
+		WebElement oTable = driver
+				.findElement(By.cssSelector("div.genTable:nth-child(18) > table:nth-child(1) > tbody:nth-child(2)"));
+		HighLight_Element(driver, oTable);
+		// System.out.println(oTable.getText());
 
+		List<WebElement> rows = driver.findElements(By.xpath("/html/body/div[1]/div[2]/section/div[8]/table/tbody/tr"));
+		System.out.println(rows.size());
+
+		HashMap<String, String> map = new HashMap<>();
+		for (int i = 1; i <= rows.size(); i++) {
+			WebElement oRow = driver
+					.findElement(By.xpath("/html/body/div[1]/div[2]/section/div[8]/table/tbody/tr[" + i + "]"));
+			HighLight_Element(driver, oRow);
+
+			try {
+				WebElement oBroker = driver.findElement(
+						By.xpath("/html/body/div[1]/div[2]/section/div[8]/table/tbody/tr[" + i + "]/td[1]"));
+				WebElement oMinimumDiposit = driver.findElement(
+						By.xpath("/html/body/div[1]/div[2]/section/div[8]/table/tbody/tr[" + i + "]/td[2]"));
+				WebElement oCommission = driver.findElement(
+						By.xpath("/html/body/div[1]/div[2]/section/div[8]/table/tbody/tr[" + i + "]/td[3]"));
+				System.out.println(oBroker.getText());
+				System.out.println(oMinimumDiposit.getText());
+				System.out.println(oCommission.getText());
+				map.put(oBroker.getText(), oCommission.getText());
+			} catch (Exception e) {
+
+			}
+
+		}
+		/* Display content using Iterator */
+		Set set = map.entrySet();
+		Iterator iterator = set.iterator();
+		while (iterator.hasNext()) {
+			Map.Entry mentry = (Map.Entry) iterator.next();
+			System.out.print("Broker is: " + mentry.getKey() + " & Commission is: ");
+			System.out.println(mentry.getValue());
+		}
+	}
 }
