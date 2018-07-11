@@ -23,7 +23,6 @@
           <include name="MousOverAllLinks"/>
           <include name="SelectA_Rose_MicorsoftEdge"/>
           <include name="TC_111_AnalystCoverage"/>
-          <include name="SearchAbility"/>
           <include name="doBeforeEveryMethod"/>
           <include name="Tc_110_SNI_UsingFindBy"/>
           <include name="SetUpPreDataMethod"/>
@@ -33,6 +32,7 @@
         <methods>
           <include name="TC_104_CheckStockOnAllPage"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_105_Social_Sites_On_New_Tabs"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- Dividend.TestSedDividend -->
@@ -46,7 +46,9 @@
       <class name="bing.TestSetBing">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_103_ExpectedMessageDisplay"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_102_ViewImages"/>
           <include name="TC_105_MicrosoftAppsForIphone"/>
           <include name="TC_101_searchOnBingHomePage"/>
           <include name="TC_104_MicrosoftAppsForWindows"/>
@@ -94,6 +96,7 @@
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
@@ -162,6 +165,14 @@
           <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
+      <class name="Google.TestSet_Google">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_SearchResultCount"/>
+          <include name="TC_105_LoginWithCaptchaAndPhoneCode"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- Google.TestSet_Google -->
     </classes>
   </test> <!-- all automation scripts(failed) -->
 </suite> <!-- Failed suite [all automation scripts] -->
