@@ -24,6 +24,7 @@
 			<class name="Dividend.TestSedDividend" />
 			<class name="Google.TestSet_Google" />
 			<class name="Nasdaq.TestSet_Nasdaq" />
+			<class name="cat.TestSet_Cat" />
 		</classes>
 	</test>
 </suite>

@@ -79,7 +79,7 @@ public class FYF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 102: highlight all elements with tagname input
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_02_HighlightAllInputs() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
 		String wBrowser = "CHROME";
@@ -93,7 +93,7 @@ public class FYF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 103: Users are able to search flowers by color
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_03_SearchByColor() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
 		String wBrowser = "CHROME";
@@ -122,7 +122,7 @@ public class FYF extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 104: Users are able to print property value in the console.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_04_PrintPropertyValueInTheConsole() {
 		String vBaseURL = "https://www.fromyouflowers.com/";
 		String wBrowser = "CHROME";

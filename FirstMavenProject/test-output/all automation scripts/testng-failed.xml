@@ -23,6 +23,7 @@
           <include name="MousOverAllLinks"/>
           <include name="SelectA_Rose_MicorsoftEdge"/>
           <include name="TC_111_AnalystCoverage"/>
+          <include name="SearchAbility"/>
           <include name="doBeforeEveryMethod"/>
           <include name="Tc_110_SNI_UsingFindBy"/>
           <include name="SetUpPreDataMethod"/>
@@ -46,13 +47,8 @@
       <class name="bing.TestSetBing">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_103_ExpectedMessageDisplay"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_102_ViewImages"/>
-          <include name="TC_105_MicrosoftAppsForIphone"/>
           <include name="TC_101_searchOnBingHomePage"/>
-          <include name="TC_104_MicrosoftAppsForWindows"/>
-          <include name="TC_106_MicrosoftAppsForAndroid"/>
         </methods>
       </class> <!-- bing.TestSetBing -->
       <class name="facebook.testSetD">
@@ -83,21 +79,12 @@
       </class> <!-- usps.TestSetJ -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_406_Searchability_restaurants"/>
-          <include name="aftermethod"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
-          <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="aftermethod"/>
           <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_409_Searchability_Fitness"/>
-          <include name="TC_801_testOne"/>
-          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
