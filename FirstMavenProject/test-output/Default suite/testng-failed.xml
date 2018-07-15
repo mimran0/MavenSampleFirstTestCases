@@ -5,8 +5,8 @@
     <classes>
       <class name="cat.TestSet_Cat">
         <methods>
-          <include name="TC_801_TBD"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_805_TBD"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- cat.TestSet_Cat -->
