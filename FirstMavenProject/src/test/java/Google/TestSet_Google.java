@@ -197,7 +197,7 @@ public class TestSet_Google extends afterLoginIn.CommonAPI {
 	// Requirement 106: Users are able to play video and turn off in given page
 	// and validate the video link.
 	@Test(enabled = true)
-	public void TC_106_TBD() {
+	public void TC_106_PlayVideo() {
 		String vBaseURL = "https://www.Google.com/";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
@@ -207,9 +207,9 @@ public class TestSet_Google extends afterLoginIn.CommonAPI {
 		driver.findElement(By.partialLinkText("AdWords AP")).click();
 		waitTime(2000);
 		WebElement obj_Video = driver.findElement(By.id("ytplayer0"));
-		obj_Video.click();
+		// obj_Video.click();
 		waitTime(5000);
-		obj_Video.click();
+		// obj_Video.click();
 		String vURL = obj_Video.getAttribute("src");
 		System.out.println(vURL);
 		// validate the vidwo link.
@@ -217,13 +217,70 @@ public class TestSet_Google extends afterLoginIn.CommonAPI {
 		driver.quit();
 	}
 
-	// requirement 107: tbd
+	// Not a requirement 107: Explore CSSSelector
 	@Test(enabled = true)
-	public void TC_107_TBD() {
-		String vBaseURL = "https://www.Google.com/";
+	public void TC_107_ExploreCSSselector() {
+		String vBaseURL = "https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
 		CommonAPI CommonAPI = new CommonAPI();
-		WebDriver driver = CommonAPI.getDriver("CHROME", vBaseURL);
-		waitTime(5000);
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(3000);
+
+		// Standard CSSselector
+		WebElement oID = driver.findElement(By.cssSelector("#identifierId"));
+		HighLight_Element(driver, oID);
+		waitTime(2000);
+		driver.navigate().refresh();
+
+		// CSSSelector with attribute "id" and exact value
+		WebElement oID2 = driver.findElement(By.cssSelector("input[id*='identifierId']"));
+		HighLight_Element(driver, oID2);
+		waitTime(2000);
+		driver.navigate().refresh();
+
+		// CSSselector with attribute "id" and "start with" value
+		WebElement oID3 = driver.findElement(By.cssSelector("input[id^='identif']"));
+		HighLight_Element(driver, oID3);
+		waitTime(2000);
+		driver.navigate().refresh();
+
+		// CSSSelector with attribute "id" and "Ends with" value
+		WebElement oID4 = driver.findElement(By.cssSelector("input[id$='fierId']"));
+		HighLight_Element(driver, oID4);
+		waitTime(2000);
+		driver.navigate().refresh();
+
+		//// CSSselector with attribute "name" and exact value
+		WebElement oID5 = driver.findElement(By.cssSelector("input[name*='identifier']"));
+		HighLight_Element(driver, oID5);
+		waitTime(2000);
+		driver.navigate().refresh();
+
+		//// CSSselector with attribute "name" and "Start With" value
+		WebElement oID6 = driver.findElement(By.cssSelector("input[name^='identif']"));
+		HighLight_Element(driver, oID6);
+		waitTime(2000);
+		driver.navigate().refresh();
+
+		//// CSSselector with attribute "name" and "Ends with" value
+		WebElement oID7 = driver.findElement(By.cssSelector("input[name$='ntifier']"));
+		HighLight_Element(driver, oID7);
+		waitTime(2000);
+		driver.navigate().refresh();
+
+		// CSSSelector with attribute "id" and contains value
+		WebElement oID8 = driver.findElement(By.cssSelector("input#identifierId"));
+		HighLight_Element(driver, oID8);
+		waitTime(2000);
+		driver.navigate().refresh();
+	}
+
+	// Requirement 108: TBD
+	@Test(enabled = true)
+	public void TC_108_TBD() {
+		String vBaseURL = "https://myaccount.google.com/intro?utm_source=OGB&utm_medium=app";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(3000);
 	}
 
 }
