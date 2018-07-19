@@ -25,6 +25,7 @@
 			<class name="Google.TestSet_Google" />
 			<class name="Nasdaq.TestSet_Nasdaq" />
 			<class name="cat.TestSet_Cat" />
+			<class name="Dow.TestSet_Dow" />
 		</classes>
 	</test>
 </suite>

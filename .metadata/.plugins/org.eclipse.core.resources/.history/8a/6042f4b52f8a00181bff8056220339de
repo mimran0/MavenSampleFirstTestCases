@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package Dow;
+
+import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.BeforeMethod;
+
+import afterLoginIn.CommonAPI;
+
+/**
+ * @author md shahajada imran
+ *
+ */
+public class TestSet_Dow extends CommonAPI {
+	@BeforeMethod
+	public void SetUpPreDataMethod() {
+		System.out.println("Before Each Test  executed");
+		WindowsUtils.killByName("chromedriver.exe");
+		WindowsUtils.killByName("iexplore.exe");
+		WindowsUtils.killByName("geckodriver.exe");
+		WindowsUtils.killByName("MicrosoftWebDriver.exe");
+		WindowsUtils.killByName("MicrosoftEdge.exe");
+	}
+}

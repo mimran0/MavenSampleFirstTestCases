@@ -64,6 +64,14 @@
           <include name="LoginAndLogout_Firefox"/>
         </methods>
       </class> <!-- facebook.testSetD -->
+      <class name="Dow.TestSet_Dow">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="TC_104_NA"/>
+          <include name="TC_105_TBD"/>
+        </methods>
+      </class> <!-- Dow.TestSet_Dow -->
       <class name="usps.TestSetJ">
         <methods>
           <include name="TC_03_ExperimentAll8Selectors"/>
@@ -87,10 +95,9 @@
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_409_Searchability_Fitness"/>
+          <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
@@ -123,6 +130,7 @@
           <include name="SetUpPreDataMethod"/>
           <include name="TC_906_RegistrationFormFillUp"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
           <include name="TC_905"/>
           <include name="TC_902"/>
@@ -149,10 +157,18 @@
           <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
+      <class name="Nasdaq.TestSet_Nasdaq">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="TC_103_HashMap"/>
+        </methods>
+      </class> <!-- Nasdaq.TestSet_Nasdaq -->
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_101_LoginCheck_AutomationObjectModel"/>
+          <include name="TC_104_POM_SendEmailAutomatically"/>
           <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_103_POM_EmailCountInTheInbox"/>
@@ -163,7 +179,6 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_105_LoginWithCaptchaAndPhoneCode"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_106_PlayVideo"/>
         </methods>
       </class> <!-- Google.TestSet_Google -->
     </classes>

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Google.TestSet_Google">
+      <class name="Dow.TestSet_Dow">
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_107_TBD"/>
+          <include name="TC_105_TBD"/>
         </methods>
-      </class> <!-- Google.TestSet_Google -->
+      </class> <!-- Dow.TestSet_Dow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
