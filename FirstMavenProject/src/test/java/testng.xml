@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Passing Test Data into TestNG tests using external XML file">
+	<test name="Test Data via XML file">
+		<parameter name="vHomevalue" value="350000" />
+		<parameter name="vPrincipal" value="300000" />
+		<parameter name="vInterest_rate" value="2.25" />
+		<parameter name="vTerm" value="15" />
+		<parameter name="vProperty_tax" value=".5" />
+		<parameter name="vPmi" value="1.3" />
+		<parameter name="vHoi" value="2000" />
+		<parameter name="vExpectedPayment" value="$2,602.75" />
+		<classes>
+			<class name="Parametarization.UsingXMLfile" />
+		</classes>
+	</test>
+</suite>

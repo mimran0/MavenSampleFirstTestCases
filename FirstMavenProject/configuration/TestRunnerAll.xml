@@ -26,6 +26,7 @@
 			<class name="Nasdaq.TestSet_Nasdaq" />
 			<class name="cat.TestSet_Cat" />
 			<class name="Dow.TestSet_Dow" />
+			<class name="Parametarization.UsingDataProvider" />
 		</classes>
 	</test>
 </suite>

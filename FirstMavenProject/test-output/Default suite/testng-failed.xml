@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="vPmi" value="not-found"/>
+  <parameter name="vPrincipal" value="not-found"/>
+  <parameter name="vTerm" value="not-found"/>
+  <parameter name="vHomevalue" value="not-found"/>
+  <parameter name="vInterest_rate" value="not-found"/>
+  <parameter name="vProperty_tax" value="not-found"/>
+  <parameter name="vExpectedPayment" value="not-found"/>
+  <parameter name="vHoi" value="not-found"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="Dow.TestSet_Dow">
+      <class name="Parametarization.UsingXMLfile">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="CalculateMortgatePayment" invocation-numbers="0"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_105_TBD"/>
         </methods>
-      </class> <!-- Dow.TestSet_Dow -->
+      </class> <!-- Parametarization.UsingXMLfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

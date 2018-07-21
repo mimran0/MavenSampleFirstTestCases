@@ -35,14 +35,12 @@
 <fullyQualifiedTypeName name="com.graphbuilder.struc.LinkedList"/>
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.intl.NumberFormat"/>
 <fullyQualifiedTypeName name="java.text.NumberFormat"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="sun.util.calendar.BaseCalendar.Date"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
-<fullyQualifiedTypeName name="afterLoginIn.CommonAPI"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.Set"/>
@@ -51,11 +49,13 @@
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.sun.glass.ui.Robot"/>
 <fullyQualifiedTypeName name="java.awt.Robot"/>
 <fullyQualifiedTypeName name="com.sun.glass.events.KeyEvent"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="afterLoginIn.CommonAPI"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>

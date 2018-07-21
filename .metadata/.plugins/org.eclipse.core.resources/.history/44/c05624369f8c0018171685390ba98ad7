@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Passing Test Data into TestNG tests using external XML file">
+
+	<test name="Test Data via XML file">
+
+		<parameter name="sUsername" value="testuser_1" />
+
+		<parameter name="sPassword" value="Test@123" />
+
+		<classes>
+
+			<class name="automationFramework.TestngParameters" />
+
+		</classes>
+
+	</test>
+
+</suite>

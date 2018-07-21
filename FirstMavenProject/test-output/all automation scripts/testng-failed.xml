@@ -64,14 +64,13 @@
           <include name="LoginAndLogout_Firefox"/>
         </methods>
       </class> <!-- facebook.testSetD -->
-      <class name="Dow.TestSet_Dow">
+      <class name="Parametarization.UsingDataProvider">
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_104_NA"/>
-          <include name="TC_105_TBD"/>
+          <include name="TC_101_TBD" invocation-numbers="4"/>
         </methods>
-      </class> <!-- Dow.TestSet_Dow -->
+      </class> <!-- Parametarization.UsingDataProvider -->
       <class name="usps.TestSetJ">
         <methods>
           <include name="TC_03_ExperimentAll8Selectors"/>
@@ -87,18 +86,14 @@
       </class> <!-- usps.TestSetJ -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_408_Searchability_Grocery"/>
-          <include name="SetUpPreDataMethod"/>
-          <include name="aftermethod"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
+          <include name="SetUpPreDataMethod"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="aftermethod"/>
           <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_801_testOne"/>
-          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
@@ -109,6 +104,13 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- MC.TestSetF -->
+      <class name="cat.TestSet_Cat">
+        <methods>
+          <include name="TC_806_TBD"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- cat.TestSet_Cat -->
       <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -168,7 +170,6 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_101_LoginCheck_AutomationObjectModel"/>
-          <include name="TC_104_POM_SendEmailAutomatically"/>
           <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_103_POM_EmailCountInTheInbox"/>
@@ -177,6 +178,7 @@
       <class name="Google.TestSet_Google">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_SearchResultCount"/>
           <include name="TC_105_LoginWithCaptchaAndPhoneCode"/>
           <include name="SetUpPreDataMethod"/>
         </methods>

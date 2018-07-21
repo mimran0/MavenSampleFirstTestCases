@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -34,7 +35,7 @@ public class TestSet_Dow extends CommonAPI {
 
 	// Technical Requirement 101:Find out how many links(a) and buttons(button)
 	// in the page and Highlight all of those.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_101_HighlightLinksAndButton() {
 		String vBaseURL = "https://www.dow.com/en-us/markets-and-solutions/energy-and-water";
 		String wBrowser = "FIREFOX";
@@ -64,7 +65,7 @@ public class TestSet_Dow extends CommonAPI {
 	// Business Requirement 102: Users are able to mouseover and view data in
 	// the given page.
 	// Technical Requirement 102: Use wide range of CSSselectors for scripting.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_102_WideRangeOfCSSselectors() {
 		String vBaseURL = "https://www.dow.com/en-us";
 		String wBrowser = "FIREFOX";
@@ -112,7 +113,7 @@ public class TestSet_Dow extends CommonAPI {
 	}
 
 	// Not a Requirement 103: Explore CSSselector
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_103_CSSselectorS() {
 		String vBaseURL = "https://www.dow.com/en-us/search#t=All";
 		String wBrowser = "FIREFOX";
@@ -162,7 +163,7 @@ public class TestSet_Dow extends CommonAPI {
 	}
 
 	// Requirement 104: N/A
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_104_NA() {
 		String vBaseURL = "https://www.dow.com/en-us/search#t=All";
 		String wBrowser = "FIREFOX";
@@ -201,9 +202,10 @@ public class TestSet_Dow extends CommonAPI {
 
 	}
 
-	// Requirement 105: TBD
-	@Test(enabled = true)
-	public void TC_105_TBD() {
+	// Requirement 105: Verify that users are able to select value from drop
+	// down list and validate the values.
+	@Test(enabled = false)
+	public void TC_105_DropdownValidation() {
 		String vBaseURL = "https://www.dow.com/en-us/contact-us";
 		String wBrowser = "FIREFOX";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -220,17 +222,121 @@ public class TestSet_Dow extends CommonAPI {
 		} catch (Exception e) {
 		}
 
+		String[] myListOfVisibleTexts = { "Career Information", "Customer Automation Information", "Energy Information",
+				"Habitat for Humanity Information", "Investor Relations", "Leadership Insights Information",
+				"Licensing Information", "Product Label Information", "Supplier Diversity Information" };
+
 		// Select all data from list one by one.
-		for (int i = 1; i < 12; i++) {
+		for (int i = 0; i < myListOfVisibleTexts.length; i++) {
+			System.out.println(myListOfVisibleTexts[i]);
 			WebElement oDropDownList = driver.findElement(
 					By.cssSelector("select[class*='notjs cl-drop-links-block__select'][name*='subject_Default']"));
-			HighLight_Element(driver, oDropDownList);
 			Select dropdown2 = new Select(oDropDownList);
-			dropdown2.selectByIndex(i);
-			waitTime(1000);
-			scrolldown(driver, 300);
-			waitTime(3000);
+			dropdown2.selectByVisibleText(myListOfVisibleTexts[i]);
+			waitTime(4000);
+			// reloaded page
+			oDropDownList = driver.findElement(
+					By.cssSelector("select[class*='notjs cl-drop-links-block__select'][name*='subject_Default']"));
+			dropdown2 = new Select(oDropDownList);
+			HighLight_Element(driver, oDropDownList);
+			// getting selected value
+			WebElement oSelectedElement = dropdown2.getFirstSelectedOption();
+			String vSelectedValue = oSelectedElement.getText();
+			System.out.println(vSelectedValue);
+			// checkpoint
+			Assert.assertEquals(vSelectedValue, myListOfVisibleTexts[i]);
+			scrolldown(driver, 200);
 		}
+	}
+
+	// Requirement 106: N/A
+	@Test(enabled = false)
+	public void TC_106_NA_PracticeCSSselector() {
+		String vBaseURL = "https://www.dow.com/en-us/about-dow";
+		String wBrowser = "FIREFOX";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+
+		// "try catch" block is used so that if the popup window does not show
+		// up then also the script will continue.
+		try {
+			WebElement oAcceptButton = driver.findElement(By.xpath("/html/body/div[2]/div/button[1]"));
+			HighLight_Element(driver, oAcceptButton);
+			waitTime(2000);
+			oAcceptButton.click();
+		} catch (Exception e) {
+		}
+		scrolldown(driver, 500);
+
+		ArrayList<WebElement> myElementList = new ArrayList<WebElement>();
+
+		// CSSSelector with "class" attribute with exact value and "href"
+		// attribute with "Ends with" value. (2 attributes)
+		myElementList.add(driver.findElement(By.cssSelector("a[class*='cl-btn'][href$='/leadership']")));
+		// CSSSelector with "href" attribute with "Ends with" value.
+		myElementList.add(driver.findElement(By.cssSelector("a[href$='/sec-filings']")));
+		// CSSSelector with "href" attribute with "Ends with" value
+		myElementList.add(driver.findElement(By.cssSelector(
+				"a[class*='cl-btn'][href*='https://www.dow.com/en-us/about-dow/our-company/codes-of-conduct/code-of-business-conduct']")));
+		// CSSSelector with "href" attribute with "Ends with" value
+		myElementList.add(driver.findElement(By.cssSelector("a[class*='cl-btn'][href$='/human-rights']")));
+		// CSSSelector with "href" attribute with exact value
+		myElementList.add(driver.findElement(By.cssSelector(
+				"a[class*='cl-btn'][href*='https://www.dow.com/en-us/about-dow/our-company/investor-presentations']")));
+		// CSSSelector with "href" attribute with "Ends with" value
+		myElementList.add(driver.findElement(
+				By.cssSelector("a[class*='cl-btn'][href$='/non-gaap-reconciliation-2q17.ashx?la=en-us']")));
+		// CSSSelector with "href" attribute with "Ends with" value
+		myElementList.add(driver
+				.findElement(By.cssSelector("a[class*='cl-btn'][href$='/dowdupont-legal-notice.ashx?la=en-us']")));
+		// CSSSelector with "href" attribute with "Ends with" value
+		myElementList.add(driver
+				.findElement(By.cssSelector("a[class*='cl-btn'][href$='/responsible-sourcing-conflict-minerals']")));
+		// CSSSelector generated by Firefox.
+		myElementList.add(driver.findElement(By.cssSelector("a.cl-btn:nth-child(10)")));
+		myElementList.add(driver.findElement(By.xpath("/html/body/div[1]/main/div[8]/div/div/div/div/a[10]")));
+		// CSSSelector with "href" attribute and exact value.
+		myElementList.add(driver.findElement(By.cssSelector(
+				"a[class*='cl-btn'][href*='https://www.dow.com/en-us/about-dow/our-company/codes-of-conduct/political-engagement-policy/corporate-political-contribution-guidelines']")));
+
+		// Mouse Over.
+		for (WebElement v : myElementList) {
+			HighLight_Element(driver, v);
+			Actions action = new Actions(driver);
+			action.moveToElement(v).build().perform();
+			waitTime(2000);
+		}
+	}
+
+	// Requirement 107: tbd
+	@Test(enabled = true)
+	public void TC_107_TBD() {
+		String vBaseURL = "https://www.dow.com/en-us/about-dow/dow-update-preferences";
+		String wBrowser = "FIREFOX";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+		waitTime(4000);
+
+		// "try catch" block is used so that if the popup window does not show
+		// up then also the script will continue.
+		try {
+			WebElement oAcceptButton = driver.findElement(By.xpath("/html/body/div[2]/div/button[1]"));
+			HighLight_Element(driver, oAcceptButton);
+			waitTime(2000);
+			oAcceptButton.click();
+		} catch (Exception e) {
+		}
+		
+		driver.findElement(By.cssSelector("input[placeholder*='First Name']")).sendKeys("md shahajada");
+		driver.findElement(By.cssSelector("input[placeholder*='Last Name']")).sendKeys("Imran");
+		driver.findElement(By.cssSelector("input[placeholder*='Email']")).sendKeys("self@love.com");
+		
+		WebElement oDropDownList = driver.findElement(
+				By.xpath("//*[@id=\"wffmeaea906788d84a13849769baad7c9253_Sections_0__Fields_3__Value\"]"));
+		Select dropdown2 = new Select(oDropDownList);
+		dropdown2.selectByVisibleText("United States");
+		
 	}
 
 }
