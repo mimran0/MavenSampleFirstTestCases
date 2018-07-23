@@ -148,7 +148,7 @@ public class TestSedDividend extends afterLoginIn.CommonAPI {
 			for (int i = 1; i <= RowCount; i++) {
 				GetBuyOrNot(driver, i);
 			}
-			WebElement obj_Next = driver.findElement(By.linkText("Next â€º"));
+			WebElement obj_Next = driver.findElement(By.linkText("Next ›"));
 			if (j < 12) {
 				obj_Next.click();
 			} else {

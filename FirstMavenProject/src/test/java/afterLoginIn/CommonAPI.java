@@ -386,6 +386,36 @@ public class CommonAPI {
 		Cell cell = row.getCell(vColumn);
 		// System.out.print(cell.getStringCellValue());
 		Result = cell.getStringCellValue();
+
 		return Result;
+	}
+
+	// Developed by md shahajada imran.(7/22/2018)
+	// This function/method will return specific Excel Cell data using row
+	// number, column number, Excel Path.
+	// Input: Row Number, Column Number, Excel Path
+	// Output: Specific cell value
+	// Required jar files/ dependency list: poi-ooxml-3.17,
+	// poi-ooxml-schemas-3.17, xmlbeans-2.6.0,
+	// poi-3.17, commons-collections4-4.1
+	public void WriteCellData(int vRow, int vColumn, String vExcelPath, String vCellValue) {
+		String Result = null;
+		Workbook wb = null;
+		try {
+			FileInputStream fis = new FileInputStream(vExcelPath);
+			wb = new XSSFWorkbook(fis);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Sheet sheet = wb.getSheetAt(0);
+		Row row = sheet.getRow(vRow);
+		Cell cell = row.getCell(vColumn);
+		// System.out.print(cell.getStringCellValue());
+		cell.setCellValue(vCellValue);
+
 	}
 }
