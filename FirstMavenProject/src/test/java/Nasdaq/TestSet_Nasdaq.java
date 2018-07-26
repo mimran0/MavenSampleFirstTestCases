@@ -6,6 +6,7 @@ package Nasdaq;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -14,9 +15,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -40,7 +44,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	// Business Requirement 101: Users are able to search stock and collect
 	// stock name
 	// and price as pair.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_101_StockSearch() {
 
 		String[] arrImageList = new String[5];
@@ -94,7 +98,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 102: find out how many web tables in the given page.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_102_WebTableCount() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -110,7 +114,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 
 	// Technical Requirement 103: get broker name and commission using HashMap
 	// and display using iterator.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_103_HashMap() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -156,5 +160,76 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 			System.out.print("Broker is: " + mentry.getKey() + " & Commission is: ");
 			System.out.println(mentry.getValue());
 		}
+	}
+
+	// Requirement 104: N/A
+	@Test(enabled = false)
+	public void TC_104_NA() {
+		String vBaseURL = "https://www.nasdaq.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+
+		// ArrayList<WebElement> arrMyList = new ArrayList<WebElement>();
+		List<WebElement> arrMyList = new ArrayList<WebElement>();
+		arrMyList.add(driver.findElement(By.linkText("Our Businesses")));
+		arrMyList.add(driver.findElement(By.cssSelector("#site-nav-quotes > a:nth-child(1) > span:nth-child(1)")));
+		arrMyList.add(driver.findElement(By.xpath("/html/body/header/nav/ul/li[3]/a/span")));
+		arrMyList.add(driver.findElement(By.cssSelector("li[id*='site-nav-news']")));
+		List<WebElement> arrAll_spans = driver.findElements(By.tagName("span"));
+		for (WebElement v : arrAll_spans) {
+			String vSpanText = v.getText();
+			// System.out.println(vSpanText);
+			if (vSpanText.equals("Investing")) {
+				arrMyList.add(v);
+				break;
+			}
+		}
+		arrMyList.add(driver.findElement(By.xpath("/html/body/header/nav/ul/li[6]/a/span")));
+		arrMyList.add(driver.findElement(By.id("site-nav-nasdaq")));
+
+		// Mouse Over.
+		for (WebElement v : arrMyList) {
+			HighLight_Element(driver, v);
+			Actions action = new Actions(driver);
+			action.moveToElement(v).build().perform();
+			waitTime(2000);
+		}
+	}
+
+	// Requirement 105: Verify that EPS column has value. (Not validation)
+	@Test(enabled = true)
+	public void TC_105_TBD() {
+		String vBaseURL = "https://www.nasdaq.com/earnings/earnings-calendar.aspx?";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+
+		WebElement oMyTable = driver.findElement(By.cssSelector("div[class*='genTable']"));
+		// HighLight_Element(driver,oMyTable);
+
+		List<WebElement> arrListofRows = driver.findElements(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr"));
+		int rowCount = arrListofRows.size();
+		// System.out.println("total row in the table is " + rowCount);
+
+		List<WebElement> arrListofColumn = driver
+				.findElements(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr[1]/td"));
+		int columnCount = arrListofColumn.size();
+		// System.out.println("Total column in the table is " + columnCount);
+
+		for (int i = 1; i < rowCount; i++) {
+			String vEPSforecast = driver
+					.findElement(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr[" + i + "]/td[5]")).getText();
+			// System.out.println(vEPSforecast);
+			String vCompanyName = driver
+					.findElement(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr[" + i + "]/td[2]")).getText();
+			// System.out.println(vCompanyName + " = " + vEPSforecast);
+			if (!((vEPSforecast.length()) == 0)) {
+				System.out.println("passed");
+			} else {
+				Assert.fail(vCompanyName + " has no EPS value");
+			}
+		}
+
 	}
 }

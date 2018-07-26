@@ -3,6 +3,7 @@
  */
 package MyMath;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -71,23 +72,25 @@ public class TestSetMath extends CommonAPI {
 	}
 
 	@Test(enabled = true, priority = 2)
-	public void TC_102() {
+	public void TC_102() throws IOException {
 
-		String vExcelPath = "C:\\Users\\imran\\workspace6\\FirstMavenProject\\src\\test\\java\\MyMath\\Result.xlsx";
+		String vExcelPath = "C:\\Users\\imran\\workspace6\\FirstMavenProject\\src\\test\\java\\MyMath\\Resultabc.xlsx";
 
 		// List of buy
-		int i = 1;
+		int i = 3;
 		for (String v : Arr_buy) {
 			System.out.println(v);
-			WriteCellData(i, 1, vExcelPath, v);
+			// WriteCellData(i, 7, vExcelPath, v);
 			i++;
 		}
 
 		// List of Do not buy
-		int j = 1;
+		System.out.println(
+				"*******************************************************************Buy Ends here. Don't buy below stocks.");
+		int j = 3;
 		for (String v : Arr_DoNotBuy) {
 			System.out.println(v);
-			WriteCellData(j, 2, vExcelPath, v);
+			// WriteCellData(j, 2, vExcelPath, v);
 			j++;
 		}
 

@@ -1,0 +1,52 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class writeExcelTemp {
+
+	public static void main(String[] args) {
+		try {
+			WriteCellData(3, 2, "C:\\Users\\imran\\workspace6\\FirstMavenProject\\src\\test\\java\\MyMath\\Result.xlsx",
+					"Love");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	public static void WriteCellData(int vRow, int vColumn, String vExcelPath, String vCellValue) throws IOException {
+		String Result = null;
+		XSSFWorkbook wb = null;
+		try {
+			FileInputStream fis = new FileInputStream(vExcelPath);
+			wb = new XSSFWorkbook(fis);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Sheet sheet = wb.getSheetAt(0);
+		// Row row = sheet.getRow(vRow);
+		// Cell cell = row.getCell(vColumn);
+
+		Row row = sheet.createRow(1);
+		Cell cell = row.createCell(1);
+		// System.out.print(cell.getStringCellValue());
+
+		cell.setCellType(cell.CELL_TYPE_STRING);
+		cell.setCellValue(vCellValue);
+		FileOutputStream fos = new FileOutputStream(vExcelPath);
+		wb.write(fos);
+		fos.close();
+
+	}
+}

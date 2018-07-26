@@ -1,0 +1,9 @@
+
+public class writeExcelTemp extends CommonAPI{
+
+	public static void main(String[] args) {
+		WriteCellData(3, 2, "C:\\Users\\imran\\workspace6\\FirstMavenProject\\src\\test\\java\\MyMath\\Result.xlsx", "hello");
+
+	}
+
+}

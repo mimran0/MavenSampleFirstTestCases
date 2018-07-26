@@ -34,7 +34,8 @@ public class UsingDataProvider extends CommonAPI {
 	// form and upon clicking on submit button payment amount displays and
 	// validate the amount.
 	// DataDriven Test with parameterization.
-	@Test(enabled = true,dataProvider="testData")
+	//@Test(enabled = true,dataProvider="testData")
+	@Test(enabled = true,dataProvider="testData_2")
 	public void TC_101_TBD(String wBrowser, String vHomevalue,String vPrincipal,String vInterest_rate,String vTerm,String vProperty_tax,String vPmi,String vHoi,String vExpectedPayment) {
 		String vBaseURL = "https://www.mortgagecalculator.org/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -84,7 +85,7 @@ public class UsingDataProvider extends CommonAPI {
 	@DataProvider
 	public Object[][] testData() {
 		return new Object[][] {
-			//wBrowser, vHomevalue ,vPrincipal, vInterest_rate, vTerm, vProperty_tax,vPmi,vHoi,vExpectedPayment
+			    //wBrowser, vHomevalue ,vPrincipal, vInterest_rate, vTerm, vProperty_tax,vPmi,vHoi,vExpectedPayment
 			    new Object[] { "CHROME", "350000", "300000", "2.25","15",".5","1.3", "2000","$2,602.75"},
 				new Object[] { "FIREFOX", "350000", "300000", "2.25","15",".5","1.3", "2000","$2,602.75" }, 
 				new Object[] { "IE", "350000", "300000", "2.25","15",".5","1.3", "2000","$2,602.75" },
@@ -92,5 +93,19 @@ public class UsingDataProvider extends CommonAPI {
 				new Object[] { "MICROSOFE EDGE", "750000", "500000", "1.75","15",".5","1.3", "2000","$2,602.75" },
 				};
 	}
+	
+	
+	
+		@DataProvider
+		public Object[][] testData_2() {
+			return new Object[][] {
+				    //wBrowser, vHomevalue ,vPrincipal, vInterest_rate, vTerm, vProperty_tax,vPmi,vHoi,vExpectedPayment
+				    new Object[] { "CHROME", "350000", "300000", "2.25","15",".5","1.3", "2000","$2,602.75"},
+					new Object[] { "FIREFOX", "350000", "300000", "2.25","15",".5","1.3", "2000","$2,602.75" }, 
+					new Object[] { "IE", "350000", "300000", "2.25","15",".5","1.3", "2000","$2,602.75" },
+					new Object[] { "MICROSOFE EDGE", "350000", "300000", "2.25","15",".5","1.3", "2000","$2,602.75" }, 
+					new Object[] { "MICROSOFE EDGE", "750000", "500000", "1.75","15",".5","1.3", "2000","$2,602.75" },
+					};
+		}
 
 }

@@ -3,6 +3,7 @@ package afterLoginIn;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -398,9 +399,9 @@ public class CommonAPI {
 	// Required jar files/ dependency list: poi-ooxml-3.17,
 	// poi-ooxml-schemas-3.17, xmlbeans-2.6.0,
 	// poi-3.17, commons-collections4-4.1
-	public void WriteCellData(int vRow, int vColumn, String vExcelPath, String vCellValue) {
+	public void WriteCellData(int vRow, int vColumn, String vExcelPath, String vCellValue) throws IOException {
 		String Result = null;
-		Workbook wb = null;
+		XSSFWorkbook wb = null;
 		try {
 			FileInputStream fis = new FileInputStream(vExcelPath);
 			wb = new XSSFWorkbook(fis);
@@ -412,10 +413,12 @@ public class CommonAPI {
 			e.printStackTrace();
 		}
 		Sheet sheet = wb.getSheetAt(0);
-		Row row = sheet.getRow(vRow);
-		Cell cell = row.getCell(vColumn);
-		// System.out.print(cell.getStringCellValue());
+		Row row = sheet.createRow(vRow);
+		Cell cell = row.createCell(vColumn);
+		cell.setCellType(cell.CELL_TYPE_STRING);
 		cell.setCellValue(vCellValue);
-
+		FileOutputStream fos = new FileOutputStream(vExcelPath);
+		wb.write(fos);
+		fos.close();
 	}
 }
