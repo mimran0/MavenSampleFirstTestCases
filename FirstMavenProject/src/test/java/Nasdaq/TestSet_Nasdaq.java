@@ -17,7 +17,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -44,7 +43,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	// Business Requirement 101: Users are able to search stock and collect
 	// stock name
 	// and price as pair.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_101_StockSearch() {
 
 		String[] arrImageList = new String[5];
@@ -98,7 +97,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 102: find out how many web tables in the given page.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_102_WebTableCount() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -114,7 +113,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 
 	// Technical Requirement 103: get broker name and commission using HashMap
 	// and display using iterator.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_103_HashMap() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -163,7 +162,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 104: N/A
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_104_NA() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -197,9 +196,9 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 		}
 	}
 
-	// Requirement 105: Verify that EPS column has value. (Not validation)
+	// Requirement 105: Verify that EPS column has value of current page only.
 	@Test(enabled = true)
-	public void TC_105_TBD() {
+	public void TC_105_VerifyEPS() {
 		String vBaseURL = "https://www.nasdaq.com/earnings/earnings-calendar.aspx?";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
@@ -231,5 +230,246 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 			}
 		}
 
+	}
+
+	// Requirement 106: Verify that EPS column has value of all open pages.
+	@Test(enabled = true)
+	public void TC_106_EPS_All_Pages() {
+		String vBaseURL = "https://www.nasdaq.com/earnings/earnings-calendar.aspx?";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+
+		int j = 0;
+		for (int i = 2; i < 7; i++) {
+			WebElement oMonday = driver
+					.findElement(By.cssSelector("span#two_column_main_content_lreportweek a:nth-of-type(" + i + ")"));
+			// HighLight_Element(driver,oMonday);
+			WebElement oTuesday = driver
+					.findElement(By.cssSelector("span#two_column_main_content_lreportweek a:nth-of-type(" + i + ")"));
+			WebElement oWednesday = driver
+					.findElement(By.cssSelector("span#two_column_main_content_lreportweek a:nth-of-type(" + i + ")"));
+			WebElement oThursday = driver
+					.findElement(By.cssSelector("span#two_column_main_content_lreportweek a:nth-of-type(" + i + ")"));
+			WebElement oFriday = driver
+					.findElement(By.cssSelector("span#two_column_main_content_lreportweek a:nth-of-type(" + i + ")"));
+
+			List<WebElement> arrMyWeek = new ArrayList<WebElement>();
+			arrMyWeek.add(oMonday);
+			arrMyWeek.add(oTuesday);
+			arrMyWeek.add(oWednesday);
+			arrMyWeek.add(oThursday);
+			arrMyWeek.add(oFriday);
+
+			arrMyWeek.get(j).click();
+			j++;
+			waitTime(4000);
+			WebElement oMyTable = driver.findElement(By.cssSelector("div[class*='genTable']"));
+			// HighLight_Element(driver,oMyTable);
+
+			List<WebElement> arrListofRows = driver.findElements(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr"));
+			int rowCount = arrListofRows.size();
+			// System.out.println("total row in the table is " + rowCount);
+
+			List<WebElement> arrListofColumn = driver
+					.findElements(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr[1]/td"));
+			int columnCount = arrListofColumn.size();
+			// System.out.println("Total column in the table is " +
+			// columnCount);
+
+			for (int k = 1; k < rowCount; k++) {
+				String vEPSforecast = driver
+						.findElement(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr[" + k + "]/td[5]")).getText();
+				// System.out.println(vEPSforecast);
+				String vCompanyName = driver
+						.findElement(By.xpath("//*[@id=\"ECCompaniesTable\"]/tbody/tr[" + k + "]/td[2]")).getText();
+				// System.out.println(vCompanyName + " = " + vEPSforecast);
+				if (!((vEPSforecast.length()) == 0)) {
+					System.out.println("passed");
+				} else {
+					Assert.fail(vCompanyName + " has no EPS value");
+				}
+			}
+			driver.navigate().refresh();
+		}
+
+	}
+
+	// Technical Requirement 107: Verify text color of a web Element.
+	@Test(enabled = true)
+	public void TC_107_VerifyColor() {
+
+		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+
+		WebElement oCC = driver.findElement(By.linkText("Centerpoint Securities"));
+		HighLight_Element(driver, oCC);
+
+		String vColor = oCC.getCssValue("color");
+		System.out.println(vColor);
+
+		// String vColor = "rgb(0, 149, 197)";
+		// removing "rgb(" from the string
+		String v_hexValue = vColor.replace("rgb(", "");
+		System.out.println(v_hexValue);
+		// removing ")" from the string
+		v_hexValue = v_hexValue.replace(")", "");
+		System.out.println(v_hexValue);
+		// Storing 3 string numbers into 3 elements of an array.
+		String[] arr_hexValue = v_hexValue.split(",");
+		// Removing spaces from the array elements
+		arr_hexValue[0] = arr_hexValue[0].trim();
+		arr_hexValue[1] = arr_hexValue[1].trim();
+		arr_hexValue[2] = arr_hexValue[2].trim();
+
+		// Converting strings to integers
+		int hexvalue1 = Integer.parseInt(arr_hexValue[0]);
+		int hexvalue2 = Integer.parseInt(arr_hexValue[1]);
+		int hexvalue3 = Integer.parseInt(arr_hexValue[2]);
+
+		// Making the color format
+		String vActualColor = String.format("#%02x%02x%02x", hexvalue1, hexvalue2, hexvalue3);
+		System.out.println(vActualColor);
+		// CheckPoint
+		Assert.assertEquals("#0095c5", vActualColor);
+	}
+
+	// Business Requirement 108: Verify text colors of all broker names
+	// displayed on
+	// given page.
+	@Test(enabled = true)
+	public void TC_108_TBD() {
+		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+
+		for (int i = 1; i < 43; i++) {
+			WebElement oBrokerName = driver
+					.findElement(By.xpath("//*[@id=\"main-content\"]/div[8]/table/tbody/tr[" + i + "]/td[1]/b/a"));
+			// HighLight_Element(driver, oBrokerName);
+			String vColor = oBrokerName.getCssValue("color");
+			// System.out.println(vColor);
+
+			// String vColor = "rgb(0, 149, 197)";
+			// removing "rgb(" from the string
+			String v_hexValue = vColor.replace("rgb(", "");
+			System.out.println(v_hexValue);
+			// removing ")" from the string
+			v_hexValue = v_hexValue.replace(")", "");
+			System.out.println(v_hexValue);
+			// Storing 3 string numbers into 3 elements of an array.
+			String[] arr_hexValue = v_hexValue.split(",");
+			// Removing spaces from the array elements
+			arr_hexValue[0] = arr_hexValue[0].trim();
+			arr_hexValue[1] = arr_hexValue[1].trim();
+			arr_hexValue[2] = arr_hexValue[2].trim();
+
+			// Converting strings to integers
+			int hexvalue1 = Integer.parseInt(arr_hexValue[0]);
+			int hexvalue2 = Integer.parseInt(arr_hexValue[1]);
+			int hexvalue3 = Integer.parseInt(arr_hexValue[2]);
+
+			// Making the color format
+			String vActualColor = String.format("#%02x%02x%02x", hexvalue1, hexvalue2, hexvalue3);
+			System.out.println(vActualColor);
+			// CheckPoint
+			Assert.assertEquals("#0095c5", vActualColor);
+		}
+	}
+
+	// Requirement 109: Verify that the text color of all "View All" links on
+	// Nasdaq home page are green.
+	@Test(enabled = true)
+	public void TC_109_TBD() {
+		String vBaseURL = "https://www.nasdaq.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		List<WebElement> arrVeiwAll = driver.findElements(By.linkText("View All"));
+		HighLight_Elements(driver, arrVeiwAll);
+
+		for (WebElement v : arrVeiwAll) {
+			String vColor = v.getCssValue("color");
+			// System.out.println(vColor);
+			// String vColor = "rgb(0, 149, 197)";
+			// removing "rgb(" from the string
+			String v_hexValue = vColor.replace("rgb(", "");
+			System.out.println(v_hexValue);
+			// removing ")" from the string
+			v_hexValue = v_hexValue.replace(")", "");
+			System.out.println(v_hexValue);
+			// Storing 3 string numbers into 3 elements of an array.
+			String[] arr_hexValue = v_hexValue.split(",");
+			// Removing spaces from the array elements
+			arr_hexValue[0] = arr_hexValue[0].trim();
+			arr_hexValue[1] = arr_hexValue[1].trim();
+			arr_hexValue[2] = arr_hexValue[2].trim();
+
+			// Converting strings to integers
+			int hexvalue1 = Integer.parseInt(arr_hexValue[0]);
+			int hexvalue2 = Integer.parseInt(arr_hexValue[1]);
+			int hexvalue3 = Integer.parseInt(arr_hexValue[2]);
+
+			// Making the color format
+			String vActualColor = String.format("#%02x%02x%02x", hexvalue1, hexvalue2, hexvalue3);
+			System.out.println(vActualColor);
+			// CheckPoint
+			Assert.assertEquals("#0095c5", vActualColor);
+		}
+	}
+
+	// requirement 110: Verify that green color data display if secondary market
+	// goes up and red color data display if secondary market goes down.
+	@Test(enabled = true)
+	public void TC_110_MarketDataColor() {
+		String vBaseURL = "https://www.nasdaq.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		List<WebElement> arrMarketResult = driver.findElements(By.cssSelector("div[class*='indexmktdata']"));
+		for (WebElement v : arrMarketResult) {
+			// HighLight_Element(driver,v);
+			String vdata = v.getText();
+			System.out.println(vdata);
+			String[] arrdata = vdata.split(" ?");
+			String vFirstPartofData = arrdata[0];
+			System.out.println(vFirstPartofData);
+
+			String vColor = v.getCssValue("color");
+			System.out.println(vColor);
+			// String vColor = "rgb(0, 149, 197)";
+			// removing "rgb(" from the string
+			String v_hexValue = vColor.replace("rgb(", "");
+			System.out.println(v_hexValue);
+			// removing ")" from the string
+			v_hexValue = v_hexValue.replace(")", "");
+			System.out.println(v_hexValue);
+			// Storing 3 string numbers into 3 elements of an array.
+			String[] arr_hexValue = v_hexValue.split(",");
+			// Removing spaces from the array elements
+			arr_hexValue[0] = arr_hexValue[0].trim();
+			arr_hexValue[1] = arr_hexValue[1].trim();
+			arr_hexValue[2] = arr_hexValue[2].trim();
+
+			// Converting strings to integers
+			int hexvalue1 = Integer.parseInt(arr_hexValue[0]);
+			int hexvalue2 = Integer.parseInt(arr_hexValue[1]);
+			int hexvalue3 = Integer.parseInt(arr_hexValue[2]);
+
+			// Making the color format
+			String vActualColor = String.format("#%02x%02x%02x", hexvalue1, hexvalue2, hexvalue3);
+			System.out.println(vActualColor);
+
+			if (vFirstPartofData.equals("-")) {
+				// checking red color
+				Assert.assertEquals("#ffffff", vActualColor);
+			} else {
+				// checking green color
+				Assert.assertEquals("#ffffff", vActualColor);
+			}
+		}
 	}
 }

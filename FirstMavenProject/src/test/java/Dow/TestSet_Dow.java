@@ -35,7 +35,7 @@ public class TestSet_Dow extends CommonAPI {
 
 	// Technical Requirement 101:Find out how many links(a) and buttons(button)
 	// in the page and Highlight all of those.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_101_HighlightLinksAndButton() {
 		String vBaseURL = "https://www.dow.com/en-us/markets-and-solutions/energy-and-water";
 		String wBrowser = "FIREFOX";
@@ -65,7 +65,7 @@ public class TestSet_Dow extends CommonAPI {
 	// Business Requirement 102: Users are able to mouseover and view data in
 	// the given page.
 	// Technical Requirement 102: Use wide range of CSSselectors for scripting.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_102_WideRangeOfCSSselectors() {
 		String vBaseURL = "https://www.dow.com/en-us";
 		String wBrowser = "FIREFOX";
@@ -113,7 +113,7 @@ public class TestSet_Dow extends CommonAPI {
 	}
 
 	// Not a Requirement 103: Explore CSSselector
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_103_CSSselectorS() {
 		String vBaseURL = "https://www.dow.com/en-us/search#t=All";
 		String wBrowser = "FIREFOX";
@@ -163,7 +163,7 @@ public class TestSet_Dow extends CommonAPI {
 	}
 
 	// Requirement 104: N/A
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_104_NA() {
 		String vBaseURL = "https://www.dow.com/en-us/search#t=All";
 		String wBrowser = "FIREFOX";
@@ -204,7 +204,7 @@ public class TestSet_Dow extends CommonAPI {
 
 	// Requirement 105: Verify that users are able to select value from drop
 	// down list and validate the values.
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_105_DropdownValidation() {
 		String vBaseURL = "https://www.dow.com/en-us/contact-us";
 		String wBrowser = "FIREFOX";
@@ -250,7 +250,7 @@ public class TestSet_Dow extends CommonAPI {
 	}
 
 	// Requirement 106: N/A
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void TC_106_NA_PracticeCSSselector() {
 		String vBaseURL = "https://www.dow.com/en-us/about-dow";
 		String wBrowser = "FIREFOX";

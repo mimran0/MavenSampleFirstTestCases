@@ -6,8 +6,8 @@
       <class name="Nasdaq.TestSet_Nasdaq">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_105_TBD"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_110_MarketDataColor"/>
         </methods>
       </class> <!-- Nasdaq.TestSet_Nasdaq -->
     </classes>
