@@ -7,7 +7,7 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_110_MarketDataColor"/>
+          <include name="TC_112_ValidateBoldTexts"/>
         </methods>
       </class> <!-- Nasdaq.TestSet_Nasdaq -->
     </classes>

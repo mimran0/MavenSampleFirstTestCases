@@ -429,15 +429,32 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
 		waitTime(5000);
-		List<WebElement> arrMarketResult = driver.findElements(By.cssSelector("div[class*='indexmktdata']"));
+		List<WebElement> arrMarketResult = new ArrayList<WebElement>();
+
+		arrMarketResult.add(driver.findElement(By.cssSelector("div.indexmktdata:nth-child(4) > span:nth-child(1)")));
+		arrMarketResult.add(driver.findElement(By.cssSelector("div.indexmktdata:nth-child(4) > span:nth-child(2)")));
+		arrMarketResult.add(driver.findElement(By.cssSelector("div.indexmktdata:nth-child(6) > span:nth-child(1)")));
+		arrMarketResult.add(driver.findElement(By.cssSelector("div.indexmktdata:nth-child(6) > span:nth-child(2)")));
+		arrMarketResult.add(driver.findElement(By.cssSelector("div.indexmktdata:nth-child(8) > span:nth-child(1)")));
+		arrMarketResult.add(driver.findElement(By.cssSelector("div.indexmktdata:nth-child(8) > span:nth-child(2)")));
+
 		for (WebElement v : arrMarketResult) {
-			// HighLight_Element(driver,v);
+			HighLight_Element(driver, v);
 			String vdata = v.getText();
 			System.out.println(vdata);
-			String[] arrdata = vdata.split(" ?");
-			String vFirstPartofData = arrdata[0];
-			System.out.println(vFirstPartofData);
+			// checking if data is negative or positive
+			boolean isNegative = vdata.contains("-");
+			System.out.println(isNegative);
 
+			// Setting expected color
+			String vExpectedColor;
+			if (isNegative == false) {
+				vExpectedColor = "#008000";
+			} else {
+				vExpectedColor = "#ee3524";
+			}
+
+			// Checking color
 			String vColor = v.getCssValue("color");
 			System.out.println(vColor);
 			// String vColor = "rgb(0, 149, 197)";
@@ -462,14 +479,110 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 			// Making the color format
 			String vActualColor = String.format("#%02x%02x%02x", hexvalue1, hexvalue2, hexvalue3);
 			System.out.println(vActualColor);
-
-			if (vFirstPartofData.equals("-")) {
-				// checking red color
-				Assert.assertEquals("#ffffff", vActualColor);
-			} else {
-				// checking green color
-				Assert.assertEquals("#ffffff", vActualColor);
-			}
+			Assert.assertEquals(vExpectedColor, vActualColor);
 		}
+	}
+
+	// Business Requirement 111: validate the text colors of "Change Net" column
+	// of "Stock Market Overview" webTable.
+	@Test(enabled = true)
+	public void TC_111_TBD() {
+		String vBaseURL = "https://www.nasdaq.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		// Creating an arrayList to store WebElements.
+		ArrayList<WebElement> arrMyElementList = new ArrayList<WebElement>();
+		// Storing elements into the arrayList
+		for (int i = 0; i < 7; i++) {
+			arrMyElementList.add(
+					driver.findElement(By.cssSelector("#indexTableRow" + i + " > td:nth-child(3) > div:nth-child(1)")));
+		}
+		// going through for each loop
+		for (WebElement v : arrMyElementList) {
+			HighLight_Element(driver, v);
+			System.out.println(v.getText());
+			// checking if text is negative or positive
+			boolean isNegative = v.getText().contains("-");
+			System.out.println(isNegative);
+
+			// Setting expected color
+			String vExpectedColor;
+			if (isNegative == false) {
+				vExpectedColor = "#387c2c";
+			} else {
+				vExpectedColor = "#ee3524";
+			}
+
+			// Checking color
+			String vColor = v.getCssValue("color");
+			System.out.println(vColor);
+			// String vColor = "rgb(0, 149, 197)";
+			// removing "rgb(" from the string
+			String v_hexValue = vColor.replace("rgb(", "");
+			System.out.println(v_hexValue);
+			// removing ")" from the string
+			v_hexValue = v_hexValue.replace(")", "");
+			System.out.println(v_hexValue);
+			// Storing 3 string numbers into 3 elements of an array.
+			String[] arr_hexValue = v_hexValue.split(",");
+			// Removing spaces from the array elements
+			arr_hexValue[0] = arr_hexValue[0].trim();
+			arr_hexValue[1] = arr_hexValue[1].trim();
+			arr_hexValue[2] = arr_hexValue[2].trim();
+
+			// Converting strings to integers
+			int hexvalue1 = Integer.parseInt(arr_hexValue[0]);
+			int hexvalue2 = Integer.parseInt(arr_hexValue[1]);
+			int hexvalue3 = Integer.parseInt(arr_hexValue[2]);
+
+			// Making the color format
+			String vActualColor = String.format("#%02x%02x%02x", hexvalue1, hexvalue2, hexvalue3);
+			System.out.println(vActualColor);
+			Assert.assertEquals(vExpectedColor, vActualColor);
+		}
+
+	}
+
+	// Requirement 112: Validate that first column's text is Bold and 2nd
+	// column's text is not bold in "More Brokers" webTable. Excludes 1st row.
+	@Test(enabled = true)
+	public void TC_112_ValidateBoldTexts() {
+		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		for (int i = 2; i < 43; i++) {
+
+			// First Column
+			WebElement oBrokerName = driver
+					.findElement(By.xpath("//*[@id=\"main-content\"]/div[8]/table/tbody/tr[" + i + "]/td[1]/b/a"));
+			HighLight_Element(driver, oBrokerName);
+			String vFont = oBrokerName.getCssValue("font-weight");
+			System.out.println(vFont);
+			Assert.assertEquals("700", vFont);
+
+			// 2nd column
+			try {
+				WebElement oMinimumDiposit = driver
+						.findElement(By.xpath("//*[@id=\"main-content\"]/div[8]/table/tbody/tr[" + i + "]/td[2]"));
+				HighLight_Element(driver, oMinimumDiposit);
+				String vFont_oMinimumDiposit = oMinimumDiposit.getCssValue("font-weight");
+				System.out.println(vFont_oMinimumDiposit);
+				Assert.assertEquals("400", vFont_oMinimumDiposit);
+			} catch (Exception e) {
+				System.out.println("There is empty data on  row number " + i);
+			}
+
+		}
+	}
+
+	// Requirement 113: TBD
+	@Test(enabled = true)
+	public void TC_113_TBD() {
+		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
 	}
 }
