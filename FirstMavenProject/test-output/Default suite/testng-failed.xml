@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Nasdaq.TestSet_Nasdaq">
+      <class name="flowerbyMe.TestSet_flowerbyMe">
         <methods>
-          <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_TBD"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_112_ValidateBoldTexts"/>
+          <include name="doBeforeEveryMethod"/>
         </methods>
-      </class> <!-- Nasdaq.TestSet_Nasdaq -->
+      </class> <!-- flowerbyMe.TestSet_flowerbyMe -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

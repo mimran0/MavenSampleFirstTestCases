@@ -28,6 +28,7 @@
 			<class name="Dow.TestSet_Dow" />
 			<class name="Parametarization.UsingDataProvider" />
 			<class name="MyMath.TestSetMath" />
+			<class name="flowerbyMe.TestSet_flowerbyMe" />
 		</classes>
 	</test>
 </suite>
