@@ -43,7 +43,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	// Business Requirement 101: Users are able to search stock and collect
 	// stock name
 	// and price as pair.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_101_StockSearch() {
 
 		String[] arrImageList = new String[5];
@@ -97,7 +97,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 102: find out how many web tables in the given page.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_102_WebTableCount() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -113,7 +113,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 
 	// Technical Requirement 103: get broker name and commission using HashMap
 	// and display using iterator.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_103_HashMap() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -162,7 +162,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 104: N/A
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_104_NA() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -197,7 +197,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 105: Verify that EPS column has value of current page only.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_105_VerifyEPS() {
 		String vBaseURL = "https://www.nasdaq.com/earnings/earnings-calendar.aspx?";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -233,7 +233,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 106: Verify that EPS column has value of all open pages.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_106_EPS_All_Pages() {
 		String vBaseURL = "https://www.nasdaq.com/earnings/earnings-calendar.aspx?";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -296,7 +296,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Technical Requirement 107: Verify text color of a web Element.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_107_VerifyColor() {
 
 		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
@@ -339,7 +339,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	// Business Requirement 108: Verify text colors of all broker names
 	// displayed on
 	// given page.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_108_TBD() {
 		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -382,7 +382,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 
 	// Requirement 109: Verify that the text color of all "View All" links on
 	// Nasdaq home page are green.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_109_TBD() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -423,7 +423,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 
 	// requirement 110: Verify that green color data display if secondary market
 	// goes up and red color data display if secondary market goes down.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_110_MarketDataColor() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -485,7 +485,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 
 	// Business Requirement 111: validate the text colors of "Change Net" column
 	// of "Stock Market Overview" webTable.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_111_TBD() {
 		String vBaseURL = "https://www.nasdaq.com/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -546,7 +546,7 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 
 	// Requirement 112: Validate that first column's text is Bold and 2nd
 	// column's text is not bold in "More Brokers" webTable. Excludes 1st row.
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_112_ValidateBoldTexts() {
 		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
 		CommonAPI CommonAPI = new CommonAPI();
@@ -578,11 +578,66 @@ public class TestSet_Nasdaq extends afterLoginIn.CommonAPI {
 	}
 
 	// Requirement 113: TBD
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void TC_113_TBD() {
 		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
 		CommonAPI CommonAPI = new CommonAPI();
 		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
 		waitTime(5000);
+
+		// List<WebElement>
+		// myFuckenList=driver.findElements(By.tagName("button"));
+		// HighLight_Elements(driver,myFuckenList);
+
+		List<WebElement> myList = new ArrayList<WebElement>();
+		myList.add(driver.findElement(By.cssSelector("a[href^='https://www.facebook.com/']")));
+		myList.add(driver.findElement(By.cssSelector("a[href$='twitter.com/nasdaq']")));
+		myList.add(driver.findElement(By.cssSelector("a[href*='https://plus.google.com/+nasdaq']")));
+		myList.add(driver.findElement(By.cssSelector("a[title*='Annual Report']")));
+		myList.add(driver.findElement(By.cssSelector("a[title*='Contact']")));
+		myList.add(driver.findElement(By.cssSelector("a[title*='Careers']")));
+		myList.add(driver.findElement(By.cssSelector("a[title*='Advertise on Nasdaq.com']")));
+		myList.add(driver.findElement(By.partialLinkText("Mobile Versi")));
+		List<WebElement> myLinkList = driver.findElements(By.tagName("a"));
+		for (WebElement v : myLinkList) {
+			if ((v.getText().equals("Feedback"))) {
+				myList.add(v);
+			}
+		}
+		for (WebElement v : myLinkList) {
+			if ((v.getAttribute("title").equals("Glossary"))) {
+				myList.add(v);
+			}
+		}
+		for (WebElement v : myLinkList) {
+			if ((v.getAttribute("href").equals("https://www.nasdaq.com/help/sitemap.aspx"))) {
+				myList.add(v);
+			}
+		}
+
+		myList.add(driver.findElement(By.xpath("//a[@title='Privacy Policy']")));
+		myList.add(driver.findElement(By.xpath("//*[@title='Terms of Use']")));
+		myList.add(driver.findElement(By.xpath("//a[@title='Company News']")));
+		for (WebElement v : myList) {
+			HighLight_Element(driver, v);
+		}
+	}
+
+	// Requirement 114: TBD
+	@Test(enabled = true)
+	public void TC_114_TBD() {
+		String vBaseURL = "https://www.nasdaq.com/investing/online-brokers/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		driver.findElement(By.xpath("//input[@id='stock-search-text'][@name='stock-search-text']")).sendKeys("NYMT");
+		waitTime(3000);
+		driver.findElement(By.xpath("//button[@id='stock-search-submit'][@type='submit']")).click();
+		waitTime(2000);
+		String vStockPrice=driver.findElement(By.xpath("//div[@id='qwidget_lastsale'][@class='qwidget-dollar']")).getText();
+		System.out.println(vStockPrice);
+		String vAsOfDate=driver.findElement(By.xpath("//span[@id='qwidget_markettime']")).getText();
+		System.out.println(vAsOfDate);
+		driver.findElement(By.xpath("//a[@href='javascript:void(0);']")).click();
 	}
 }
