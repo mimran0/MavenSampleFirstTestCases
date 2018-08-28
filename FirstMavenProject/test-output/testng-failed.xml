@@ -31,9 +31,7 @@
       </class> <!-- FTD.TestSetK -->
       <class name="Dividend.TestSedDividend">
         <methods>
-          <include name="TC_104_CheckStockOnAllPage"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_105_Social_Sites_On_New_Tabs"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_110_Search_Securities"/>
         </methods>
@@ -45,6 +43,13 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
+      <class name="bing.TestSetBing">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="TC_101_searchOnBingHomePage"/>
+        </methods>
+      </class> <!-- bing.TestSetBing -->
       <class name="facebook.testSetD">
         <methods>
           <include name="LoginAndLogout_Chrome"/>
@@ -81,6 +86,7 @@
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
           <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
+          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>
@@ -88,15 +94,15 @@
       </class> <!-- usps.TestSetJ -->
       <class name="groupon.TestSet_E">
         <methods>
+          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
           <include name="aftermethod"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
           <include name="TC_410_Searchability_yoga"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
@@ -114,6 +120,7 @@
         <methods>
           <include name="TC_806_TBD"/>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_802_Red"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- cat.TestSet_Cat -->
@@ -181,17 +188,10 @@
           <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
-      <class name="FirstClassWith2methods">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="doLast"/>
-          <include name="UsersAreAbleToSearch"/>
-          <include name="doFirst"/>
-        </methods>
-      </class> <!-- FirstClassWith2methods -->
       <class name="Google.TestSet_Google">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_SearchResultCount"/>
           <include name="TC_105_LoginWithCaptchaAndPhoneCode"/>
           <include name="SetUpPreDataMethod"/>
         </methods>

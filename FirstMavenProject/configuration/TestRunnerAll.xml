@@ -29,6 +29,7 @@
 			<class name="Parametarization.UsingDataProvider" />
 			<class name="MyMath.TestSetMath" />
 			<class name="flowerbyMe.TestSet_flowerbyMe" />
+			<class name="bing2.TestSet2_bing" />
 		</classes>
 	</test>
 </suite>
