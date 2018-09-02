@@ -1,14 +1,14 @@
-import java.io.File;
-
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.opera.OperaOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class OperaTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		/// Experiment. Not Valid Code.
+		/// Below code is not valid code. It is experiment only.
 
 		/*
 		 * WebDriver driver=null; System.setProperty("webdriver.opera.driver",
@@ -39,17 +39,23 @@ public class OperaTest {
 
 		System.setProperty("webdriver.opera.driver",
 				"C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\operadriver.exe");
-		//System.setProperty("opera.binary", "C:\\Program Files\\Opera\\54.0.2952.64\\opera.exe");
-		
-		OperaOptions op = new OperaOptions();
-		op.setBinary(new File("C:\\Program Files\\Opera\\54.0.2952.64\\opera.exe"));
-		OperaDriver driver = new OperaDriver(op);
-	
-		//WebDriver driver = new OperaDriver();
-		driver.get("https://www.google.com/");
-		
-		
-		
+		// System.setProperty("opera.binary", "C:\\Program
+		// Files\\Opera\\54.0.2952.64\\opera.exe");
+
+		/*
+		 * OperaOptions op = new OperaOptions(); op.setBinary(new File(
+		 * "C:\\Program Files\\Opera\\55.0.2994.47\\opera.exe")); OperaDriver
+		 * driver = new OperaDriver(op);
+		 * 
+		 * //WebDriver driver = new OperaDriver();
+		 * driver.get("https://www.google.com/");
+		 */
+
+		DesiredCapabilities capabilities = DesiredCapabilities.opera();
+		capabilities.setCapability("opera.binary", "C:\\Program Files\\Opera\\55.0.2994.47\\opera.exe");
+		OperaDriver driver = new OperaDriver(capabilities);
+		driver.get("https://www.linkedin.com/in/md-shahajada-imran");
+
 	}
 
 }

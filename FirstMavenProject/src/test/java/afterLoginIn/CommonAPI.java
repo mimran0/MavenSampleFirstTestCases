@@ -115,6 +115,7 @@ public class CommonAPI {
 		BrowserName = BrowserName.toUpperCase();
 		switch (BrowserName) {
 		case "OPERA":
+			// In-progress
 			System.setProperty("webdriver.opera.driver",
 					"C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\operadriver.exe");
 			driver = new OperaDriver();

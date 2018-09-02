@@ -32,6 +32,7 @@
       <class name="Dividend.TestSedDividend">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_105_Social_Sites_On_New_Tabs"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_110_Search_Securities"/>
         </methods>
@@ -40,12 +41,14 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TestCase_103"/>
+          <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
       <class name="bing.TestSetBing">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_103_ExpectedMessageDisplay"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_101_searchOnBingHomePage"/>
         </methods>
@@ -65,10 +68,10 @@
       </class> <!-- facebook.testSetD -->
       <class name="Dow.TestSet_Dow">
         <methods>
-          <include name="TC_102_WideRangeOfCSSselectors"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_104_NA"/>
+          <include name="TC_106_NA_PracticeCSSselector"/>
         </methods>
       </class> <!-- Dow.TestSet_Dow -->
       <class name="Parametarization.UsingDataProvider">
@@ -86,7 +89,6 @@
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
           <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
-          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>
@@ -96,16 +98,15 @@
         <methods>
           <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="aftermethod"/>
-          <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
+          <include name="TC_406_Searchability_restaurants"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="aftermethod"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_409_Searchability_Fitness"/>
-          <include name="TC_801_testOne"/>
-          <include name="TC_413_Searchability_SeaFoodStores"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
@@ -116,14 +117,6 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- MC.TestSetF -->
-      <class name="cat.TestSet_Cat">
-        <methods>
-          <include name="TC_806_TBD"/>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_802_Red"/>
-          <include name="SetUpPreDataMethod"/>
-        </methods>
-      </class> <!-- cat.TestSet_Cat -->
       <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -147,7 +140,6 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
-          <include name="TC_905"/>
           <include name="TC_902"/>
           <include name="TC_904"/>
         </methods>

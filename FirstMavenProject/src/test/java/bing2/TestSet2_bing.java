@@ -28,9 +28,10 @@ public class TestSet2_bing extends CommonAPI {
 		WindowsUtils.killByName("MicrosoftEdge.exe");
 		WindowsUtils.killByName("firefox.exe");
 		WindowsUtils.killByName("iexplore.exe");
+		WindowsUtils.killByName("operadriver.exe");
 	}
 
-	// Requirement 101: TBD
+	// Requirement 101: Verify that users are able to search on bing home page.
 	@Test(enabled = true)
 	public void TC_101_TBD() {
 		String vBaseURL = "https://www.bing.com/";
@@ -46,27 +47,36 @@ public class TestSet2_bing extends CommonAPI {
 		CAPTURESCREEN(driver, "md shahajada imran");
 	}
 
-	// Requirement 102: TBD
+	// Requirement 102: Verify in GoogleChrome Browser that users are able to
+	// search on bing home page.
 	@Test(enabled = true)
 	public void TC_SE_CHROME() {
 		SearchEngineInBing("CHROME");
 	}
 
+	// Requirement 103: Verify in Firefox Browser that users are able to search
+	// on bing home page.
 	@Test(enabled = true)
 	public void TC_SE_Firefox() {
 		SearchEngineInBing("FIREFOX");
 	}
 
+	// Requirement 104: Verify in Microsoft Edge Browser that users are able to
+	// search on bing home page.
 	@Test(enabled = true)
 	public void TC_SE_MicrosoftEdge() {
 		SearchEngineInBing("MICROSOFE EDGE");
 	}
 
+	// Requirement 105: Verify in Internet Explorer Browser that users are able
+	// to search on bing home page.
 	@Test(enabled = true)
 	public void TC_SE_ie() {
 		SearchEngineInBing("IE");
 	}
 
+	// Requirement 106: Verify in Opera Browser that users are able to search on
+	// bing home page.
 	@Test(enabled = false)
 	public void TC_SE_Opera() {
 		SearchEngineInBing("OPERA");
