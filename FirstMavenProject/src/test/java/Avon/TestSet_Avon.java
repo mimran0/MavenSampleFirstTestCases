@@ -1,0 +1,105 @@
+/**
+ * 
+ */
+package Avon;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import afterLoginIn.CommonAPI;
+
+/**
+ * @author md shahajada imran
+ *
+ */
+public class TestSet_Avon extends CommonAPI {
+	// this method will be executed before every test
+	@BeforeMethod
+	public void SetUpPreDataMethod() {
+		System.out.println("Before Each Test  executed");
+		WindowsUtils.killByName("chromedriver.exe");
+		WindowsUtils.killByName("MicrosoftEdge.exe");
+		WindowsUtils.killByName("firefox.exe");
+		WindowsUtils.killByName("iexplore.exe");
+		WindowsUtils.killByName("operadriver.exe");
+	}
+
+	// Requirement 101: TBD
+	@Test(enabled = false)
+	public void TC_101_TBD() {
+		String vBaseURL = "https://www.avon.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		
+		List<WebElement> myList=new ArrayList<WebElement>();
+		
+		myList.add(driver.findElement(By.partialLinkText("SHOP CATEGORIES")));
+		myList.add(driver.findElement(By.partialLinkText("NEW & NOW")));
+		myList.add(driver.findElement(By.partialLinkText("WELLNESS")));
+		myList.add(driver.findElement(By.partialLinkText("SPECIAL OFFERS")));
+		myList.add(driver.findElement(By.partialLinkText("HOW-TO's")));
+		myList.add(driver.findElement(By.partialLinkText("CAUSES")));
+		
+		for(WebElement v: myList){
+			HighLight_Element(driver,v);
+			Actions action = new Actions(driver);
+			action.moveToElement(v).build().perform();
+			waitTime(9000);
+		}
+		
+		
+	}
+	
+	//Requirement 102: TBD
+	@Test(enabled=true)
+	public void TC_102_TBD(){
+		String vBaseURL = "https://www.avon.com/";
+		CommonAPI CommonAPI = new CommonAPI();
+		WebDriver driver = CommonAPI.getDriver("FIREFOX", vBaseURL);
+		waitTime(5000);
+		WebElement objSingIn=driver.findElement(By.xpath("//a[@data-analytics='hdr-signin-lnk']"));
+		HighLight_Element(driver,objSingIn);
+		objSingIn.click();
+		waitTime(2000);
+		driver.findElement(By.cssSelector("a[class*='Button2 CreateNewAccount']")).click();
+		waitTime(5000);
+		Random rm=new Random();
+		String vFirstName="md"+rm.nextInt(500);
+		String vLastName="Imran"+rm.nextInt(500);
+		
+		driver.findElement(By.name("registrationModel_LoginInfo_FirstName")).sendKeys(vFirstName);
+		driver.findElement(By.name("registrationModel_LoginInfo_LastName")).sendKeys(vLastName);
+		
+		driver.findElement(By.id("registrationModel_LoginInfo_EmailInput")).sendKeys("mdshahajadaimran@aol.com");
+		String vPassword="ghjkl"+vFirstName;
+		driver.findElement(By.id("registrationModel_LoginInfo_PasswordInput")).sendKeys(vPassword);
+		driver.findElement(By.id("registrationModel_LoginInfo_PasswordConfirmInput")).sendKeys(vPassword);
+		driver.findElement(By.id("registrationModel_LoginInfo_PasswordHintInput")).sendKeys("self test");
+		
+		WebElement objCheckBox=driver.findElement(By.cssSelector("#registrationModel_PrivacyPolicy > div:nth-child(1) > label:nth-child(2)"));
+		HighLight_Element(driver,objCheckBox);
+		objCheckBox.click();
+		waitTime(6000);
+		
+		try {
+			ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
+			driver.switchTo().window(tabs2.get(1));
+			driver.close();
+			objCheckBox.click();
+		} catch (Exception e) {
+			System.out.println("PopUp Window did not displayed");
+		}
+	}
+	
+
+}

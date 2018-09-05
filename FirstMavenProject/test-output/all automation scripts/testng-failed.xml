@@ -41,7 +41,6 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TestCase_103"/>
-          <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
@@ -71,7 +70,6 @@
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_104_NA"/>
-          <include name="TC_106_NA_PracticeCSSselector"/>
         </methods>
       </class> <!-- Dow.TestSet_Dow -->
       <class name="Parametarization.UsingDataProvider">
@@ -98,15 +96,18 @@
         <methods>
           <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="TC_406_Searchability_restaurants"/>
+          <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
+          <include name="TC_407_Searchability_Public_Library"/>
+          <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
-          <include name="aftermethod"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
+          <include name="TC_801_testOne"/>
+          <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
       </class> <!-- groupon.TestSet_E -->
@@ -140,6 +141,7 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
+          <include name="TC_905"/>
           <include name="TC_902"/>
           <include name="TC_904"/>
         </methods>
