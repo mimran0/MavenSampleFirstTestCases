@@ -77,6 +77,8 @@ public class TestSetMath extends CommonAPI {
 		String vExcelPath = "C:\\Users\\imran\\workspace6\\FirstMavenProject\\src\\test\\java\\MyMath\\Resultabc.xlsx";
 
 		// List of buy
+		int vBuyList_Stock_Count = Arr_buy.size();
+		System.out.println("There are " + vBuyList_Stock_Count + " stocks in the buy bucket");
 		int i = 3;
 		for (String v : Arr_buy) {
 			System.out.println(v);
@@ -85,6 +87,8 @@ public class TestSetMath extends CommonAPI {
 		}
 
 		// List of Do not buy
+		int vDoNotBuyList_Stock_Count = Arr_DoNotBuy.size();
+		System.out.println("There are " + vDoNotBuyList_Stock_Count + " stocks in the do not buy bucket");
 		System.out.println(
 				"*******************************************************************Buy Ends here. Don't buy below stocks.");
 		int j = 3;

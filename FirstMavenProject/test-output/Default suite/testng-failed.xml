@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Avon.TestSet_Avon">
+      <class name="MyMath.TestSetMath_Version2">
         <methods>
-          <include name="TC_102_TBD"/>
           <include name="doBeforeEveryMethod"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_104_CheckStockOnAllPage"/>
         </methods>
-      </class> <!-- Avon.TestSet_Avon -->
+      </class> <!-- MyMath.TestSetMath_Version2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
