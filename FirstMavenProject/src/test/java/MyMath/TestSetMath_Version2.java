@@ -3,7 +3,11 @@
  */
 package MyMath;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +18,10 @@ import org.openqa.selenium.os.WindowsUtils;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.steadystate.css.parser.ParseException;
+
 import afterLoginIn.CommonAPI;
+import sun.util.calendar.BaseCalendar.Date;
 
 /**
  * @author md shahajada imran
@@ -25,6 +32,7 @@ public class TestSetMath_Version2 extends CommonAPI {
 	public static ArrayList<String> Arr_buy = new ArrayList<String>();
 	public static ArrayList<String> Arr_DoNotBuy = new ArrayList<String>();
 	public static ArrayList<String> Arr_buy_withOver8PercentDividend = new ArrayList<String>();
+	public static ArrayList<String> Arr_buy_withExdate = new ArrayList<String>();
 
 	@BeforeMethod
 	public void SetUpPreDataMethod() {
@@ -108,6 +116,84 @@ public class TestSetMath_Version2 extends CommonAPI {
 			System.out.println(v);
 		}
 
+	}
+
+	// Ex-date
+	@Test(enabled = false, priority = 3)
+	public void TC_Exdate_p() throws java.text.ParseException, ParseException {
+		String sWeekStartdate = "2018-09-12";
+		String wWeekEndDate = "2018-09-31";
+		TC_Exdate(sWeekStartdate, wWeekEndDate);
+		System.out.println(
+				"********************************List of stocks with given Exdate time frame and over 7% dividend");
+		for (String v : Arr_buy_withExdate) {
+			System.out.println(v);
+		}
+
+	}
+
+	// Not TestNG test.
+	// this method will take each stock of "Arr_buy_withOver8PercentDividend"
+	// and check the exdate with given 2 dates.
+	public static void TC_Exdate(String sWeekStartdate, String wWeekEndDate)
+			throws java.text.ParseException, ParseException {
+
+		// Arr_buy_withOver8PercentDividend.add("CMO-E");
+		// Arr_buy_withOver8PercentDividend.add("GOODP");
+		// Arr_buy_withOver8PercentDividend.add("BHR-B");
+
+		for (String v : Arr_buy_withOver8PercentDividend) {
+			try {
+				WindowsUtils.killByName("chromedriver.exe");
+				String vBaseURL = "http://www.dividend.com/dividend-stocks";
+				String wBrowser = "CHROME";
+				CommonAPI CommonAPI = new CommonAPI();
+				WebDriver driver = CommonAPI.getDriver(wBrowser, vBaseURL);
+				waitTime(4000);
+				driver.manage().window().maximize();
+				waitTime(4000);
+				driver.findElement(By.name("q")).sendKeys(v);
+				waitTime(2000);
+				// Hit enter from the keyboard starts here
+				Robot r = null;
+				try {
+					r = new Robot();
+				} catch (AWTException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				r.keyPress(KeyEvent.VK_ENTER);
+				r.keyRelease(KeyEvent.VK_ENTER);
+				// Hit enter from the keyboard Ends here
+				waitTime(5000);
+				String sExDate = driver
+						.findElement(By
+								.xpath("//*[@id=\"stock-price-recovery-table-collapse\"]/div/table/tbody/tr[1]/td[1]"))
+						.getText();
+				// System.out.println(sExDate);
+				// sExDate="2018-09-19";
+				// Converting string to date starts here
+				SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+				String dateInString = sExDate;
+				java.util.Date date = formatter.parse(dateInString);
+				// System.out.println(date);
+				// System.out.println(formatter.format(date));
+				// Converting string to date ends here
+
+				// checking if exDate is in next working week
+				java.util.Date dWeekStartDate = formatter.parse(sWeekStartdate);
+				java.util.Date dWeekEndDate = formatter.parse(wWeekEndDate);
+				// System.out.println(dWeekStartDate);
+				// System.out.println(dWeekEndDate);
+
+				if (date.after(dWeekStartDate) && date.before(dWeekEndDate)) {
+					System.out.println("Exdate is in the given time frame for " + v);
+
+				}
+				Arr_buy_withExdate.add(v);
+			} catch (Exception e) {
+			}
+		}
 	}
 
 	// This is not TestNG method. It is reused in TestNG methods.
