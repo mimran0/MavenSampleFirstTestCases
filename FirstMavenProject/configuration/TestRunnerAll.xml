@@ -30,6 +30,7 @@
 			<class name="MyMath.TestSetMath" />
 			<class name="flowerbyMe.TestSet_flowerbyMe" />
 			<class name="bing2.TestSet2_bing" />
+			<class name="MarriottAll.MarriottAllTestSet" />
 		</classes>
 	</test>
 </suite>
