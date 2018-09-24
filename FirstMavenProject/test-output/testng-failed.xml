@@ -32,6 +32,7 @@
       <class name="Dividend.TestSedDividend">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_105_Social_Sites_On_New_Tabs"/>
           <include name="TC_103_CheckStockOnCurrentPage"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_110_Search_Securities"/>
@@ -69,6 +70,7 @@
       <class name="Dow.TestSet_Dow">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_105_DropdownValidation"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_104_NA"/>
         </methods>
@@ -104,7 +106,8 @@
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="TC_410_Searchability_yoga"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
@@ -146,6 +149,14 @@
           <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
+      <class name="SecondClasssWith2Methods">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="UsersAreAbleToSearch"/>
+          <include name="doLast"/>
+          <include name="doFirst"/>
+        </methods>
+      </class> <!-- SecondClasssWith2Methods -->
       <class name="levis.TestSetH">
         <methods>
           <include name="TC101_MouseOver_OnMajorElements"/>
@@ -177,10 +188,12 @@
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
       <class name="Google.TestSet_Google">
         <methods>
+          <include name="TC_103_HangOut"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_101_SearchResultCount"/>
           <include name="TC_105_LoginWithCaptchaAndPhoneCode"/>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_106_PlayVideo"/>
         </methods>
       </class> <!-- Google.TestSet_Google -->
     </classes>

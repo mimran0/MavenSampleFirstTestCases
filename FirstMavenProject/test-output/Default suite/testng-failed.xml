@@ -6,8 +6,8 @@
       <class name="MarriottAll.MarriottAllTestSet">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_101_SelectByKeybordInput"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_102_TBD"/>
         </methods>
       </class> <!-- MarriottAll.MarriottAllTestSet -->
     </classes>
