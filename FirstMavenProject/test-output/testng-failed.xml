@@ -90,6 +90,7 @@
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
           <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
+          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>
@@ -106,6 +107,8 @@
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
+          <include name="TC_411_Searchability_spaMessage"/>
+          <include name="TC_402_LinkCount"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
           <include name="TC_409_Searchability_Fitness"/>
@@ -149,14 +152,6 @@
           <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
-      <class name="SecondClasssWith2Methods">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="UsersAreAbleToSearch"/>
-          <include name="doLast"/>
-          <include name="doFirst"/>
-        </methods>
-      </class> <!-- SecondClasssWith2Methods -->
       <class name="levis.TestSetH">
         <methods>
           <include name="TC101_MouseOver_OnMajorElements"/>
@@ -177,6 +172,13 @@
           <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
+      <class name="Nasdaq.TestSet_Nasdaq">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_114_TBD"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- Nasdaq.TestSet_Nasdaq -->
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -193,7 +195,6 @@
           <include name="TC_101_SearchResultCount"/>
           <include name="TC_105_LoginWithCaptchaAndPhoneCode"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_106_PlayVideo"/>
         </methods>
       </class> <!-- Google.TestSet_Google -->
     </classes>
