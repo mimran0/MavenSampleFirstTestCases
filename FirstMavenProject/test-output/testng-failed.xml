@@ -42,7 +42,6 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TestCase_103"/>
-          <include name="TC_102"/>
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- amazon.TestSetAmazon -->
@@ -90,7 +89,6 @@
           <include name="TC_05_FindOutUSPS_Locations"/>
           <include name="TC_02_CalculateAprice"/>
           <include name="TC_08_ErrorMessageVerificationOnWrongTrackingNumber"/>
-          <include name="TC_09_SignUpEligibility"/>
           <include name="TC_O6_USPS_Locations_AllRadios"/>
           <include name="TC_07_RandomClicks"/>
           <include name="TC_01_FindZipCode"/>
@@ -108,11 +106,8 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
-          <include name="TC_402_LinkCount"/>
           <include name="TC_410_Searchability_yoga"/>
           <include name="TC_405_Searchability_SPA_11372"/>
-          <include name="TC_409_Searchability_Fitness"/>
-          <include name="TC_801_testOne"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
@@ -124,6 +119,14 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- MC.TestSetF -->
+      <class name="cat.TestSet_Cat">
+        <methods>
+          <include name="TC_806_TBD"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+          <include name="TC_803_Pink"/>
+        </methods>
+      </class> <!-- cat.TestSet_Cat -->
       <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -179,6 +182,13 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- Nasdaq.TestSet_Nasdaq -->
+      <class name="flowerbyMe.TestSet_flowerbyMe">
+        <methods>
+          <include name="SetUpPreDataMethod"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="TC_102_TBD" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- flowerbyMe.TestSet_flowerbyMe -->
       <class name="AOL_AutomationScripts.Automation_Test_SuiteOne">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -190,7 +200,6 @@
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
       <class name="Google.TestSet_Google">
         <methods>
-          <include name="TC_103_HangOut"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_101_SearchResultCount"/>
           <include name="TC_105_LoginWithCaptchaAndPhoneCode"/>
