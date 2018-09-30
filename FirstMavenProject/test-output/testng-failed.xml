@@ -69,7 +69,6 @@
       <class name="Dow.TestSet_Dow">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_105_DropdownValidation"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_104_NA"/>
         </methods>
@@ -96,18 +95,14 @@
       </class> <!-- usps.TestSetJ -->
       <class name="groupon.TestSet_E">
         <methods>
-          <include name="TC_408_Searchability_Grocery"/>
           <include name="SetUpPreDataMethod"/>
-          <include name="TC_406_Searchability_restaurants"/>
-          <include name="aftermethod"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
-          <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
           <include name="TC_411_Searchability_spaMessage"/>
+          <include name="aftermethod"/>
           <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
@@ -119,14 +114,6 @@
           <include name="SetUpPreDataMethod"/>
         </methods>
       </class> <!-- MC.TestSetF -->
-      <class name="cat.TestSet_Cat">
-        <methods>
-          <include name="TC_806_TBD"/>
-          <include name="doBeforeEveryMethod"/>
-          <include name="SetUpPreDataMethod"/>
-          <include name="TC_803_Pink"/>
-        </methods>
-      </class> <!-- cat.TestSet_Cat -->
       <class name="walmart.TestSetB">
         <methods>
           <include name="doBeforeEveryMethod"/>
@@ -150,7 +137,6 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
-          <include name="TC_905"/>
           <include name="TC_902"/>
           <include name="TC_904"/>
         </methods>
@@ -175,13 +161,6 @@
           <include name="TC_404_ToolTip"/>
         </methods>
       </class> <!-- afterLoginIn.TestSetA -->
-      <class name="Nasdaq.TestSet_Nasdaq">
-        <methods>
-          <include name="doBeforeEveryMethod"/>
-          <include name="TC_114_TBD"/>
-          <include name="SetUpPreDataMethod"/>
-        </methods>
-      </class> <!-- Nasdaq.TestSet_Nasdaq -->
       <class name="flowerbyMe.TestSet_flowerbyMe">
         <methods>
           <include name="SetUpPreDataMethod"/>
@@ -193,6 +172,7 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_101_LoginCheck_AutomationObjectModel"/>
+          <include name="TC_106_SearchResultInImageFormate"/>
           <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_103_POM_EmailCountInTheInbox"/>

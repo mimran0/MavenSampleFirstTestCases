@@ -1,0 +1,28 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.Test;
+
+/**
+ * 
+ */
+
+/**
+ * @author md shahajada imran
+ *
+ */
+public class Yahoo extends CommonAPI {
+
+	
+	@Test(enabled=true)
+	public void TC_Synchronizations(){
+		WindowsUtils.killByName("firefox.exe");
+		System.setProperty("webdriver.gecko.driver",
+				"C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.get("https://www.yahoo.com/");
+		
+		
+	}
+	
+}

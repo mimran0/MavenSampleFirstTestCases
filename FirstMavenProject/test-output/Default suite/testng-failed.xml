@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="MarriottAll.MarriottAllTestSet">
+      <class name="Yahoo">
         <methods>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_101_SelectByKeybordInput"/>
-          <include name="SetUpPreDataMethod"/>
+          <include name="TC_Synchronizations"/>
         </methods>
-      </class> <!-- MarriottAll.MarriottAllTestSet -->
+      </class> <!-- Yahoo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

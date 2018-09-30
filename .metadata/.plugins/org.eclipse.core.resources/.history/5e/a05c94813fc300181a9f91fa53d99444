@@ -1,0 +1,25 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.os.WindowsUtils;
+import org.testng.annotations.Test;
+
+/**
+ * 
+ */
+
+/**
+ * @author md shahajada imran
+ *
+ */
+public class Yahoo extends CommonAPI {
+
+	
+	@Test(enabled=true)
+	public void TC_Synchronizations(){
+		WindowsUtils.killByName("chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\imran\\workspace6\\FirstMavenProject\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.yahoo.com/");
+		
+	}
+}
