@@ -23,7 +23,6 @@
           <include name="MousOverAllLinks"/>
           <include name="SelectA_Rose_MicorsoftEdge"/>
           <include name="TC_111_AnalystCoverage"/>
-          <include name="SearchAbility"/>
           <include name="doBeforeEveryMethod"/>
           <include name="Tc_110_SNI_UsingFindBy"/>
           <include name="SetUpPreDataMethod"/>
@@ -69,6 +68,7 @@
       <class name="Dow.TestSet_Dow">
         <methods>
           <include name="doBeforeEveryMethod"/>
+          <include name="TC_105_DropdownValidation"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_104_NA"/>
         </methods>
@@ -96,13 +96,16 @@
       <class name="groupon.TestSet_E">
         <methods>
           <include name="SetUpPreDataMethod"/>
+          <include name="TC_406_Searchability_restaurants"/>
+          <include name="aftermethod"/>
+          <include name="TC_412_Searchability_DunkinDonuts"/>
+          <include name="TC_407_Searchability_Public_Library"/>
           <include name="TC_404_HighlightElementsUnderCOUPON"/>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_403_Highlignt"/>
-          <include name="TC_411_Searchability_spaMessage"/>
-          <include name="aftermethod"/>
           <include name="TC_410_Searchability_yoga"/>
-          <include name="TC_412_Searchability_DunkinDonuts"/>
+          <include name="TC_405_Searchability_SPA_11372"/>
+          <include name="TC_409_Searchability_Fitness"/>
           <include name="TC_413_Searchability_SeaFoodStores"/>
           <include name="SetUpPreData"/>
         </methods>
@@ -137,10 +140,18 @@
           <include name="doBeforeEveryMethod"/>
           <include name="TC_901"/>
           <include name="TC_903_MouseOver"/>
+          <include name="TC_905"/>
           <include name="TC_902"/>
           <include name="TC_904"/>
         </methods>
       </class> <!-- bbb.TestSetI -->
+      <class name="Yahoo">
+        <methods>
+          <include name="doBeforeEveryMethod"/>
+          <include name="BeforeTest"/>
+          <include name="TC_102_ValidateErrorMessage"/>
+        </methods>
+      </class> <!-- Yahoo -->
       <class name="levis.TestSetH">
         <methods>
           <include name="TC101_MouseOver_OnMajorElements"/>
@@ -172,12 +183,18 @@
         <methods>
           <include name="doBeforeEveryMethod"/>
           <include name="TC_101_LoginCheck_AutomationObjectModel"/>
-          <include name="TC_106_SearchResultInImageFormate"/>
           <include name="TC_107_HighlightAllLinks"/>
           <include name="SetUpPreDataMethod"/>
           <include name="TC_103_POM_EmailCountInTheInbox"/>
         </methods>
       </class> <!-- AOL_AutomationScripts.Automation_Test_SuiteOne -->
+      <class name="MarriottAll.MarriottAllTestSet">
+        <methods>
+          <include name="TC_102_ParametarizationViaDataProvider" invocation-numbers="0 1 2 3 4"/>
+          <include name="doBeforeEveryMethod"/>
+          <include name="SetUpPreDataMethod"/>
+        </methods>
+      </class> <!-- MarriottAll.MarriottAllTestSet -->
       <class name="Google.TestSet_Google">
         <methods>
           <include name="doBeforeEveryMethod"/>

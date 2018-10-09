@@ -5,8 +5,9 @@
     <classes>
       <class name="Yahoo">
         <methods>
+          <include name="TC_102_TBD"/>
           <include name="doBeforeEveryMethod"/>
-          <include name="TC_Synchronizations"/>
+          <include name="BeforeTest"/>
         </methods>
       </class> <!-- Yahoo -->
     </classes>
